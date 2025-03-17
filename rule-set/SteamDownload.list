@@ -1,0 +1,105 @@
+# ===============================
+# Steam 下载 CDN 规则列表
+# 本文件包含 Steam 相关的下载 CDN 服务器域名
+# 各 CDN 提供商分类整理，便于使用和管理
+# ===============================
+
+# -------------------------------
+# Akamai Download CDN
+# 全球知名 CDN 提供商，广泛用于 Steam 下载加速
+# -------------------------------
+DOMAIN-SUFFIX,steambroadcast.akamaized.net
+DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
+DOMAIN-SUFFIX,steampipe.akamaized.net
+DOMAIN-SUFFIX,steamstore-a.akamaihd.net
+DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
+DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
+DOMAIN-SUFFIX,steamvideo-a.akamaized.net
+DOMAIN-SUFFIX,steammobile.akamaized.net
+DOMAIN-SUFFIX,steampipe-kr.akamaized.net
+DOMAIN-SUFFIX,steampipe-partner.akamaized.net
+
+# -------------------------------
+# 阿里云 (Alibaba Cloud) Download CDN
+# 主要用于 Steam 中国版 (蒸汽平台) 的下载加速
+# -------------------------------
+DOMAIN-SUFFIX,cdn-ali.content.steamchina.com
+
+# -------------------------------
+# 白山云 (Baishan Cloud) Download CDN
+# 提供中国区域的 Steam 下载加速
+# -------------------------------
+DOMAIN-SUFFIX,st.dl.bscstorage.net
+DOMAIN-SUFFIX,st.dl.eccdnx.com
+DOMAIN-SUFFIX,st.dl.pinyuncloud.com
+
+# -------------------------------
+# Edgecast Download CDN (Verizon)
+# Verizon 旗下的 CDN 服务
+# -------------------------------
+DOMAIN-SUFFIX,edge.steam-dns.top.comcast.net
+
+# -------------------------------
+# HIGHWINDS Download CDN
+# 另一家国际 CDN 提供商
+# -------------------------------
+DOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net
+
+# -------------------------------
+# 华为云 (Huawei Cloud) Download CDN
+# 中国区域的 Steam 下载加速
+# -------------------------------
+DOMAIN-SUFFIX,steampipe.steamcontent.tnkjmec.com
+
+# -------------------------------
+# Internode Download CDN
+# 适用于澳大利亚用户
+# -------------------------------
+DOMAIN-SUFFIX,steam.cdn.on.net
+
+# -------------------------------
+# 金山云 (Kingsoft Cloud) Download CDN
+# 主要覆盖中国地区
+# -------------------------------
+DOMAIN-SUFFIX,dl.steam.clngaa.com
+DOMAIN-SUFFIX,dl.steam.ksyna.com
+
+# -------------------------------
+# Orcon Download CDN
+# 适用于新西兰用户
+# -------------------------------
+DOMAIN-SUFFIX,steam.cdn.orcon.net.nz
+DOMAIN-SUFFIX,steam.cdn.slingshot.co.nz
+
+# -------------------------------
+# 腾讯云 (Tencent Cloud) Download CDN
+# 主要用于 Steam 中国版 (蒸汽平台) 的下载加速
+# -------------------------------
+DOMAIN-SUFFIX,cdn-qc.content.steamchina.com
+
+# -------------------------------
+# 完美世界 (Perfect World) Download CDN
+# 专为中国区 CS:GO 和 Dota2 提供的下载 CDN
+# -------------------------------
+DOMAIN-SUFFIX,csgo.wmsj.cn
+DOMAIN-SUFFIX,dota2.wmsj.cn
+DOMAIN-SUFFIX,wmsjsteam.com
+
+# -------------------------------
+# 网宿 (Wangsu) Download CDN
+# 提供全球 Steam 访问加速
+# -------------------------------
+DOMAIN-SUFFIX,cdn-ws.content.steamchina.com
+DOMAIN-SUFFIX,steampowered.com.8686c.com
+DOMAIN-SUFFIX,steamstatic.com.8686c.com
+DOMAIN-SUFFIX,steam.apac.qtlglb.com
+DOMAIN-SUFFIX,steam.eca.qtlglb.com
+DOMAIN-SUFFIX,steam.naeu.qtlglb.com
+DOMAIN-SUFFIX,steam.ru.qtlglb.com
+
+# -------------------------------
+# Webra Download CDN
+# 适用于俄罗斯地区
+# -------------------------------
+DOMAIN-SUFFIX,steam.cdn.webra.ru
