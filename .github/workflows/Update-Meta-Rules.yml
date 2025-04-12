@@ -68,7 +68,7 @@ jobs:
 
       - name: 准备输出目录
         run: |
-          FINAL_DIR="rule-set/repo"
+          FINAL_DIR="main-repo/rule-set/repo"
           if [ -d "$FINAL_DIR" ]; then
             rm -rf "$FINAL_DIR"/*
           else
@@ -77,9 +77,9 @@ jobs:
 
       - name: 复制处理后的文件
         run: |
-          echo "正在复制文件到目标目录: rule-set/repo"
-          cp -r temp-repo/* rule-set/repo/
-          FILE_COUNT=$(find "rule-set/repo" -type f | wc -l)
+          echo "正在复制文件到目标目录: main-repo/rule-set/repo"
+          cp -r temp-repo/* main-repo/rule-set/repo/
+          FILE_COUNT=$(find "main-repo/rule-set/repo" -type f | wc -l)
           echo "下载和更新完成，总文件数: $FILE_COUNT"
 
       - name: 提交更改
@@ -87,6 +87,6 @@ jobs:
           cd main-repo
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add rule-set/repo
+          git add main-repo/rule-set/repo
           git commit -m "更新Meta规则集 $(date '+%Y-%m-%d %H:%M')" || echo "没有变更需要提交"
           git push 
