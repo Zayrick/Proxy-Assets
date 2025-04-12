@@ -129,40 +129,25 @@ jobs:
 
       - name: Check for changes
         id: check_changes
-        uses: actions/github-script@v7.0.1
-        with:
-          script: |
-            const { execSync } = require('child_process');
-            try {
-              // 删除可能的子模块状态
-              try {
-                execSync('git rm --cached -rf rule-set/repo');
-              } catch (e) {
-                console.log('Note: rule-set/repo not in index or not a submodule');
-              }
-              
-              // 添加所有更改的文件
-              execSync('git add -A rule-set/repo/');
-              const hasChanges = execSync('git status --porcelain').toString().trim().length > 0;
-              
-              // 删除临时目录
-              try {
-                execSync('git clean -fdx meta_temp/');
-              } catch (e) {
-                console.log('Note: Could not clean meta_temp directory');
-              }
-              
-              core.setOutput('has_changes', hasChanges);
-              return { hasChanges };
-            } catch (error) {
-              console.error('Error checking for changes:', error);
-              core.setOutput('has_changes', false);
-              return { hasChanges: false };
-            }
-          result-encoding: json
+        run: |
+          # 删除可能的子模块状态
+          git rm --cached -rf rule-set/repo || echo "Note: rule-set/repo not in index or not a submodule"
+          
+          # 添加所有更改的文件
+          git add -A rule-set/repo/
+          
+          # 检查是否有变更
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+          
+          # 删除临时目录
+          rm -rf meta_temp/
       
       - name: Commit and push changes
-        if: ${{ fromJSON(steps.check_changes.outputs.result).hasChanges }}
+        if: ${{ steps.check_changes.outputs.has_changes == 'true' }}
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git commit -m "Chore: Update Meta Rules"
