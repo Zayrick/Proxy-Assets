@@ -13,7 +13,7 @@ jobs:
         rule:
           - name: DeepSeek
             url: https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/main/DeepSeek.list
-          - name: talkatone
+          - name: Talkatone
             url: https://raw.githubusercontent.com/mottzz87/crules/main/rule/talkatone.list
       fail-fast: false  # Continue other tasks even if one fails
       max-parallel: 1  # Run one task at a time to avoid git push conflicts
