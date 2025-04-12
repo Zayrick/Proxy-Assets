@@ -9,13 +9,9 @@ jobs:
   Rules-Update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          path: main-repo
-          fetch-depth: 1
-          sparse-checkout: |
-            rule-set/repo
+      - name: Create Working Directories
+        run: |
+          mkdir -p main-repo/rule-set/repo
 
       - name: Setup Memory FileSystem
         run: |
@@ -101,25 +97,16 @@ jobs:
           echo "Files copied successfully"
           echo "::endgroup::"
 
-      - name: Commit Changes
+      - name: Setup Git and Push Changes
         run: |
           echo "::group::Committing Changes"
           cd main-repo
+          git init
           git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          
-          git config core.compression 9
-          git config gc.auto 256
-          git config http.postBuffer 524288000
-          
-          git add -A rule-set/repo
-          
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            echo "Committing and pushing changes..."
-            git commit -q -m "Chore: Update Meta Rules $(date '+%Y-%m-%d %H:%M')" --no-verify
-            git push -q --no-verify
-            echo "Changes committed and pushed successfully"
-          fi
+          git config user.email "Actions@GitHub.com"
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          git checkout -b main
+          git add rule-set/repo
+          git commit -q -m "Chore: Update Meta Rules $(date '+%Y-%m-%d %H:%M')"
+          git push -q --force origin main
           echo "::endgroup::"
