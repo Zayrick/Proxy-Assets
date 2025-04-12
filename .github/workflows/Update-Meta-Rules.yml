@@ -26,67 +26,82 @@ jobs:
           echo "::endgroup::"
 
       - name: Process IPv6 Rules
-        run: |
-          echo "::group::Processing IPv6 Rules"
-          LIST_DIR="temp-repo/geo/geoip/classical"
-          if [ -d "$LIST_DIR" ]; then
-            echo "Converting IPv6 rules format..."
-            echo "Source directory: $LIST_DIR"
-            BEFORE_COUNT=$(grep -r "IP-CIDR," --include="*.list" "$LIST_DIR" | grep ":" | wc -l)
-            echo "IPv6 rules before conversion: $BEFORE_COUNT"
-            
-            find "$LIST_DIR" -type f -name "*.list" | while read -r file; do
-              BEFORE=$(grep -c ":" "$file" || echo "0")
-              sed -i -E 's/^(IP-CIDR,)([^,]*:)/IP-CIDR6,\2/' "$file"
-              AFTER=$(grep -c "IP-CIDR6," "$file" || echo "0")
-              echo "Processed $file: Converted $BEFORE IPv6 rules to $AFTER IP-CIDR6 format"
-            done
-            
-            AFTER_COUNT=$(grep -r "IP-CIDR6," --include="*.list" "$LIST_DIR" | wc -l)
-            echo "IPv6 rules after conversion: $AFTER_COUNT"
-            echo "IPv6 rules conversion completed"
-          else
-            echo "Directory $LIST_DIR does not exist, skipping IPv6 rules conversion"
-          fi
-          echo "::endgroup::"
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs').promises;
+            const path = require('path');
+            const { promisify } = require('util');
+            const glob = promisify(require('glob'));
+
+            async function processIPv6() {
+              const LIST_DIR = 'temp-repo/geo/geoip/classical';
+              const files = await glob(path.join(LIST_DIR, '**/*.list'));
+              
+              console.log(`找到IPv6规则文件：${files.length}个`);
+              
+              // 分批处理防止内存溢出
+              const batchSize = 200;
+              for (let i = 0; i < files.length; i += batchSize) {
+                const batch = files.slice(i, i + batchSize);
+                await Promise.all(batch.map(async (file) => {
+                  const content = await fs.readFile(file, 'utf8');
+                  const newContent = content.replace(/^(IP-CIDR,)([^,]*:)/gm, 'IP-CIDR6,$2');
+                  await fs.writeFile(file, newContent);
+                }));
+                // 只在每批次完成后输出一次
+                console.log(`IPv6处理进度：${Math.min(i + batchSize, files.length)}/${files.length} 文件（${Math.floor((Math.min(i + batchSize, files.length) / files.length) * 100)}%）`);
+              }
+              console.log(`IPv6规则处理完成，总共处理：${files.length}个文件`);
+            }
+
+            processIPv6().catch(console.error);
 
       - name: Process ASN Directory
-        run: |
-          echo "::group::Processing ASN Directory"
-          ASN_DIR="temp-repo/asn"
-          ASN_CLASSICAL_DIR="$ASN_DIR/classical"
-          
-          mkdir -p "$ASN_CLASSICAL_DIR"
-          
-          echo "Starting to copy list files to $ASN_CLASSICAL_DIR..."
-          
-          FILES_COPIED=0
-          find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" | while read -r file; do
-            cp "$file" "$ASN_CLASSICAL_DIR"/
-            echo "Copied $(basename "$file") to classical directory"
-            FILES_COPIED=$((FILES_COPIED+1))
-          done
-          
-          echo "File copying completed. Total files copied: $FILES_COPIED"
-          
-          echo "Processing ASN files to add IP-CIDR prefix..."
-          PROCESSED=0
-          find "$ASN_CLASSICAL_DIR" -type f -name "*.list" | while read -r file; do
-            BEFORE_IPV4=$(grep -v ":" "$file" | grep -v "^#" | wc -l)
-            BEFORE_IPV6=$(grep ":" "$file" | grep -v "^#" | wc -l)
-            
-            sed -i -E 's/^([^#].*)$/IP-CIDR,\1/' "$file"
-            sed -i -E 's/^IP-CIDR,([^,]*:)/IP-CIDR6,\1/' "$file"
-            
-            AFTER_IPV4=$(grep "IP-CIDR," "$file" | wc -l)
-            AFTER_IPV6=$(grep "IP-CIDR6," "$file" | wc -l)
-            
-            echo "Processed $(basename "$file"): Added prefix to $AFTER_IPV4 IPv4 and $AFTER_IPV6 IPv6 rules"
-            PROCESSED=$((PROCESSED+1))
-          done
-          
-          echo "ASN directory processing completed. Total files processed: $PROCESSED"
-          echo "::endgroup::"
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs').promises;
+            const path = require('path');
+            const { promisify } = require('util');
+            const glob = promisify(require('glob'));
+
+            async function processASN() {
+              const ASN_DIR = 'temp-repo/asn';
+              const ASN_CLASSICAL_DIR = path.join(ASN_DIR, 'classical');
+              
+              // 创建目录
+              await fs.mkdir(ASN_CLASSICAL_DIR, { recursive: true });
+
+              // 分批复制文件
+              const sourceFiles = await glob(path.join(ASN_DIR, '*.list'));
+              console.log(`找到ASN源文件：${sourceFiles.length}个`);
+              
+              const batchSize = 200;
+              for (let i = 0; i < sourceFiles.length; i += batchSize) {
+                const batch = sourceFiles.slice(i, i + batchSize);
+                await Promise.all(batch.map(async (file) => {
+                  const dest = path.join(ASN_CLASSICAL_DIR, path.basename(file));
+                  await fs.copyFile(file, dest);
+                }));
+                console.log(`ASN文件复制进度：${Math.min(i + batchSize, sourceFiles.length)}/${sourceFiles.length} 文件（${Math.floor((Math.min(i + batchSize, sourceFiles.length) / sourceFiles.length) * 100)}%）`);
+              }
+
+              // 分批处理文件
+              const targetFiles = await glob(path.join(ASN_CLASSICAL_DIR, '*.list'));
+              for (let i = 0; i < targetFiles.length; i += batchSize) {
+                const batch = targetFiles.slice(i, i + batchSize);
+                await Promise.all(batch.map(async (file) => {
+                  let content = await fs.readFile(file, 'utf8');
+                  content = content
+                    .replace(/^([^#\n].*)$/gm, 'IP-CIDR,$1')
+                    .replace(/^IP-CIDR,([^,]*:)/gm, 'IP-CIDR6,$1');
+                  await fs.writeFile(file, content);
+                }));
+              }
+            }
+
+            processASN().catch(console.error);
 
       - name: Prepare Output Directory
         run: |
