@@ -21,12 +21,10 @@ jobs:
         with:
           fetch-depth: 1
           
-      - name: Setup custom actions
-        uses: actions/github-script@v7
-        with:
-          script: |
-            await exec.exec('git', ['config', '--global', 'user.name', 'github-actions[bot]']);
-            await exec.exec('git', ['config', '--global', 'user.email', 'github-actions[bot]@users.noreply.github.com']);
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
             
       - name: Clone Meta Rules
         uses: actions/checkout@v4
@@ -42,10 +40,6 @@ jobs:
           name: meta-rules-source
           path: meta_temp/
           retention-days: 1
-          
-      - name: Clean up meta_temp
-        run: |
-          rm -rf meta_temp/
 
   process-ipv6-rules:
     needs: prepare
@@ -86,10 +80,6 @@ jobs:
           name: processed-ipv6-rules
           path: meta_temp/geo/
           retention-days: 1
-          
-      - name: Clean up meta_temp
-        run: |
-          rm -rf meta_temp/
 
   process-asn-rules:
     needs: prepare
@@ -142,10 +132,6 @@ jobs:
           name: processed-asn-rules
           path: meta_temp/asn/
           retention-days: 1
-          
-      - name: Clean up meta_temp
-        run: |
-          rm -rf meta_temp/
 
   process-other-files:
     needs: prepare
@@ -167,10 +153,6 @@ jobs:
             !meta_temp/geo/
             !meta_temp/asn/
           retention-days: 1
-          
-      - name: Clean up meta_temp
-        run: |
-          rm -rf meta_temp/
 
   merge-and-commit:
     needs: [prepare, process-ipv6-rules, process-asn-rules, process-other-files]
@@ -183,11 +165,9 @@ jobs:
           fetch-depth: 1
           
       - name: Setup Git
-        uses: actions/github-script@v7
-        with:
-          script: |
-            await exec.exec('git', ['config', '--global', 'user.name', 'github-actions[bot]']);
-            await exec.exec('git', ['config', '--global', 'user.email', 'github-actions[bot]@users.noreply.github.com']);
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
       
       - name: Download all processed artifacts
         uses: actions/download-artifact@v4
@@ -261,30 +241,19 @@ jobs:
             // 删除临时目录
             console.log('删除临时目录...');
             fs.rmSync('processed_artifacts', { recursive: true, force: true });
-            
-            // 返回有无更改
-            return { hasChanges: true };
 
       - name: Check for changes
         id: check_changes
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { execSync } = require('child_process');
-            try {
-              execSync('git add rule-set/repo/');
-              const hasChanges = execSync('git status --porcelain').toString().trim().length > 0;
-              core.setOutput('has_changes', hasChanges);
-              return { hasChanges };
-            } catch (error) {
-              console.error('检查更改时出错:', error);
-              core.setOutput('has_changes', false);
-              return { hasChanges: false };
-            }
-          result-encoding: json
+        run: |
+          git add rule-set/repo/
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
       
       - name: Commit and push changes
-        if: ${{ fromJSON(steps.check_changes.outputs.result).hasChanges }}
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git commit -m "Chore: Update Meta Rules"
           git push 
