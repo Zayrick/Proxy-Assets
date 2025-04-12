@@ -1,0 +1,153 @@
+name: Update Meta Rules
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 每天早上7点运行
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  update-rules:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 1
+          
+      - name: Setup custom actions
+        uses: actions/github-script@v7.0.1
+        id: setup-git
+        with:
+          script: |
+            await exec.exec('git', ['config', '--global', 'user.name', 'github-actions[bot]']);
+            await exec.exec('git', ['config', '--global', 'user.email', 'github-actions[bot]@users.noreply.github.com']);
+      
+      - name: Clone Meta Rules
+        uses: actions/checkout@v4
+        with:
+          repository: MetaCubeX/meta-rules-dat
+          ref: meta
+          path: meta_temp
+          fetch-depth: 1
+      
+      - name: Process Rules
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const { execSync } = require('child_process');
+            
+            // 处理IPv6规则
+            const listDir = path.join('meta_temp', 'geo', 'geoip', 'classical');
+            if (fs.existsSync(listDir)) {
+              console.log('处理IPv6规则...');
+              const ipv6Files = fs.readdirSync(listDir)
+                .filter(file => file.endsWith('.list'))
+                .map(file => path.join(listDir, file));
+                
+              for (const file of ipv6Files) {
+                const content = fs.readFileSync(file, 'utf8');
+                const processed = content.replace(/^(IP-CIDR,)([^,]*:)/gm, 'IP-CIDR6,$2');
+                fs.writeFileSync(file, processed);
+              }
+            }
+            
+            // 处理ASN规则
+            const asnDir = path.join('meta_temp', 'asn');
+            const asnClassicalDir = path.join(asnDir, 'classical');
+            
+            if (!fs.existsSync(asnClassicalDir)) {
+              fs.mkdirSync(asnClassicalDir, { recursive: true });
+            }
+            
+            console.log('处理ASN规则...');
+            const files = fs.readdirSync(asnDir)
+              .filter(file => file.endsWith('.list') && fs.statSync(path.join(asnDir, file)).isFile());
+              
+            // 批量处理所有ASN文件
+            for (const file of files) {
+              const content = fs.readFileSync(path.join(asnDir, file), 'utf8');
+              const processedContent = content
+                .split('\n')
+                .map(line => {
+                  if (line.startsWith('#') || line.trim() === '') return line;
+                  if (line.includes(':')) return `IP-CIDR6,${line}`;
+                  return `IP-CIDR,${line}`;
+                })
+                .join('\n');
+                
+              fs.writeFileSync(path.join(asnClassicalDir, file), processedContent);
+            }
+            
+            // 更新本地仓库
+            console.log('更新本地仓库...');
+            // 使用Node.js的文件操作替代shell命令，减少子进程调用
+            const repoDir = 'rule-set/repo';
+            if (fs.existsSync(repoDir)) {
+              // 递归删除目录内容但保留目录本身
+              const deleteContents = (dir) => {
+                const items = fs.readdirSync(dir);
+                for (const item of items) {
+                  const itemPath = path.join(dir, item);
+                  if (fs.lstatSync(itemPath).isDirectory()) {
+                    deleteContents(itemPath);
+                    fs.rmdirSync(itemPath);
+                  } else {
+                    fs.unlinkSync(itemPath);
+                  }
+                }
+              };
+              deleteContents(repoDir);
+            } else {
+              fs.mkdirSync(repoDir, { recursive: true });
+            }
+            
+            // 使用fs-extra的copySync功能复制整个目录
+            const copyDir = (src, dest) => {
+              if (!fs.existsSync(dest)) {
+                fs.mkdirSync(dest, { recursive: true });
+              }
+              
+              const items = fs.readdirSync(src);
+              for (const item of items) {
+                const srcPath = path.join(src, item);
+                const destPath = path.join(dest, item);
+                
+                if (fs.lstatSync(srcPath).isDirectory()) {
+                  copyDir(srcPath, destPath);
+                } else {
+                  fs.copyFileSync(srcPath, destPath);
+                }
+              }
+            };
+            
+            copyDir('meta_temp', repoDir);
+            
+            // 返回有无更改
+            return { hasChanges: true };
+
+      - name: Check for changes
+        id: check_changes
+        uses: actions/github-script@v7.0.1
+        with:
+          script: |
+            const { execSync } = require('child_process');
+            try {
+              execSync('git add rule-set/repo/');
+              const hasChanges = execSync('git status --porcelain').toString().trim().length > 0;
+              core.setOutput('has_changes', hasChanges);
+              return { hasChanges };
+            } catch (error) {
+              console.error('检查更改时出错:', error);
+              core.setOutput('has_changes', false);
+              return { hasChanges: false };
+            }
+          result-encoding: json
+      
+      - name: Commit and push changes
+        if: ${{ fromJSON(steps.check_changes.outputs.result).hasChanges }}
+        run: |
+          git commit -m "Chore: Update Meta Rules"
+          git push 
