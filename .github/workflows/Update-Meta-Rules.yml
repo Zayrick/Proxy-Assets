@@ -3,7 +3,7 @@ name: Update Meta Rules
 on:
   schedule:
     - cron: '0 7 * * *'  # 每天早上7点运行
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:     # 允许手动触发
 
 jobs:
   update-rules:
@@ -13,231 +13,69 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1  # 减少克隆深度提高速度
           
       - name: Set up Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
           
-      - name: Create update-rules.js
+      - name: Setup cache for meta rules
+        uses: actions/cache@v3
+        id: meta-cache
+        with:
+          path: /tmp/meta_temp
+          key: ${{ runner.os }}-meta-rules-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-meta-rules-
+          
+      - name: Clone Meta Rules Repository
+        if: steps.meta-cache.outputs.cache-hit != 'true'
         run: |
-          cat > update-rules.js << 'EOF'
-          const fs = require('fs');
-          const path = require('path');
-          const { execSync } = require('child_process');
-          const { promisify } = require('util');
-          const readdir = promisify(fs.readdir);
-          const readFile = promisify(fs.readFile);
-          const writeFile = promisify(fs.writeFile);
-          const mkdir = promisify(fs.mkdir);
-          const stat = promisify(fs.stat);
-
-          const TEMP_DIR = '/tmp/meta_temp';
-          const RULE_SET_DIR = 'rule-set/repo';
-          // 设置文件处理的最大并发数
-          const MAX_CONCURRENT = 50;
-
-          async function cloneRepository() {
-            console.log('正在克隆Meta Rules仓库...');
-            execSync(`mkdir -p ${TEMP_DIR}`);
-            execSync(`git clone --depth 1 --branch meta https://github.com/MetaCubeX/meta-rules-dat.git ${TEMP_DIR}`);
-          }
-
-          // 添加并发控制工具函数
-          async function concurrentMap(items, fn, concurrency = MAX_CONCURRENT) {
-            const results = [];
-            const inProgress = new Set();
-            let index = 0;
-
-            async function next() {
-              if (index >= items.length) return;
-              
-              const i = index++;
-              const item = items[i];
-              inProgress.add(i);
-              
-              try {
-                const result = await fn(item, i);
-                results[i] = result;
-              } catch (error) {
-                console.error(`处理项目时出错:`, error);
-              } finally {
-                inProgress.delete(i);
-                await next();
-              }
-            }
-
-            // 初始化并发任务
-            const initialPromises = [];
-            for (let i = 0; i < Math.min(concurrency, items.length); i++) {
-              initialPromises.push(next());
-            }
-
-            await Promise.all(initialPromises);
-            return results;
-          }
-
-          async function processFile(filePath, patterns) {
-            try {
-              let content = await readFile(filePath, 'utf8');
-              
-              for (const pattern of patterns) {
-                content = content.replace(pattern.regex, pattern.replacement);
-              }
-              
-              await writeFile(filePath, content, 'utf8');
-            } catch (error) {
-              console.error(`处理文件 ${filePath} 时出错:`, error);
-            }
-          }
-
-          async function processDirectory(dir, patterns, filter = () => true) {
-            try {
-              const entries = await readdir(dir, { withFileTypes: true });
-              
-              // 按照类型分组
-              const files = [];
-              const directories = [];
-              
-              for (const entry of entries) {
-                const fullPath = path.join(dir, entry.name);
-                if (entry.isDirectory()) {
-                  directories.push(fullPath);
-                } else if (entry.isFile() && filter(entry.name) && entry.name.endsWith('.list')) {
-                  files.push(fullPath);
-                }
-              }
-              
-              // 先处理目录，使用递归但控制并发
-              if (directories.length > 0) {
-                await concurrentMap(directories, (subDir) => processDirectory(subDir, patterns, filter), 5);
-              }
-              
-              // 再处理文件，使用并发控制
-              if (files.length > 0) {
-                console.log(`处理目录 ${dir} 中的 ${files.length} 个文件...`);
-                await concurrentMap(files, (file) => processFile(file, patterns));
-              }
-            } catch (error) {
-              console.error(`处理目录 ${dir} 时出错:`, error);
-            }
-          }
-
-          async function processIpv6Rules() {
-            console.log('正在处理IPv6规则...');
-            const listDir = path.join(TEMP_DIR, 'geo/geoip/classical');
+          # 只克隆meta分支并减少深度为1
+          git clone --depth 1 --branch meta --single-branch https://github.com/MetaCubeX/meta-rules-dat.git /tmp/meta_temp
+          
+      - name: Process Rules (Parallel Processing)
+        run: |
+          # 创建目标目录
+          mkdir -p rule-set/repo
+          
+          # 并行处理IPv6和ASN规则
+          {
+            # 处理IPv6规则 - 使用awk提高性能
+            LIST_DIR="/tmp/meta_temp/geo/geoip/classical"
+            if [ -d "$LIST_DIR" ]; then
+              find "$LIST_DIR" -type f -name "*.list" -print0 | xargs -0 -P 4 -I{} sh -c '
+                awk "{if (/^IP-CIDR,.*:/) {sub(/^IP-CIDR,/,\"IP-CIDR6,\"); print} else {print}}" "{}" > "{}.tmp" && mv "{}.tmp" "{}"
+              '
+            fi
+          } &
+          
+          {
+            # 处理ASN规则 - 优化处理流程
+            ASN_DIR="/tmp/meta_temp/asn"
+            ASN_CLASSICAL_DIR="$ASN_DIR/classical"
+            mkdir -p "$ASN_CLASSICAL_DIR"
             
-            try {
-              const dirExists = await stat(listDir).catch(() => false);
-              if (!dirExists) {
-                console.log(`目录 ${listDir} 不存在，跳过IPv6规则处理`);
-                return;
-              }
-              
-              await processDirectory(listDir, [
-                {
-                  regex: /^(IP-CIDR,)([^,]*:)/gm,
-                  replacement: 'IP-CIDR6,$2'
-                }
-              ]);
-            } catch (error) {
-              console.error('处理IPv6规则时出错:', error);
-            }
-          }
-
-          async function processAsnRules() {
-            console.log('正在处理ASN规则...');
-            const asnDir = path.join(TEMP_DIR, 'asn');
-            const asnClassicalDir = path.join(asnDir, 'classical');
-            
-            try {
-              // 创建classical目录
-              await mkdir(asnClassicalDir, { recursive: true });
-              
-              // 复制list文件，控制并发
-              const entries = await readdir(asnDir, { withFileTypes: true });
-              const listFiles = entries.filter(entry => entry.isFile() && entry.name.endsWith('.list'));
-              
-              console.log(`找到 ${listFiles.length} 个ASN列表文件需要处理`);
-              
-              // 使用并发控制复制文件
-              await concurrentMap(listFiles, async (entry) => {
-                const sourcePath = path.join(asnDir, entry.name);
-                const destPath = path.join(asnClassicalDir, entry.name);
-                
-                try {
-                  const content = await readFile(sourcePath, 'utf8');
-                  await writeFile(destPath, content, 'utf8');
-                } catch (error) {
-                  console.error(`复制文件 ${sourcePath} 时出错:`, error);
-                }
-              });
-              
-              // 处理规则格式
-              await processDirectory(asnClassicalDir, [
-                {
-                  regex: /^([^#].*)$/gm,
-                  replacement: 'IP-CIDR,$1'
-                },
-                {
-                  regex: /^IP-CIDR,([^,]*:)/gm,
-                  replacement: 'IP-CIDR6,$1'
-                }
-              ]);
-            } catch (error) {
-              console.error('处理ASN规则时出错:', error);
-            }
-          }
-
-          async function updateRulesInRepository() {
-            console.log('正在更新仓库中的规则...');
-            
-            try {
-              // 清空目标目录
-              execSync(`rm -rf ${RULE_SET_DIR}/*`);
-              
-              // 复制新文件
-              execSync(`mkdir -p ${RULE_SET_DIR}`);
-              execSync(`cp -r ${TEMP_DIR}/* ${RULE_SET_DIR}/`);
-              
-              // 清理临时目录
-              execSync(`rm -rf ${TEMP_DIR}`);
-            } catch (error) {
-              console.error('更新仓库规则时出错:', error);
-            }
-          }
-
-          async function main() {
-            try {
-              await cloneRepository();
-              
-              // 串行处理IPv6和ASN规则，避免同时打开过多文件
-              await processIpv6Rules();
-              await processAsnRules();
-              
-              await updateRulesInRepository();
-              
-              console.log('规则更新完成');
-            } catch (error) {
-              console.error('规则更新过程中出错:', error);
-              process.exit(1);
-            }
-          }
-
-          main();
-          EOF
-      
-      - name: Run update script
-        run: node update-rules.js
+            # 直接在目标位置处理文件
+            find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" -print0 | xargs -0 -P 4 -I{} sh -c '
+              FILENAME=$(basename "{}") 
+              awk "{if(/^#/) {print} else if(/.*:.*/) {print \"IP-CIDR6,\" \$0} else {print \"IP-CIDR,\" \$0}}" "{}" > "$ASN_CLASSICAL_DIR/$FILENAME"
+            '
+          } &
+          
+          # 等待所有并行任务完成
+          wait
+          
+      - name: Update Rules in Repository
+        run: |
+          # 清空目标目录
+          rm -rf rule-set/repo/*
+          
+          # 使用rsync替代cp提高性能
+          rsync -a --delete /tmp/meta_temp/ rule-set/repo/
           
       - name: Commit and Push Changes
         run: |
           git add rule-set/repo/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Chore: Update Meta Rules" && git push) 
           git diff --quiet && git diff --staged --quiet || (git commit -m "Chore: Update Meta Rules" && git push) 
