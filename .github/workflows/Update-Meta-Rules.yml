@@ -26,7 +26,7 @@ jobs:
       - name: Clone Meta Rules Repository
         run: |
           echo "::group::Cloning Meta Rules Repository"
-          git clone --depth 1 --branch meta https://github.com/MetaCubeX/meta-rules-dat.git /mnt/ramdisk/temp-repo
+          git clone -q --depth 1 --branch meta https://github.com/MetaCubeX/meta-rules-dat.git /mnt/ramdisk/temp-repo
           echo "Meta rules repository cloned successfully"
           echo "::endgroup::"
 
@@ -94,6 +94,8 @@ jobs:
             tar -cf - -C "$TEMP_REPO" . | tar -xf - -C "$FINAL_DIR"
           fi
           
+          find "$FINAL_DIR" -name ".git" -type d -exec rm -rf {} +
+          
           echo "Files copied successfully"
           echo "::endgroup::"
 
@@ -101,12 +103,10 @@ jobs:
         run: |
           echo "::group::Committing Changes"
           cd main-repo
-          git init
+          git init -b main
           git config user.name "GitHub Actions"
           git config user.email "Actions@GitHub.com"
-          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
-          git checkout -b main
-          git add rule-set/repo
+          git add -f rule-set/repo
           git commit -q -m "Chore: Update Meta Rules $(date '+%Y-%m-%d %H:%M')"
-          git push -q --force origin main
+          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" main --force
           echo "::endgroup::"
