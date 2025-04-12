@@ -37,12 +37,12 @@ jobs:
           script: |
             const fs = require('fs-extra');
             const path = require('path');
-            const glob = require('@actions/glob');
+            const globModule = require('@actions/glob');
             const io = require('@actions/io');
             const exec = require('@actions/exec');
             
             async function processFiles(pattern, processor, batchSize = 100) {
-              const globber = await glob.create(pattern);
+              const globber = await globModule.create(pattern);
               const files = await globber.glob();
               
               // 分批处理文件以避免内存溢出
@@ -136,7 +136,7 @@ jobs:
               // 使用外部命令复制大量文件，更高效
               await exec.exec('cp', ['-r', 'temp-repo/.', 'rule-set/repo/']);
               
-              const globber = await glob.create('rule-set/repo/**/*');
+              const globber = await globModule.create('rule-set/repo/**/*');
               const files = await globber.glob();
               const fileCount = files.filter(file => !fs.statSync(file).isDirectory()).length;
               
