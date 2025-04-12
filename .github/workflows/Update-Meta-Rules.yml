@@ -42,11 +42,8 @@ jobs:
             BEFORE_COUNT=$(find "$LIST_DIR" -type f -name "*.list" -print0 | xargs -0 grep -l "IP-CIDR,.*:" | wc -l)
             echo "IPv6 rules files before conversion: $BEFORE_COUNT"
             
-            # 增加并行处理数
             find "$LIST_DIR" -type f -name "*.list" -print0 | xargs -0 -P $(nproc --all) -I{} bash -c "sed -i -E 's/^(IP-CIDR,)([^,]*:)/IP-CIDR6,\2/' {}"
-            
-            AFTER_COUNT=$(find "$LIST_DIR" -type f -name "*.list" -print0 | xargs -0 grep -l "IP-CIDR6," | wc -l)
-            echo "IPv6 rules files after conversion: $AFTER_COUNT"
+            echo "IPv6 rules conversion completed"
           else
             echo "Directory $LIST_DIR does not exist, skipping IPv6 rules conversion"
           fi
@@ -60,17 +57,14 @@ jobs:
           
           mkdir -p "$ASN_CLASSICAL_DIR"
           
-          # 使用更高效的文件复制方式
           if [ -d "$ASN_DIR" ]; then
+            echo "Copying ASN files..."
             find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" -print0 | xargs -0 -P $(nproc --all) -I{} cp {} "$ASN_CLASSICAL_DIR/"
             FILES_COPIED=$(find "$ASN_CLASSICAL_DIR" -maxdepth 1 -type f -name "*.list" | wc -l)
             echo "ASN files copied: $FILES_COPIED"
             
-            # 使用更高效的批处理方式
-            if [ $FILES_COPIED -gt 0 ]; then
-              find "$ASN_CLASSICAL_DIR" -type f -name "*.list" -print0 | xargs -0 -P $(nproc --all) sed -i -E 's/^([^#].*):(.*)$/IP-CIDR6,\1:\2/; s/^([^#IP][^:]*)$/IP-CIDR,\1/'
-              echo "ASN files processed: $(find "$ASN_CLASSICAL_DIR" -type f -name "*.list" | wc -l)"
-            fi
+            echo "Processing ASN files..."
+            find "$ASN_CLASSICAL_DIR" -type f -name "*.list" -print0 | xargs -0 -P $(nproc --all) sed -i -E 's/^([^#].*):(.*)$/IP-CIDR6,\1:\2/; s/^([^#IP][^:]*)$/IP-CIDR,\1/'
           else
             echo "ASN directory does not exist"
           fi
@@ -92,27 +86,23 @@ jobs:
       - name: Copy Processed Files
         run: |
           echo "::group::Copying Processed Files"
-          # 分批并行复制文件以提高性能
           TEMP_REPO="/mnt/ramdisk/temp-repo"
           FINAL_DIR="main-repo/rule-set/repo"
           
-          # 首先创建目录结构 - 这比复制时创建更快
           find "$TEMP_REPO" -type d | while read -r dir; do
             rel_dir="${dir#$TEMP_REPO/}"
             [ -n "$rel_dir" ] && mkdir -p "$FINAL_DIR/$rel_dir"
           done
           
-          # 分批并行复制文件
-          find "$TEMP_REPO" -type f -print0 | xargs -0 -n 1000 -P $(nproc --all) -I{} bash -c '
-            src="$1"
-            rel_path="${src#/mnt/ramdisk/temp-repo/}"
-            cp "$src" "main-repo/rule-set/repo/$rel_path"
-          ' -- {}
+          echo "Copying files..."
+          find "$TEMP_REPO" -type f -print0 | xargs -0 -P $(nproc --all) bash -c '
+            for src in "$@"; do
+              rel_path="${src#/mnt/ramdisk/temp-repo/}"
+              cp "$src" "main-repo/rule-set/repo/$rel_path"
+            done
+          ' --
           
-          # 统计结果
-          FILE_COUNT=$(find "$FINAL_DIR" -type f | wc -l)
-          DIR_COUNT=$(find "$FINAL_DIR" -type d | wc -l)
-          echo "Files copied: $FILE_COUNT in $DIR_COUNT directories"
+          echo "Files copied successfully"
           echo "::endgroup::"
 
       - name: Commit Changes
@@ -122,22 +112,16 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           
-          # 更高效的Git提交方式，避免单独跟踪每个文件
           git config core.compression 9
           git config gc.auto 256
           git config http.postBuffer 524288000
           
-          # 使用更高效的git add
           git add -A rule-set/repo
           
-          # 检查是否有变更
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            CHANGE_COUNT=$(git diff --cached --name-only | wc -l)
-            echo "Changed files: $CHANGE_COUNT"
-            
-            # 使用更快的提交方式并避免不必要的检查
+            echo "Committing and pushing changes..."
             git commit -q -m "Chore: Update Meta Rules $(date '+%Y-%m-%d %H:%M')" --no-verify
             git push -q --no-verify
             echo "Changes committed and pushed successfully"
