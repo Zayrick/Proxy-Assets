@@ -1,0 +1,64 @@
+name: Update Meta Rules
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 每天早上7点运行
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  update-rules:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+      - name: Create temp directory
+        run: mkdir -p /tmp/meta_temp
+        
+      - name: Clone Meta Rules Repository
+        run: |
+          git clone --depth 1 --branch meta https://github.com/MetaCubeX/meta-rules-dat.git /tmp/meta_temp
+          
+      - name: Process IPv6 Rules
+        run: |
+          LIST_DIR="/tmp/meta_temp/geo/geoip/classical"
+          if [ -d "$LIST_DIR" ]; then
+            find "$LIST_DIR" -type f -name "*.list" -exec sed -i -E 's/^(IP-CIDR,)([^,]*:)/IP-CIDR6,\2/' {} \;
+          fi
+          
+      - name: Process ASN Rules
+        run: |
+          ASN_DIR="/tmp/meta_temp/asn"
+          ASN_CLASSICAL_DIR="$ASN_DIR/classical"
+          mkdir -p "$ASN_CLASSICAL_DIR"
+          
+          # 复制 list 文件
+          find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" -exec cp {} "$ASN_CLASSICAL_DIR"/ \;
+          
+          # 处理规则格式
+          find "$ASN_CLASSICAL_DIR" -type f -name "*.list" -exec sed -i -E 's/^([^#].*)$/IP-CIDR,\1/' {} \;
+          find "$ASN_CLASSICAL_DIR" -type f -name "*.list" -exec sed -i -E 's/^IP-CIDR,([^,]*:)/IP-CIDR6,\1/' {} \;
+          
+      - name: Update Rules in Repository
+        run: |
+          # 清空目标目录
+          rm -rf rule-set/repo/*
+          
+          # 复制新文件
+          cp -r /tmp/meta_temp/* rule-set/repo/
+          
+          # 清理临时目录
+          rm -rf /tmp/meta_temp
+          
+      - name: Commit and Push Changes
+        run: |
+          git add rule-set/repo/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Chore: Update Meta Rules" && git push) 
