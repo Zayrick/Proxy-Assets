@@ -45,9 +45,9 @@ jobs:
           script: |
             const fs = require('fs').promises;
             const path = require('path');
-            const { exec } = require('child_process');
+            const childProcess = require('child_process');
             const util = require('util');
-            const execAsync = util.promisify(exec);
+            const execCommand = util.promisify(childProcess.exec);
             
             // 定义非递归、流式处理函数，避免栈溢出
             async function processRules() {
@@ -55,13 +55,13 @@ jobs:
               
               // 准备目标目录
               const repoDir = 'rule-set/repo';
-              await execAsync(`mkdir -p ${repoDir}`);
+              await execCommand(`mkdir -p ${repoDir}`);
               
               // 处理IPv6规则 - 使用高效shell命令避免内存问题
               console.log('处理IPv6规则...');
               const listDir = path.join('meta_temp', 'geo', 'geoip', 'classical');
               try {
-                await execAsync(`if [ -d "${listDir}" ]; then find ${listDir} -name "*.list" -type f -exec sed -i 's/^IP-CIDR,\\([^,]*:\\)/IP-CIDR6,\\1/g' {} \\; ; fi`);
+                await execCommand(`if [ -d "${listDir}" ]; then find ${listDir} -name "*.list" -type f -exec sed -i 's/^IP-CIDR,\\([^,]*:\\)/IP-CIDR6,\\1/g' {} \\; ; fi`);
               } catch (error) {
                 console.error('处理IPv6规则时出错:', error);
               }
@@ -72,30 +72,41 @@ jobs:
               const asnClassicalDir = path.join(asnDir, 'classical');
               
               try {
-                await execAsync(`mkdir -p ${asnClassicalDir}`);
+                await execCommand(`mkdir -p ${asnClassicalDir}`);
                 
                 // 获取所有ASN .list文件
-                const { stdout: fileList } = await execAsync(`find ${asnDir} -maxdepth 1 -name "*.list" -type f`);
+                const { stdout: fileList } = await execCommand(`find ${asnDir} -maxdepth 1 -name "*.list" -type f`);
                 const files = fileList.trim().split('\n').filter(f => f);
                 
-                // 并行处理所有文件，每个文件独立处理，避免栈溢出
-                await Promise.all(files.map(async (filePath) => {
-                  if (!filePath) return;
-                  
-                  const filename = path.basename(filePath);
-                  const outputPath = path.join(asnClassicalDir, filename);
-                  
-                  // 使用stream API处理大文件
-                  await execAsync(`cat "${filePath}" | awk '{
-                    if ($0 ~ /^#/ || $0 ~ /^$/) {
-                      print $0  # 保留注释和空行
-                    } else if ($0 ~ /:/) {
-                      print "IP-CIDR6," $0  # IPv6地址添加IP-CIDR6前缀
-                    } else {
-                      print "IP-CIDR," $0  # IPv4地址添加IP-CIDR前缀
+                // 批量处理文件，使用多批次以避免并行处理太多文件
+                const batchSize = 10; // 每批处理10个文件
+                for (let i = 0; i < files.length; i += batchSize) {
+                  const batch = files.slice(i, i + batchSize);
+                  await Promise.all(batch.map(async (filePath) => {
+                    if (!filePath) return;
+                    
+                    const filename = path.basename(filePath);
+                    const outputPath = path.join(asnClassicalDir, filename);
+                    
+                    try {
+                      // 使用stream API处理大文件
+                      await execCommand(`cat "${filePath}" | awk '{
+                        if ($0 ~ /^#/ || $0 ~ /^$/) {
+                          print $0  # 保留注释和空行
+                        } else if ($0 ~ /:/) {
+                          print "IP-CIDR6," $0  # IPv6地址添加IP-CIDR6前缀
+                        } else {
+                          print "IP-CIDR," $0  # IPv4地址添加IP-CIDR前缀
+                        }
+                      }' > "${outputPath}"`);
+                    } catch (err) {
+                      console.error(`处理文件 ${filename} 时出错:`, err.message);
                     }
-                  }' > "${outputPath}"`);
-                }));
+                  }));
+                  
+                  // 添加小延迟以避免系统资源过载
+                  await new Promise(resolve => setTimeout(resolve, 100));
+                }
               } catch (error) {
                 console.error('处理ASN规则时出错:', error);
               }
@@ -103,7 +114,7 @@ jobs:
               // 复制处理后的文件到目标目录 - 使用系统命令而非JS递归
               console.log('复制所有处理后的文件到rule-set/repo目录...');
               try {
-                await execAsync(`cp -r meta_temp/* rule-set/repo/`);
+                await execCommand(`cp -r meta_temp/* rule-set/repo/`);
               } catch (error) {
                 console.error('复制文件时出错:', error);
               }
@@ -111,7 +122,7 @@ jobs:
               // 清理临时目录
               console.log('清理临时目录...');
               try {
-                await execAsync(`rm -rf meta_temp`);
+                await execCommand(`rm -rf meta_temp`);
               } catch (error) {
                 console.error('清理临时目录时出错:', error);
               }
