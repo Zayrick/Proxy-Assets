@@ -89,18 +89,14 @@ jobs:
           TEMP_REPO="/mnt/ramdisk/temp-repo"
           FINAL_DIR="main-repo/rule-set/repo"
           
-          find "$TEMP_REPO" -type d | while read -r dir; do
-            rel_dir="${dir#$TEMP_REPO/}"
-            [ -n "$rel_dir" ] && mkdir -p "$FINAL_DIR/$rel_dir"
-          done
+          echo "Copying files with rsync..."
+          rsync -a "$TEMP_REPO/" "$FINAL_DIR/"
           
-          echo "Copying files..."
-          find "$TEMP_REPO" -type f -print0 | xargs -0 -P $(nproc --all) bash -c '
-            for src in "$@"; do
-              rel_path="${src#/mnt/ramdisk/temp-repo/}"
-              cp "$src" "main-repo/rule-set/repo/$rel_path"
-            done
-          ' --
+          if [ $? -ne 0 ]; then
+            echo "Rsync failed, using tar alternative..."
+            mkdir -p "$FINAL_DIR"
+            tar -cf - -C "$TEMP_REPO" . | tar -xf - -C "$FINAL_DIR"
+          fi
           
           echo "Files copied successfully"
           echo "::endgroup::"
