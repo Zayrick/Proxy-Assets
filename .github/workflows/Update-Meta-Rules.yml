@@ -3,266 +3,151 @@ name: Update Meta Rules
 on:
   schedule:
     - cron: '0 7 * * *'  # 每天早上7点运行
-  workflow_dispatch:     # 允许手动触发
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
-  check-updates:
+  update-rules:
     runs-on: ubuntu-latest
-    outputs:
-      has_changes: ${{ steps.check.outputs.has_changes }}
-      meta_sha: ${{ steps.check.outputs.meta_sha }}
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 1
           
-      - name: Check for updates in Meta repository
-        id: check
-        run: |
-          # 安装必要工具
-          sudo apt-get update && sudo apt-get install -y curl jq
-          
-          # 使用GitHub令牌获取Meta仓库的最新提交SHA (避免API限制)
-          META_SHA=""
-          MAX_RETRY=3
-          RETRY=0
-          
-          while [ -z "$META_SHA" ] && [ $RETRY -lt $MAX_RETRY ]; do
-            echo "尝试获取Meta仓库SHA (尝试 $((RETRY+1))/$MAX_RETRY)..."
+      - name: Setup custom actions
+        uses: actions/github-script@v7.0.1
+        id: setup-git
+        with:
+          script: |
+            await exec.exec('git', ['config', '--global', 'user.name', 'github-actions[bot]']);
+            await exec.exec('git', ['config', '--global', 'user.email', 'github-actions[bot]@users.noreply.github.com']);
+      
+      - name: Clone Meta Rules
+        uses: actions/checkout@v4
+        with:
+          repository: MetaCubeX/meta-rules-dat
+          ref: meta
+          path: meta_temp
+          fetch-depth: 1
+      
+      - name: Process Rules
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const { execSync } = require('child_process');
             
-            # 使用GitHub API获取最新提交SHA
-            RESPONSE=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-              -H "Accept: application/vnd.github.v3+json" \
-              "https://api.github.com/repos/MetaCubeX/meta-rules-dat/branches/meta")
+            // 处理IPv6规则
+            const listDir = path.join('meta_temp', 'geo', 'geoip', 'classical');
+            if (fs.existsSync(listDir)) {
+              console.log('处理IPv6规则...');
+              const ipv6Files = fs.readdirSync(listDir)
+                .filter(file => file.endsWith('.list'))
+                .map(file => path.join(listDir, file));
+                
+              for (const file of ipv6Files) {
+                const content = fs.readFileSync(file, 'utf8');
+                const processed = content.replace(/^(IP-CIDR,)([^,]*:)/gm, 'IP-CIDR6,$2');
+                fs.writeFileSync(file, processed);
+              }
+            }
             
-            # 检查是否成功获取数据
-            if echo "$RESPONSE" | grep -q "commit"; then
-              META_SHA=$(echo "$RESPONSE" | jq -r '.commit.sha')
-              echo "成功获取SHA: $META_SHA"
-            else
-              echo "API返回异常数据，尝试使用git方式获取..."
-              # 备用方法: 直接克隆仓库获取SHA
-              git clone --quiet --depth 1 --branch meta https://github.com/MetaCubeX/meta-rules-dat.git /tmp/meta_check
-              cd /tmp/meta_check
-              META_SHA=$(git rev-parse HEAD)
-              cd -
-              rm -rf /tmp/meta_check
-              echo "通过git方式获取SHA: $META_SHA"
-            fi
+            // 处理ASN规则
+            const asnDir = path.join('meta_temp', 'asn');
+            const asnClassicalDir = path.join(asnDir, 'classical');
             
-            RETRY=$((RETRY+1))
+            if (!fs.existsSync(asnClassicalDir)) {
+              fs.mkdirSync(asnClassicalDir, { recursive: true });
+            }
             
-            if [ -z "$META_SHA" ] && [ $RETRY -lt $MAX_RETRY ]; then
-              echo "获取SHA失败，等待5秒后重试..."
-              sleep 5
-            fi
-          done
-          
-          # 如果无法获取SHA，默认视为有更新
-          if [ -z "$META_SHA" ]; then
-            echo "无法获取Meta仓库SHA，默认视为有更新"
-            META_SHA="unknown_$(date +%s)"
-            echo "meta_sha=$META_SHA" >> $GITHUB_OUTPUT
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-          
-          echo "meta_sha=$META_SHA" >> $GITHUB_OUTPUT
-          
-          # 检查是否有更新
-          if [ -f "rule-set/repo/.meta-sha" ]; then
-            LAST_SHA=$(cat rule-set/repo/.meta-sha)
-            if [ "$META_SHA" = "$LAST_SHA" ]; then
-              echo "没有新的更新，跳过处理"
-              echo "has_changes=false" >> $GITHUB_OUTPUT
-            else
-              echo "检测到新的更新，SHA: $META_SHA (上一个SHA: $LAST_SHA)"
-              echo "has_changes=true" >> $GITHUB_OUTPUT
-            fi
-          else
-            echo "首次运行或SHA文件不存在"
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-          fi
+            console.log('处理ASN规则...');
+            const files = fs.readdirSync(asnDir)
+              .filter(file => file.endsWith('.list') && fs.statSync(path.join(asnDir, file)).isFile());
+              
+            // 批量处理所有ASN文件
+            for (const file of files) {
+              const content = fs.readFileSync(path.join(asnDir, file), 'utf8');
+              const processedContent = content
+                .split('\n')
+                .map(line => {
+                  if (line.startsWith('#') || line.trim() === '') return line;
+                  if (line.includes(':')) return `IP-CIDR6,${line}`;
+                  return `IP-CIDR,${line}`;
+                })
+                .join('\n');
+                
+              fs.writeFileSync(path.join(asnClassicalDir, file), processedContent);
+            }
+            
+            // 更新本地仓库
+            console.log('更新本地仓库...');
+            // 使用Node.js的文件操作替代shell命令，减少子进程调用
+            const repoDir = 'rule-set/repo';
+            if (fs.existsSync(repoDir)) {
+              // 递归删除目录内容但保留目录本身
+              const deleteContents = (dir) => {
+                const items = fs.readdirSync(dir);
+                for (const item of items) {
+                  const itemPath = path.join(dir, item);
+                  if (fs.lstatSync(itemPath).isDirectory()) {
+                    deleteContents(itemPath);
+                    fs.rmdirSync(itemPath);
+                  } else {
+                    fs.unlinkSync(itemPath);
+                  }
+                }
+              };
+              deleteContents(repoDir);
+            } else {
+              fs.mkdirSync(repoDir, { recursive: true });
+            }
+            
+            // 使用fs-extra的copySync功能复制整个目录
+            const copyDir = (src, dest) => {
+              if (!fs.existsSync(dest)) {
+                fs.mkdirSync(dest, { recursive: true });
+              }
+              
+              const items = fs.readdirSync(src);
+              for (const item of items) {
+                const srcPath = path.join(src, item);
+                const destPath = path.join(dest, item);
+                
+                if (fs.lstatSync(srcPath).isDirectory()) {
+                  copyDir(srcPath, destPath);
+                } else {
+                  fs.copyFileSync(srcPath, destPath);
+                }
+              }
+            };
+            
+            copyDir('meta_temp', repoDir);
+            
+            // 返回有无更改
+            return { hasChanges: true };
 
-  process-rules:
-    needs: check-updates
-    if: needs.check-updates.outputs.has_changes == 'true'
-    runs-on: ubuntu-latest
-    container:
-      image: alpine:latest
-      
-    strategy:
-      matrix:
-        rule_type: [ipv6, asn]
-      fail-fast: false
-    
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Check for changes
+        id: check_changes
+        uses: actions/github-script@v7.0.1
         with:
-          fetch-depth: 1
-          
-      - name: Install dependencies
-        run: |
-          apk add --no-cache git curl jq moreutils parallel rsync
-          
-      - name: Get Meta SHA
-        run: |
-          echo "${{ needs.check-updates.outputs.meta_sha }}" > .meta-sha
-          
-      - name: Setup rule processing
-        run: |
-          # 创建必要的目录
-          mkdir -p /tmp/meta_temp /tmp/processed
-          
-          # 克隆必要的文件 (仅克隆需要处理的相关目录)
-          if [ "${{ matrix.rule_type }}" = "ipv6" ]; then
-            # 尝试使用sparse-checkout，如果失败则使用普通克隆
-            if git clone --depth 1 --branch meta --single-branch --filter=blob:none https://github.com/MetaCubeX/meta-rules-dat.git /tmp/meta_temp; then
-              cd /tmp/meta_temp
-              git sparse-checkout init --cone
-              git sparse-checkout set geo/geoip/classical
-            else
-              echo "稀疏检出失败，使用完整克隆"
-              rm -rf /tmp/meta_temp
-              git clone --depth 1 --branch meta --single-branch https://github.com/MetaCubeX/meta-rules-dat.git /tmp/meta_temp
-            fi
-          elif [ "${{ matrix.rule_type }}" = "asn" ]; then
-            # 尝试使用sparse-checkout，如果失败则使用普通克隆
-            if git clone --depth 1 --branch meta --single-branch --filter=blob:none https://github.com/MetaCubeX/meta-rules-dat.git /tmp/meta_temp; then
-              cd /tmp/meta_temp
-              git sparse-checkout init --cone
-              git sparse-checkout set asn
-            else
-              echo "稀疏检出失败，使用完整克隆"
-              rm -rf /tmp/meta_temp
-              git clone --depth 1 --branch meta --single-branch https://github.com/MetaCubeX/meta-rules-dat.git /tmp/meta_temp
-            fi
-          fi
+          script: |
+            const { execSync } = require('child_process');
+            try {
+              execSync('git add rule-set/repo/');
+              const hasChanges = execSync('git status --porcelain').toString().trim().length > 0;
+              core.setOutput('has_changes', hasChanges);
+              return { hasChanges };
+            } catch (error) {
+              console.error('检查更改时出错:', error);
+              core.setOutput('has_changes', false);
+              return { hasChanges: false };
+            }
+          result-encoding: json
       
-      - name: Process IPv6 rules
-        if: matrix.rule_type == 'ipv6'
+      - name: Commit and push changes
+        if: ${{ fromJSON(steps.check_changes.outputs.result).hasChanges }}
         run: |
-          LIST_DIR="/tmp/meta_temp/geo/geoip/classical"
-          if [ -d "$LIST_DIR" ]; then
-            mkdir -p /tmp/processed/geo/geoip/classical
-            
-            # 检查文件数量
-            FILE_COUNT=$(find "$LIST_DIR" -type f -name "*.list" | wc -l)
-            echo "需要处理 $FILE_COUNT 个IPv6规则文件"
-            
-            if [ $FILE_COUNT -gt 0 ]; then
-              # 使用GNU Parallel并行处理所有文件
-              find "$LIST_DIR" -type f -name "*.list" | \
-                parallel --will-cite -j$(nproc) '
-                  FILE={}
-                  DEST_FILE=/tmp/processed/geo/geoip/classical/$(basename $FILE)
-                  cat $FILE | sed -E "s/^(IP-CIDR,)([^,]*:)/IP-CIDR6,\2/" > $DEST_FILE
-                  echo "已处理: $FILE"
-                '
-              echo "所有IPv6规则文件处理完成"
-            else
-              echo "没有找到IPv6规则文件"
-            fi
-          else
-            echo "IPv6规则目录不存在"
-            mkdir -p /tmp/processed/geo/geoip/classical
-          fi
-      
-      - name: Process ASN rules
-        if: matrix.rule_type == 'asn'
-        run: |
-          ASN_DIR="/tmp/meta_temp/asn"
-          if [ -d "$ASN_DIR" ]; then
-            # 创建输出目录
-            mkdir -p /tmp/processed/asn/classical
-            
-            # 检查文件数量
-            FILE_COUNT=$(find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" | wc -l)
-            echo "需要处理 $FILE_COUNT 个ASN规则文件"
-            
-            if [ $FILE_COUNT -gt 0 ]; then
-              # 使用GNU Parallel并行处理
-              find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" | \
-                parallel --will-cite -j$(nproc) '
-                  FILE={}
-                  FILENAME=$(basename $FILE)
-                  DEST_FILE=/tmp/processed/asn/classical/$FILENAME
-                  
-                  # 使用更高效的处理方式
-                  awk "BEGIN{FS=\"\n\"; OFS=\"\n\"}
-                  /^#/ {print; next}
-                  /.*:.*/ {print \"IP-CIDR6,\" \$0; next}
-                  {print \"IP-CIDR,\" \$0}" $FILE > $DEST_FILE
-                  echo "已处理: $FILE"
-                '
-              echo "所有ASN规则文件处理完成"
-            else
-              echo "没有找到ASN规则文件"
-            fi
-          else
-            echo "ASN规则目录不存在"
-            mkdir -p /tmp/processed/asn/classical
-          fi
-          
-      - name: Upload processed rules
-        uses: actions/upload-artifact@v3
-        with:
-          name: processed-${{ matrix.rule_type }}-rules
-          path: /tmp/processed
-          retention-days: 1
-  
-  merge-and-commit:
-    needs: [check-updates, process-rules]
-    if: needs.check-updates.outputs.has_changes == 'true'
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      
-      - name: Set up Git
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-      
-      - name: Download processed rules
-        uses: actions/download-artifact@v3
-        with:
-          path: /tmp/processed-artifacts
-      
-      - name: Merge and update rules
-        run: |
-          # 创建目标目录
-          mkdir -p rule-set/repo
-          
-          # 检查下载的工件
-          echo "下载的工件列表:"
-          find /tmp/processed-artifacts -type d | sort
-          
-          # 清空目标目录
-          rm -rf rule-set/repo/*
-          
-          # 合并所有处理好的规则
-          find /tmp/processed-artifacts -type d -name "processed-*-rules" -exec rsync -av {}/. rule-set/repo/ \;
-          
-          # 保存Meta SHA以便下次检查
-          echo "${{ needs.check-updates.outputs.meta_sha }}" > rule-set/repo/.meta-sha
-          
-          # 检查结果
-          echo "目标目录结构:"
-          find rule-set/repo -type d | sort
-      
-      - name: Commit and Push Changes
-        run: |
-          git add rule-set/repo/
-          
-          if ! git diff --quiet && ! git diff --staged --quiet; then
-            git commit -m "Chore: Update Meta Rules [$(date +'%Y-%m-%d')]"
-            git push
-            echo "规则已成功更新"
-          else
-            echo "没有检测到变更，无需提交"
-          fi 
+          git commit -m "Chore: Update Meta Rules"
+          git push 
