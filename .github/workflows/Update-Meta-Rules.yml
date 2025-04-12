@@ -1,247 +1,87 @@
 name: Update Meta Rules
 
+# 工作流触发条件
 on:
   schedule:
     - cron: '0 7 * * *'  # 每天早上7点运行
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:  # 允许手动触发工作流
 
 jobs:
-  prepare:
+  # 处理所有规则：在单一作业中处理所有规则
+  process-rules:
     runs-on: ubuntu-latest
-    outputs:
-      timestamp: ${{ steps.set-timestamp.outputs.timestamp }}
     
     steps:
+      # 设置时间戳，用于标记此次更新
       - name: Set timestamp
         id: set-timestamp
         run: echo "timestamp=$(date +%s)" >> $GITHUB_OUTPUT
         
+      # 检出当前仓库
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 1  # 只拉取最新的一次提交，减少下载量
           
+      # 配置Git用户信息，为后续提交做准备
       - name: Setup Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
             
+      # 从MetaCubeX/meta-rules-dat仓库克隆Meta规则
       - name: Clone Meta Rules
         uses: actions/checkout@v4
         with:
-          repository: MetaCubeX/meta-rules-dat
-          ref: meta
-          path: meta_temp
-          fetch-depth: 1
+          repository: MetaCubeX/meta-rules-dat  # 要克隆的仓库
+          ref: meta  # 克隆meta分支
+          path: meta_temp  # 克隆到meta_temp目录
+          fetch-depth: 1  # 只拉取最新的一次提交
           
-      - name: Upload Meta Rules as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: meta-rules-source
-          path: meta_temp/
-          retention-days: 1
-
-  process-ipv6-rules:
-    needs: prepare
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Download Meta Rules artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: meta-rules-source
-          path: meta_temp
-          
-      - name: Process IPv6 Rules
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const path = require('path');
-            
-            // 处理IPv6规则
-            const listDir = path.join('meta_temp', 'geo', 'geoip', 'classical');
-            if (fs.existsSync(listDir)) {
-              console.log('处理IPv6规则...');
-              const ipv6Files = fs.readdirSync(listDir)
-                .filter(file => file.endsWith('.list'))
-                .map(file => path.join(listDir, file));
-                
-              for (const file of ipv6Files) {
-                const content = fs.readFileSync(file, 'utf8');
-                const processed = content.replace(/^(IP-CIDR,)([^,]*:)/gm, 'IP-CIDR6,$2');
-                fs.writeFileSync(file, processed);
-              }
-            }
-      
-      - name: Upload processed IPv6 rules
-        uses: actions/upload-artifact@v4
-        with:
-          name: processed-ipv6-rules
-          path: meta_temp/geo/
-          retention-days: 1
-
-  process-asn-rules:
-    needs: prepare
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Download Meta Rules artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: meta-rules-source
-          path: meta_temp
-          
-      - name: Process ASN Rules
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const path = require('path');
-            
-            // 处理ASN规则
-            const asnDir = path.join('meta_temp', 'asn');
-            const asnClassicalDir = path.join(asnDir, 'classical');
-            
-            if (!fs.existsSync(asnClassicalDir)) {
-              fs.mkdirSync(asnClassicalDir, { recursive: true });
-            }
-            
-            console.log('处理ASN规则...');
-            const files = fs.readdirSync(asnDir)
-              .filter(file => file.endsWith('.list') && fs.statSync(path.join(asnDir, file)).isFile());
-              
-            // 批量处理所有ASN文件
-            for (const file of files) {
-              const content = fs.readFileSync(path.join(asnDir, file), 'utf8');
-              const processedContent = content
-                .split('\n')
-                .map(line => {
-                  if (line.startsWith('#') || line.trim() === '') return line;
-                  if (line.includes(':')) return `IP-CIDR6,${line}`;
-                  return `IP-CIDR,${line}`;
-                })
-                .join('\n');
-                
-              fs.writeFileSync(path.join(asnClassicalDir, file), processedContent);
-            }
-      
-      - name: Upload processed ASN rules
-        uses: actions/upload-artifact@v4
-        with:
-          name: processed-asn-rules
-          path: meta_temp/asn/
-          retention-days: 1
-
-  process-other-files:
-    needs: prepare
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Download Meta Rules artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: meta-rules-source
-          path: meta_temp
-          
-      - name: Upload other files
-        uses: actions/upload-artifact@v4
-        with:
-          name: other-meta-files
-          path: |
-            meta_temp/
-            !meta_temp/geo/
-            !meta_temp/asn/
-          retention-days: 1
-
-  merge-and-commit:
-    needs: [prepare, process-ipv6-rules, process-asn-rules, process-other-files]
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-          
-      - name: Setup Git
+      # 处理所有规则文件（直接在克隆的目录中处理）
+      - name: Process All Rules
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      
-      - name: Download all processed artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: processed_artifacts
+          echo "开始处理所有规则文件..."
           
-      - name: Merge and update local repository
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const path = require('path');
+          # 准备目标目录
+          mkdir -p rule-set/repo
+          
+          # 处理IPv6规则
+          echo "处理IPv6规则..."
+          if [ -d "meta_temp/geo/geoip/classical" ]; then
+            find meta_temp/geo/geoip/classical -name "*.list" -type f -exec sed -i 's/^IP-CIDR,\([^,]*:\)/IP-CIDR6,\1/g' {} \;
+          fi
+          
+          # 处理ASN规则
+          echo "处理ASN规则..."
+          if [ -d "meta_temp/asn" ]; then
+            mkdir -p meta_temp/asn/classical
             
-            // 更新本地仓库
-            console.log('更新本地仓库...');
-            const repoDir = 'rule-set/repo';
-            if (fs.existsSync(repoDir)) {
-              // 递归删除目录内容但保留目录本身
-              const deleteContents = (dir) => {
-                if (!fs.existsSync(dir)) return;
-                const items = fs.readdirSync(dir);
-                for (const item of items) {
-                  const itemPath = path.join(dir, item);
-                  if (fs.lstatSync(itemPath).isDirectory()) {
-                    deleteContents(itemPath);
-                    fs.rmdirSync(itemPath);
-                  } else {
-                    fs.unlinkSync(itemPath);
-                  }
-                }
-              };
-              deleteContents(repoDir);
-            } else {
-              fs.mkdirSync(repoDir, { recursive: true });
-            }
-            
-            // 直接将处理后的文件合并到目标目录
-            const copyDir = (src, dest) => {
-              if (!fs.existsSync(dest)) {
-                fs.mkdirSync(dest, { recursive: true });
-              }
-              
-              const items = fs.readdirSync(src);
-              for (const item of items) {
-                const srcPath = path.join(src, item);
-                const destPath = path.join(dest, item);
-                
-                if (fs.lstatSync(srcPath).isDirectory()) {
-                  copyDir(srcPath, destPath);
+            # 查找asn目录中的所有.list文件
+            find meta_temp/asn -maxdepth 1 -name "*.list" -type f | while read file; do
+              filename=$(basename "$file")
+              # 创建新的处理后文件
+              cat "$file" | awk '{
+                if ($0 ~ /^#/ || $0 ~ /^$/) {
+                  print $0  # 保留注释和空行
+                } else if ($0 ~ /:/) {
+                  print "IP-CIDR6," $0  # IPv6地址添加IP-CIDR6前缀
                 } else {
-                  fs.copyFileSync(srcPath, destPath);
+                  print "IP-CIDR," $0  # IPv4地址添加IP-CIDR前缀
                 }
-              }
-            };
-            
-            // 从processed_artifacts中提取并合并所有meta_temp目录
-            const artifactDirs = fs.readdirSync('processed_artifacts');
-            for (const artifactDir of artifactDirs) {
-              const artifactPath = path.join('processed_artifacts', artifactDir);
-              if (fs.lstatSync(artifactPath).isDirectory()) {
-                // 对于每个工件目录，如果有meta_temp目录就复制到最终目录
-                if (fs.existsSync(path.join(artifactPath, 'meta_temp'))) {
-                  copyDir(path.join(artifactPath, 'meta_temp'), repoDir);
-                } else {
-                  // 否则直接复制整个目录内容
-                  copyDir(artifactPath, repoDir);
-                }
-              }
-            }
-            
-            // 删除临时目录
-            console.log('删除临时目录...');
-            fs.rmSync('processed_artifacts', { recursive: true, force: true });
+              }' > "meta_temp/asn/classical/$filename"
+            done
+          fi
+          
+          # 复制处理后的文件到目标目录
+          echo "复制所有处理后的文件到rule-set/repo目录..."
+          cp -r meta_temp/* rule-set/repo/
+          
+          # 清理临时目录
+          echo "清理临时目录..."
+          rm -rf meta_temp
 
+      # 检查是否有文件变更
       - name: Check for changes
         id: check_changes
         run: |
@@ -252,6 +92,7 @@ jobs:
             echo "has_changes=false" >> $GITHUB_OUTPUT
           fi
       
+      # 如果有变更，则提交并推送
       - name: Commit and push changes
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
