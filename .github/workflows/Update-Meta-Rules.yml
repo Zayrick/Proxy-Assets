@@ -87,6 +87,6 @@ jobs:
           cd main-repo
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add main-repo/rule-set/repo
+          git add rule-set/repo
           git commit -m "更新Meta规则集 $(date '+%Y-%m-%d %H:%M')" || echo "没有变更需要提交"
           git push 
