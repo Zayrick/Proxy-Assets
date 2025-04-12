@@ -64,7 +64,7 @@ jobs:
             const fs = require('fs').promises;
             const path = require('path');
             const { promisify } = require('util');
-            const glob = promisify(require('glob'));
+            const globPromise = promisify(require('glob'));
 
             async function processASN() {
               const ASN_DIR = 'temp-repo/asn';
@@ -74,7 +74,7 @@ jobs:
               await fs.mkdir(ASN_CLASSICAL_DIR, { recursive: true });
 
               // 分批复制文件
-              const sourceFiles = await glob(path.join(ASN_DIR, '*.list'));
+              const sourceFiles = await globPromise(path.join(ASN_DIR, '*.list'));
               console.log(`找到ASN源文件：${sourceFiles.length}个`);
               
               const batchSize = 200;
@@ -88,7 +88,7 @@ jobs:
               }
 
               // 分批处理文件
-              const targetFiles = await glob(path.join(ASN_CLASSICAL_DIR, '*.list'));
+              const targetFiles = await globPromise(path.join(ASN_CLASSICAL_DIR, '*.list'));
               for (let i = 0; i < targetFiles.length; i += batchSize) {
                 const batch = targetFiles.slice(i, i + batchSize);
                 await Promise.all(batch.map(async (file) => {
