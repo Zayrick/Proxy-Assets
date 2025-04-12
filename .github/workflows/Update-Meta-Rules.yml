@@ -1,92 +1,155 @@
-name: Meta规则集更新
+name: Meta Rules Update
 
 on:
   schedule:
-    - cron: '0 */12 * * *'  # 每12小时运行一次
-  workflow_dispatch:  # 允许手动触发
+    - cron: '0 7 * * *'
+  workflow_dispatch:
 
 jobs:
-  update-meta-rules:
+  Rules-Update:
     runs-on: ubuntu-latest
     steps:
-      - name: 检出仓库
-        uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
           path: main-repo
+          fetch-depth: 1
+          sparse-checkout: false
 
-      - name: 设置缓存
-        uses: actions/cache@v3
-        id: cache-rules
-        with:
-          path: temp-cache
-          key: ${{ runner.os }}-meta-rules-${{ github.run_id }}
-          restore-keys: |
-            ${{ runner.os }}-meta-rules-
-
-      - name: 克隆Meta规则仓库
+      - name: Clone Meta Rules Repository
         run: |
+          echo "::group::Cloning Meta Rules Repository"
           mkdir -p temp-repo
           git clone --depth 1 --branch meta https://github.com/MetaCubeX/meta-rules-dat.git temp-repo
+          echo "Meta rules repository cloned successfully to temp-repo"
+          ls -la temp-repo
+          echo "::endgroup::"
 
-      - name: 处理IPv6规则
+      - name: Process IPv6 Rules
         run: |
+          echo "::group::Processing IPv6 Rules"
           LIST_DIR="temp-repo/geo/geoip/classical"
           if [ -d "$LIST_DIR" ]; then
-            echo "正在转换IPv6规则格式..."
+            echo "Converting IPv6 rules format..."
+            echo "Source directory: $LIST_DIR"
+            BEFORE_COUNT=$(grep -r "IP-CIDR," --include="*.list" "$LIST_DIR" | grep ":" | wc -l)
+            echo "IPv6 rules before conversion: $BEFORE_COUNT"
+            
             find "$LIST_DIR" -type f -name "*.list" | while read -r file; do
+              BEFORE=$(grep -c ":" "$file" || echo "0")
               sed -i -E 's/^(IP-CIDR,)([^,]*:)/IP-CIDR6,\2/' "$file"
+              AFTER=$(grep -c "IP-CIDR6," "$file" || echo "0")
+              echo "Processed $file: Converted $BEFORE IPv6 rules to $AFTER IP-CIDR6 format"
             done
-            echo "IPv6规则转换完成"
+            
+            AFTER_COUNT=$(grep -r "IP-CIDR6," --include="*.list" "$LIST_DIR" | wc -l)
+            echo "IPv6 rules after conversion: $AFTER_COUNT"
+            echo "IPv6 rules conversion completed"
           else
-            echo "目录 $LIST_DIR 不存在，跳过IPv6规则转换"
+            echo "Directory $LIST_DIR does not exist, skipping IPv6 rules conversion"
           fi
+          echo "::endgroup::"
 
-      - name: 处理ASN目录
+      - name: Process ASN Directory
         run: |
+          echo "::group::Processing ASN Directory"
           ASN_DIR="temp-repo/asn"
           ASN_CLASSICAL_DIR="$ASN_DIR/classical"
           
-          # 确保目录存在
           mkdir -p "$ASN_CLASSICAL_DIR"
           
-          echo "开始复制list文件到 $ASN_CLASSICAL_DIR..."
+          echo "Starting to copy list files to $ASN_CLASSICAL_DIR..."
           
-          # 复制文件
+          FILES_COPIED=0
           find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" | while read -r file; do
             cp "$file" "$ASN_CLASSICAL_DIR"/
+            echo "Copied $(basename "$file") to classical directory"
+            FILES_COPIED=$((FILES_COPIED+1))
           done
           
-          echo "文件复制完成"
+          echo "File copying completed. Total files copied: $FILES_COPIED"
           
-          # 处理文件
+          echo "Processing ASN files to add IP-CIDR prefix..."
+          PROCESSED=0
           find "$ASN_CLASSICAL_DIR" -type f -name "*.list" | while read -r file; do
-            sed -i -E 's/^([^#].*)$/IP-CIDR,\1/' "$file"  # 默认增加 "IP-CIDR,"
-            sed -i -E 's/^IP-CIDR,([^,]*:)/IP-CIDR6,\1/' "$file"  # 如果包含 ":"，替换为 "IP-CIDR6,"
+            BEFORE_IPV4=$(grep -v ":" "$file" | grep -v "^#" | wc -l)
+            BEFORE_IPV6=$(grep ":" "$file" | grep -v "^#" | wc -l)
+            
+            sed -i -E 's/^([^#].*)$/IP-CIDR,\1/' "$file"
+            sed -i -E 's/^IP-CIDR,([^,]*:)/IP-CIDR6,\1/' "$file"
+            
+            AFTER_IPV4=$(grep "IP-CIDR," "$file" | wc -l)
+            AFTER_IPV6=$(grep "IP-CIDR6," "$file" | wc -l)
+            
+            echo "Processed $(basename "$file"): Added prefix to $AFTER_IPV4 IPv4 and $AFTER_IPV6 IPv6 rules"
+            PROCESSED=$((PROCESSED+1))
           done
           
-          echo "ASN目录处理完成"
+          echo "ASN directory processing completed. Total files processed: $PROCESSED"
+          echo "::endgroup::"
 
-      - name: 准备输出目录
+      - name: Prepare Output Directory
         run: |
+          echo "::group::Preparing Output Directory"
           FINAL_DIR="main-repo/rule-set/repo"
           if [ -d "$FINAL_DIR" ]; then
+            echo "Clearing existing output directory: $FINAL_DIR"
+            BEFORE_COUNT=$(find "$FINAL_DIR" -type f | wc -l)
+            echo "Files before clearing: $BEFORE_COUNT"
             rm -rf "$FINAL_DIR"/*
+            echo "Directory cleared successfully"
           else
+            echo "Creating output directory: $FINAL_DIR"
             mkdir -p "$FINAL_DIR"
+            echo "Directory created successfully"
           fi
+          echo "::endgroup::"
 
-      - name: 复制处理后的文件
+      - name: Copy Processed Files
         run: |
-          echo "正在复制文件到目标目录: main-repo/rule-set/repo"
+          echo "::group::Copying Processed Files"
+          echo "Copying files to target directory: main-repo/rule-set/repo"
+          
+          SOURCE_COUNT=$(find "temp-repo" -type f | wc -l)
+          echo "Source files count: $SOURCE_COUNT"
+          find "temp-repo" -type f -name "*.list" | head -n 5 | while read -r file; do
+            echo "Sample source file: $file"
+          done
+          
           cp -r temp-repo/* main-repo/rule-set/repo/
+          
           FILE_COUNT=$(find "main-repo/rule-set/repo" -type f | wc -l)
-          echo "下载和更新完成，总文件数: $FILE_COUNT"
+          DIR_COUNT=$(find "main-repo/rule-set/repo" -type d | wc -l)
+          echo "Download and update completed"
+          echo "Total files copied: $FILE_COUNT in $DIR_COUNT directories"
+          
+          find "main-repo/rule-set/repo" -type d -mindepth 1 -maxdepth 2 | while read -r dir; do
+            FILE_IN_DIR=$(find "$dir" -type f | wc -l)
+            echo "Directory: $dir - Contains $FILE_IN_DIR files"
+          done
+          
+          echo "Sample rule files:"
+          find "main-repo/rule-set/repo" -type f -name "*.list" | head -n 5
+          echo "::endgroup::"
 
-      - name: 提交更改
+      - name: Commit Changes
         run: |
+          echo "::group::Committing Changes"
           cd main-repo
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
+          
           git add rule-set/repo
-          git commit -m "更新Meta规则集 $(date '+%Y-%m-%d %H:%M')" || echo "没有变更需要提交"
-          git push 
+          
+          CHANGES=$(git status --porcelain | wc -l)
+          echo "Changed files: $CHANGES"
+          
+          if [ $CHANGES -gt 0 ]; then
+            echo "Changes detected, committing..."
+            git commit -m "Chore: Update Meta Rules $(date '+%Y-%m-%d %H:%M')"
+            git push
+            echo "Changes committed and pushed successfully"
+          else
+            echo "No changes to commit"
+          fi
+          echo "::endgroup::"
