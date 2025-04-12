@@ -17,26 +17,35 @@ jobs:
           sparse-checkout: |
             rule-set/repo
 
+      - name: Setup Memory FileSystem
+        run: |
+          echo "::group::Setting up RAM disk"
+          sudo mkdir -p /mnt/ramdisk
+          sudo mount -t tmpfs -o size=4G tmpfs /mnt/ramdisk
+          echo "RAM disk mounted at /mnt/ramdisk with 4GB size"
+          mkdir -p /mnt/ramdisk/temp-repo
+          mkdir -p /mnt/ramdisk/processed
+          echo "::endgroup::"
+
       - name: Clone Meta Rules Repository
         run: |
           echo "::group::Cloning Meta Rules Repository"
-          mkdir -p temp-repo
-          git clone --depth 1 --branch meta https://github.com/MetaCubeX/meta-rules-dat.git temp-repo
+          git clone --depth 1 --branch meta https://github.com/MetaCubeX/meta-rules-dat.git /mnt/ramdisk/temp-repo
           echo "Meta rules repository cloned successfully"
           echo "::endgroup::"
 
       - name: Process IPv6 Rules
         run: |
           echo "::group::Processing IPv6 Rules"
-          LIST_DIR="temp-repo/geo/geoip/classical"
+          LIST_DIR="/mnt/ramdisk/temp-repo/geo/geoip/classical"
           if [ -d "$LIST_DIR" ]; then
-            BEFORE_COUNT=$(find "$LIST_DIR" -type f -name "*.list" -exec grep -l "IP-CIDR,.*:" {} \; | wc -l)
+            BEFORE_COUNT=$(find "$LIST_DIR" -type f -name "*.list" -print0 | xargs -0 grep -l "IP-CIDR,.*:" | wc -l)
             echo "IPv6 rules files before conversion: $BEFORE_COUNT"
             
-            # 并行处理所有文件
-            find "$LIST_DIR" -type f -name "*.list" | parallel -j $(nproc) "sed -i -E 's/^(IP-CIDR,)([^,]*:)/IP-CIDR6,\2/' {}"
+            # 增加并行处理数
+            find "$LIST_DIR" -type f -name "*.list" -print0 | xargs -0 -P $(nproc --all) -I{} bash -c "sed -i -E 's/^(IP-CIDR,)([^,]*:)/IP-CIDR6,\2/' {}"
             
-            AFTER_COUNT=$(find "$LIST_DIR" -type f -name "*.list" -exec grep -l "IP-CIDR6," {} \; | wc -l)
+            AFTER_COUNT=$(find "$LIST_DIR" -type f -name "*.list" -print0 | xargs -0 grep -l "IP-CIDR6," | wc -l)
             echo "IPv6 rules files after conversion: $AFTER_COUNT"
           else
             echo "Directory $LIST_DIR does not exist, skipping IPv6 rules conversion"
@@ -46,23 +55,20 @@ jobs:
       - name: Process ASN Directory
         run: |
           echo "::group::Processing ASN Directory"
-          ASN_DIR="temp-repo/asn"
+          ASN_DIR="/mnt/ramdisk/temp-repo/asn"
           ASN_CLASSICAL_DIR="$ASN_DIR/classical"
           
           mkdir -p "$ASN_CLASSICAL_DIR"
           
-          # Copy ASN list files - use rsync for better performance
+          # 使用更高效的文件复制方式
           if [ -d "$ASN_DIR" ]; then
-            rsync -a --include="*.list" --exclude="*/" "$ASN_DIR/" "$ASN_CLASSICAL_DIR/"
+            find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" -print0 | xargs -0 -P $(nproc --all) -I{} cp {} "$ASN_CLASSICAL_DIR/"
             FILES_COPIED=$(find "$ASN_CLASSICAL_DIR" -maxdepth 1 -type f -name "*.list" | wc -l)
             echo "ASN files copied: $FILES_COPIED"
             
-            # 批量处理文件 - 使用并行处理
+            # 使用更高效的批处理方式
             if [ $FILES_COPIED -gt 0 ]; then
-              find "$ASN_CLASSICAL_DIR" -type f -name "*.list" | parallel -j $(nproc) '
-                # 使用单次sed操作替代多次操作
-                sed -i -E '\''s/^([^#].*):(.*)$/IP-CIDR6,\1:\2/; s/^([^#IP][^:]*)$/IP-CIDR,\1/'\'' {}
-              '
+              find "$ASN_CLASSICAL_DIR" -type f -name "*.list" -print0 | xargs -0 -P $(nproc --all) sed -i -E 's/^([^#].*):(.*)$/IP-CIDR6,\1:\2/; s/^([^#IP][^:]*)$/IP-CIDR,\1/'
               echo "ASN files processed: $(find "$ASN_CLASSICAL_DIR" -type f -name "*.list" | wc -l)"
             fi
           else
@@ -86,12 +92,26 @@ jobs:
       - name: Copy Processed Files
         run: |
           echo "::group::Copying Processed Files"
-          # 使用rsync替代cp以提高性能，添加静默参数
-          rsync -a --quiet temp-repo/ main-repo/rule-set/repo/
+          # 分批并行复制文件以提高性能
+          TEMP_REPO="/mnt/ramdisk/temp-repo"
+          FINAL_DIR="main-repo/rule-set/repo"
           
-          # 使用更高效的方式计算文件数量
-          FILE_COUNT=$(find "main-repo/rule-set/repo" -type f | wc -l)
-          DIR_COUNT=$(find "main-repo/rule-set/repo" -type d | wc -l)
+          # 首先创建目录结构 - 这比复制时创建更快
+          find "$TEMP_REPO" -type d | while read -r dir; do
+            rel_dir="${dir#$TEMP_REPO/}"
+            [ -n "$rel_dir" ] && mkdir -p "$FINAL_DIR/$rel_dir"
+          done
+          
+          # 分批并行复制文件
+          find "$TEMP_REPO" -type f -print0 | xargs -0 -n 1000 -P $(nproc --all) -I{} bash -c '
+            src="$1"
+            rel_path="${src#/mnt/ramdisk/temp-repo/}"
+            cp "$src" "main-repo/rule-set/repo/$rel_path"
+          ' -- {}
+          
+          # 统计结果
+          FILE_COUNT=$(find "$FINAL_DIR" -type f | wc -l)
+          DIR_COUNT=$(find "$FINAL_DIR" -type d | wc -l)
           echo "Files copied: $FILE_COUNT in $DIR_COUNT directories"
           echo "::endgroup::"
 
@@ -102,18 +122,24 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           
-          # 使用高效的git add方式，添加静默选项和sparse选项
-          git add -q --sparse -A rule-set/repo
+          # 更高效的Git提交方式，避免单独跟踪每个文件
+          git config core.compression 9
+          git config gc.auto 256
+          git config http.postBuffer 524288000
           
-          # 使用git diff提高检测变更的效率
-          CHANGES=$(git diff --staged --name-only | wc -l)
-          echo "Changed files: $CHANGES"
+          # 使用更高效的git add
+          git add -A rule-set/repo
           
-          if [ $CHANGES -gt 0 ]; then
-            git commit -q -m "Chore: Update Meta Rules $(date '+%Y-%m-%d %H:%M')"
-            git push -q
-            echo "Changes committed and pushed successfully"
-          else
+          # 检查是否有变更
+          if git diff --cached --quiet; then
             echo "No changes to commit"
+          else
+            CHANGE_COUNT=$(git diff --cached --name-only | wc -l)
+            echo "Changed files: $CHANGE_COUNT"
+            
+            # 使用更快的提交方式并避免不必要的检查
+            git commit -q -m "Chore: Update Meta Rules $(date '+%Y-%m-%d %H:%M')" --no-verify
+            git push -q --no-verify
+            echo "Changes committed and pushed successfully"
           fi
           echo "::endgroup::"
