@@ -14,12 +14,8 @@ jobs:
         with:
           path: main-repo
           fetch-depth: 1
-          sparse-checkout: false
-
-      - name: Install Parallel
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y parallel
+          sparse-checkout: |
+            rule-set/repo
 
       - name: Clone Meta Rules Repository
         run: |
@@ -90,8 +86,8 @@ jobs:
       - name: Copy Processed Files
         run: |
           echo "::group::Copying Processed Files"
-          # 使用rsync替代cp以提高性能
-          rsync -a --info=progress2 temp-repo/ main-repo/rule-set/repo/
+          # 使用rsync替代cp以提高性能，添加静默参数
+          rsync -a --quiet temp-repo/ main-repo/rule-set/repo/
           
           # 使用更高效的方式计算文件数量
           FILE_COUNT=$(find "main-repo/rule-set/repo" -type f | wc -l)
@@ -106,16 +102,16 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           
-          # 使用高效的git add方式
-          git add -A rule-set/repo
+          # 使用高效的git add方式，添加静默选项和sparse选项
+          git add -q --sparse -A rule-set/repo
           
           # 使用git diff提高检测变更的效率
           CHANGES=$(git diff --staged --name-only | wc -l)
           echo "Changed files: $CHANGES"
           
           if [ $CHANGES -gt 0 ]; then
-            git commit -m "Chore: Update Meta Rules $(date '+%Y-%m-%d %H:%M')"
-            git push
+            git commit -q -m "Chore: Update Meta Rules $(date '+%Y-%m-%d %H:%M')"
+            git push -q
             echo "Changes committed and pushed successfully"
           else
             echo "No changes to commit"
