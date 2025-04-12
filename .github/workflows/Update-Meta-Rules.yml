@@ -1,152 +1,92 @@
-name: Update Meta Rules
+name: Meta规则集更新
 
-# 工作流触发条件
 on:
   schedule:
-    - cron: '0 7 * * *'  # 每天早上7点运行
-  workflow_dispatch:  # 允许手动触发工作流
+    - cron: '0 */12 * * *'  # 每12小时运行一次
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
-  # 处理所有规则：在单一作业中处理所有规则
-  process-rules:
+  update-meta-rules:
     runs-on: ubuntu-latest
-    
     steps:
-      # 设置时间戳，用于标记此次更新
-      - name: Set timestamp
-        id: set-timestamp
-        run: echo "timestamp=$(date +%s)" >> $GITHUB_OUTPUT
-        
-      # 检出当前仓库
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: 检出仓库
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 1  # 只拉取最新的一次提交，减少下载量
-          
-      # 配置Git用户信息，为后续提交做准备
-      - name: Setup Git
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            
-      # 从MetaCubeX/meta-rules-dat仓库克隆Meta规则
-      - name: Clone Meta Rules
-        uses: actions/checkout@v4
-        with:
-          repository: MetaCubeX/meta-rules-dat  # 要克隆的仓库
-          ref: meta  # 克隆meta分支
-          path: meta_temp  # 克隆到meta_temp目录
-          fetch-depth: 1  # 只拉取最新的一次提交
-          
-      # 处理所有规则文件（使用优化的JavaScript）
-      - name: Process All Rules
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs').promises;
-            const path = require('path');
-            const childProcess = require('child_process');
-            const util = require('util');
-            const execCommand = util.promisify(childProcess.exec);
-            
-            // 定义非递归、流式处理函数，避免栈溢出
-            async function processRules() {
-              console.log('开始处理所有规则文件...');
-              
-              // 准备目标目录
-              const repoDir = 'rule-set/repo';
-              await execCommand(`mkdir -p ${repoDir}`);
-              
-              // 处理IPv6规则 - 使用高效shell命令避免内存问题
-              console.log('处理IPv6规则...');
-              const listDir = path.join('meta_temp', 'geo', 'geoip', 'classical');
-              try {
-                await execCommand(`if [ -d "${listDir}" ]; then find ${listDir} -name "*.list" -type f -exec sed -i 's/^IP-CIDR,\\([^,]*:\\)/IP-CIDR6,\\1/g' {} \\; ; fi`);
-              } catch (error) {
-                console.error('处理IPv6规则时出错:', error);
-              }
-              
-              // 处理ASN规则 - 使用流式处理
-              console.log('处理ASN规则...');
-              const asnDir = path.join('meta_temp', 'asn');
-              const asnClassicalDir = path.join(asnDir, 'classical');
-              
-              try {
-                await execCommand(`mkdir -p ${asnClassicalDir}`);
-                
-                // 获取所有ASN .list文件
-                const { stdout: fileList } = await execCommand(`find ${asnDir} -maxdepth 1 -name "*.list" -type f`);
-                const files = fileList.trim().split('\n').filter(f => f);
-                
-                // 批量处理文件，使用多批次以避免并行处理太多文件
-                const batchSize = 10; // 每批处理10个文件
-                for (let i = 0; i < files.length; i += batchSize) {
-                  const batch = files.slice(i, i + batchSize);
-                  await Promise.all(batch.map(async (filePath) => {
-                    if (!filePath) return;
-                    
-                    const filename = path.basename(filePath);
-                    const outputPath = path.join(asnClassicalDir, filename);
-                    
-                    try {
-                      // 使用stream API处理大文件
-                      await execCommand(`cat "${filePath}" | awk '{
-                        if ($0 ~ /^#/ || $0 ~ /^$/) {
-                          print $0  # 保留注释和空行
-                        } else if ($0 ~ /:/) {
-                          print "IP-CIDR6," $0  # IPv6地址添加IP-CIDR6前缀
-                        } else {
-                          print "IP-CIDR," $0  # IPv4地址添加IP-CIDR前缀
-                        }
-                      }' > "${outputPath}"`);
-                    } catch (err) {
-                      console.error(`处理文件 ${filename} 时出错:`, err.message);
-                    }
-                  }));
-                  
-                  // 添加小延迟以避免系统资源过载
-                  await new Promise(resolve => setTimeout(resolve, 100));
-                }
-              } catch (error) {
-                console.error('处理ASN规则时出错:', error);
-              }
-              
-              // 复制处理后的文件到目标目录 - 使用系统命令而非JS递归
-              console.log('复制所有处理后的文件到rule-set/repo目录...');
-              try {
-                await execCommand(`cp -r meta_temp/* rule-set/repo/`);
-              } catch (error) {
-                console.error('复制文件时出错:', error);
-              }
-              
-              // 清理临时目录
-              console.log('清理临时目录...');
-              try {
-                await execCommand(`rm -rf meta_temp`);
-              } catch (error) {
-                console.error('清理临时目录时出错:', error);
-              }
-              
-              console.log('所有规则处理完成');
-            }
-            
-            // 执行主函数
-            return processRules();
+          path: main-repo
 
-      # 检查是否有文件变更
-      - name: Check for changes
-        id: check_changes
+      - name: 设置缓存
+        uses: actions/cache@v3
+        id: cache-rules
+        with:
+          path: temp-cache
+          key: ${{ runner.os }}-meta-rules-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-meta-rules-
+
+      - name: 克隆Meta规则仓库
         run: |
-          git add rule-set/repo/
-          if [[ -n "$(git status --porcelain)" ]]; then
-            echo "has_changes=true" >> $GITHUB_OUTPUT
+          mkdir -p temp-repo
+          git clone --depth 1 --branch meta https://github.com/MetaCubeX/meta-rules-dat.git temp-repo
+
+      - name: 处理IPv6规则
+        run: |
+          LIST_DIR="temp-repo/geo/geoip/classical"
+          if [ -d "$LIST_DIR" ]; then
+            echo "正在转换IPv6规则格式..."
+            find "$LIST_DIR" -type f -name "*.list" | while read -r file; do
+              sed -i -E 's/^(IP-CIDR,)([^,]*:)/IP-CIDR6,\2/' "$file"
+            done
+            echo "IPv6规则转换完成"
           else
-            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "目录 $LIST_DIR 不存在，跳过IPv6规则转换"
           fi
-      
-      # 如果有变更，则提交并推送
-      - name: Commit and push changes
-        if: steps.check_changes.outputs.has_changes == 'true'
+
+      - name: 处理ASN目录
         run: |
-          git commit -m "Chore: Update Meta Rules"
+          ASN_DIR="temp-repo/asn"
+          ASN_CLASSICAL_DIR="$ASN_DIR/classical"
+          
+          # 确保目录存在
+          mkdir -p "$ASN_CLASSICAL_DIR"
+          
+          echo "开始复制list文件到 $ASN_CLASSICAL_DIR..."
+          
+          # 复制文件
+          find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" | while read -r file; do
+            cp "$file" "$ASN_CLASSICAL_DIR"/
+          done
+          
+          echo "文件复制完成"
+          
+          # 处理文件
+          find "$ASN_CLASSICAL_DIR" -type f -name "*.list" | while read -r file; do
+            sed -i -E 's/^([^#].*)$/IP-CIDR,\1/' "$file"  # 默认增加 "IP-CIDR,"
+            sed -i -E 's/^IP-CIDR,([^,]*:)/IP-CIDR6,\1/' "$file"  # 如果包含 ":"，替换为 "IP-CIDR6,"
+          done
+          
+          echo "ASN目录处理完成"
+
+      - name: 准备输出目录
+        run: |
+          FINAL_DIR="rule-set/repo"
+          if [ -d "$FINAL_DIR" ]; then
+            rm -rf "$FINAL_DIR"/*
+          else
+            mkdir -p "$FINAL_DIR"
+          fi
+
+      - name: 复制处理后的文件
+        run: |
+          echo "正在复制文件到目标目录: rule-set/repo"
+          cp -r temp-repo/* rule-set/repo/
+          FILE_COUNT=$(find "rule-set/repo" -type f | wc -l)
+          echo "下载和更新完成，总文件数: $FILE_COUNT"
+
+      - name: 提交更改
+        run: |
+          cd main-repo
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add rule-set/repo
+          git commit -m "更新Meta规则集 $(date '+%Y-%m-%d %H:%M')" || echo "没有变更需要提交"
           git push 
