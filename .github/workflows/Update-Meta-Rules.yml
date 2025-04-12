@@ -6,76 +6,162 @@ on:
   workflow_dispatch:     # 允许手动触发
 
 jobs:
-  update-rules:
+  check-updates:
     runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.check.outputs.has_changes }}
+      meta_sha: ${{ steps.check.outputs.meta_sha }}
+    
+    steps:
+      - name: Check for updates in Meta repository
+        id: check
+        run: |
+          # 获取Meta仓库的最新提交SHA
+          META_SHA=$(curl -s https://api.github.com/repos/MetaCubeX/meta-rules-dat/commits/meta | jq -r .sha)
+          echo "meta_sha=$META_SHA" >> $GITHUB_OUTPUT
+          
+          # 检查是否有更新 (与上次处理的SHA比较)
+          if [ -f ".meta-sha" ]; then
+            LAST_SHA=$(cat .meta-sha)
+            if [ "$META_SHA" = "$LAST_SHA" ]; then
+              echo "has_changes=false" >> $GITHUB_OUTPUT
+              echo "没有新的更新，跳过处理"
+            else
+              echo "has_changes=true" >> $GITHUB_OUTPUT
+              echo "检测到新的更新，SHA: $META_SHA"
+            fi
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "首次运行或SHA文件不存在"
+          fi
+
+  process-rules:
+    needs: check-updates
+    if: needs.check-updates.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+    container:
+      image: alpine:latest
+      
+    strategy:
+      matrix:
+        rule_type: [ipv6, asn]
+      fail-fast: false
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1  # 减少克隆深度提高速度
+          fetch-depth: 1
           
+      - name: Install dependencies
+        run: |
+          apk add --no-cache git curl jq moreutils parallel rsync
+          
+      - name: Get Meta SHA
+        run: |
+          echo "${{ needs.check-updates.outputs.meta_sha }}" > .meta-sha
+          
+      - name: Setup rule processing
+        run: |
+          # 创建必要的目录
+          mkdir -p /tmp/meta_temp /tmp/processed
+          
+          # 克隆必要的文件 (仅克隆需要处理的相关目录)
+          if [ "${{ matrix.rule_type }}" = "ipv6" ]; then
+            git clone --depth 1 --branch meta --single-branch --sparse https://github.com/MetaCubeX/meta-rules-dat.git /tmp/meta_temp
+            cd /tmp/meta_temp
+            git sparse-checkout set geo/geoip/classical
+          elif [ "${{ matrix.rule_type }}" = "asn" ]; then
+            git clone --depth 1 --branch meta --single-branch --sparse https://github.com/MetaCubeX/meta-rules-dat.git /tmp/meta_temp
+            cd /tmp/meta_temp
+            git sparse-checkout set asn
+          fi
+      
+      - name: Process IPv6 rules
+        if: matrix.rule_type == 'ipv6'
+        run: |
+          LIST_DIR="/tmp/meta_temp/geo/geoip/classical"
+          if [ -d "$LIST_DIR" ]; then
+            mkdir -p /tmp/processed/geo/geoip/classical
+            
+            # 使用GNU Parallel并行处理所有文件
+            find "$LIST_DIR" -type f -name "*.list" | \
+              parallel --will-cite -j$(nproc) '
+                FILE={}
+                DEST_FILE=/tmp/processed/geo/geoip/classical/$(basename $FILE)
+                cat $FILE | sed -E "s/^(IP-CIDR,)([^,]*:)/IP-CIDR6,\2/" > $DEST_FILE
+              '
+          fi
+      
+      - name: Process ASN rules
+        if: matrix.rule_type == 'asn'
+        run: |
+          ASN_DIR="/tmp/meta_temp/asn"
+          if [ -d "$ASN_DIR" ]; then
+            # 创建输出目录
+            mkdir -p /tmp/processed/asn/classical
+            
+            # 使用GNU Parallel并行处理
+            find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" | \
+              parallel --will-cite -j$(nproc) '
+                FILE={}
+                FILENAME=$(basename $FILE)
+                DEST_FILE=/tmp/processed/asn/classical/$FILENAME
+                
+                # 使用更高效的处理方式
+                awk "BEGIN{FS=\"\n\"; OFS=\"\n\"}
+                /^#/ {print; next}
+                /.*:.*/ {print \"IP-CIDR6,\" \$0; next}
+                {print \"IP-CIDR,\" \$0}" $FILE > $DEST_FILE
+              '
+          fi
+          
+      - name: Upload processed rules
+        uses: actions/upload-artifact@v3
+        with:
+          name: processed-${{ matrix.rule_type }}-rules
+          path: /tmp/processed
+          retention-days: 1
+  
+  merge-and-commit:
+    needs: [check-updates, process-rules]
+    if: needs.check-updates.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
       - name: Set up Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          
-      - name: Setup cache for meta rules
-        uses: actions/cache@v3
-        id: meta-cache
+      
+      - name: Download processed rules
+        uses: actions/download-artifact@v3
         with:
-          path: /tmp/meta_temp
-          key: ${{ runner.os }}-meta-rules-${{ github.run_id }}
-          restore-keys: |
-            ${{ runner.os }}-meta-rules-
-          
-      - name: Clone Meta Rules Repository
-        if: steps.meta-cache.outputs.cache-hit != 'true'
-        run: |
-          # 只克隆meta分支并减少深度为1
-          git clone --depth 1 --branch meta --single-branch https://github.com/MetaCubeX/meta-rules-dat.git /tmp/meta_temp
-          
-      - name: Process Rules (Parallel Processing)
-        run: |
-          # 创建目标目录
-          mkdir -p rule-set/repo
-          
-          # 并行处理IPv6和ASN规则
-          {
-            # 处理IPv6规则 - 使用awk提高性能
-            LIST_DIR="/tmp/meta_temp/geo/geoip/classical"
-            if [ -d "$LIST_DIR" ]; then
-              find "$LIST_DIR" -type f -name "*.list" -print0 | xargs -0 -P 4 -I{} sh -c '
-                awk "{if (/^IP-CIDR,.*:/) {sub(/^IP-CIDR,/,\"IP-CIDR6,\"); print} else {print}}" "{}" > "{}.tmp" && mv "{}.tmp" "{}"
-              '
-            fi
-          } &
-          
-          {
-            # 处理ASN规则 - 优化处理流程
-            ASN_DIR="/tmp/meta_temp/asn"
-            ASN_CLASSICAL_DIR="$ASN_DIR/classical"
-            mkdir -p "$ASN_CLASSICAL_DIR"
-            
-            # 直接在目标位置处理文件
-            find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" -print0 | xargs -0 -P 4 -I{} sh -c '
-              FILENAME=$(basename "{}") 
-              awk "{if(/^#/) {print} else if(/.*:.*/) {print \"IP-CIDR6,\" \$0} else {print \"IP-CIDR,\" \$0}}" "{}" > "$ASN_CLASSICAL_DIR/$FILENAME"
-            '
-          } &
-          
-          # 等待所有并行任务完成
-          wait
-          
-      - name: Update Rules in Repository
+          path: /tmp/processed-artifacts
+      
+      - name: Merge and update rules
         run: |
           # 清空目标目录
+          mkdir -p rule-set/repo
           rm -rf rule-set/repo/*
           
-          # 使用rsync替代cp提高性能
-          rsync -a --delete /tmp/meta_temp/ rule-set/repo/
+          # 合并所有处理好的规则
+          find /tmp/processed-artifacts -type d -name "processed-*-rules" -exec rsync -a {}/. rule-set/repo/ \;
           
+          # 保存Meta SHA以便下次检查
+          echo "${{ needs.check-updates.outputs.meta_sha }}" > rule-set/repo/.meta-sha
+      
       - name: Commit and Push Changes
         run: |
           git add rule-set/repo/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Chore: Update Meta Rules" && git push) 
+          
+          if ! git diff --quiet && ! git diff --staged --quiet; then
+            git commit -m "Chore: Update Meta Rules [$(date +'%Y-%m-%d')]"
+            git push
+            echo "规则已成功更新"
+          else
+            echo "没有检测到变更，无需提交"
+          fi 
