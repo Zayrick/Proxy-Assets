@@ -1,0 +1,58 @@
+name: External Rules Update
+
+on:
+  schedule:
+    - cron: '0 */8 * * *'  # Every 8 hours (UTC 0:00, 8:00, 16:00)
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  Rules-Update:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        rule:
+          - name: DeepSeek
+            url: https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/main/DeepSeek.list
+          - name: talkatone
+            url: https://raw.githubusercontent.com/mottzz87/crules/main/rule/talkatone.list
+      fail-fast: false  # Continue other tasks even if one fails
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Ensure Target Directory
+        run: |
+          mkdir -p rule-set/external
+
+      - name: Download ${{ matrix.rule.name }} Rule File
+        run: |
+          echo "::group::Downloading ${{ matrix.rule.name }}.list"
+          curl -s -o rule-set/external/${{ matrix.rule.name }}.list "${{ matrix.rule.url }}"
+          if [ $? -eq 0 ]; then
+            echo "${{ matrix.rule.name }}.list downloaded successfully"
+          else
+            echo "${{ matrix.rule.name }}.list download failed"
+            exit 1
+          fi
+          echo "::endgroup::"
+
+      - name: Commit Changes
+        run: |
+          echo "::group::Committing Changes for ${{ matrix.rule.name }}"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          
+          git add rule-set/external/${{ matrix.rule.name }}.list
+          
+          if git diff --staged --quiet; then
+            echo "No changes detected for ${{ matrix.rule.name }}.list"
+          else
+            TZ=Asia/Shanghai beijing_time=$(date "+%Y-%m-%d %H:%M:%S")
+            git commit -m "Update: ${{ matrix.rule.name }} rules (Beijing time: $beijing_time)"
+            git push
+            echo "${{ matrix.rule.name }}.list changes committed"
+          fi
+          echo "::endgroup::" 
