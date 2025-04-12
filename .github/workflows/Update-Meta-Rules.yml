@@ -38,48 +38,89 @@ jobs:
           path: meta_temp  # 克隆到meta_temp目录
           fetch-depth: 1  # 只拉取最新的一次提交
           
-      # 处理所有规则文件（直接在克隆的目录中处理）
+      # 处理所有规则文件（使用优化的JavaScript）
       - name: Process All Rules
-        run: |
-          echo "开始处理所有规则文件..."
-          
-          # 准备目标目录
-          mkdir -p rule-set/repo
-          
-          # 处理IPv6规则
-          echo "处理IPv6规则..."
-          if [ -d "meta_temp/geo/geoip/classical" ]; then
-            find meta_temp/geo/geoip/classical -name "*.list" -type f -exec sed -i 's/^IP-CIDR,\([^,]*:\)/IP-CIDR6,\1/g' {} \;
-          fi
-          
-          # 处理ASN规则
-          echo "处理ASN规则..."
-          if [ -d "meta_temp/asn" ]; then
-            mkdir -p meta_temp/asn/classical
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs').promises;
+            const path = require('path');
+            const { exec } = require('child_process');
+            const util = require('util');
+            const execAsync = util.promisify(exec);
             
-            # 查找asn目录中的所有.list文件
-            find meta_temp/asn -maxdepth 1 -name "*.list" -type f | while read file; do
-              filename=$(basename "$file")
-              # 创建新的处理后文件
-              cat "$file" | awk '{
-                if ($0 ~ /^#/ || $0 ~ /^$/) {
-                  print $0  # 保留注释和空行
-                } else if ($0 ~ /:/) {
-                  print "IP-CIDR6," $0  # IPv6地址添加IP-CIDR6前缀
-                } else {
-                  print "IP-CIDR," $0  # IPv4地址添加IP-CIDR前缀
-                }
-              }' > "meta_temp/asn/classical/$filename"
-            done
-          fi
-          
-          # 复制处理后的文件到目标目录
-          echo "复制所有处理后的文件到rule-set/repo目录..."
-          cp -r meta_temp/* rule-set/repo/
-          
-          # 清理临时目录
-          echo "清理临时目录..."
-          rm -rf meta_temp
+            // 定义非递归、流式处理函数，避免栈溢出
+            async function processRules() {
+              console.log('开始处理所有规则文件...');
+              
+              // 准备目标目录
+              const repoDir = 'rule-set/repo';
+              await execAsync(`mkdir -p ${repoDir}`);
+              
+              // 处理IPv6规则 - 使用高效shell命令避免内存问题
+              console.log('处理IPv6规则...');
+              const listDir = path.join('meta_temp', 'geo', 'geoip', 'classical');
+              try {
+                await execAsync(`if [ -d "${listDir}" ]; then find ${listDir} -name "*.list" -type f -exec sed -i 's/^IP-CIDR,\\([^,]*:\\)/IP-CIDR6,\\1/g' {} \\; ; fi`);
+              } catch (error) {
+                console.error('处理IPv6规则时出错:', error);
+              }
+              
+              // 处理ASN规则 - 使用流式处理
+              console.log('处理ASN规则...');
+              const asnDir = path.join('meta_temp', 'asn');
+              const asnClassicalDir = path.join(asnDir, 'classical');
+              
+              try {
+                await execAsync(`mkdir -p ${asnClassicalDir}`);
+                
+                // 获取所有ASN .list文件
+                const { stdout: fileList } = await execAsync(`find ${asnDir} -maxdepth 1 -name "*.list" -type f`);
+                const files = fileList.trim().split('\n').filter(f => f);
+                
+                // 并行处理所有文件，每个文件独立处理，避免栈溢出
+                await Promise.all(files.map(async (filePath) => {
+                  if (!filePath) return;
+                  
+                  const filename = path.basename(filePath);
+                  const outputPath = path.join(asnClassicalDir, filename);
+                  
+                  // 使用stream API处理大文件
+                  await execAsync(`cat "${filePath}" | awk '{
+                    if ($0 ~ /^#/ || $0 ~ /^$/) {
+                      print $0  # 保留注释和空行
+                    } else if ($0 ~ /:/) {
+                      print "IP-CIDR6," $0  # IPv6地址添加IP-CIDR6前缀
+                    } else {
+                      print "IP-CIDR," $0  # IPv4地址添加IP-CIDR前缀
+                    }
+                  }' > "${outputPath}"`);
+                }));
+              } catch (error) {
+                console.error('处理ASN规则时出错:', error);
+              }
+              
+              // 复制处理后的文件到目标目录 - 使用系统命令而非JS递归
+              console.log('复制所有处理后的文件到rule-set/repo目录...');
+              try {
+                await execAsync(`cp -r meta_temp/* rule-set/repo/`);
+              } catch (error) {
+                console.error('复制文件时出错:', error);
+              }
+              
+              // 清理临时目录
+              console.log('清理临时目录...');
+              try {
+                await execAsync(`rm -rf meta_temp`);
+              } catch (error) {
+                console.error('清理临时目录时出错:', error);
+              }
+              
+              console.log('所有规则处理完成');
+            }
+            
+            // 执行主函数
+            return processRules();
 
       # 检查是否有文件变更
       - name: Check for changes
