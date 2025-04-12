@@ -28,135 +28,59 @@ jobs:
           mkdir -p temp-repo
           git clone --depth 1 --branch meta https://github.com/MetaCubeX/meta-rules-dat.git temp-repo
 
-      - name: 安装依赖
-        run: npm install @actions/io @actions/glob @actions/exec fs-extra
+      - name: 处理IPv6规则
+        run: |
+          LIST_DIR="temp-repo/geo/geoip/classical"
+          if [ -d "$LIST_DIR" ]; then
+            echo "正在转换IPv6规则格式..."
+            find "$LIST_DIR" -type f -name "*.list" | while read -r file; do
+              sed -i -E 's/^(IP-CIDR,)([^,]*:)/IP-CIDR6,\2/' "$file"
+            done
+            echo "IPv6规则转换完成"
+          else
+            echo "目录 $LIST_DIR 不存在，跳过IPv6规则转换"
+          fi
 
-      - name: 处理规则文件
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs-extra');
-            const path = require('path');
-            const globModule = require('@actions/glob');
-            const io = require('@actions/io');
-            const exec = require('@actions/exec');
-            
-            async function processFiles(pattern, processor, batchSize = 100) {
-              const globber = await globModule.create(pattern);
-              const files = await globber.glob();
-              
-              // 分批处理文件以避免内存溢出
-              for (let i = 0; i < files.length; i += batchSize) {
-                const batch = files.slice(i, i + batchSize);
-                console.log(`处理批次 ${Math.floor(i/batchSize) + 1}/${Math.ceil(files.length/batchSize)}, 文件数: ${batch.length}`);
-                
-                for (const file of batch) {
-                  await processor(file);
-                }
-              }
-              
-              return files.length;
-            }
-            
-            // 处理IPv6规则
-            async function processIPv6Rules() {
-              const listDir = 'temp-repo/geo/geoip/classical';
-              
-              if (!fs.existsSync(listDir)) {
-                console.log(`目录 ${listDir} 不存在，跳过IPv6规则转换`);
-                return;
-              }
-              
-              console.log('正在转换IPv6规则格式...');
-              
-              await processFiles(`${listDir}/**/*.list`, async (file) => {
-                try {
-                  let content = await fs.readFile(file, 'utf8');
-                  content = content.replace(/^(IP-CIDR,)([^,]*:)/gm, 'IP-CIDR6,$2');
-                  await fs.writeFile(file, content, 'utf8');
-                } catch (error) {
-                  console.error(`处理文件 ${file} 时出错:`, error);
-                }
-              });
-              
-              console.log('IPv6规则转换完成');
-            }
-            
-            // 处理ASN目录
-            async function processASNDir() {
-              const asnDir = 'temp-repo/asn';
-              const asnClassicalDir = `${asnDir}/classical`;
-              
-              // 确保目录存在
-              await io.mkdirP(asnClassicalDir);
-              
-              console.log(`开始复制list文件到 ${asnClassicalDir}...`);
-              
-              // 复制文件
-              await processFiles(`${asnDir}/*.list`, async (file) => {
-                const fileName = path.basename(file);
-                const targetFile = path.join(asnClassicalDir, fileName);
-                await fs.copy(file, targetFile);
-              });
-              
-              console.log('文件复制完成');
-              
-              // 处理文件
-              await processFiles(`${asnClassicalDir}/*.list`, async (file) => {
-                try {
-                  let content = await fs.readFile(file, 'utf8');
-                  // 默认增加 "IP-CIDR,"
-                  content = content.replace(/^([^#].*?)$/gm, 'IP-CIDR,$1');
-                  // 如果包含 ":"，替换为 "IP-CIDR6,"
-                  content = content.replace(/^IP-CIDR,([^,]*:)/gm, 'IP-CIDR6,$1');
-                  await fs.writeFile(file, content, 'utf8');
-                } catch (error) {
-                  console.error(`处理文件 ${file} 时出错:`, error);
-                }
-              });
-              
-              console.log('ASN目录处理完成');
-            }
-            
-            // 准备输出目录
-            async function prepareOutputDir() {
-              const finalDir = 'rule-set/repo';
-              
-              if (fs.existsSync(finalDir)) {
-                await io.rmRF(`${finalDir}/*`);
-              } else {
-                await io.mkdirP(finalDir);
-              }
-            }
-            
-            // 复制处理后的文件
-            async function copyProcessedFiles() {
-              console.log('正在复制文件到目标目录: rule-set/repo');
-              
-              // 使用外部命令复制大量文件，更高效
-              await exec.exec('cp', ['-r', 'temp-repo/.', 'rule-set/repo/']);
-              
-              const globber = await globModule.create('rule-set/repo/**/*');
-              const files = await globber.glob();
-              const fileCount = files.filter(file => !fs.statSync(file).isDirectory()).length;
-              
-              console.log(`下载和更新完成，总文件数: ${fileCount}`);
-            }
-            
-            // 主要执行流程
-            async function main() {
-              try {
-                await processIPv6Rules();
-                await processASNDir();
-                await prepareOutputDir();
-                await copyProcessedFiles();
-              } catch (error) {
-                console.error('处理过程中出错:', error);
-                process.exit(1);
-              }
-            }
-            
-            await main();
+      - name: 处理ASN目录
+        run: |
+          ASN_DIR="temp-repo/asn"
+          ASN_CLASSICAL_DIR="$ASN_DIR/classical"
+          
+          # 确保目录存在
+          mkdir -p "$ASN_CLASSICAL_DIR"
+          
+          echo "开始复制list文件到 $ASN_CLASSICAL_DIR..."
+          
+          # 复制文件
+          find "$ASN_DIR" -maxdepth 1 -type f -name "*.list" | while read -r file; do
+            cp "$file" "$ASN_CLASSICAL_DIR"/
+          done
+          
+          echo "文件复制完成"
+          
+          # 处理文件
+          find "$ASN_CLASSICAL_DIR" -type f -name "*.list" | while read -r file; do
+            sed -i -E 's/^([^#].*)$/IP-CIDR,\1/' "$file"  # 默认增加 "IP-CIDR,"
+            sed -i -E 's/^IP-CIDR,([^,]*:)/IP-CIDR6,\1/' "$file"  # 如果包含 ":"，替换为 "IP-CIDR6,"
+          done
+          
+          echo "ASN目录处理完成"
+
+      - name: 准备输出目录
+        run: |
+          FINAL_DIR="rule-set/repo"
+          if [ -d "$FINAL_DIR" ]; then
+            rm -rf "$FINAL_DIR"/*
+          else
+            mkdir -p "$FINAL_DIR"
+          fi
+
+      - name: 复制处理后的文件
+        run: |
+          echo "正在复制文件到目标目录: rule-set/repo"
+          cp -r temp-repo/* rule-set/repo/
+          FILE_COUNT=$(find "rule-set/repo" -type f | wc -l)
+          echo "下载和更新完成，总文件数: $FILE_COUNT"
 
       - name: 提交更改
         run: |
