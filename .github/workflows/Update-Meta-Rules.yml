@@ -2,8 +2,8 @@ name: Update Meta Rules
 
 on:
   schedule:
-    - cron: '0 7 * * *'  # 每天早上7点运行
-  workflow_dispatch:  # 允许手动触发
+    - cron: '0 7 * * *'  # Run every day at 7 AM
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   update-rules:
@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 1
           
-      - name: Setup custom actions
+      - name: Setup Git configuration
         uses: actions/github-script@v7.0.1
         id: setup-git
         with:
@@ -24,7 +24,7 @@ jobs:
             await exec.exec('git', ['config', '--global', 'user.email', 'github-actions[bot]@users.noreply.github.com']);
       
       - name: Clone Meta Rules
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
         with:
           repository: MetaCubeX/meta-rules-dat
           ref: meta
@@ -32,17 +32,16 @@ jobs:
           fetch-depth: 1
       
       - name: Process Rules
-        uses: actions/github-script@v7
+        uses: actions/github-script@v7.0.1
         with:
           script: |
             const fs = require('fs');
             const path = require('path');
-            const { execSync } = require('child_process');
             
-            // 处理IPv6规则
+            // Process IPv6 Rules
             const listDir = path.join('meta_temp', 'geo', 'geoip', 'classical');
             if (fs.existsSync(listDir)) {
-              console.log('处理IPv6规则...');
+              console.log('Processing IPv6 rules...');
               const ipv6Files = fs.readdirSync(listDir)
                 .filter(file => file.endsWith('.list'))
                 .map(file => path.join(listDir, file));
@@ -54,7 +53,7 @@ jobs:
               }
             }
             
-            // 处理ASN规则
+            // Process ASN Rules
             const asnDir = path.join('meta_temp', 'asn');
             const asnClassicalDir = path.join(asnDir, 'classical');
             
@@ -62,11 +61,11 @@ jobs:
               fs.mkdirSync(asnClassicalDir, { recursive: true });
             }
             
-            console.log('处理ASN规则...');
+            console.log('Processing ASN rules...');
             const files = fs.readdirSync(asnDir)
               .filter(file => file.endsWith('.list') && fs.statSync(path.join(asnDir, file)).isFile());
               
-            // 批量处理所有ASN文件
+            // Batch process all ASN files
             for (const file of files) {
               const content = fs.readFileSync(path.join(asnDir, file), 'utf8');
               const processedContent = content
@@ -81,12 +80,12 @@ jobs:
               fs.writeFileSync(path.join(asnClassicalDir, file), processedContent);
             }
             
-            // 更新本地仓库
-            console.log('更新本地仓库...');
-            // 使用Node.js的文件操作替代shell命令，减少子进程调用
+            // Update local repository
+            console.log('Updating local repository...');
+            // Use Node.js file operations instead of shell commands to reduce subprocess calls
             const repoDir = 'rule-set/repo';
             if (fs.existsSync(repoDir)) {
-              // 递归删除目录内容但保留目录本身
+              // Recursively delete directory contents but keep the directory itself
               const deleteContents = (dir) => {
                 const items = fs.readdirSync(dir);
                 for (const item of items) {
@@ -104,7 +103,7 @@ jobs:
               fs.mkdirSync(repoDir, { recursive: true });
             }
             
-            // 使用fs-extra的copySync功能复制整个目录
+            // Copy directory recursively
             const copyDir = (src, dest) => {
               if (!fs.existsSync(dest)) {
                 fs.mkdirSync(dest, { recursive: true });
@@ -125,7 +124,7 @@ jobs:
             
             copyDir('meta_temp', repoDir);
             
-            // 返回有无更改
+            // Return whether changes were made
             return { hasChanges: true };
 
       - name: Check for changes
@@ -140,7 +139,7 @@ jobs:
               core.setOutput('has_changes', hasChanges);
               return { hasChanges };
             } catch (error) {
-              console.error('检查更改时出错:', error);
+              console.error('Error checking for changes:', error);
               core.setOutput('has_changes', false);
               return { hasChanges: false };
             }
