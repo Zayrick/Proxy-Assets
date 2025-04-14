@@ -164,14 +164,14 @@ payload:
     - +.highwirepress.com
     - +.hindawi.com
     - +.icevirtuallibrary.com
-    - +.sciencedirectassets.com
-    - +.sciencedirect.com
-    - +.wkap.nl
-    - +.springernature.com
+    - +.scopus.com
+    - +.scival.com
+    - +.reaxys.com
+    - +.mendeley.com
     - +.igi-global.com
     - +.igpublish.com
-    - +.springerlink.com
-    - +.springer.com
+    - +.knovel.com
+    - +.fundinginstitutional.com
     - +.informs.org
     - +.ioinformatics.org
     - +.iop.org
@@ -183,11 +183,11 @@ payload:
     - +.jmlr.org
     - +.jneurosci.org
     - +.jove.com
-    - +.apress.com
+    - +.evise.com
     - +.jstor.org
     - +.karger.com
     - +.kuke.com
-    - +.mitpressjournals.org
+    - +.engineeringvillage.com
     - +.lexisnexis.com
     - +.literatumonline.com
     - +.mdpi.com
@@ -195,10 +195,10 @@ payload:
     - +.morganclaypool.com
     - +.nature.com
     - +.naturemag.org
-    - +.mit.net
+    - +.elsevier.io
     - +.nejm.org
     - +.neurology.org
-    - +.mit.edu
+    - +.elsevier.com
     - +.oecd-ilibrary.org
     - +.optica.org
     - +.osapublishing.org
@@ -244,102 +244,29 @@ payload:
     - +.worldscientific.com
     - +.yale.edu
     - +.zenodo.org
-    - +.tandfonline.com
-    - +.taylorandfrancis.com
-    - +.taylorfrancis.com
-    - +.1lib.cloud
-    - +.1lib.cz
-    - +.1lib.domains
-    - +.1lib.education
-    - +.1lib.eu
-    - +.1lib.limited
-    - +.1lib.pl
-    - +.1lib.to
-    - +.1lib.tw
-    - +.2lib.org
-    - +.3lib.net
-    - +.art1lib.com
-    - +.b-ok.africa
-    - +.b-ok.asia
-    - +.b-ok.cc
-    - +.b-ok.global
-    - +.b-ok.org
-    - +.book4you.org
-    - +.bookfi.net
-    - +.booksc.eu
-    - +.booksc.me
-    - +.booksc.org
-    - +.booksc.xyz
-    - +.bookshome.info
-    - +.bookshome.net
-    - +.bookshome.world
-    - +.de1lib.org
-    - +.hk1lib.org
-    - +.libsolutions.app
-    - +.libsolutions.domains
-    - +.libsolutions.net
-    - +.ma1lib.org
-    - +.sg1lib.org
-    - +.singlelogin.app
-    - +.singlelogin.me
-    - +.singlelogin.re
-    - +.singlelogin.site
-    - +.z-lib.org
-    - +.z-library.se
-    - +.zlib.life
-    - +.zlibcdn.com
-    - +.zlibcdn2.com
-    - +.cell.com
-    - +.clinicalkey.com
-    - +.els-cdn.com
-    - +.elsevier-ae.com
-    - +.elsevier.com
-    - +.elsevier.io
-    - +.engineeringvillage.com
-    - +.evise.com
-    - +.fundinginstitutional.com
-    - +.knovel.com
-    - +.mendeley.com
-    - +.reaxys.com
-    - +.scival.com
-    - +.scopus.com
-    - +.oxfordfirstsource.com
-    - +.oxfordscholarlyeditions.com
-    - +.amamanualofstyle.com
-    - +.epigeum.com
-    - +.oxfordhandbooks.com
-    - +.omscr.com
-    - +.oup.com
-    - +.ouplaw.com
-    - +.veryshortintroductions.com
-    - +.oxfordaasc.com
-    - +.oxfordartonline.com
-    - +.oxfordlawtrove.com
-    - +.oxfordclinicalpsych.com
-    - +.oxforddnb.com
-    - +.blackstonespoliceservice.com
-    - +.oed.com
-    - +.oxfordbibliographies.com
-    - +.oxfordmedicine.com
-    - +.oxfordmusiconline.com
-    - +.oxfordpoliticstrove.com
-    - +.oxfordre.com
-    - +.oxfordreference.com
-    - +.anb.org
-    - +.oxfordscholarship.com
-    - +.oxfordwesternmusic.com
-    - +.sipriyearbook.org
-    - +.ukwhoswho.com
-    - +.universitypressscholarship.com
-    - +.doi.info
-    - +.serialssolutions.com
-    - +.proquest.com
     - +.sci-hub.se
     - +.sci-hub.ee
     - +.sci-hub.st
-    - +.doi.org
+    - +.elsevier-ae.com
+    - +.els-cdn.com
+    - +.clinicalkey.com
+    - +.ac.ir
+    - +.edu.ir
+    - +.iranlms.ir
+    - +.jtt.ir
+    - +.sanjesh.org
+    - +.sharif.edu
+    - +.sharif.ir
+    - +.srttu.edu
+    - +.cell.com
+    - +.apa.org
+    - +.psyccareers.com
+    - +.serialssolutions.com
+    - +.proquest.com
+    - +.tandfonline.com
+    - +.taylorandfrancis.com
+    - +.taylorfrancis.com
     - +.isiknowledge.com
-    - +.newisiknowledge.com
     - +.ieee.org
     - +.ieee.tv
     - +.tryengineering.org
@@ -394,6 +321,89 @@ payload:
     - +.signalprocessingsociety.org
     - +.technologyandsociety.org
     - +.vtsociety.org
+    - +.sciencedirect.com
+    - +.sciencedirectassets.com
+    - +.apress.com
+    - +.springer.com
+    - +.springerlink.com
+    - +.springernature.com
+    - +.wkap.nl
+    - +.doi.org
+    - +.doi.info
+    - +.mit.edu
+    - +.mit.net
+    - +.mitpressjournals.org
+    - +.oxfordfirstsource.com
+    - +.oxfordscholarlyeditions.com
+    - +.amamanualofstyle.com
+    - +.epigeum.com
+    - +.oxfordhandbooks.com
+    - +.omscr.com
+    - +.oup.com
+    - +.ouplaw.com
+    - +.veryshortintroductions.com
+    - +.oxfordaasc.com
+    - +.oxfordartonline.com
+    - +.oxfordlawtrove.com
+    - +.oxfordclinicalpsych.com
+    - +.oxforddnb.com
+    - +.blackstonespoliceservice.com
+    - +.oed.com
+    - +.oxfordbibliographies.com
+    - +.oxfordmedicine.com
+    - +.oxfordmusiconline.com
+    - +.oxfordpoliticstrove.com
+    - +.oxfordre.com
+    - +.oxfordreference.com
+    - +.anb.org
+    - +.oxfordscholarship.com
+    - +.oxfordwesternmusic.com
+    - +.sipriyearbook.org
+    - +.ukwhoswho.com
+    - +.universitypressscholarship.com
+    - +.newisiknowledge.com
+    - +.1lib.cloud
+    - +.1lib.cz
+    - +.1lib.domains
+    - +.1lib.education
+    - +.1lib.eu
+    - +.1lib.limited
+    - +.1lib.pl
+    - +.1lib.to
+    - +.1lib.tw
+    - +.2lib.org
+    - +.3lib.net
+    - +.art1lib.com
+    - +.b-ok.africa
+    - +.b-ok.asia
+    - +.b-ok.cc
+    - +.b-ok.global
+    - +.b-ok.org
+    - +.book4you.org
+    - +.bookfi.net
+    - +.booksc.eu
+    - +.booksc.me
+    - +.booksc.org
+    - +.booksc.xyz
+    - +.bookshome.info
+    - +.bookshome.net
+    - +.bookshome.world
+    - +.de1lib.org
+    - +.hk1lib.org
+    - +.libsolutions.app
+    - +.libsolutions.domains
+    - +.libsolutions.net
+    - +.ma1lib.org
+    - +.sg1lib.org
+    - +.singlelogin.app
+    - +.singlelogin.me
+    - +.singlelogin.re
+    - +.singlelogin.site
+    - +.z-lib.org
+    - +.z-library.se
+    - +.zlib.life
+    - +.zlibcdn.com
+    - +.zlibcdn2.com
     - +.cambridge.org
     - +.cambridgeschoolshakespeare.com
     - +.cambridgedigital.net
@@ -402,18 +412,18 @@ payload:
     - +.webofscience.com
     - +.webofknowledge.com
     - +.clarivate.com
-    - +.psyccareers.com
-    - +.apa.org
-    - +.srttu.edu
-    - +.sharif.ir
-    - +.sharif.edu
-    - +.sanjesh.org
-    - +.jtt.ir
-    - +.iranlms.ir
-    - +.edu.ir
-    - +.ac.ir
-    - +.lboro.ac.uk
-    - +.jiscmu.ac.uk
+    - +.languagebox.ac.uk
+    - +.jischistories.ac.uk
+    - +.aaacymru.ac.uk
+    - +.aaschool.ac.uk
+    - +.aau.ac.uk
+    - +.abbeygatesfc.ac.uk
+    - +.abbeygatesixthformcollege.ac.uk
+    - +.abcol.ac.uk
+    - +.abcolstudents.ac.uk
+    - +.abdn-access-biomedical.ac.uk
+    - +.abdn.ac.uk
+    - +.abdn-online.ac.uk
     - +.aber.ac.uk
     - +.aberbangorpartnership.ac.uk
     - +.aberbangorstrategicalliance.ac.uk
@@ -1869,7 +1879,7 @@ payload:
     - +.earlymoderndressandtextiles.ac.uk
     - +.earlyphonography.ac.uk
     - +.earthsciencescotland.ac.uk
-    - +.ease.ac.uk
+    - +.livenet.ac.uk
     - +.easeit-eng.ac.uk
     - +.east15.ac.uk
     - +.east-anglia.ac.uk
@@ -1879,7 +1889,7 @@ payload:
     - +.eastcoast.ac.uk
     - +.eastdevon.ac.uk
     - +.eastdurham.ac.uk
-    - +.livingwithmachines.ac.uk
+    - +.eastendcbc.ac.uk
     - +.easternarc.ac.uk
     - +.eastkent.ac.uk
     - +.eastkentcollege.ac.uk
@@ -2058,7 +2068,7 @@ payload:
     - +.epne.ac.uk
     - +.eportfolios.ac.uk
     - +.eppi.ac.uk
-    - +.epping-forest.ac.uk
+    - +.liv-e.ac.uk
     - +.epress.ac.uk
     - +.eps.ac.uk
     - +.epsilon.ac.uk
@@ -2068,7 +2078,7 @@ payload:
     - +.equal.ac.uk
     - +.equalityhigher.ac.uk
     - +.equator.ac.uk
-    - +.livinglaboratory.ac.uk
+    - +.equistudy.ac.uk
     - +.era.ac.uk
     - +.erasmus.ac.uk
     - +.erbecdt.ac.uk
@@ -2894,7 +2904,7 @@ payload:
     - +.jiscdigitalmedia.ac.uk
     - +.jiscecollections.ac.uk
     - +.jischistoricbooks.ac.uk
-    - +.jischistories.ac.uk
+    - +.live.ac.uk
     - +.jiscinfonet.ac.uk
     - +.jiscjournalarchives.ac.uk
     - +.jisc-liberate.ac.uk
@@ -2904,7 +2914,7 @@ payload:
     - +.jiscmail.ac.uk
     - +.jisc-mau.ac.uk
     - +.jiscmediahub.ac.uk
-    - +.livinglegacies1914-18.ac.uk
+    - +.jiscmu.ac.uk
     - +.jiscpas.ac.uk
     - +.jisc-services.ac.uk
     - +.jisc-tau.ac.uk
@@ -3030,7 +3040,7 @@ payload:
     - +.langdoncollege.ac.uk
     - +.langpol.ac.uk
     - +.langside.ac.uk
-    - +.languagebox.ac.uk
+    - +.3sixty-ucc.ac.uk
     - +.languagesmythsfinds.ac.uk
     - +.languagesresearch.ac.uk
     - +.languagessoutheast.ac.uk
@@ -3040,7 +3050,7 @@ payload:
     - +.lawteacher.ac.uk
     - +.lbc.ac.uk
     - +.lbc-northwood.ac.uk
-    - +.abdn.ac.uk
+    - +.lboro.ac.uk
     - +.lborolondon.ac.uk
     - +.lbpresearch.ac.uk
     - +.lbs.ac.uk
@@ -3190,9 +3200,9 @@ payload:
     - +.littlehampton.ac.uk
     - +.liv.ac.uk
     - +.liv-coll.ac.uk
-    - +.liv-e.ac.uk
-    - +.live.ac.uk
-    - +.livenet.ac.uk
+    - +.epping-forest.ac.uk
+    - +.4gls.ac.uk
+    - +.ease.ac.uk
     - +.liverpool.ac.uk
     - +.liverpoolsas.ac.uk
     - +.livesandletters.ac.uk
@@ -3200,9 +3210,9 @@ payload:
     - +.livhope.ac.uk
     - +.livingdigital.ac.uk
     - +.livinglab.ac.uk
-    - +.equistudy.ac.uk
-    - +.abdn-online.ac.uk
-    - +.eastendcbc.ac.uk
+    - +.livinglaboratory.ac.uk
+    - +.livinglegacies1914-18.ac.uk
+    - +.livingwithmachines.ac.uk
     - +.livjm.ac.uk
     - +.ljmu.ac.uk
     - +.lkl.ac.uk
@@ -5960,23 +5970,13 @@ payload:
     - +.zoonosis.ac.uk
     - +.dlib.eastview.com
     - +.academic.eb.com
-    - +.abdn-access-biomedical.ac.uk
-    - +.abcolstudents.ac.uk
-    - +.abcol.ac.uk
-    - +.abbeygatesixthformcollege.ac.uk
-    - +.abbeygatesfc.ac.uk
-    - +.aau.ac.uk
-    - +.aaschool.ac.uk
-    - +.aaacymru.ac.uk
-    - +.4gls.ac.uk
-    - +.3sixty-ucc.ac.uk
     - +.3d-fossils.ac.uk
     - +.uk-data-service.ac.uk
     - +.liparm.ac.uk
+    - +.tandf.co.uk
     - +.sci.hubg.org
     - +.sci-hub.mksa.top
     - +.sci-hub.it.nf
-    - +.tandf.co.uk
     - +.nii.ac.jp
     - +.ncl.edu.tw
     - +.lawdata.com.tw
