@@ -1,5 +1,5 @@
 payload:
-    - +.vpngate.net
+    - +.v2ray.com
     - +.shadowsocks.org
     - +.browserleaks.com
     - +.bypasscensorship.org
@@ -16,7 +16,7 @@ payload:
     - +.guardianproject.info
     - +.hiddify.com
     - +.jitsi.org
-    - +.epicbrowser.com
+    - +.v2fly.org
     - +.ntc.party
     - +.onionshare.org
     - +.ooni.org
@@ -25,7 +25,7 @@ payload:
     - +.psiphon.ca
     - +.psiphon3.com
     - +.sagernet.org
-    - +.censorship.no
+    - +.v2ray.cool
     - +.sspanel.net
     - +.stunnel.org
     - +.telex.cc
@@ -38,26 +38,12 @@ payload:
     - +.wikileaks.org
     - +.wireguard.com
     - +.zeronet.io
-    - +.torproject.org
-    - +.opengw.net
-    - +.vpngate.jp
-    - +.wikiunblocked.org
-    - +.akasha.world
-    - +.lokinet.org
-    - +.applecensorship.com
-    - +.freebrowser.org
-    - +.freewechat.com
-    - +.freeweibo.com
-    - +.freezhihu.org
-    - +.greatfire.org
-    - +.pao-pao.net
-    - +.ahmia.fi
-    - +.haveibeenpwned.com
-    - +.pwnedpasswords.com
-    - +.getlantern.org
-    - +.lantern.io
     - +.softether.org
     - +.softether-download.com
+    - +.torproject.org
+    - +.via0.com
+    - +.akasha.world
+    - +.lokinet.org
     - +.ipns.co
     - +.ipfs.tech
     - +.cloudflare-ipfs.com
@@ -65,7 +51,7 @@ payload:
     - +.ipfs.io
     - +.ipfs-gateway.cloud
     - +.c4rex.co
-    - +.via0.com
+    - +.ahmia.fi
     - +.nftstorage.link
     - +.jorropo.net
     - +.crustwebsites.net
@@ -73,13 +59,27 @@ payload:
     - +.dweb.link
     - +.citizenlab.ca
     - +.citizenlab.org
+    - +.epicbrowser.com
+    - +.applecensorship.com
     - +.paskoocheh.com
-    - +.v2ray.com
-    - +.v2fly.org
-    - +.v2ray.cool
-    - +.ipfs.runfission.com
-    - +.gateway.pinata.cloud
+    - +.lantern.io
+    - +.getlantern.org
+    - +.censorship.no
+    - +.vpngate.net
+    - +.freebrowser.org
+    - +.freewechat.com
+    - +.freeweibo.com
+    - +.freezhihu.org
+    - +.greatfire.org
+    - +.pao-pao.net
+    - +.wikiunblocked.org
+    - +.haveibeenpwned.com
+    - +.pwnedpasswords.com
+    - +.opengw.net
+    - +.vpngate.jp
     - +.ipfs.eternum.io
+    - +.gateway.pinata.cloud
+    - +.ipfs.runfission.com
     - +.ipfs.anonymize.com
     - +.twister.net.co
     - +.ipfs.best-practice.se

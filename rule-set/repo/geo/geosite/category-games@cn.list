@@ -1,7 +1,3 @@
-+.kurogames.com
-+.aki-game.com
-uplaypc-s-ubisoft.cdn.ubi.com
-+.sl916.com
 +.steamserver.net
 +.steamusercontent.com
 +.csgo.wmsj.cn
@@ -18,6 +14,14 @@ lv.queniujq.cn
 xz.pphimalayanrt.com
 +.steamchina.com
 +.gstore.val.manlaxy.com
+uplaypc-s-ubisoft.cdn.ubi.com
++.bilibiligame.cn
++.bilibiligame.co
++.bilibiligame.net
++.biligame.co
++.biligame.com
++.biligame.net
++.bluearchive-cn.com
 gog.qtlglb.com
 gogalaxy.gog-statics.com
 menu-static.gog-statics.com
@@ -53,15 +57,10 @@ gog-cdn.akamaized.net
 +.mariokart.cn
 +.mariokart.com.cn
 +.supermariobros.com.cn
-+.bilibiligame.cn
-+.bilibiligame.co
-+.bilibiligame.net
-+.biligame.co
-+.biligame.com
-+.biligame.net
-+.bluearchive-cn.com
++.xboxlive.cn
 +.leagueoflegends.cn
 +.lpl.com.cn
++.sl916.com
 +.battlecare.net
 +.gameitop.com
 +.gameloop.com
@@ -147,4 +146,5 @@ gog-cdn.akamaized.net
 +.anticheatexpert.com
 +.17roco.com
 +.roco.qq.com
-+.xboxlive.cn
++.kurogames.com
++.aki-game.com

@@ -1,5 +1,4 @@
 payload:
-    - +.ggpht.cn
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -15,12 +14,6 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
-    - +.amazonprimevideo.cn
-    - +.amazonprimevideo.com.cn
-    - +.kurogames.com
-    - +.aki-game.com
-    - uplaypc-s-ubisoft.cdn.ubi.com
-    - +.sl916.com
     - +.steamserver.net
     - +.steamusercontent.com
     - +.csgo.wmsj.cn
@@ -37,6 +30,14 @@ payload:
     - xz.pphimalayanrt.com
     - +.steamchina.com
     - +.gstore.val.manlaxy.com
+    - uplaypc-s-ubisoft.cdn.ubi.com
+    - +.bilibiligame.cn
+    - +.bilibiligame.co
+    - +.bilibiligame.net
+    - +.biligame.co
+    - +.biligame.com
+    - +.biligame.net
+    - +.bluearchive-cn.com
     - gog.qtlglb.com
     - gogalaxy.gog-statics.com
     - menu-static.gog-statics.com
@@ -72,15 +73,10 @@ payload:
     - +.mariokart.cn
     - +.mariokart.com.cn
     - +.supermariobros.com.cn
-    - +.bilibiligame.cn
-    - +.bilibiligame.co
-    - +.bilibiligame.net
-    - +.biligame.co
-    - +.biligame.com
-    - +.biligame.net
-    - +.bluearchive-cn.com
+    - +.xboxlive.cn
     - +.leagueoflegends.cn
     - +.lpl.com.cn
+    - +.sl916.com
     - +.battlecare.net
     - +.gameitop.com
     - +.gameloop.com
@@ -166,4 +162,8 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
-    - +.xboxlive.cn
+    - +.kurogames.com
+    - +.aki-game.com
+    - +.amazonprimevideo.cn
+    - +.amazonprimevideo.com.cn
+    - +.ggpht.cn

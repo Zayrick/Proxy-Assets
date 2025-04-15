@@ -9,5 +9,6 @@ payload:
     - DOMAIN-SUFFIX,datalore.io
     - DOMAIN-SUFFIX,kotlinlang.org
     - DOMAIN-SUFFIX,jb.gg
+    - DOMAIN-SUFFIX,youtrack.cloud
     - DOMAIN-SUFFIX,cdn.jetbrains.com
     - DOMAIN-SUFFIX,download-cdn.jetbrains.com.cn
