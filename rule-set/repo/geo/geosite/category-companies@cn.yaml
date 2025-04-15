@@ -1,22 +1,11 @@
 payload:
-    - +.acer.com.cn
-    - +.myqnapcloud.cn
-    - +.qlinkto.cn
-    - +.qnap.com.cn
-    - +.duolingo.cn
-    - +.adobedc.cn
-    - +.asus.com.cn
-    - www.amd.com
-    - +.intel.cn
-    - +.intel.com.cn
-    - +.intelrealsense.cn
-    - +.gpsonextra.net
-    - +.izatcloud.net
-    - +.qceventscenter.com.cn
-    - +.qualcomm.cn
-    - +.qualcomm.cn.cdn.cloudflare.net
-    - +.xtracloud.cn
+    - +.stmicroelectronics.com.cn
+    - +.yahoo.cn
+    - +.yahoo.com.cn
     - +.samsungeshop.com.cn
+    - +.adobedc.cn
+    - +.aoruszone.cn
+    - +.gigabyte.cn
     - +.apple.cn
     - +.apple.com.cn
     - +.apple-store.cn
@@ -319,6 +308,15 @@ payload:
     - ocsp2-lb.apple.com.akadns.net
     - ocsp2.apple.com
     - valid.apple.com
+    - +.beats1.cn
+    - +.beats1.com.cn
+    - +.beats2.com.cn
+    - +.beats4.cn
+    - +.beatsbydre.com
+    - +.beatsbydre.com.cn
+    - +.beatsep.cn
+    - +.swiftui.cn
+    - +.swiftui.com.cn
     - +.apple-icloud.cn
     - +.appleicloud.cn
     - +.icloud-apple.cn
@@ -330,28 +328,20 @@ payload:
     - +.itunesapple.cn
     - +.itunesradio.cn
     - +.itunesradio.com.cn
-    - +.swiftui.cn
-    - +.swiftui.com.cn
     - +.researchkit.cn
     - +.researchkit.com.cn
     - +.swiftui.cn
     - +.swiftui.com.cn
-    - +.beats1.cn
-    - +.beats1.com.cn
-    - +.beats2.com.cn
-    - +.beats4.cn
-    - +.beatsbydre.com
-    - +.beatsbydre.com.cn
-    - +.beatsep.cn
-    - +.stmicroelectronics.com.cn
-    - +.heptio.cn
-    - +.panasonic.cn
+    - +.att.cn
+    - +.attcorp.cn
     - +.razerapi.com
     - +.razersynapse.com
     - +.razerzone.com
-    - +.hpstore.cn
-    - +.att.cn
-    - +.attcorp.cn
+    - +.asus.com.cn
+    - +.myqnapcloud.cn
+    - +.qlinkto.cn
+    - +.qnap.com.cn
+    - +.acer.com.cn
     - +.google.cn
     - +.g.cn
     - +.gkecnapps.cn
@@ -549,6 +539,7 @@ payload:
     - qiao-cn.com
     - +.gvt1-cn.com
     - +.gvt2-cn.com
+    - redirector.c.play.google.com
     - firebase-settings.crashlytics.com
     - pki-goog.l.google.com
     - c.pki.goog
@@ -557,19 +548,74 @@ payload:
     - crl.pki.goog
     - crls.pki.goog
     - ocsp.pki.goog
-    - redirector.c.play.google.com
     - +.ggpht.cn
-    - +.amplifi.com.cn
-    - +.frontrow.com.cn
-    - +.ubnt.com
-    - +.ubnt.com.cn
-    - +.ui.com.cn
-    - +.uum.com.cn
-    - +.uwn.com
     - +.yahoo.cn
     - +.yahoo.com.cn
-    - +.aoruszone.cn
-    - +.gigabyte.cn
+    - +.canon.cn
+    - +.canon.com.cn
+    - +.hpstore.cn
+    - +.panasonic.cn
+    - +.quickconnect.cn
+    - +.synology.cn
+    - +.aboutamazon.cn
+    - +.alexafund.cn
+    - +.alexafund.com.cn
+    - +.amazon.cn
+    - +.amazonbusiness.cn
+    - +.amazonbusiness.com.cn
+    - +.amazonchoice.cn
+    - +.amazonchoice.com.cn
+    - +.amazonchoices.cn
+    - +.amazonchoices.com.cn
+    - +.amazoninspire.cn
+    - +.amazoninspire.com.cn
+    - +.amazonlaunchpad.cn
+    - +.amazonlaunchpad.com.cn
+    - +.amazonlending.com.cn
+    - +.amazonnow.cn
+    - +.amazonnow.com.cn
+    - +.assoc-amazon.cn
+    - +.primeday.cn
+    - +.primeday.com.cn
+    - +.yamaxun.cn
+    - +.z.cn
+    - images-cn.ssl-images-amazon.com
+    - images-cn-8.ssl-images-amazon.com
+    - +.kindle.cn
+    - +.kindleoasis.cn
+    - +.kindleoasis.com.cn
+    - +.amazonprimevideo.cn
+    - +.amazonprimevideo.com.cn
+    - +.a2z.org.cn
+    - +.amazonaws.cn
+    - +.amazonaws.com.cn
+    - +.amazonwebservices.com.cn
+    - +.amazonworkdocs.cn
+    - +.amazonworkdocs.com.cn
+    - +.asfiovnxocqpcry.com.cn
+    - +.aws-border.cn
+    - +.aws-icp-domain-manager.cn
+    - +.awsapps.cn
+    - +.awsapps.com.cn
+    - +.awsstatic.cn
+    - +.cloudfront-cn.net
+    - +.cloudfront-test.cn
+    - +.cloudfront.cn
+    - +.nwcdcloud.cn
+    - +.nwcdcloud.com.cn
+    - +.nwcddns.cn
+    - +.nwcdinfosec.cn
+    - +.route53.cn
+    - +.sagemaker.com.cn
+    - +.amzndns-cn.biz
+    - +.amzndns-cn.cn
+    - +.amzndns-cn.com
+    - +.amzndns-cn.net
+    - www.amd.com
+    - +.duolingo.cn
+    - +.intel.cn
+    - +.intel.com.cn
+    - +.intelrealsense.cn
     - +.dcg.microsoft.com
     - +.dynamics.cn
     - +.engkoo.com
@@ -644,16 +690,6 @@ payload:
     - wscont1.apps.microsoft.com
     - wscont2.apps.microsoft.com
     - xb.dlservice.microsoft.com
-    - +.bing.com.cn
-    - +.cn.bing.com
-    - +.cn.bing.net
-    - +.cn.mm.bing.net
-    - +.ditu.live.com
-    - bj1.api.bing.com
-    - emoi-cncdn.bing.com
-    - +.microsoftreactor.cn
-    - +.microsoftreactor.com.cn
-    - +.reactorms.com.cn
     - www.microsoft.com
     - +.microsoftnews.cn
     - +.msn.cn
@@ -743,73 +779,37 @@ payload:
     - +.azure-dns-8.cn
     - +.azure-dns-9.cn
     - +.azure-dns-10.cn
-    - +.aboutamazon.cn
-    - +.alexafund.cn
-    - +.alexafund.com.cn
-    - +.amazon.cn
-    - +.amazonbusiness.cn
-    - +.amazonbusiness.com.cn
-    - +.amazonchoice.cn
-    - +.amazonchoice.com.cn
-    - +.amazonchoices.cn
-    - +.amazonchoices.com.cn
-    - +.amazoninspire.cn
-    - +.amazoninspire.com.cn
-    - +.amazonlaunchpad.cn
-    - +.amazonlaunchpad.com.cn
-    - +.amazonlending.com.cn
-    - +.amazonnow.cn
-    - +.amazonnow.com.cn
-    - +.assoc-amazon.cn
-    - +.primeday.cn
-    - +.primeday.com.cn
-    - +.yamaxun.cn
-    - +.z.cn
-    - images-cn.ssl-images-amazon.com
-    - images-cn-8.ssl-images-amazon.com
-    - +.a2z.org.cn
-    - +.amazonaws.cn
-    - +.amazonaws.com.cn
-    - +.amazonwebservices.com.cn
-    - +.amazonworkdocs.cn
-    - +.amazonworkdocs.com.cn
-    - +.asfiovnxocqpcry.com.cn
-    - +.aws-border.cn
-    - +.aws-icp-domain-manager.cn
-    - +.awsapps.cn
-    - +.awsapps.com.cn
-    - +.awsstatic.cn
-    - +.cloudfront-cn.net
-    - +.cloudfront-test.cn
-    - +.cloudfront.cn
-    - +.nwcdcloud.cn
-    - +.nwcdcloud.com.cn
-    - +.nwcddns.cn
-    - +.nwcdinfosec.cn
-    - +.route53.cn
-    - +.sagemaker.com.cn
-    - +.amzndns-cn.biz
-    - +.amzndns-cn.cn
-    - +.amzndns-cn.com
-    - +.amzndns-cn.net
-    - +.kindle.cn
-    - +.kindleoasis.cn
-    - +.kindleoasis.com.cn
-    - +.amazonprimevideo.cn
-    - +.amazonprimevideo.com.cn
+    - +.bing.com.cn
+    - +.cn.bing.com
+    - +.cn.bing.net
+    - +.cn.mm.bing.net
+    - +.ditu.live.com
+    - bj1.api.bing.com
+    - emoi-cncdn.bing.com
+    - +.microsoftreactor.cn
+    - +.microsoftreactor.com.cn
+    - +.reactorms.com.cn
     - +.geforce.cn
     - +.gputechconf.cn
     - +.nvidia.cn
     - cn.download.nvidia.com
-    - +.quickconnect.cn
-    - +.synology.cn
-    - +.yahoo.cn
-    - +.yahoo.com.cn
-    - +.sandisk.cn
+    - +.amplifi.com.cn
+    - +.frontrow.com.cn
+    - +.ubnt.com
+    - +.ubnt.com.cn
+    - +.ui.com.cn
+    - +.uum.com.cn
+    - +.uwn.com
+    - +.heptio.cn
     - +.cisco.cn
     - +.cisco.com.cn
     - +.network-auth.cn
     - +.webex.com.cn
+    - +.sandisk.cn
     - +.teamviewer.cn
-    - +.canon.cn
-    - +.canon.com.cn
+    - +.gpsonextra.net
+    - +.izatcloud.net
+    - +.qceventscenter.com.cn
+    - +.qualcomm.cn
+    - +.qualcomm.cn.cdn.cloudflare.net
+    - +.xtracloud.cn

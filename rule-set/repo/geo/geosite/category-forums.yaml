@@ -1,6 +1,6 @@
 payload:
-    - +.18p2p.com
-    - +.avsforum.com
+    - +.redditblog.com
+    - +.rutracker.nl
     - +.disp.cc
     - +.doom9.org
     - +.eyny.com
@@ -10,23 +10,8 @@ payload:
     - +.parler.com
     - +.pincong.rocks
     - +.safechat.com
-    - +.sis001.com
+    - +.18p2p.com
     - +.v2ex.com
-    - +.2ch.net
-    - +.5ch.net
-    - +.lih.kg
-    - +.lihkg.com
-    - +.5i01.com
-    - +.mobile01.com
-    - +.maintracker.org
-    - +.rutracker.cc
-    - +.rutracker.cr
-    - +.rutracker.me
-    - +.rutracker.nl
-    - +.rutracker.org
-    - +.rutrecker.net
-    - +.rutrk.org
-    - +.yamibo.com
     - +.6park.com
     - +.6parkbbs.com
     - +.6parknews.com
@@ -34,29 +19,35 @@ payload:
     - +.popo8.com
     - +.parkvv.com
     - +.xwbo.com
-    - +.ck101.com
-    - +.ckcdn.com
-    - +.ckck.fun
-    - +.broadbandreports.com
-    - +.dslr.net
-    - +.dslreports.com
-    - +.ptt.cc
+    - +.hkgolden.com
+    - +.hkgolden.media
+    - +.lih.kg
+    - +.lihkg.com
+    - +.4cdn.org
+    - +.4chan.org
+    - +.4channel.org
+    - +.dcard.cc
+    - +.dcard.io
+    - +.dcard.link
+    - +.dcard.tw
+    - +.5i01.com
+    - +.mobile01.com
+    - +.redditinc.com
     - +.ptt2.cc
     - +.ptt3.cc
     - +.redd.it
     - +.reddit.com
-    - +.redditblog.com
-    - +.reddithelp.com
-    - +.redditinc.com
+    - +.sis001.com
+    - +.avsforum.com
+    - +.ptt.cc
     - +.redditmail.com
     - +.redditmedia.com
     - +.redditspace.com
     - +.redditstatic.com
     - +.redditstatus.com
-    - +.dcard.cc
-    - +.dcard.io
-    - +.dcard.link
-    - +.dcard.tw
+    - +.dslreports.com
+    - +.dslr.net
+    - +.yamibo.com
     - +.pimg.tw
     - +.pixanalytics.com
     - +.pixfs.net
@@ -65,16 +56,25 @@ payload:
     - +.pixnet.pro
     - +.pixnet.tw
     - +.pixplug.in
-    - +.4cdn.org
-    - +.4chan.org
-    - +.4channel.org
-    - +.hkgolden.com
-    - +.hkgolden.media
+    - +.broadbandreports.com
     - +.qr.ae
     - +.quora.com
     - +.quoracdn.net
     - +.poe.com
     - +.poecdn.net
-    - +.reddit.app.link
+    - +.maintracker.org
+    - +.rutracker.cc
+    - +.rutracker.cr
+    - +.rutracker.me
+    - +.reddithelp.com
+    - +.rutracker.org
+    - +.rutrecker.net
+    - +.rutrk.org
+    - +.2ch.net
+    - +.5ch.net
+    - +.ck101.com
+    - +.ckcdn.com
+    - +.ckck.fun
     - +.pixinsight.com.tw
+    - +.reddit.app.link
     - +.reddit.map.fastly.net

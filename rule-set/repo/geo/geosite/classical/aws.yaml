@@ -1,28 +1,29 @@
 payload:
     - DOMAIN-SUFFIX,aws
-    - DOMAIN-SUFFIX,awscommandlineinterface.com
+    - DOMAIN-SUFFIX,awsbraket.com
     - DOMAIN-SUFFIX,amazonaws.info
-    - DOMAIN-SUFFIX,aesworkshops.com
-    - DOMAIN-SUFFIX,awsedstart.com
-    - DOMAIN-SUFFIX,amazonaws.biz
-    - DOMAIN-SUFFIX,awseducate.net
-    - DOMAIN-SUFFIX,amazonaws.com
     - DOMAIN-SUFFIX,awseducate.com
+    - DOMAIN-SUFFIX,amazonaws-china.com
+    - DOMAIN-SUFFIX,amazonaws.biz
+    - DOMAIN-SUFFIX,amzndns.org
+    - DOMAIN-SUFFIX,amazonaws.com
+    - DOMAIN-SUFFIX,awsedstart.com
     - DOMAIN-SUFFIX,amazonaws.net
     - DOMAIN-SUFFIX,amazonaws.org
     - DOMAIN-SUFFIX,amazonaws.tv
     - DOMAIN-SUFFIX,amazonses.com
-    - DOMAIN-SUFFIX,amazonworkdocs.com
+    - DOMAIN-SUFFIX,awscommandlineinterface.com
     - DOMAIN-SUFFIX,amplifyapp.com
     - DOMAIN-SUFFIX,amplifyframework.com
     - DOMAIN-SUFFIX,aws-iot-hackathon.com
+    - DOMAIN-SUFFIX,aws.com
     - DOMAIN-SUFFIX,awsautopilot.com
     - DOMAIN-SUFFIX,awsautoscaling.com
-    - DOMAIN-SUFFIX,awsbraket.com
     - DOMAIN-SUFFIX,acmvalidations.com
-    - DOMAIN-SUFFIX,amazonaws-china.com
+    - DOMAIN-SUFFIX,amazonworkdocs.com
     - DOMAIN-SUFFIX,acmvalidationsaws.com
-    - DOMAIN-SUFFIX,amzndns.org
+    - DOMAIN-SUFFIX,aesworkshops.com
+    - DOMAIN-SUFFIX,awseducate.net
     - DOMAIN-SUFFIX,awseducate.org
     - DOMAIN-SUFFIX,awsglobalaccelerator.com
     - DOMAIN-SUFFIX,awsloft-johannesburg.com

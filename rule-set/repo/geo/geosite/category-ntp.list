@@ -1,5 +1,6 @@
 time.apple.com
 time.euro.apple.com
+time.aws.com
 time.facebook.com
 time1.facebook.com
 time2.facebook.com
@@ -91,6 +92,7 @@ ntp4.aliyun.com
 ntp5.aliyun.com
 ntp6.aliyun.com
 ntp7.aliyun.com
+time.amazonaws.cn
 time.izatcloud.net
 time.xtracloud.net
 ntp.tencent.com

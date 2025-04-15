@@ -10,118 +10,23 @@ payload:
     - +.ledu.com
     - +.pearvideo.com
     - +.wo1wan.com
+    - +.lizhi.fm
+    - +.lizhifm.com
+    - +.sfacg.com
+    - +.tiancity.com
+    - +.tiancitycdn.com
+    - +.kumiao.com
+    - +.youku.com
+    - +.ykimg.com
+    - +.mmstat.com
+    - +.soku.com
+    - +.cibntv.net
+    - +.jjwxc.net
+    - +.ciweimao.com
+    - +.hbooker.com
+    - +.kuangxiangit.com
     - +.gitv.cn
     - +.gitv.tv
-    - +.61.com
-    - +.taomee.com
-    - +.acplay.net
-    - +.dandanplay.com
-    - +.bbtv.cn
-    - +.bestvcdn.cn
-    - +.bestvcdn.com
-    - +.bestvcdn.net
-    - +.smgbb.cn
-    - +.gamersky.com
-    - +.jjwxc.net
-    - +.sfacg.com
-    - +.vgtime.com
-    - +.bilicomic.com
-    - +.bilicomics.com
-    - +.acg.tv
-    - +.acgvideo.com
-    - +.animetamashi.cn
-    - +.animetamashi.com
-    - +.anitama.cn
-    - +.anitama.net
-    - +.b23.tv
-    - +.bigfun.cn
-    - +.bigfunapp.cn
-    - +.bili22.cn
-    - +.bili2233.cn
-    - +.bili23.cn
-    - +.bili33.cn
-    - +.biliapi.com
-    - +.biliapi.net
-    - +.bilibili.cc
-    - +.bilibili.cn
-    - +.bilibili.com
-    - +.bilibili.net
-    - +.bilibilipay.cn
-    - +.bilibilipay.com
-    - +.bilicdn1.com
-    - +.bilicdn2.com
-    - +.bilicdn3.com
-    - +.bilicdn4.com
-    - +.bilicdn5.com
-    - +.biligo.com
-    - +.biliimg.com
-    - +.bilivideo.cn
-    - +.bilivideo.com
-    - +.bilivideo.net
-    - +.hdslb.com
-    - +.hdslb.org
-    - +.im9.com
-    - +.maoercdn.com
-    - +.mincdn.com
-    - +.yo9.com
-    - +.jiuyue919.com
-    - +.qimao.com
-    - +.qm989.com
-    - +.qmniu.com
-    - +.quehu.com
-    - +.wtzw.com
-    - +.fanxingliveshow.com
-    - +.kgimg.com
-    - +.kglink.cn
-    - +.ktv.com
-    - +.kugoo.com
-    - +.kugou.com
-    - +.kugou.net
-    - +.kugouaudio.com
-    - +.kugouipv6.com
-    - +.kugoukid.com
-    - +.kugouliveshow.com
-    - +.kugouringtone.com
-    - +.kugousenior.com
-    - +.kugoustore.com
-    - +.kugouvoice.com
-    - +.kugouyouth.com
-    - +.mfuns.cn
-    - +.acfun.cn
-    - +.aixifan.com
-    - +.biji.com
-    - +.ddmogo.com
-    - +.igetget.cn
-    - +.igetget.com
-    - +.luojilab.com
-    - +.mogoo.com
-    - +.sao.cn
-    - +.saolife.com
-    - +.dtstatic.com
-    - +.duitang.com
-    - +.71.am
-    - +.iqiyi.com
-    - +.iqiyipic.com
-    - +.pps.tv
-    - +.ppsimg.com
-    - +.qiyi.com
-    - +.qiyipic.com
-    - +.qy.net
-    - +.71edge.com
-    - +.koowo.cn
-    - +.koowo.com
-    - +.kuwo.cn
-    - +.pplive.cn
-    - +.pplive.com
-    - +.pptv.com
-    - +.qingting.fm
-    - +.qtfm.cn
-    - +.aichongzoo.cn
-    - +.hzdtv.tv
-    - +.hzman.net
-    - +.wasu.cn
-    - +.wasu.tv
-    - +.wasumedia.cn
     - +.3304399.com
     - +.3304399.net
     - +.3839.com
@@ -177,9 +82,137 @@ payload:
     - +.webgame163.com
     - +.youba.com
     - +.yxhhdl.com
-    - +.ciweimao.com
-    - +.hbooker.com
-    - +.kuangxiangit.com
+    - +.bilicomic.com
+    - +.bilicomics.com
+    - +.acg.tv
+    - +.acgvideo.com
+    - +.animetamashi.cn
+    - +.animetamashi.com
+    - +.anitama.cn
+    - +.anitama.net
+    - +.b23.tv
+    - +.bigfun.cn
+    - +.bigfunapp.cn
+    - +.bili22.cn
+    - +.bili2233.cn
+    - +.bili23.cn
+    - +.bili33.cn
+    - +.biliapi.com
+    - +.biliapi.net
+    - +.bilibili.cc
+    - +.bilibili.cn
+    - +.bilibili.com
+    - +.bilibili.net
+    - +.bilibilipay.cn
+    - +.bilibilipay.com
+    - +.bilicdn1.com
+    - +.bilicdn2.com
+    - +.bilicdn3.com
+    - +.bilicdn4.com
+    - +.bilicdn5.com
+    - +.biligo.com
+    - +.biliimg.com
+    - +.bilivideo.cn
+    - +.bilivideo.com
+    - +.bilivideo.net
+    - +.hdslb.com
+    - +.hdslb.org
+    - +.im9.com
+    - +.maoercdn.com
+    - +.mincdn.com
+    - +.yo9.com
+    - +.hifuntv.com
+    - +.hitv.com
+    - +.hnbntv.com
+    - +.hunaniptv.com
+    - +.hunantv.com
+    - +.imgo.tv
+    - +.mgtv.com
+    - +.huya.com
+    - +.msstatic.com
+    - +.71.am
+    - +.iqiyi.com
+    - +.iqiyipic.com
+    - +.pps.tv
+    - +.ppsimg.com
+    - +.qiyi.com
+    - +.qiyipic.com
+    - +.qy.net
+    - +.71edge.com
+    - +.ku6.com
+    - +.ku6cdn.com
+    - +.ku6img.com
+    - +.jiuyue919.com
+    - +.qimao.com
+    - +.qm989.com
+    - +.qmniu.com
+    - +.quehu.com
+    - +.wtzw.com
+    - +.u17.com
+    - +.u17i.com
+    - +.u17t.com
+    - +.ali213.net
+    - +.mfuns.cn
+    - +.acplay.net
+    - +.dandanplay.com
+    - +.fanxingliveshow.com
+    - +.kgimg.com
+    - +.kglink.cn
+    - +.ktv.com
+    - +.kugoo.com
+    - +.kugou.com
+    - +.kugou.net
+    - +.kugouaudio.com
+    - +.kugouipv6.com
+    - +.kugoukid.com
+    - +.kugouliveshow.com
+    - +.kugouringtone.com
+    - +.kugousenior.com
+    - +.kugoustore.com
+    - +.kugouvoice.com
+    - +.kugouyouth.com
+    - +.koowo.cn
+    - +.koowo.com
+    - +.kuwo.cn
+    - +.aichongzoo.cn
+    - +.hzdtv.tv
+    - +.hzman.net
+    - +.wasu.cn
+    - +.wasu.tv
+    - +.wasumedia.cn
+    - +.ro.com
+    - +.xd.cn
+    - +.xd.com
+    - +.xdcdn.net
+    - +.xindong.com
+    - +.tapimg.com
+    - +.tapimg.net
+    - +.taptap.cn
+    - +.taptap.com
+    - +.taptap.io
+    - +.taptapdada.com
+    - +.zhanqi.tv
+    - +.kkmh.com
+    - +.kuaikanmanhua.com
+    - +.biji.com
+    - +.ddmogo.com
+    - +.igetget.cn
+    - +.igetget.com
+    - +.luojilab.com
+    - +.mogoo.com
+    - +.sao.cn
+    - +.saolife.com
+    - +.bbtv.cn
+    - +.bestvcdn.cn
+    - +.bestvcdn.com
+    - +.bestvcdn.net
+    - +.smgbb.cn
+    - +.douyu.com
+    - +.douyu.tv
+    - +.douyucdn.cn
+    - +.douyucdn2.cn
+    - +.douyuscdn.com
+    - +.douyutv.com
     - +.activity-zhendingtech.com
     - +.changdunovel.com
     - +.fanqienovel.com
@@ -208,26 +241,7 @@ payload:
     - +.qznovelpic.com
     - +.qznovelstatic.com
     - +.qznovelvod.com
-    - +.ximalaya.com
-    - +.xmcdn.com
-    - +.zhanqi.tv
-    - +.u17.com
-    - +.u17i.com
-    - +.u17t.com
-    - +.kumiao.com
-    - +.youku.com
-    - +.ykimg.com
-    - +.mmstat.com
-    - +.soku.com
-    - +.cibntv.net
-    - +.douyu.com
-    - +.douyu.tv
-    - +.douyucdn.cn
-    - +.douyucdn2.cn
-    - +.douyuscdn.com
-    - +.douyutv.com
-    - +.kkmh.com
-    - +.kuaikanmanhua.com
+    - +.gcores.com
     - +.gifshow.com
     - +.inkwai.com
     - +.ksapisrv.com
@@ -236,35 +250,6 @@ payload:
     - +.kuaishouzt.com
     - +.kwimgs.com
     - +.yximgs.com
-    - +.hifuntv.com
-    - +.hitv.com
-    - +.hnbntv.com
-    - +.hunaniptv.com
-    - +.hunantv.com
-    - +.imgo.tv
-    - +.mgtv.com
-    - +.lizhi.fm
-    - +.lizhifm.com
-    - +.tgbus.com
-    - +.tiancity.com
-    - +.tiancitycdn.com
-    - +.ro.com
-    - +.xd.cn
-    - +.xd.com
-    - +.xdcdn.net
-    - +.xindong.com
-    - +.tapimg.com
-    - +.tapimg.net
-    - +.taptap.cn
-    - +.taptap.com
-    - +.taptap.io
-    - +.taptapdada.com
-    - +.3dmgame.com
-    - +.dmzj.com
-    - +.gcores.com
-    - +.ku6.com
-    - +.ku6cdn.com
-    - +.ku6img.com
     - +.le.com
     - +.leautolink.com
     - +.lecloud.com
@@ -274,13 +259,28 @@ payload:
     - +.letv.com
     - +.letvcdn.com
     - +.letvimg.com
-    - +.miaopai.com
-    - +.muwai.com
-    - +.ali213.net
+    - +.tgbus.com
+    - +.ximalaya.com
+    - +.xmcdn.com
+    - +.acfun.cn
+    - +.aixifan.com
     - +.cowlevel.net
     - +.cdncl.net
-    - +.huya.com
-    - +.msstatic.com
+    - +.dmzj.com
+    - +.dtstatic.com
+    - +.duitang.com
+    - +.gamersky.com
+    - +.miaopai.com
+    - +.muwai.com
+    - +.pplive.cn
+    - +.pplive.com
+    - +.pptv.com
+    - +.3dmgame.com
+    - +.61.com
+    - +.taomee.com
+    - +.vgtime.com
+    - +.qingting.fm
+    - +.qtfm.cn
     - +.bestv.com.cn
     - +.bestvcdn.com.cn
     - +.bilibili.tv
@@ -293,25 +293,12 @@ payload:
     - +.biligame.co
     - +.biligame.com
     - +.biligame.net
-    - +.mhystatic.com
-    - +.mhyurl.cn
-    - +.mihayo.com
-    - +.mihayou.com
-    - +.mihoyo.com
-    - +.mihoyocg.com
-    - +.mihoyogift.com
-    - +.mihoyomall.com
-    - +.miyoushe.com
-    - +.benghuai.com
-    - +.bh3.com
-    - +.bhsr.com
-    - +.themisweeps.com
-    - +.yuanshen.com
-    - +.juequling.com
-    - +.ads.service.kugou.com
-    - +.adserviceretry.kglink.cn
-    - +.adserviceretry.kugou.com
-    - apilog-web.acfun.cn
+    - +.click.hunantv.com
+    - +.da.hunantv.com
+    - +.da.mgtv.com
+    - +.log.hunantv.com
+    - +.log.v2.hunantv.com
+    - +.res.hunantv.com
     - +.iq.com
     - +.a.ckm.iqiyi.com
     - +.ad.m.iqiyi.com
@@ -330,6 +317,24 @@ payload:
     - +.msg2.video.qiyi.com
     - +.policy.video.iqiyi.com
     - +.yuedu.iqiyi.com
+    - +.ads.service.kugou.com
+    - +.adserviceretry.kglink.cn
+    - +.adserviceretry.kugou.com
+    - +.mhystatic.com
+    - +.mhyurl.cn
+    - +.mihayo.com
+    - +.mihayou.com
+    - +.mihoyo.com
+    - +.mihoyocg.com
+    - +.mihoyogift.com
+    - +.mihoyomall.com
+    - +.miyoushe.com
+    - +.benghuai.com
+    - +.bh3.com
+    - +.bhsr.com
+    - +.themisweeps.com
+    - +.yuanshen.com
+    - +.juequling.com
     - ads3-normal-hl.zijieapi.com
     - ads5-normal-hl.zijieapi.com
     - log3-applog-hl.fqnovel.com
@@ -346,12 +351,6 @@ payload:
     - +.e.kuaishou.com
     - log-sdk.gifshow.com
     - wlog.kuaishou.com
-    - +.click.hunantv.com
-    - +.da.hunantv.com
-    - +.da.mgtv.com
-    - +.log.hunantv.com
-    - +.log.v2.hunantv.com
-    - +.res.hunantv.com
     - +.api.game.letvstore.com
     - +.ark.letv.com
     - +.dc.letv.com
@@ -365,3 +364,4 @@ payload:
     - +.pro.letv.com
     - +.stat.letv.com
     - +.static.app.m.letv.com
+    - apilog-web.acfun.cn

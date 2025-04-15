@@ -4,7 +4,6 @@ payload:
     - DOMAIN-SUFFIX,wetv.vip
     - DOMAIN-SUFFIX,wetvinfo.com
     - DOMAIN,wetv.qq.com
-    - DOMAIN-SUFFIX,supercell.com
     - DOMAIN-SUFFIX,intltencentcos.com
     - DOMAIN-SUFFIX,ap-hongkong.myqcloud.com
     - DOMAIN-SUFFIX,ap-singapore.myqcloud.com
@@ -66,3 +65,4 @@ payload:
     - DOMAIN-SUFFIX,sgp.file.myqcloud.com
     - DOMAIN-SUFFIX,ca.file.myqcloud.com
     - DOMAIN-SUFFIX,ger.file.myqcloud.com
+    - DOMAIN-SUFFIX,supercell.com

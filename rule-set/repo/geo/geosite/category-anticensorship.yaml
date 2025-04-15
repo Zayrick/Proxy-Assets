@@ -1,5 +1,5 @@
 payload:
-    - +.opengw.net
+    - +.v2ray.com
     - +.shadowsocks.org
     - +.browserleaks.com
     - +.bypasscensorship.org
@@ -16,7 +16,7 @@ payload:
     - +.guardianproject.info
     - +.hiddify.com
     - +.jitsi.org
-    - +.vpngate.net
+    - +.v2fly.org
     - +.ntc.party
     - +.onionshare.org
     - +.ooni.org
@@ -25,7 +25,7 @@ payload:
     - +.psiphon.ca
     - +.psiphon3.com
     - +.sagernet.org
-    - +.vpngate.jp
+    - +.v2ray.cool
     - +.sspanel.net
     - +.stunnel.org
     - +.telex.cc
@@ -38,9 +38,9 @@ payload:
     - +.wikileaks.org
     - +.wireguard.com
     - +.zeronet.io
-    - +.v2ray.com
-    - +.v2ray.cool
-    - +.v2fly.org
+    - +.softether.org
+    - +.softether-download.com
+    - +.torproject.org
     - +.via0.com
     - +.akasha.world
     - +.lokinet.org
@@ -60,23 +60,23 @@ payload:
     - +.citizenlab.ca
     - +.citizenlab.org
     - +.epicbrowser.com
-    - +.haveibeenpwned.com
-    - +.softether-download.com
-    - +.softether.org
-    - +.paskoocheh.com
-    - +.wikiunblocked.org
-    - +.pao-pao.net
-    - +.pwnedpasswords.com
-    - +.getlantern.org
-    - +.lantern.io
-    - +.torproject.org
-    - +.censorship.no
     - +.applecensorship.com
+    - +.paskoocheh.com
+    - +.lantern.io
+    - +.getlantern.org
+    - +.censorship.no
+    - +.vpngate.net
     - +.freebrowser.org
     - +.freewechat.com
     - +.freeweibo.com
     - +.freezhihu.org
     - +.greatfire.org
+    - +.pao-pao.net
+    - +.wikiunblocked.org
+    - +.haveibeenpwned.com
+    - +.pwnedpasswords.com
+    - +.opengw.net
+    - +.vpngate.jp
     - +.ipfs.eternum.io
     - +.gateway.pinata.cloud
     - +.ipfs.runfission.com
