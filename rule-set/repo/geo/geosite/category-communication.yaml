@@ -1,6 +1,15 @@
 payload:
     - discord-attachments-uploads-prd.storage.googleapis.com
     - hammerandchisel.ssl.zendesk.com
+    - +.freenode.net
+    - +.intercom.com
+    - +.intercom.io
+    - +.intercomassets.com
+    - +.intercomcdn.com
+    - +.fbmessenger.com
+    - +.m.me
+    - +.messenger.com
+    - +.nbabot.net
     - +.cdn-telegram.org
     - +.comments.app
     - +.contest.com
@@ -20,6 +29,9 @@ payload:
     - +.tg.dev
     - +.tx.me
     - +.usercontent.dev
+    - +.clubhouse.com
+    - +.clubhouseapi.com
+    - +.joinclubhouse.com
     - +.dis.gd
     - +.discord.co
     - +.discord.com
@@ -46,10 +58,8 @@ payload:
     - +.watchanimeattheoffice.com
     - +.discordapp.io
     - +.discordcdn.com
-    - +.intercom.com
-    - +.intercom.io
-    - +.intercomassets.com
-    - +.intercomcdn.com
+    - +.keybase.io
+    - +.keybaseapi.com
     - +.linemobile.com
     - +.lineshoppingseller.com
     - +.line-apps-beta.com
@@ -68,6 +78,15 @@ payload:
     - +.gcld-line.com
     - +.linemyshop.com
     - +.line.me
+    - +.arewereadyyet.com
+    - +.cinny.in
+    - +.element.io
+    - +.fluffychat.im
+    - +.matrix.org
+    - +.matrix.to
+    - +.modular.im
+    - +.riot.im
+    - +.vector.im
     - +.signal.art
     - +.signal.group
     - +.signal.link
@@ -76,10 +95,6 @@ payload:
     - +.signal.org
     - +.signalusers.org
     - +.whispersystems.org
-    - +.fbmessenger.com
-    - +.m.me
-    - +.messenger.com
-    - +.nbabot.net
     - +.slack-core.com
     - +.slack-edge.com
     - +.slack-files.com
@@ -102,21 +117,6 @@ payload:
     - +.whatsapp.org
     - +.whatsapp.tv
     - +.whatsappbrand.com
-    - +.clubhouse.com
-    - +.clubhouseapi.com
-    - +.joinclubhouse.com
-    - +.freenode.net
-    - +.keybase.io
-    - +.keybaseapi.com
-    - +.arewereadyyet.com
-    - +.cinny.in
-    - +.element.io
-    - +.fluffychat.im
-    - +.matrix.org
-    - +.matrix.to
-    - +.modular.im
-    - +.riot.im
-    - +.vector.im
     - +.linefriends.com.tw
     - +.line.naver.jp
     - +.graph.whatsapp.com
