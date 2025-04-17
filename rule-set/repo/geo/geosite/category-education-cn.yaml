@@ -43,6 +43,16 @@ payload:
     - +.mooc.cn
     - +.openlearning.com
     - +.pmphmooc.com
+    - +.applysquare.com
+    - +.applysquare.net
+    - +.hugecore.net
+    - +.shareintelli.com
+    - +.mojidict.com
+    - +.speiyou.com
+    - +.xesimg.com
+    - +.xueersi.com
+    - +.rainclassroom.com
+    - +.yuketang.cn
     - +.17zuoye.cn
     - +.17zuoye.com
     - +.17zuoye.net
@@ -51,6 +61,9 @@ payload:
     - +.hjfile.cn
     - +.hujiang.com
     - +.yeshj.com
+    - +.koocdn.com
+    - +.koolearn.com
+    - +.koopass.com
     - +.baydn.com
     - +.shanbay.com
     - +.banmaaike.com
@@ -65,18 +78,5 @@ payload:
     - +.fenbike.com
     - +.fenbilantian.cn
     - +.fenbilantian.com
-    - +.rainclassroom.com
-    - +.yuketang.cn
-    - +.applysquare.com
-    - +.applysquare.net
-    - +.hugecore.net
-    - +.shareintelli.com
-    - +.mojidict.com
-    - +.koocdn.com
-    - +.koolearn.com
-    - +.koopass.com
-    - +.speiyou.com
-    - +.xesimg.com
-    - +.xueersi.com
     - +.zhihuishu.com
     - +.icve.com.cn

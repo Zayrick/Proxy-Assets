@@ -30,7 +30,10 @@ payload:
     - +.openlibrary.org
     - +.4pcdn.org
     - +.4plebs.org
-    - +.csis.org
+    - +.emojipedia.org
+    - +.worldemojiawards.com
+    - +.worldemojiday.com
+    - +.xn--yt8h.la
     - +.f-dro1d.org
     - +.f-droid.com
     - +.f-droid.org
@@ -97,16 +100,16 @@ payload:
     - +.messybrainz.org
     - +.metabrainz.org
     - +.musicbrainz.org
-    - +.nist.gov
-    - +.time.gov
+    - +.paskoocheh.com
+    - +.rolfoundation.org
+    - +.rolsociety.org
     - +.ccstatic.org
     - +.creativecommons.org
     - +.creativecommons.engineering
     - +.licensebuttons.net
-    - +.emojipedia.org
-    - +.worldemojiawards.com
-    - +.worldemojiday.com
-    - +.xn--yt8h.la
+    - +.csis.org
+    - +.nist.gov
+    - +.time.gov
     - +.openmaps.org
     - +.openstreetmap.com
     - +.openstreetmap.net
@@ -116,7 +119,4 @@ payload:
     - +.osmfoundation.org
     - +.stateofthemap.com
     - +.stateofthemap.org
-    - +.paskoocheh.com
     - +.ppy.sh
-    - +.rolfoundation.org
-    - +.rolsociety.org

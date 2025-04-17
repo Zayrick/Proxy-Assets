@@ -73,6 +73,7 @@ payload:
     - wscont1.apps.microsoft.com
     - wscont2.apps.microsoft.com
     - xb.dlservice.microsoft.com
+    - +.xboxlive.cn
     - +.21vbc.com
     - +.21vbluecloud.com
     - +.21vbluecloud.net
@@ -171,4 +172,3 @@ payload:
     - www.microsoft.com
     - +.microsoftnews.cn
     - +.msn.cn
-    - +.xboxlive.cn

@@ -34,13 +34,13 @@ payload:
     - +.office
     - +.skype
     - +.windows
-    - +.azure
     - +.xbox
     - +.onedriveupdater
     - +.onedrive
     - +.bing
-    - +.windowsupdate.com
-    - +.bingapistatistics.com
+    - +.azure
+    - +.winhec.com
+    - +.msft.net
     - +.microsoft.cl
     - +.microsoft.com
     - +.microsoft.cz
@@ -64,7 +64,7 @@ payload:
     - +.microsoft.pl
     - +.microsoft.pt
     - +.microsoft.red
-    - +.microsoft.ro
+    - +.forzaracingchampionship.com
     - +.microsoft.rs
     - +.microsoft.ru
     - +.microsoft.se
@@ -186,14 +186,15 @@ payload:
     - +.mschallenge2018.com
     - +.msecnd.net
     - +.msedge.net
-    - +.azure-devices-int.net
-    - +.msft.net
+    - +.msft.info
+    - +.sharepoint.cn
     - +.msftauth.net
     - +.msftconnecttest.com
     - +.msfteducation.ca
     - +.msftncsi.com
     - +.msftnet.org
     - +.msgamesresearch.com
+    - +.mshome.net
     - +.msocdn.com
     - +.msturing.org
     - +.msudalosti.com
@@ -239,7 +240,7 @@ payload:
     - +.spo-msedge.net
     - +.staffhub.ms
     - +.successwithteams.com
-    - +.surface.com
+    - +.livefilestore.com
     - +.svc.ms
     - +.sway-cdn.com
     - +.sway.com
@@ -267,15 +268,53 @@ payload:
     - +.windowsphone-int.com
     - +.windowsphone.com
     - +.windowssearch.com
+    - +.windowsupdate.com
     - +.microsoft.cat
-    - +.winhec.com
     - +.winhec.net
     - +.yammer.com
-    - +.aadrm.com
-    - +.elderscrolls.com
-    - +.doom.com
-    - +.msft.info
+    - +.forzamotorsport.net
+    - +.surface.com
     - +.microsoft.ch
+    - +.microsoft.ro
+    - +.forzarc.com
+    - +.gamepass.com
+    - +.orithegame.com
+    - +.renovacionxboxlive.com
+    - +.tellmewhygame.com
+    - +.xbox.co
+    - +.xbox.com
+    - +.xbox.eu
+    - +.xbox.org
+    - +.xbox360.co
+    - +.xbox360.com
+    - +.xbox360.eu
+    - +.xbox360.org
+    - +.xboxab.com
+    - +.xboxgamepass.com
+    - +.xboxgamestudios.com
+    - +.xboxlive.com
+    - +.xboxone.co
+    - +.xboxone.com
+    - +.xboxone.eu
+    - +.xboxplayanywhere.com
+    - +.xboxservices.com
+    - +.xboxstudios.com
+    - +.xbx.lv
+    - +.beth.games
+    - +.bethesda.net
+    - +.bethesdagamestudios.com
+    - +.bethsoft.com
+    - +.doom.com
+    - +.elderscrolls.com
+    - +.callersbane.com
+    - +.minecraft.net
+    - +.minecraftservices.com
+    - +.minecraftshop.com
+    - +.mojang.com
+    - +.microsoft.ca
+    - +.aadrm.com
+    - +.azure-devices-int.net
+    - +.azure-devices.net
     - +.azure-mobile.net
     - +.azure-sphere.com
     - +.azure-test.net
@@ -329,14 +368,14 @@ payload:
     - +.azure-dns.info
     - +.azure-dns.net
     - +.azure-dns.org
-    - +.microsoft.ca
+    - +.microsoft.by
     - +.dictate.ms
     - +.sprinklesapp.com
     - +.bing.com
     - +.bingads.com
     - +.bingagencyawards.com
     - +.bingapis.com
-    - +.azure-devices.net
+    - +.bingapistatistics.com
     - +.bingparachute.com
     - +.bingsandbox.com
     - +.bingvisualsearch.com
@@ -356,9 +395,8 @@ payload:
     - +.office365love.com
     - +.office365tw.com
     - +.renovacionoffice.com
-    - +.bethsoft.com
-    - +.bethesdagamestudios.com
-    - +.bethesda.net
+    - +.1drv.com
+    - +.onedrive.com
     - +.githubhackathon.com
     - +.ghcr.io
     - +.githubnext.com
@@ -384,7 +422,6 @@ payload:
     - +.atom.io
     - +.npm.community
     - +.npmjs.com
-    - +.beth.games
     - +.adaptivecards.io
     - +.api-extractor.com
     - +.apisof.net
@@ -435,7 +472,7 @@ payload:
     - +.vscode-cdn.net
     - +.vscode-unpkg.net
     - +.xamarin.com
-    - +.mojang.com
+    - +.microsoft.az
     - +.msocsp.com
     - +.microsoftnews.cc
     - +.microsoftnews.com
@@ -454,49 +491,13 @@ payload:
     - +.msnkids.com
     - +.microsoftstart.com
     - +.start.com
-    - +.microsoft.by
     - +.microsoft.be
-    - +.onedrive.com
-    - +.1drv.com
-    - +.livefilestore.com
-    - +.sharepoint.cn
-    - +.minecraftshop.com
-    - +.minecraftservices.com
-    - +.minecraft.net
-    - +.callersbane.com
-    - +.xbx.lv
-    - +.xboxstudios.com
-    - +.xboxservices.com
-    - +.microsoft.az
-    - +.forzamotorsport.net
-    - +.forzaracingchampionship.com
-    - +.forzarc.com
-    - +.gamepass.com
-    - +.orithegame.com
-    - +.renovacionxboxlive.com
-    - +.tellmewhygame.com
-    - +.xbox.co
-    - +.xbox.com
-    - +.xbox.eu
-    - +.xbox.org
-    - +.xbox360.co
-    - +.xbox360.com
-    - +.xbox360.eu
-    - +.xbox360.org
-    - +.xboxab.com
-    - +.xboxgamepass.com
-    - +.xboxgamestudios.com
-    - +.xboxlive.com
-    - +.xboxone.co
-    - +.xboxone.com
-    - +.xboxone.eu
-    - +.xboxplayanywhere.com
-    - +.visualstudio.co.uk
-    - +.spoprod-a.akamaihd.net
-    - +.live.com.au
-    - +.skypedata.akadns.net
     - +.microsoftstore.com.hk
+    - +.skypedata.akadns.net
     - +.skype-edf.akadns.net
+    - +.visualstudio.co.uk
+    - +.live.com.au
+    - +.spoprod-a.akamaihd.net
     - +.dcg.microsoft.com
     - +.dynamics.cn
     - +.engkoo.com
@@ -572,6 +573,7 @@ payload:
     - wscont1.apps.microsoft.com
     - wscont2.apps.microsoft.com
     - xb.dlservice.microsoft.com
+    - +.xboxlive.cn
     - +.21vbc.com
     - +.21vbluecloud.com
     - +.21vbluecloud.net
@@ -670,4 +672,3 @@ payload:
     - www.microsoft.com
     - +.microsoftnews.cn
     - +.msn.cn
-    - +.xboxlive.cn
