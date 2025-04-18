@@ -36,26 +36,6 @@ payload:
     - DOMAIN-SUFFIX,eduei.com
     - DOMAIN-SUFFIX,edu.cn
     - DOMAIN-SUFFIX,ystbds.com
-    - DOMAIN-SUFFIX,chinesemooc.org
-    - DOMAIN-SUFFIX,cnmooc.org
-    - DOMAIN-SUFFIX,icourse163.org
-    - DOMAIN-SUFFIX,icourses.cn
-    - DOMAIN-SUFFIX,mooc.cn
-    - DOMAIN-SUFFIX,openlearning.com
-    - DOMAIN-SUFFIX,pmphmooc.com
-    - DOMAIN-SUFFIX,applysquare.com
-    - DOMAIN-SUFFIX,applysquare.net
-    - DOMAIN-SUFFIX,hugecore.net
-    - DOMAIN-SUFFIX,shareintelli.com
-    - DOMAIN-SUFFIX,mojidict.com
-    - DOMAIN-SUFFIX,speiyou.com
-    - DOMAIN-SUFFIX,xesimg.com
-    - DOMAIN-SUFFIX,xueersi.com
-    - DOMAIN-SUFFIX,rainclassroom.com
-    - DOMAIN-SUFFIX,yuketang.cn
-    - DOMAIN-SUFFIX,17zuoye.cn
-    - DOMAIN-SUFFIX,17zuoye.com
-    - DOMAIN-SUFFIX,17zuoye.net
     - DOMAIN-SUFFIX,cctalk.com
     - DOMAIN-SUFFIX,hjapi.com
     - DOMAIN-SUFFIX,hjfile.cn
@@ -66,6 +46,9 @@ payload:
     - DOMAIN-SUFFIX,koopass.com
     - DOMAIN-SUFFIX,baydn.com
     - DOMAIN-SUFFIX,shanbay.com
+    - DOMAIN-SUFFIX,speiyou.com
+    - DOMAIN-SUFFIX,xesimg.com
+    - DOMAIN-SUFFIX,xueersi.com
     - DOMAIN-SUFFIX,banmaaike.com
     - DOMAIN-SUFFIX,xiaoyuankousuan.com
     - DOMAIN-SUFFIX,ybccode.com
@@ -78,5 +61,22 @@ payload:
     - DOMAIN-SUFFIX,fenbike.com
     - DOMAIN-SUFFIX,fenbilantian.cn
     - DOMAIN-SUFFIX,fenbilantian.com
+    - DOMAIN-SUFFIX,rainclassroom.com
+    - DOMAIN-SUFFIX,yuketang.cn
+    - DOMAIN-SUFFIX,chinesemooc.org
+    - DOMAIN-SUFFIX,cnmooc.org
+    - DOMAIN-SUFFIX,icourse163.org
+    - DOMAIN-SUFFIX,icourses.cn
+    - DOMAIN-SUFFIX,mooc.cn
+    - DOMAIN-SUFFIX,openlearning.com
+    - DOMAIN-SUFFIX,pmphmooc.com
+    - DOMAIN-SUFFIX,17zuoye.cn
+    - DOMAIN-SUFFIX,17zuoye.com
+    - DOMAIN-SUFFIX,17zuoye.net
+    - DOMAIN-SUFFIX,applysquare.com
+    - DOMAIN-SUFFIX,applysquare.net
+    - DOMAIN-SUFFIX,hugecore.net
+    - DOMAIN-SUFFIX,shareintelli.com
+    - DOMAIN-SUFFIX,mojidict.com
     - DOMAIN-SUFFIX,zhihuishu.com
     - DOMAIN-SUFFIX,icve.com.cn

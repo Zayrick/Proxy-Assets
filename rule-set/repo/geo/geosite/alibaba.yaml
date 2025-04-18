@@ -4,7 +4,7 @@ payload:
     - +.taobao
     - +.tmall
     - +.taobao.com
-    - +.tmall.com
+    - +.alibaba-inc.com
     - +.95095.com
     - +.9game.cn
     - +.aliapp.org
@@ -83,7 +83,7 @@ payload:
     - +.rexpos.cn
     - +.shenjing.com
     - +.shuqi.com
-    - +.elenet.me
+    - +.lwurl.to
     - +.shuqireader.com
     - +.sparenode.com
     - +.supet.com
@@ -121,9 +121,9 @@ payload:
     - +.pailitao.com
     - +.25pp.com
     - +.taobao.org
-    - +.dingtalk.cn
+    - +.laiwang.com
+    - +.tmall.com
     - +.56che.com
-    - +.alibaba-inc.com
     - +.tb.cn
     - +.tbcache.com
     - +.tbcdn.cn
@@ -145,6 +145,30 @@ payload:
     - +.zhisheng.com
     - +.npmmirror.com
     - +.goofish.com
+    - +.cainiao-inc.com
+    - +.cainiao.com
+    - +.cainiaoyizhan.com
+    - +.guoguo-app.com
+    - +.dingtalkapps.com
+    - +.dingtalk.net
+    - +.dingtalk.com
+    - +.alibabacloud.com
+    - +.alicloud.com
+    - +.doservice.com
+    - +.ele.me
+    - +.ele.to
+    - +.eleme.cn
+    - +.eleme.io
+    - +.elemecdn.cn
+    - +.elemecdn.com
+    - +.elenet.me
+    - +.teambition.com
+    - +.teambition.net
+    - +.teambitionapis.com
+    - +.uc.cn
+    - +.uc123.com
+    - +.ucweb.com
+    - +.uczzd.cn
     - +.mobmore.com
     - +.umeng.com
     - +.umengcloud.com
@@ -198,49 +222,25 @@ payload:
     - +.kunlunwe.com
     - +.mxhichina.com
     - +.myalicdn.com
-    - +.elemecdn.com
-    - +.elemecdn.cn
-    - +.eleme.io
-    - +.eleme.cn
-    - +.ele.to
-    - +.ele.me
-    - +.doservice.com
-    - +.lwurl.to
-    - +.laiwang.com
-    - +.dingtalkapps.com
-    - +.dingtalk.net
-    - +.dingtalk.com
-    - +.taobaocdn.com
+    - +.dingtalk.cn
     - +.dingding.xin
-    - +.cainiao-inc.com
-    - +.cainiao.com
-    - +.cainiaoyizhan.com
-    - +.guoguo-app.com
     - +.ddurl.to
-    - +.teambition.com
-    - +.teambition.net
-    - +.teambitionapis.com
-    - +.uc.cn
-    - +.uc123.com
-    - +.ucweb.com
-    - +.uczzd.cn
-    - +.alibabacloud.com
-    - +.alicloud.com
-    - +.oss-cn-shenzhen.aliyuncs.com
-    - +.oss-cn-hangzhou.aliyuncs.com
-    - +.oss-cn-wulanchabu.aliyuncs.com
-    - +.oss-cn-heyuan.aliyuncs.com
-    - +.cainiao.com.cn
+    - +.taobaocdn.com
     - +.oss-cn-qingdao.aliyuncs.com
-    - +.oss-cn-huhehaote.aliyuncs.com
-    - +.oss-cn-zhangjiakou.aliyuncs.com
-    - +.oss-cn-shanghai.aliyuncs.com
-    - +.oss-cn-nanjing.aliyuncs.com
-    - +.oss-cn-guangzhou.aliyuncs.com
     - +.oss-cn-chengdu.aliyuncs.com
+    - +.oss-cn-hangzhou.aliyuncs.com
+    - +.oss-cn-guangzhou.aliyuncs.com
+    - +.oss-cn-heyuan.aliyuncs.com
+    - +.oss-cn-shenzhen.aliyuncs.com
+    - +.oss-cn-zhangjiakou.aliyuncs.com
+    - +.oss-cn-huhehaote.aliyuncs.com
+    - +.oss-cn-shanghai.aliyuncs.com
+    - +.oss-cn-wulanchabu.aliyuncs.com
     - +.oss-cn-beijing.aliyuncs.com
+    - +.cainiao.com.cn
     - +.saee.org.cn
     - +.alipay.com.cn
+    - +.oss-cn-nanjing.aliyuncs.com
     - +.alihealth.com.cn
     - +.alihealth.hk
     - +.aliexpress.ru
@@ -248,10 +248,6 @@ payload:
     - +.alipaymo.com
     - +.tmall.ru
     - +.fliggy.hk
-    - +.alog.umeng.com
-    - +.alog.umengcloud.com
-    - +.w.cnzz.com
-    - +.z.gds.cnzz.com
     - +.a.alimama.cn
     - +.acjs.aliyun.com
     - +.adash-c.m.taobao.com
@@ -350,6 +346,16 @@ payload:
     - +.v6-adashx.ut.taobao.com
     - +.w.m.taobao.com
     - +.yiliao.hupan.com
+    - +.alibabacloud.co.in
+    - +.alibabacloud.com.au
+    - +.alibabacloud.com.hk
+    - +.alibabacloud.com.my
+    - +.alibabacloud.com.sg
+    - +.alibabacloud.com.tw
+    - +.alog.umeng.com
+    - +.alog.umengcloud.com
+    - +.w.cnzz.com
+    - +.z.gds.cnzz.com
     - +.oss-ap-northeast-1.aliyuncs.com
     - +.oss-ap-northeast-2.aliyuncs.com
     - +.oss-ap-south-1.aliyuncs.com
@@ -365,9 +371,3 @@ payload:
     - +.oss-me-east-1.aliyuncs.com
     - +.oss-us-east-1.aliyuncs.com
     - +.oss-us-west-1.aliyuncs.com
-    - +.alibabacloud.co.in
-    - +.alibabacloud.com.au
-    - +.alibabacloud.com.hk
-    - +.alibabacloud.com.my
-    - +.alibabacloud.com.sg
-    - +.alibabacloud.com.tw

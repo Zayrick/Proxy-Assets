@@ -10,8 +10,10 @@ IP-CIDR6,2a0e:acc0:ac08::/47
 IP-CIDR6,2a0e:acc0:ac10::/45
 IP-CIDR6,2a0e:acc0:ac18::/47
 IP-CIDR6,2a0e:acc0:ac20::/45
-IP-CIDR6,2a0e:acc0:ac28::/47
-IP-CIDR6,2a0e:acc0:ac30::/45
+IP-CIDR6,2a0e:acc0:ac28::/48
+IP-CIDR6,2a0e:acc0:ac30::/48
+IP-CIDR6,2a0e:acc0:ac32::/47
+IP-CIDR6,2a0e:acc0:ac34::/46
 IP-CIDR6,2a0e:acc0:ac38::/47
 IP-CIDR6,2a0e:acc0:ac40::/45
 IP-CIDR6,2a0e:acc0:ac48::/47

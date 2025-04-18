@@ -1,4 +1,26 @@
 payload:
+    - DOMAIN,ntp.aliyun.com
+    - DOMAIN,ntp1.aliyun.com
+    - DOMAIN,ntp2.aliyun.com
+    - DOMAIN,ntp3.aliyun.com
+    - DOMAIN,ntp4.aliyun.com
+    - DOMAIN,ntp5.aliyun.com
+    - DOMAIN,ntp6.aliyun.com
+    - DOMAIN,ntp7.aliyun.com
+    - DOMAIN,time.amazonaws.cn
+    - DOMAIN,time.izatcloud.net
+    - DOMAIN,time.xtracloud.net
+    - DOMAIN,ntp.tencent.com
+    - DOMAIN,ntp1.tencent.com
+    - DOMAIN,ntp2.tencent.com
+    - DOMAIN,ntp3.tencent.com
+    - DOMAIN,ntp4.tencent.com
+    - DOMAIN,ntp5.tencent.com
+    - DOMAIN-SUFFIX,cn.pool.ntp.org
+    - DOMAIN-SUFFIX,ntp.neu.edu.cn
+    - DOMAIN-SUFFIX,ntp.ntsc.ac.cn
+    - DOMAIN-SUFFIX,ntp.org.cn
+    - DOMAIN-SUFFIX,weui.io
     - DOMAIN-SUFFIX,bisheng.cn
     - DOMAIN-SUFFIX,bishengcompiler.cn
     - DOMAIN-SUFFIX,devui.design
@@ -22,6 +44,30 @@ payload:
     - DOMAIN-SUFFIX,owsgo.com
     - DOMAIN-SUFFIX,teleows.com
     - DOMAIN-SUFFIX,saasops.tech
+    - DOMAIN-SUFFIX,bisheng.cn
+    - DOMAIN-SUFFIX,bishengcompiler.cn
+    - DOMAIN-SUFFIX,devui.design
+    - DOMAIN-SUFFIX,gneec.com
+    - DOMAIN-SUFFIX,gneec.com.cn
+    - DOMAIN-SUFFIX,gneec3.com
+    - DOMAIN-SUFFIX,gneec4.com
+    - DOMAIN-SUFFIX,gneec7.com
+    - DOMAIN-SUFFIX,harmonyos.com
+    - DOMAIN-SUFFIX,hiascend.cn
+    - DOMAIN-SUFFIX,hiascend.com
+    - DOMAIN-SUFFIX,hiclc.com
+    - DOMAIN-SUFFIX,hikunpeng.cn
+    - DOMAIN-SUFFIX,hikunpeng.com
+    - DOMAIN-SUFFIX,hikunpeng.com.cn
+    - DOMAIN-SUFFIX,hikunpeng.net
+    - DOMAIN-SUFFIX,hisilicon.com
+    - DOMAIN-SUFFIX,hisilicon.com.cn
+    - DOMAIN-SUFFIX,huaweiapaas.com
+    - DOMAIN-SUFFIX,mindspore.cn
+    - DOMAIN-SUFFIX,owsgo.com
+    - DOMAIN-SUFFIX,teleows.com
+    - DOMAIN-SUFFIX,saasops.tech
+    - DOMAIN,kc.kexinshe.com
     - DOMAIN-SUFFIX,cf-ns.com
     - DOMAIN-SUFFIX,cf-ns.net
     - DOMAIN-SUFFIX,cf-ns.site
@@ -62,54 +108,6 @@ payload:
     - DOMAIN-SUFFIX,biligame.co
     - DOMAIN-SUFFIX,biligame.com
     - DOMAIN-SUFFIX,biligame.net
-    - DOMAIN-SUFFIX,doubao.com
-    - DOMAIN-SUFFIX,coze.cn
-    - DOMAIN,ntp.aliyun.com
-    - DOMAIN,ntp1.aliyun.com
-    - DOMAIN,ntp2.aliyun.com
-    - DOMAIN,ntp3.aliyun.com
-    - DOMAIN,ntp4.aliyun.com
-    - DOMAIN,ntp5.aliyun.com
-    - DOMAIN,ntp6.aliyun.com
-    - DOMAIN,ntp7.aliyun.com
-    - DOMAIN,time.amazonaws.cn
-    - DOMAIN,time.izatcloud.net
-    - DOMAIN,time.xtracloud.net
-    - DOMAIN,ntp.tencent.com
-    - DOMAIN,ntp1.tencent.com
-    - DOMAIN,ntp2.tencent.com
-    - DOMAIN,ntp3.tencent.com
-    - DOMAIN,ntp4.tencent.com
-    - DOMAIN,ntp5.tencent.com
-    - DOMAIN-SUFFIX,cn.pool.ntp.org
-    - DOMAIN-SUFFIX,ntp.neu.edu.cn
-    - DOMAIN-SUFFIX,ntp.ntsc.ac.cn
-    - DOMAIN-SUFFIX,ntp.org.cn
-    - DOMAIN,kc.kexinshe.com
-    - DOMAIN-SUFFIX,bisheng.cn
-    - DOMAIN-SUFFIX,bishengcompiler.cn
-    - DOMAIN-SUFFIX,devui.design
-    - DOMAIN-SUFFIX,gneec.com
-    - DOMAIN-SUFFIX,gneec.com.cn
-    - DOMAIN-SUFFIX,gneec3.com
-    - DOMAIN-SUFFIX,gneec4.com
-    - DOMAIN-SUFFIX,gneec7.com
-    - DOMAIN-SUFFIX,harmonyos.com
-    - DOMAIN-SUFFIX,hiascend.cn
-    - DOMAIN-SUFFIX,hiascend.com
-    - DOMAIN-SUFFIX,hiclc.com
-    - DOMAIN-SUFFIX,hikunpeng.cn
-    - DOMAIN-SUFFIX,hikunpeng.com
-    - DOMAIN-SUFFIX,hikunpeng.com.cn
-    - DOMAIN-SUFFIX,hikunpeng.net
-    - DOMAIN-SUFFIX,hisilicon.com
-    - DOMAIN-SUFFIX,hisilicon.com.cn
-    - DOMAIN-SUFFIX,huaweiapaas.com
-    - DOMAIN-SUFFIX,mindspore.cn
-    - DOMAIN-SUFFIX,owsgo.com
-    - DOMAIN-SUFFIX,teleows.com
-    - DOMAIN-SUFFIX,saasops.tech
-    - DOMAIN-SUFFIX,weui.io
     - DOMAIN-SUFFIX,battlecare.net
     - DOMAIN-SUFFIX,gameitop.com
     - DOMAIN-SUFFIX,gameloop.com
@@ -196,6 +194,8 @@ payload:
     - DOMAIN-SUFFIX,17roco.com
     - DOMAIN-SUFFIX,roco.qq.com
     - DOMAIN-SUFFIX,weui.io
+    - DOMAIN-SUFFIX,doubao.com
+    - DOMAIN-SUFFIX,coze.cn
     - DOMAIN-SUFFIX,bluepoch.com
     - DOMAIN-SUFFIX,sl916.com
     - DOMAIN-SUFFIX,a2z.org.cn
