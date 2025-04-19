@@ -34,13 +34,14 @@ payload:
     - +.office
     - +.skype
     - +.windows
-    - +.xbox
-    - +.onedriveupdater
     - +.onedrive
+    - +.onedriveupdater
     - +.bing
     - +.azure
-    - +.winhec.com
-    - +.msft.net
+    - +.xbox
+    - +.windowsupdate.com
+    - +.msft.info
+    - +.microsoft.ch
     - +.microsoft.cl
     - +.microsoft.com
     - +.microsoft.cz
@@ -63,8 +64,8 @@ payload:
     - +.microsoft.net
     - +.microsoft.pl
     - +.microsoft.pt
-    - +.microsoft.red
-    - +.forzaracingchampionship.com
+    - +.sharepoint.com
+    - +.microsoft.ro
     - +.microsoft.rs
     - +.microsoft.ru
     - +.microsoft.se
@@ -186,8 +187,8 @@ payload:
     - +.mschallenge2018.com
     - +.msecnd.net
     - +.msedge.net
-    - +.msft.info
-    - +.sharepoint.cn
+    - +.start.com
+    - +.msft.net
     - +.msftauth.net
     - +.msftconnecttest.com
     - +.msfteducation.ca
@@ -230,7 +231,6 @@ payload:
     - +.sfbassets.com
     - +.sfbassets.net
     - +.sfx.ms
-    - +.sharepoint.com
     - +.sharepointonline.com
     - +.signalr.net
     - +.skype.com
@@ -239,8 +239,8 @@ payload:
     - +.skypeassets.net
     - +.spo-msedge.net
     - +.staffhub.ms
-    - +.successwithteams.com
-    - +.livefilestore.com
+    - +.microsoftstart.com
+    - +.surface.com
     - +.svc.ms
     - +.sway-cdn.com
     - +.sway.com
@@ -268,14 +268,29 @@ payload:
     - +.windowsphone-int.com
     - +.windowsphone.com
     - +.windowssearch.com
-    - +.windowsupdate.com
-    - +.microsoft.cat
+    - +.microsoft.ca
+    - +.winhec.com
     - +.winhec.net
     - +.yammer.com
+    - +.successwithteams.com
+    - +.microsoft.cat
+    - +.microsoft.red
+    - +.onedrive.com
+    - +.1drv.com
+    - +.livefilestore.com
+    - +.sharepoint.cn
+    - +.msnkids.com
+    - +.msnewskids.org
+    - +.msnewskids.net
+    - +.msnewskids.com
+    - +.msn.com
+    - +.microsoftnewskids.org
+    - +.microsoftnewskids.net
+    - +.microsoftnewskids.com
+    - +.microsoftnewsforkids.org
+    - +.microsoft.by
     - +.forzamotorsport.net
-    - +.surface.com
-    - +.microsoft.ch
-    - +.microsoft.ro
+    - +.forzaracingchampionship.com
     - +.forzarc.com
     - +.gamepass.com
     - +.orithegame.com
@@ -311,7 +326,7 @@ payload:
     - +.minecraftservices.com
     - +.minecraftshop.com
     - +.mojang.com
-    - +.microsoft.ca
+    - +.microsoft.be
     - +.aadrm.com
     - +.azure-devices-int.net
     - +.azure-devices.net
@@ -368,7 +383,7 @@ payload:
     - +.azure-dns.info
     - +.azure-dns.net
     - +.azure-dns.org
-    - +.microsoft.by
+    - +.microsoft.az
     - +.dictate.ms
     - +.sprinklesapp.com
     - +.bing.com
@@ -395,8 +410,7 @@ payload:
     - +.office365love.com
     - +.office365tw.com
     - +.renovacionoffice.com
-    - +.1drv.com
-    - +.onedrive.com
+    - +.microsoftnewsforkids.net
     - +.githubhackathon.com
     - +.ghcr.io
     - +.githubnext.com
@@ -422,6 +436,7 @@ payload:
     - +.atom.io
     - +.npm.community
     - +.npmjs.com
+    - +.microsoftnewsforkids.com
     - +.adaptivecards.io
     - +.api-extractor.com
     - +.apisof.net
@@ -472,32 +487,17 @@ payload:
     - +.vscode-cdn.net
     - +.vscode-unpkg.net
     - +.xamarin.com
-    - +.microsoft.az
+    - +.microsoftnews.org
     - +.msocsp.com
     - +.microsoftnews.cc
     - +.microsoftnews.com
     - +.microsoftnews.net
-    - +.microsoftnews.org
-    - +.microsoftnewsforkids.com
-    - +.microsoftnewsforkids.net
-    - +.microsoftnewsforkids.org
-    - +.microsoftnewskids.com
-    - +.microsoftnewskids.net
-    - +.microsoftnewskids.org
-    - +.msn.com
-    - +.msnewskids.com
-    - +.msnewskids.net
-    - +.msnewskids.org
-    - +.msnkids.com
-    - +.microsoftstart.com
-    - +.start.com
-    - +.microsoft.be
+    - +.spoprod-a.akamaihd.net
     - +.microsoftstore.com.hk
-    - +.skypedata.akadns.net
-    - +.skype-edf.akadns.net
     - +.visualstudio.co.uk
     - +.live.com.au
-    - +.spoprod-a.akamaihd.net
+    - +.skypedata.akadns.net
+    - +.skype-edf.akadns.net
     - +.dcg.microsoft.com
     - +.dynamics.cn
     - +.engkoo.com

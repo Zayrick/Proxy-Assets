@@ -34,13 +34,14 @@ payload:
     - DOMAIN-SUFFIX,office
     - DOMAIN-SUFFIX,skype
     - DOMAIN-SUFFIX,windows
-    - DOMAIN-SUFFIX,xbox
-    - DOMAIN-SUFFIX,onedriveupdater
     - DOMAIN-SUFFIX,onedrive
+    - DOMAIN-SUFFIX,onedriveupdater
     - DOMAIN-SUFFIX,bing
     - DOMAIN-SUFFIX,azure
-    - DOMAIN-SUFFIX,winhec.com
-    - DOMAIN-SUFFIX,msft.net
+    - DOMAIN-SUFFIX,xbox
+    - DOMAIN-SUFFIX,windowsupdate.com
+    - DOMAIN-SUFFIX,msft.info
+    - DOMAIN-SUFFIX,microsoft.ch
     - DOMAIN-SUFFIX,microsoft.cl
     - DOMAIN-SUFFIX,microsoft.com
     - DOMAIN-SUFFIX,microsoft.cz
@@ -63,8 +64,8 @@ payload:
     - DOMAIN-SUFFIX,microsoft.net
     - DOMAIN-SUFFIX,microsoft.pl
     - DOMAIN-SUFFIX,microsoft.pt
-    - DOMAIN-SUFFIX,microsoft.red
-    - DOMAIN-SUFFIX,forzaracingchampionship.com
+    - DOMAIN-SUFFIX,sharepoint.com
+    - DOMAIN-SUFFIX,microsoft.ro
     - DOMAIN-SUFFIX,microsoft.rs
     - DOMAIN-SUFFIX,microsoft.ru
     - DOMAIN-SUFFIX,microsoft.se
@@ -186,8 +187,8 @@ payload:
     - DOMAIN-SUFFIX,mschallenge2018.com
     - DOMAIN-SUFFIX,msecnd.net
     - DOMAIN-SUFFIX,msedge.net
-    - DOMAIN-SUFFIX,msft.info
-    - DOMAIN-SUFFIX,sharepoint.cn
+    - DOMAIN-SUFFIX,start.com
+    - DOMAIN-SUFFIX,msft.net
     - DOMAIN-SUFFIX,msftauth.net
     - DOMAIN-SUFFIX,msftconnecttest.com
     - DOMAIN-SUFFIX,msfteducation.ca
@@ -230,7 +231,6 @@ payload:
     - DOMAIN-SUFFIX,sfbassets.com
     - DOMAIN-SUFFIX,sfbassets.net
     - DOMAIN-SUFFIX,sfx.ms
-    - DOMAIN-SUFFIX,sharepoint.com
     - DOMAIN-SUFFIX,sharepointonline.com
     - DOMAIN-SUFFIX,signalr.net
     - DOMAIN-SUFFIX,skype.com
@@ -239,8 +239,8 @@ payload:
     - DOMAIN-SUFFIX,skypeassets.net
     - DOMAIN-SUFFIX,spo-msedge.net
     - DOMAIN-SUFFIX,staffhub.ms
-    - DOMAIN-SUFFIX,successwithteams.com
-    - DOMAIN-SUFFIX,livefilestore.com
+    - DOMAIN-SUFFIX,microsoftstart.com
+    - DOMAIN-SUFFIX,surface.com
     - DOMAIN-SUFFIX,svc.ms
     - DOMAIN-SUFFIX,sway-cdn.com
     - DOMAIN-SUFFIX,sway.com
@@ -268,14 +268,29 @@ payload:
     - DOMAIN-SUFFIX,windowsphone-int.com
     - DOMAIN-SUFFIX,windowsphone.com
     - DOMAIN-SUFFIX,windowssearch.com
-    - DOMAIN-SUFFIX,windowsupdate.com
-    - DOMAIN-SUFFIX,microsoft.cat
+    - DOMAIN-SUFFIX,microsoft.ca
+    - DOMAIN-SUFFIX,winhec.com
     - DOMAIN-SUFFIX,winhec.net
     - DOMAIN-SUFFIX,yammer.com
+    - DOMAIN-SUFFIX,successwithteams.com
+    - DOMAIN-SUFFIX,microsoft.cat
+    - DOMAIN-SUFFIX,microsoft.red
+    - DOMAIN-SUFFIX,onedrive.com
+    - DOMAIN-SUFFIX,1drv.com
+    - DOMAIN-SUFFIX,livefilestore.com
+    - DOMAIN-SUFFIX,sharepoint.cn
+    - DOMAIN-SUFFIX,msnkids.com
+    - DOMAIN-SUFFIX,msnewskids.org
+    - DOMAIN-SUFFIX,msnewskids.net
+    - DOMAIN-SUFFIX,msnewskids.com
+    - DOMAIN-SUFFIX,msn.com
+    - DOMAIN-SUFFIX,microsoftnewskids.org
+    - DOMAIN-SUFFIX,microsoftnewskids.net
+    - DOMAIN-SUFFIX,microsoftnewskids.com
+    - DOMAIN-SUFFIX,microsoftnewsforkids.org
+    - DOMAIN-SUFFIX,microsoft.by
     - DOMAIN-SUFFIX,forzamotorsport.net
-    - DOMAIN-SUFFIX,surface.com
-    - DOMAIN-SUFFIX,microsoft.ch
-    - DOMAIN-SUFFIX,microsoft.ro
+    - DOMAIN-SUFFIX,forzaracingchampionship.com
     - DOMAIN-SUFFIX,forzarc.com
     - DOMAIN-SUFFIX,gamepass.com
     - DOMAIN-SUFFIX,orithegame.com
@@ -311,7 +326,7 @@ payload:
     - DOMAIN-SUFFIX,minecraftservices.com
     - DOMAIN-SUFFIX,minecraftshop.com
     - DOMAIN-SUFFIX,mojang.com
-    - DOMAIN-SUFFIX,microsoft.ca
+    - DOMAIN-SUFFIX,microsoft.be
     - DOMAIN-SUFFIX,aadrm.com
     - DOMAIN-SUFFIX,azure-devices-int.net
     - DOMAIN-SUFFIX,azure-devices.net
@@ -368,7 +383,7 @@ payload:
     - DOMAIN-SUFFIX,azure-dns.info
     - DOMAIN-SUFFIX,azure-dns.net
     - DOMAIN-SUFFIX,azure-dns.org
-    - DOMAIN-SUFFIX,microsoft.by
+    - DOMAIN-SUFFIX,microsoft.az
     - DOMAIN-SUFFIX,dictate.ms
     - DOMAIN-SUFFIX,sprinklesapp.com
     - DOMAIN-SUFFIX,bing.com
@@ -395,8 +410,7 @@ payload:
     - DOMAIN-SUFFIX,office365love.com
     - DOMAIN-SUFFIX,office365tw.com
     - DOMAIN-SUFFIX,renovacionoffice.com
-    - DOMAIN-SUFFIX,1drv.com
-    - DOMAIN-SUFFIX,onedrive.com
+    - DOMAIN-SUFFIX,microsoftnewsforkids.net
     - DOMAIN-SUFFIX,githubhackathon.com
     - DOMAIN-SUFFIX,ghcr.io
     - DOMAIN-SUFFIX,githubnext.com
@@ -422,6 +436,7 @@ payload:
     - DOMAIN-SUFFIX,atom.io
     - DOMAIN-SUFFIX,npm.community
     - DOMAIN-SUFFIX,npmjs.com
+    - DOMAIN-SUFFIX,microsoftnewsforkids.com
     - DOMAIN-SUFFIX,adaptivecards.io
     - DOMAIN-SUFFIX,api-extractor.com
     - DOMAIN-SUFFIX,apisof.net
@@ -472,32 +487,17 @@ payload:
     - DOMAIN-SUFFIX,vscode-cdn.net
     - DOMAIN-SUFFIX,vscode-unpkg.net
     - DOMAIN-SUFFIX,xamarin.com
-    - DOMAIN-SUFFIX,microsoft.az
+    - DOMAIN-SUFFIX,microsoftnews.org
     - DOMAIN-SUFFIX,msocsp.com
     - DOMAIN-SUFFIX,microsoftnews.cc
     - DOMAIN-SUFFIX,microsoftnews.com
     - DOMAIN-SUFFIX,microsoftnews.net
-    - DOMAIN-SUFFIX,microsoftnews.org
-    - DOMAIN-SUFFIX,microsoftnewsforkids.com
-    - DOMAIN-SUFFIX,microsoftnewsforkids.net
-    - DOMAIN-SUFFIX,microsoftnewsforkids.org
-    - DOMAIN-SUFFIX,microsoftnewskids.com
-    - DOMAIN-SUFFIX,microsoftnewskids.net
-    - DOMAIN-SUFFIX,microsoftnewskids.org
-    - DOMAIN-SUFFIX,msn.com
-    - DOMAIN-SUFFIX,msnewskids.com
-    - DOMAIN-SUFFIX,msnewskids.net
-    - DOMAIN-SUFFIX,msnewskids.org
-    - DOMAIN-SUFFIX,msnkids.com
-    - DOMAIN-SUFFIX,microsoftstart.com
-    - DOMAIN-SUFFIX,start.com
-    - DOMAIN-SUFFIX,microsoft.be
+    - DOMAIN-SUFFIX,spoprod-a.akamaihd.net
     - DOMAIN-SUFFIX,microsoftstore.com.hk
-    - DOMAIN-SUFFIX,skypedata.akadns.net
-    - DOMAIN-SUFFIX,skype-edf.akadns.net
     - DOMAIN-SUFFIX,visualstudio.co.uk
     - DOMAIN-SUFFIX,live.com.au
-    - DOMAIN-SUFFIX,spoprod-a.akamaihd.net
+    - DOMAIN-SUFFIX,skypedata.akadns.net
+    - DOMAIN-SUFFIX,skype-edf.akadns.net
     - DOMAIN-REGEX,^github-production-release-asset-[0-9a-zA-Z]{6}\.s3\.amazonaws\.com$
     - DOMAIN-KEYWORD,1drv
     - DOMAIN-KEYWORD,onedrive

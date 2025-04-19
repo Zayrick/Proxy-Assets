@@ -195,7 +195,6 @@ uberproxy-with-cn6.l.google.com
 qiao-cn.com
 +.gvt1-cn.com
 +.gvt2-cn.com
-firebase-settings.crashlytics.com
 redirector.c.play.google.com
 pki-goog.l.google.com
 c.pki.goog
@@ -205,3 +204,4 @@ crl.pki.goog
 crls.pki.goog
 ocsp.pki.goog
 +.ggpht.cn
+firebase-settings.crashlytics.com

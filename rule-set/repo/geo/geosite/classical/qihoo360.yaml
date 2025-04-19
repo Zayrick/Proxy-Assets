@@ -1,12 +1,12 @@
 payload:
-    - DOMAIN-SUFFIX,360.cn
-    - DOMAIN-SUFFIX,360.com
+    - DOMAIN-SUFFIX,qhres2.com
+    - DOMAIN-SUFFIX,360jie.com
     - DOMAIN-SUFFIX,360.net
     - DOMAIN-SUFFIX,360-jr.com
     - DOMAIN-SUFFIX,360chou.com
     - DOMAIN-SUFFIX,360daikuan.com
     - DOMAIN-SUFFIX,360huzhubao.com
-    - DOMAIN-SUFFIX,360jie.com
+    - DOMAIN-SUFFIX,qhres.com
     - DOMAIN-SUFFIX,360jinrong.net
     - DOMAIN-SUFFIX,360kan.com
     - DOMAIN-SUFFIX,360kuai.com
@@ -47,9 +47,9 @@ payload:
     - DOMAIN-SUFFIX,qhimgs4.com
     - DOMAIN-SUFFIX,qhimgs5.com
     - DOMAIN-SUFFIX,qhimgs6.com
-    - DOMAIN-SUFFIX,qhmsg.com
-    - DOMAIN-SUFFIX,qhres.com
-    - DOMAIN-SUFFIX,qhres2.com
+    - DOMAIN-SUFFIX,theworld.cn
+    - DOMAIN-SUFFIX,360.com
+    - DOMAIN-SUFFIX,sou.com
     - DOMAIN-SUFFIX,qhstatic.com
     - DOMAIN-SUFFIX,qihoo.com
     - DOMAIN-SUFFIX,qihoo.net
@@ -59,7 +59,7 @@ payload:
     - DOMAIN-SUFFIX,qikucdn.com
     - DOMAIN-SUFFIX,so.com
     - DOMAIN-SUFFIX,sou.cn
-    - DOMAIN-SUFFIX,sou.com
+    - DOMAIN-SUFFIX,360.cn
     - DOMAIN-SUFFIX,urlqh.cn
     - DOMAIN-SUFFIX,xiaoluyouxuan.com
     - DOMAIN-SUFFIX,xiaoluzhidian.com
@@ -69,9 +69,7 @@ payload:
     - DOMAIN-SUFFIX,beifangsl.cn
     - DOMAIN-SUFFIX,zhaomi.cn
     - DOMAIN-SUFFIX,zhaomishijie.com
-    - DOMAIN-SUFFIX,75.team
-    - DOMAIN-SUFFIX,75team.com
-    - DOMAIN-SUFFIX,theworld.cn
+    - DOMAIN-SUFFIX,qhmsg.com
     - DOMAIN-SUFFIX,360pay.cn
     - DOMAIN-SUFFIX,360-api.cn
     - DOMAIN-SUFFIX,360-game.net
@@ -93,6 +91,8 @@ payload:
     - DOMAIN-SUFFIX,woxihuan.com
     - DOMAIN-SUFFIX,wztsy.cn
     - DOMAIN-SUFFIX,wztsy.com
+    - DOMAIN-SUFFIX,75.team
+    - DOMAIN-SUFFIX,75team.com
     - DOMAIN-SUFFIX,360sou.com.cn
     - DOMAIN-SUFFIX,haosou.com.cn
     - DOMAIN-SUFFIX,worldoftanks.com.cn

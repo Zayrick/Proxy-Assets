@@ -196,7 +196,6 @@ payload:
     - qiao-cn.com
     - +.gvt1-cn.com
     - +.gvt2-cn.com
-    - firebase-settings.crashlytics.com
     - redirector.c.play.google.com
     - pki-goog.l.google.com
     - c.pki.goog
@@ -206,3 +205,4 @@ payload:
     - crls.pki.goog
     - ocsp.pki.goog
     - +.ggpht.cn
+    - firebase-settings.crashlytics.com
