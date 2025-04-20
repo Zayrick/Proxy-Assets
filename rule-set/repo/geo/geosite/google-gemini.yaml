@@ -5,6 +5,7 @@ payload:
     - +.deepmind.com
     - +.deepmind.google
     - +.generativeai.google
+    - +.gemini.google
     - +.geller-pa.googleapis.com
     - +.generativelanguage.googleapis.com
     - +.proactivebackend-pa.googleapis.com

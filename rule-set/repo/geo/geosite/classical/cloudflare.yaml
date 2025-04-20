@@ -1,12 +1,13 @@
 payload:
-    - DOMAIN-SUFFIX,cloudflarepreview.com
+    - DOMAIN-SUFFIX,cloudflareportal.com
     - DOMAIN-SUFFIX,cf-ipfs.com
+    - DOMAIN-SUFFIX,cfl.re
     - DOMAIN-SUFFIX,cloudflare-dns.com
-    - DOMAIN-SUFFIX,argotunnel.com
+    - DOMAIN-SUFFIX,cloudflare-ech.com
     - DOMAIN-SUFFIX,cloudflare-esni.com
     - DOMAIN-SUFFIX,cloudflare-gateway.com
     - DOMAIN-SUFFIX,cloudflare-quic.com
-    - DOMAIN-SUFFIX,cloudflare.com
+    - DOMAIN-SUFFIX,argotunnel.com
     - DOMAIN-SUFFIX,cloudflare.net
     - DOMAIN-SUFFIX,cloudflare.tv
     - DOMAIN-SUFFIX,cloudflareaccess.com
@@ -16,14 +17,14 @@ payload:
     - DOMAIN-SUFFIX,cloudflareinsights.com
     - DOMAIN-SUFFIX,cloudflareok.com
     - DOMAIN-SUFFIX,cloudflarepartners.com
-    - DOMAIN-SUFFIX,cloudflareportal.com
-    - DOMAIN-SUFFIX,cloudflare-ech.com
-    - DOMAIN-SUFFIX,cfl.re
-    - DOMAIN-SUFFIX,cloudflarestatus.com
+    - DOMAIN-SUFFIX,cloudflare.com
+    - DOMAIN-SUFFIX,cfargotunnel.com
+    - DOMAIN-SUFFIX,cloudflaretest.com
     - DOMAIN-SUFFIX,cloudflaressl.com
+    - DOMAIN-SUFFIX,cloudflarestatus.com
     - DOMAIN-SUFFIX,cloudflarestorage.com
     - DOMAIN-SUFFIX,cloudflarestream.com
-    - DOMAIN-SUFFIX,cloudflaretest.com
+    - DOMAIN-SUFFIX,cloudflareresolve.com
     - DOMAIN-SUFFIX,cloudflarewarp.com
     - DOMAIN-SUFFIX,every1dns.net
     - DOMAIN-SUFFIX,isbgpsafeyet.com
@@ -34,7 +35,7 @@ payload:
     - DOMAIN-SUFFIX,videodelivery.net
     - DOMAIN-SUFFIX,warp.plus
     - DOMAIN-SUFFIX,workers.dev
-    - DOMAIN-SUFFIX,cloudflareresolve.com
+    - DOMAIN-SUFFIX,cloudflarepreview.com
     - DOMAIN-SUFFIX,one.one.one
     - DOMAIN-SUFFIX,cf-ns.com
     - DOMAIN-SUFFIX,cf-ns.net

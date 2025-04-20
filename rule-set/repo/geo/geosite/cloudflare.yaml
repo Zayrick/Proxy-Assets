@@ -1,12 +1,13 @@
 payload:
-    - +.cloudflarepreview.com
+    - +.cloudflareportal.com
     - +.cf-ipfs.com
+    - +.cfl.re
     - +.cloudflare-dns.com
-    - +.argotunnel.com
+    - +.cloudflare-ech.com
     - +.cloudflare-esni.com
     - +.cloudflare-gateway.com
     - +.cloudflare-quic.com
-    - +.cloudflare.com
+    - +.argotunnel.com
     - +.cloudflare.net
     - +.cloudflare.tv
     - +.cloudflareaccess.com
@@ -16,14 +17,14 @@ payload:
     - +.cloudflareinsights.com
     - +.cloudflareok.com
     - +.cloudflarepartners.com
-    - +.cloudflareportal.com
-    - +.cloudflare-ech.com
-    - +.cfl.re
-    - +.cloudflarestatus.com
+    - +.cloudflare.com
+    - +.cfargotunnel.com
+    - +.cloudflaretest.com
     - +.cloudflaressl.com
+    - +.cloudflarestatus.com
     - +.cloudflarestorage.com
     - +.cloudflarestream.com
-    - +.cloudflaretest.com
+    - +.cloudflareresolve.com
     - +.cloudflarewarp.com
     - +.every1dns.net
     - +.isbgpsafeyet.com
@@ -34,7 +35,7 @@ payload:
     - +.videodelivery.net
     - +.warp.plus
     - +.workers.dev
-    - +.cloudflareresolve.com
+    - +.cloudflarepreview.com
     - +.one.one.one
     - +.cf-ns.com
     - +.cf-ns.net

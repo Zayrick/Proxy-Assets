@@ -1,5 +1,4 @@
 payload:
-    - DOMAIN-SUFFIX,supercell.com
     - DOMAIN-SUFFIX,byteoversea.com
     - DOMAIN-SUFFIX,muscdn.com
     - DOMAIN-SUFFIX,musical.ly
@@ -21,3 +20,4 @@ payload:
     - DOMAIN-SUFFIX,ttoverseaus.net
     - DOMAIN-SUFFIX,ttwstatic.com
     - DOMAIN,p16-tiktokcdn-com.akamaized.net
+    - DOMAIN-SUFFIX,supercell.com

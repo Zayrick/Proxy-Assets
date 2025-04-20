@@ -1,6 +1,4 @@
 payload:
-    - p3-novel.byteimg.com
-    - p6-novel.byteimg.com
     - p1-juejin.byteimg.com
     - p2-juejin.byteimg.com
     - p3-juejin.byteimg.com
@@ -10,8 +8,10 @@ payload:
     - p7-juejin.byteimg.com
     - p8-juejin.byteimg.com
     - p9-juejin.byteimg.com
+    - p3-novel.byteimg.com
+    - p6-novel.byteimg.com
     - +.toutiaocloud.net
-    - +.feishumeetings.com
+    - +.feishuimg.com
     - +.activity01.com
     - +.activity02.com
     - +.activity03.com
@@ -326,7 +326,7 @@ payload:
     - +.toutiaoapi.com
     - +.toutiaocdn.com
     - +.toutiaocloud.com
-    - +.lackvc.cn
+    - +.getfeishu.com
     - +.99uri.com
     - +.myimis.com
     - +.toutiaoimg.cn
@@ -368,10 +368,13 @@ payload:
     - +.365yg.com
     - +.gogokid.com
     - +.pipix.com
-    - +.xitu.io
+    - +.qznovelvod.com
     - +.faceu.com
     - +.ulikecam.com
     - +.rsproxy.cn
+    - +.juejin.cn
+    - +.juejin.im
+    - +.xitu.io
     - +.baseopendev.com
     - +.bytecloud.com
     - +.byteoc.com
@@ -406,10 +409,10 @@ payload:
     - +.feishuhuiyi.com
     - +.feishuimg-boe.com
     - +.feishuimg-pre.com
-    - +.feishuimg.com
+    - +.toutiaohao.com
     - +.feishukacdn.com
     - +.feishumeetings.cn
-    - +.toutiaohao.com
+    - +.feishumeetings.com
     - +.feishuoffice.cn
     - +.feishuoffice.com
     - +.feishuopenplatformrecord.com
@@ -417,10 +420,10 @@ payload:
     - +.feishuvc.cn
     - +.feishuvc.com
     - +.getfeishu.cn
-    - +.getfeishu.com
+    - +.99uri.cn
     - +.getsays.cn
     - +.getsays.com
-    - +.99uri.cn
+    - +.lackvc.cn
     - +.securityfeishu.cn
     - +.securityfs.cn
     - +.statusfeishu.cn
@@ -451,13 +454,13 @@ payload:
     - +.larksuitecdn.com
     - +.larksuiteimg-boe.com
     - +.larksuiteimg-pre.com
-    - +.juejin.im
-    - +.juejin.cn
-    - +.qznovelvod.com
     - +.qznovelstatic.com
     - +.qznovelpic.com
     - +.qznovel.com
     - +.novelfmvod.com
+    - +.novelfmstatic.com
+    - +.novelfmpic.com
+    - +.novelfm.com
     - +.aigc-cloud.com
     - +.bdegnine.com
     - +.bplslb.com
@@ -607,7 +610,7 @@ payload:
     - +.zvip.cn
     - +.bcy.net
     - +.bcyimg.com
-    - +.novelfmstatic.com
+    - +.muyewx.com
     - +.activity-zhendingtech.com
     - +.changdunovel.com
     - +.fanqienovel.com
@@ -627,9 +630,6 @@ payload:
     - +.fqnovelstatic.com
     - +.fqnovelvod.com
     - +.ihaohaoxuexi.com
-    - +.muyewx.com
-    - +.novelfm.com
-    - +.novelfmpic.com
     - +.lf-rc1.yhgfb-cn-static.com
     - +.okr.com.cn
     - +.gogokid.com.cn
