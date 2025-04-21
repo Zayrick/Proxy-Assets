@@ -9,10 +9,7 @@ DOMAIN-SUFFIX,xn--p1acf
 DOMAIN-SUFFIX,xn--p1ai
 DOMAIN-SUFFIX,yandex
 DOMAIN-SUFFIX,psk
-DOMAIN-SUFFIX,vkmessenger.app
-DOMAIN-SUFFIX,ozonusercontent.com
-DOMAIN-SUFFIX,mvk.com
-DOMAIN-SUFFIX,userapi.com
+DOMAIN-SUFFIX,vkuser.net
 DOMAIN-SUFFIX,vk-apps.com
 DOMAIN-SUFFIX,vk-cdn.me
 DOMAIN-SUFFIX,vk-cdn.net
@@ -27,8 +24,8 @@ DOMAIN-SUFFIX,vk.team
 DOMAIN-SUFFIX,vkcache.com
 DOMAIN-SUFFIX,vkgo.app
 DOMAIN-SUFFIX,vklive.app
+DOMAIN-SUFFIX,vkmessenger.app
 DOMAIN-SUFFIX,vkmessenger.com
-DOMAIN-SUFFIX,vkuser.net
 DOMAIN-SUFFIX,vkuseraudio.com
 DOMAIN-SUFFIX,vkuseraudio.net
 DOMAIN-SUFFIX,vkuserlive.net
@@ -40,9 +37,9 @@ DOMAIN-SUFFIX,yandex.fi
 DOMAIN-SUFFIX,yandex.fr
 DOMAIN-SUFFIX,yandex.az
 DOMAIN-SUFFIX,yandex.by
+DOMAIN-SUFFIX,yastatic.net
 DOMAIN-SUFFIX,yandex.com
 DOMAIN-SUFFIX,yandexcloud.net
-DOMAIN-SUFFIX,yandex.uz
 DOMAIN-SUFFIX,yandex.ua
 DOMAIN-SUFFIX,yandex.tm
 DOMAIN-SUFFIX,yandex.tj
@@ -59,9 +56,12 @@ DOMAIN-SUFFIX,yandex.net
 DOMAIN-SUFFIX,yandex.jobs
 DOMAIN-SUFFIX,yandex.st
 DOMAIN-SUFFIX,yandex.sx
-DOMAIN-SUFFIX,mycdn.me
+DOMAIN-SUFFIX,ozonusercontent.com
 DOMAIN-SUFFIX,emias.info
-DOMAIN-SUFFIX,yastatic.net
+DOMAIN-SUFFIX,mvk.com
+DOMAIN-SUFFIX,userapi.com
+DOMAIN-SUFFIX,yandex.uz
+DOMAIN-SUFFIX,mycdn.me
 DOMAIN-SUFFIX,yandex.com.tr
 DOMAIN-SUFFIX,yandex.com.ua
 DOMAIN-SUFFIX,yandex.com.ge

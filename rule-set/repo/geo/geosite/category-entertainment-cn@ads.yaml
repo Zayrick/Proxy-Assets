@@ -19,13 +19,6 @@ payload:
     - +.ads.service.kugou.com
     - +.adserviceretry.kglink.cn
     - +.adserviceretry.kugou.com
-    - apilog-web.acfun.cn
-    - +.click.hunantv.com
-    - +.da.hunantv.com
-    - +.da.mgtv.com
-    - +.log.hunantv.com
-    - +.log.v2.hunantv.com
-    - +.res.hunantv.com
     - +.api.game.letvstore.com
     - +.ark.letv.com
     - +.dc.letv.com
@@ -55,3 +48,10 @@ payload:
     - +.e.kuaishou.com
     - log-sdk.gifshow.com
     - wlog.kuaishou.com
+    - +.click.hunantv.com
+    - +.da.hunantv.com
+    - +.da.mgtv.com
+    - +.log.hunantv.com
+    - +.log.v2.hunantv.com
+    - +.res.hunantv.com
+    - apilog-web.acfun.cn
