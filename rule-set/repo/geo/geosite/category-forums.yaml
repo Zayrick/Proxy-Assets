@@ -1,9 +1,9 @@
 payload:
-    - +.redditspace.com
-    - +.dslr.net
+    - +.18p2p.com
+    - +.8chan.moe
     - +.avsforum.com
     - +.disp.cc
-    - +.18p2p.com
+    - +.doom9.org
     - +.eyny.com
     - +.gab.com
     - +.hydrogenaud.io
@@ -15,6 +15,14 @@ payload:
     - +.v2ex.com
     - +.5i01.com
     - +.mobile01.com
+    - +.ptt.cc
+    - +.ptt2.cc
+    - +.ptt3.cc
+    - +.qr.ae
+    - +.quora.com
+    - +.quoracdn.net
+    - +.poe.com
+    - +.poecdn.net
     - +.maintracker.org
     - +.rutracker.cc
     - +.rutracker.cr
@@ -23,33 +31,30 @@ payload:
     - +.rutracker.org
     - +.rutrecker.net
     - +.rutrk.org
+    - +.soyjak.party
+    - +.soyjak.st
+    - +.yamibo.com
     - +.dcard.cc
     - +.dcard.io
     - +.dcard.link
     - +.dcard.tw
-    - +.hkgolden.com
-    - +.hkgolden.media
-    - +.broadbandreports.com
-    - +.redditstatic.com
-    - +.dslreports.com
-    - +.redd.it
-    - +.reddit.com
-    - +.redditblog.com
-    - +.reddithelp.com
-    - +.redditinc.com
-    - +.redditmail.com
-    - +.redditmedia.com
-    - +.doom9.org
-    - +.8chan.moe
-    - +.soyjak.st
-    - +.ptt3.cc
-    - +.ptt2.cc
-    - +.yamibo.com
-    - +.2ch.net
-    - +.5ch.net
     - +.ck101.com
     - +.ckcdn.com
     - +.ckck.fun
+    - +.broadbandreports.com
+    - +.dslr.net
+    - +.dslreports.com
+    - +.6park.com
+    - +.6parkbbs.com
+    - +.6parknews.com
+    - +.cool18.com
+    - +.popo8.com
+    - +.parkvv.com
+    - +.xwbo.com
+    - +.2ch.net
+    - +.5ch.net
+    - +.hkgolden.com
+    - +.hkgolden.media
     - +.pimg.tw
     - +.pixanalytics.com
     - +.pixfs.net
@@ -58,24 +63,19 @@ payload:
     - +.pixnet.pro
     - +.pixnet.tw
     - +.pixplug.in
-    - +.ptt.cc
+    - +.redd.it
+    - +.reddit.com
+    - +.redditblog.com
+    - +.reddithelp.com
+    - +.redditinc.com
+    - +.redditmail.com
+    - +.redditmedia.com
+    - +.redditspace.com
+    - +.redditstatic.com
+    - +.redditstatus.com
     - +.4cdn.org
     - +.4chan.org
     - +.4channel.org
-    - +.6park.com
-    - +.6parkbbs.com
-    - +.6parknews.com
-    - +.cool18.com
-    - +.popo8.com
-    - +.parkvv.com
-    - +.xwbo.com
-    - +.qr.ae
-    - +.quora.com
-    - +.quoracdn.net
-    - +.poe.com
-    - +.poecdn.net
-    - +.soyjak.party
-    - +.redditstatus.com
     - +.lih.kg
     - +.lihkg.com
     - +.pixinsight.com.tw
