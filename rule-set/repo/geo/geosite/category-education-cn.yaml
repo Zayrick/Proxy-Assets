@@ -8,25 +8,25 @@ payload:
     - +.chesicc.net
     - +.chsi.cn
     - +.gfbzb.cn
-    - +.yeshj.com
+    - +.shanbay.com
     - +.keboyunxiao.com
+    - +.baydn.com
+    - +.koopass.com
+    - +.koolearn.com
+    - +.koocdn.com
+    - +.yeshj.com
     - +.hujiang.com
+    - +.gfbzb.com
     - +.hjfile.cn
     - +.hjapi.com
     - +.cctalk.com
-    - +.mojidict.com
-    - +.shareintelli.com
-    - +.gfbzb.com
-    - +.hugecore.net
-    - +.applysquare.net
-    - +.applysquare.com
     - +.gfbzb.net
     - +.ncss.cn
-    - +.17zuoye.net
-    - +.17zuoye.com
-    - +.17zuoye.cn
+    - +.mojidict.com
+    - +.shareintelli.com
+    - +.hugecore.net
     - +.qgzb.net
-    - +.pmphmooc.com
+    - +.17zuoye.net
     - +.zbbm.net
     - +.yudou.cn
     - +.yushiyan.net
@@ -52,8 +52,8 @@ payload:
     - +.aiyunxiao.com
     - +.cedf.cn
     - +.iyunxiao.com
-    - +.xesimg.com
-    - +.openlearning.com
+    - +.pmphmooc.com
+    - +.17zuoye.com
     - +.chesicc.cn
     - +.pigai.org
     - +.weilaiyunxiao.com
@@ -62,13 +62,18 @@ payload:
     - +.eduei.com
     - +.edu.cn
     - +.ystbds.com
-    - +.koocdn.com
-    - +.koolearn.com
-    - +.koopass.com
-    - +.baydn.com
-    - +.shanbay.com
-    - +.speiyou.com
+    - +.chinesemooc.org
+    - +.cnmooc.org
+    - +.icourse163.org
+    - +.icourses.cn
+    - +.mooc.cn
+    - +.openlearning.com
     - +.yunxiao.com
+    - +.17zuoye.cn
+    - +.applysquare.com
+    - +.applysquare.net
+    - +.speiyou.com
+    - +.xesimg.com
     - +.xueersi.com
     - +.banmaaike.com
     - +.xiaoyuankousuan.com
@@ -85,19 +90,14 @@ payload:
     - +.zhihuishu.com
     - +.rainclassroom.com
     - +.yuketang.cn
-    - +.chinesemooc.org
-    - +.cnmooc.org
-    - +.icourse163.org
-    - +.icourses.cn
-    - +.mooc.cn
     - +.qgzb.gov.cn
     - +.chsi.com.cn
-    - +.icve.com.cn
+    - +.zbbm.gov.cn
     - +.gatzs.com.cn
-    - +.chdi.com.cn
+    - +.icve.com.cn
     - +.ncss.org.cn
     - +.gfbzb.com.cn
-    - +.zbbm.gov.cn
+    - +.chdi.com.cn
     - +.qgzb.com.cn
     - +.gfbzb.gov.cn
     - +.chinayz.com.cn

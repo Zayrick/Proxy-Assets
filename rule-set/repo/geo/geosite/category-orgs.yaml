@@ -23,24 +23,6 @@ payload:
     - +.who.int
     - +.wi-fi.org
     - +.wto.org
-    - +.nist.gov
-    - +.time.gov
-    - +.openmaps.org
-    - +.openstreetmap.com
-    - +.openstreetmap.net
-    - +.openstreetmap.org
-    - +.openstreetmaps.org
-    - +.osm.org
-    - +.osmfoundation.org
-    - +.stateofthemap.com
-    - +.stateofthemap.org
-    - +.archive-it.org
-    - +.archive.org
-    - +.archive.ph
-    - +.archive.today
-    - +.openlibrary.org
-    - +.4pcdn.org
-    - +.4plebs.org
     - +.ccstatic.org
     - +.creativecommons.org
     - +.creativecommons.engineering
@@ -108,10 +90,26 @@ payload:
     - +.signalprocessingsociety.org
     - +.technologyandsociety.org
     - +.vtsociety.org
+    - +.nist.gov
+    - +.time.gov
+    - +.openmaps.org
+    - +.openstreetmap.com
+    - +.openstreetmap.net
+    - +.openstreetmap.org
+    - +.openstreetmaps.org
+    - +.osm.org
+    - +.osmfoundation.org
+    - +.stateofthemap.com
+    - +.stateofthemap.org
     - +.paskoocheh.com
     - +.ppy.sh
-    - +.rolfoundation.org
-    - +.rolsociety.org
+    - +.archive-it.org
+    - +.archive.org
+    - +.archive.ph
+    - +.archive.today
+    - +.openlibrary.org
+    - +.4pcdn.org
+    - +.4plebs.org
     - +.acousticbrainz.org
     - +.bookbrainz.org
     - +.coverartarchive.org
@@ -120,3 +118,5 @@ payload:
     - +.messybrainz.org
     - +.metabrainz.org
     - +.musicbrainz.org
+    - +.rolfoundation.org
+    - +.rolsociety.org

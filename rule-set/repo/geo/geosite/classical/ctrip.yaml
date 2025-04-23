@@ -18,6 +18,9 @@ payload:
     - DOMAIN-SUFFIX,toptown.cn
     - DOMAIN-SUFFIX,toursbms.com
     - DOMAIN-SUFFIX,vipdlt.com
+    - DOMAIN-SUFFIX,qunar.com
+    - DOMAIN-SUFFIX,qunarcdn.com
+    - DOMAIN-SUFFIX,qunarzz.com
     - DOMAIN-SUFFIX,ctrip.co.id
     - DOMAIN-SUFFIX,ctrip.co.kr
     - DOMAIN-SUFFIX,ctrip.co.th
