@@ -28,14 +28,28 @@ payload:
     - +.creativecommons.engineering
     - +.licensebuttons.net
     - +.csis.org
-    - +.emojipedia.org
-    - +.worldemojiawards.com
-    - +.worldemojiday.com
-    - +.xn--yt8h.la
     - +.f-dro1d.org
     - +.f-droid.com
     - +.f-droid.org
     - +.fdroid.org
+    - +.openmaps.org
+    - +.openstreetmap.com
+    - +.openstreetmap.net
+    - +.openstreetmap.org
+    - +.openstreetmaps.org
+    - +.osm.org
+    - +.osmfoundation.org
+    - +.stateofthemap.com
+    - +.stateofthemap.org
+    - +.rolfoundation.org
+    - +.rolsociety.org
+    - +.archive-it.org
+    - +.archive.org
+    - +.archive.ph
+    - +.archive.today
+    - +.openlibrary.org
+    - +.4pcdn.org
+    - +.4plebs.org
     - +.ieee.org
     - +.ieee.tv
     - +.tryengineering.org
@@ -90,26 +104,6 @@ payload:
     - +.signalprocessingsociety.org
     - +.technologyandsociety.org
     - +.vtsociety.org
-    - +.nist.gov
-    - +.time.gov
-    - +.openmaps.org
-    - +.openstreetmap.com
-    - +.openstreetmap.net
-    - +.openstreetmap.org
-    - +.openstreetmaps.org
-    - +.osm.org
-    - +.osmfoundation.org
-    - +.stateofthemap.com
-    - +.stateofthemap.org
-    - +.paskoocheh.com
-    - +.ppy.sh
-    - +.archive-it.org
-    - +.archive.org
-    - +.archive.ph
-    - +.archive.today
-    - +.openlibrary.org
-    - +.4pcdn.org
-    - +.4plebs.org
     - +.acousticbrainz.org
     - +.bookbrainz.org
     - +.coverartarchive.org
@@ -118,5 +112,11 @@ payload:
     - +.messybrainz.org
     - +.metabrainz.org
     - +.musicbrainz.org
-    - +.rolfoundation.org
-    - +.rolsociety.org
+    - +.nist.gov
+    - +.time.gov
+    - +.paskoocheh.com
+    - +.ppy.sh
+    - +.emojipedia.org
+    - +.worldemojiawards.com
+    - +.worldemojiday.com
+    - +.xn--yt8h.la

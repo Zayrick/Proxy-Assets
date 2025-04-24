@@ -1,6 +1,14 @@
 payload:
     - discord-attachments-uploads-prd.storage.googleapis.com
     - hammerandchisel.ssl.zendesk.com
+    - +.telegram.space
+    - +.cinny.in
+    - +.signal.link
+    - +.signal.me
+    - +.signal.tube
+    - +.signal.org
+    - +.signalusers.org
+    - +.whispersystems.org
     - +.slack-core.com
     - +.slack-edge.com
     - +.slack-files.com
@@ -23,37 +31,16 @@ payload:
     - +.whatsapp.org
     - +.whatsapp.tv
     - +.whatsappbrand.com
-    - +.dis.gd
-    - +.discord.co
-    - +.discord.com
-    - +.discord.design
-    - +.discord.dev
-    - +.discord.gg
-    - +.discord.gift
-    - +.discord.gifts
-    - +.discord.media
-    - +.discord.new
-    - +.discord.store
-    - +.discord.tools
-    - +.discord-activities.com
-    - +.discordactivities.com
-    - +.discordapp.com
-    - +.discordapp.net
-    - +.discordmerch.com
-    - +.discordpartygames.com
-    - +.discordsays.com
-    - +.discordstatus.com
-    - +.airhorn.solutions
-    - +.airhornbot.com
-    - +.bigbeans.solutions
-    - +.watchanimeattheoffice.com
-    - +.discordapp.io
-    - +.discordcdn.com
+    - +.clubhouse.com
+    - +.clubhouseapi.com
+    - +.joinclubhouse.com
     - +.freenode.net
     - +.intercom.com
     - +.intercom.io
     - +.intercomassets.com
     - +.intercomcdn.com
+    - +.keybase.io
+    - +.keybaseapi.com
     - +.linemobile.com
     - +.lineshoppingseller.com
     - +.line-apps-beta.com
@@ -65,28 +52,17 @@ payload:
     - +.nhncorp.jp
     - +.lin.ee
     - +.line-scdn.net
-    - +.linecorp.com
+    - +.discordcdn.com
     - +.linefriends.com
     - +.linetv.tw
     - +.linegame.jp
     - +.gcld-line.com
     - +.linemyshop.com
     - +.line.me
-    - +.signal.art
+    - +.linecorp.com
     - +.signal.group
-    - +.signal.link
-    - +.signal.me
-    - +.signal.tube
-    - +.signal.org
-    - +.signalusers.org
-    - +.whispersystems.org
-    - +.clubhouse.com
-    - +.clubhouseapi.com
-    - +.joinclubhouse.com
-    - +.keybase.io
-    - +.keybaseapi.com
+    - +.discordapp.io
     - +.arewereadyyet.com
-    - +.cinny.in
     - +.element.io
     - +.fluffychat.im
     - +.matrix.org
@@ -112,12 +88,36 @@ payload:
     - +.telegram.dog
     - +.telegram.me
     - +.telegram.org
-    - +.telegram.space
+    - +.signal.art
     - +.telesco.pe
     - +.tg.dev
     - +.tx.me
     - +.usercontent.dev
-    - +.linefriends.com.tw
+    - +.dis.gd
+    - +.discord.co
+    - +.discord.com
+    - +.discord.design
+    - +.discord.dev
+    - +.discord.gg
+    - +.discord.gift
+    - +.discord.gifts
+    - +.discord.media
+    - +.discord.new
+    - +.discord.store
+    - +.discord.tools
+    - +.discord-activities.com
+    - +.discordactivities.com
+    - +.discordapp.com
+    - +.discordapp.net
+    - +.discordmerch.com
+    - +.discordpartygames.com
+    - +.discordsays.com
+    - +.discordstatus.com
+    - +.airhorn.solutions
+    - +.airhornbot.com
+    - +.bigbeans.solutions
+    - +.watchanimeattheoffice.com
     - +.line.naver.jp
+    - +.linefriends.com.tw
     - +.graph.whatsapp.com
     - +.graph.whatsapp.net

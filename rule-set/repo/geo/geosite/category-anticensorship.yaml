@@ -1,5 +1,5 @@
 payload:
-    - +.citizenlab.ca
+    - +.cf-ipfs.com
     - +.proxifier.com
     - +.browserleaks.com
     - +.bypasscensorship.org
@@ -10,7 +10,7 @@ payload:
     - +.ffprofile.com
     - +.freenetproject.org
     - +.fteproxy.org
-    - +.epicbrowser.com
+    - +.ipfs-gateway.cloud
     - +.getoutline.org
     - +.gfw.report
     - +.guardianproject.info
@@ -22,7 +22,7 @@ payload:
     - +.ooni.org
     - +.openvpn.net
     - +.privacytools.io
-    - +.citizenlab.org
+    - +.ipfs.io
     - +.psiphon.ca
     - +.psiphon3.com
     - +.sagernet.org
@@ -40,32 +40,12 @@ payload:
     - +.wikileaks.org
     - +.wireguard.com
     - +.zeronet.io
-    - +.v2ray.com
-    - +.v2ray.cool
-    - +.v2fly.org
-    - +.censorship.ai
-    - +.akasha.world
-    - +.geti2p.net
-    - +.applecensorship.com
-    - +.freebrowser.org
-    - +.freewechat.com
-    - +.freeweibo.com
-    - +.freezhihu.org
-    - +.greatfire.org
-    - +.pao-pao.net
-    - +.wikiunblocked.org
-    - +.haveibeenpwned.com
-    - +.pwnedpasswords.com
-    - +.getlantern.org
-    - +.lantern.io
-    - +.paskoocheh.com
-    - +.torproject.org
     - +.ipns.co
     - +.ipfs.tech
     - +.cloudflare-ipfs.com
-    - +.cf-ipfs.com
-    - +.ipfs.io
-    - +.ipfs-gateway.cloud
+    - +.censorship.ai
+    - +.akasha.world
+    - +.geti2p.net
     - +.c4rex.co
     - +.via0.com
     - +.nftstorage.link
@@ -73,16 +53,36 @@ payload:
     - +.crustwebsites.net
     - +.4everland.io
     - +.dweb.link
-    - +.censorship.no
-    - +.softether.org
+    - +.applecensorship.com
+    - +.freebrowser.org
     - +.vpngate.net
     - +.vpngate.jp
     - +.opengw.net
     - +.softether-download.com
-    - +.gateway.pinata.cloud
-    - +.ipfs.eternum.io
-    - +.ipfs.best-practice.se
+    - +.softether.org
+    - +.pwnedpasswords.com
+    - +.haveibeenpwned.com
+    - +.epicbrowser.com
+    - +.freewechat.com
+    - +.freeweibo.com
+    - +.freezhihu.org
+    - +.greatfire.org
+    - +.pao-pao.net
+    - +.wikiunblocked.org
+    - +.getlantern.org
+    - +.lantern.io
+    - +.paskoocheh.com
+    - +.torproject.org
+    - +.v2ray.com
+    - +.v2ray.cool
+    - +.v2fly.org
+    - +.censorship.no
+    - +.citizenlab.ca
+    - +.citizenlab.org
     - +.ipfs.lain.la
+    - +.ipfs.best-practice.se
+    - +.ipfs.eternum.io
+    - +.gateway.pinata.cloud
     - +.ipfs.runfission.com
     - +.ipfs.anonymize.com
     - +.xtls.github.io
