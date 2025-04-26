@@ -1,5 +1,5 @@
 payload:
-    - +.torproject.org
+    - +.haveibeenpwned.com
     - +.proxifier.com
     - +.browserleaks.com
     - +.bypasscensorship.org
@@ -10,7 +10,7 @@ payload:
     - +.ffprofile.com
     - +.freenetproject.org
     - +.fteproxy.org
-    - +.vpngate.jp
+    - +.getlantern.org
     - +.getoutline.org
     - +.gfw.report
     - +.guardianproject.info
@@ -22,7 +22,7 @@ payload:
     - +.ooni.org
     - +.openvpn.net
     - +.privacytools.io
-    - +.opengw.net
+    - +.pwnedpasswords.com
     - +.psiphon.ca
     - +.psiphon3.com
     - +.sagernet.org
@@ -40,13 +40,28 @@ payload:
     - +.wikileaks.org
     - +.wireguard.com
     - +.zeronet.io
-    - +.paskoocheh.com
-    - +.softether.org
-    - +.softether-download.com
+    - +.opengw.net
+    - +.vpngate.jp
+    - +.vpngate.net
     - +.censorship.ai
     - +.akasha.world
     - +.geti2p.net
-    - +.vpngate.net
+    - +.lantern.io
+    - +.softether.org
+    - +.softether-download.com
+    - +.v2ray.com
+    - +.v2ray.cool
+    - +.v2fly.org
+    - +.applecensorship.com
+    - +.freebrowser.org
+    - +.freewechat.com
+    - +.freeweibo.com
+    - +.freezhihu.org
+    - +.greatfire.org
+    - +.pao-pao.net
+    - +.wikiunblocked.org
+    - +.paskoocheh.com
+    - +.torproject.org
     - +.ipns.co
     - +.ipfs.tech
     - +.cloudflare-ipfs.com
@@ -61,30 +76,15 @@ payload:
     - +.4everland.io
     - +.dweb.link
     - +.censorship.no
-    - +.getlantern.org
-    - +.wikiunblocked.org
-    - +.pao-pao.net
-    - +.greatfire.org
-    - +.freezhihu.org
-    - +.freeweibo.com
-    - +.freewechat.com
-    - +.freebrowser.org
-    - +.applecensorship.com
-    - +.lantern.io
-    - +.haveibeenpwned.com
-    - +.pwnedpasswords.com
-    - +.v2ray.com
-    - +.v2ray.cool
-    - +.v2fly.org
     - +.citizenlab.ca
-    - +.citizenlab.org
     - +.epicbrowser.com
-    - +.ipfs.lain.la
-    - +.ipfs.best-practice.se
-    - +.ipfs.eternum.io
-    - +.gateway.pinata.cloud
-    - +.ipfs.runfission.com
+    - +.citizenlab.org
     - +.ipfs.anonymize.com
+    - +.ipfs.runfission.com
+    - +.gateway.pinata.cloud
+    - +.ipfs.eternum.io
+    - +.ipfs.best-practice.se
+    - +.ipfs.lain.la
     - +.xtls.github.io
     - +.twister.net.co
     - +.ipfs.fleek.co

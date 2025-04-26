@@ -2,10 +2,8 @@ payload:
     - +.ir
     - +.xn--mgba3a4f16a
     - +.xn--mgba3a4fra
-    - +.zarinpal.com
-    - +.agri-bank.com
+    - +.iranserver.com
     - +.loxblog.com
-    - +.divarcdn.com
     - +.rozblog.com
     - +.neshan.org
     - +.varzesh3.com
@@ -53,7 +51,19 @@ payload:
     - +.ramzinex.com
     - +.tabdeal.org
     - +.tetherland.com
-    - +.agrieng.org
+    - +.snapptrip.com
+    - +.asanpardakht.com
+    - +.behpardakht.com
+    - +.mydigipay.com
+    - +.asanpardakht.net
+    - +.zarinpal.com
+    - +.weswap.digital
+    - +.sanjesh.org
+    - +.sharif.edu
+    - +.srttu.edu
+    - +.snapproom.com
+    - +.flightio.com
+    - +.mrbilit.com
     - +.bimeonline.com
     - +.dana-insurance.com
     - +.dayins.com
@@ -69,32 +79,16 @@ payload:
     - +.aparatsport.com
     - +.filimo.com
     - +.filimo.school
-    - +.bale.ai
-    - +.eitaa.com
-    - +.gap.im
-    - +.gaplication.com
-    - +.niniban.com
-    - +.ninisite.com
-    - +.virasty.com
-    - +.flightio.com
-    - +.mrbilit.com
-    - +.faradars.org
-    - +.toplearn.com
-    - +.iranlms.org
-    - +.webinarplus.online
-    - +.asanpardakht.com
-    - +.behpardakht.com
-    - +.mydigipay.com
-    - +.asanpardakht.net
-    - +.blogfa.com
-    - +.tgju.org
-    - +.blogsky.com
-    - +.niniweblog.com
-    - +.divar.cloud
-    - +.sanjesh.org
-    - +.sharif.edu
-    - +.srttu.edu
+    - +.digi-kala.com
+    - +.janebi.com
+    - +.sheypoor.com
+    - +.torob.com
+    - +.digikala.com
+    - +.digikalabusiness.com
+    - +.digikalajet.com
     - +.digistyle.com
+    - +.divar.cloud
+    - +.divarcdn.com
     - +.abrha.net
     - +.afranet.com
     - +.arvancloud.com
@@ -104,8 +98,10 @@ payload:
     - +.farsroid.com
     - +.ipnumberia.com
     - +.iranmobile.org
-    - +.iranserver.com
-    - +.mihanwebhost.com
+    - +.blogfa.com
+    - +.tgju.org
+    - +.blogsky.com
+    - +.niniweblog.com
     - +.p30download.com
     - +.parsonline.com
     - +.parspack.com
@@ -118,31 +114,17 @@ payload:
     - +.softgozar.com
     - +.yasdl.com
     - +.zhaket.com
-    - +.cdnsnapptrip.com
-    - +.snapp-box.com
-    - +.snapp.cab
-    - +.snapp.doctor
-    - +.snapp.express
-    - +.snapp.ninja
-    - +.snapp.site
-    - +.snapp.supply
-    - +.snapp.taxi
-    - +.snapp.tech
-    - +.snappcloud.io
-    - +.snappfood.dev
-    - +.snapproom.com
-    - +.snapptrip.com
-    - +.weswap.digital
-    - +.ansarbank.com
-    - +.blubank.com
-    - +.hibank24.com
-    - +.parsian-bank.com
-    - +.sb24.com
+    - +.faradars.org
+    - +.toplearn.com
+    - +.iranlms.org
+    - +.webinarplus.online
     - +.quera.org
+    - +.agrieng.org
     - +.asriran.com
     - +.eghtesadnews.com
     - +.fararu.com
     - +.hawzahnews.com
+    - +.mihanwebhost.com
     - +.iraneconomist.com
     - +.mehrnews.com
     - +.parsine.com
@@ -162,10 +144,28 @@ payload:
     - +.khorasannews.com
     - +.resalat-news.com
     - +.tehrantimes.com
-    - +.digikalajet.com
-    - +.digi-kala.com
-    - +.janebi.com
-    - +.sheypoor.com
-    - +.torob.com
-    - +.digikala.com
-    - +.digikalabusiness.com
+    - +.snappfood.dev
+    - +.agri-bank.com
+    - +.ansarbank.com
+    - +.blubank.com
+    - +.hibank24.com
+    - +.parsian-bank.com
+    - +.sb24.com
+    - +.bale.ai
+    - +.eitaa.com
+    - +.gap.im
+    - +.gaplication.com
+    - +.niniban.com
+    - +.ninisite.com
+    - +.virasty.com
+    - +.cdnsnapptrip.com
+    - +.snapp-box.com
+    - +.snapp.cab
+    - +.snapp.doctor
+    - +.snapp.express
+    - +.snapp.ninja
+    - +.snapp.site
+    - +.snapp.supply
+    - +.snapp.taxi
+    - +.snapp.tech
+    - +.snappcloud.io
