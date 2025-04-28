@@ -1,5 +1,5 @@
 payload:
-    - DOMAIN-SUFFIX,pwnedpasswords.com
+    - DOMAIN-SUFFIX,epicbrowser.com
     - DOMAIN-SUFFIX,proxifier.com
     - DOMAIN-SUFFIX,browserleaks.com
     - DOMAIN-SUFFIX,bypasscensorship.org
@@ -10,7 +10,7 @@ payload:
     - DOMAIN-SUFFIX,ffprofile.com
     - DOMAIN-SUFFIX,freenetproject.org
     - DOMAIN-SUFFIX,fteproxy.org
-    - DOMAIN-SUFFIX,lantern.io
+    - DOMAIN-SUFFIX,pwnedpasswords.com
     - DOMAIN-SUFFIX,getoutline.org
     - DOMAIN-SUFFIX,gfw.report
     - DOMAIN-SUFFIX,guardianproject.info
@@ -22,7 +22,7 @@ payload:
     - DOMAIN-SUFFIX,ooni.org
     - DOMAIN-SUFFIX,openvpn.net
     - DOMAIN-SUFFIX,privacytools.io
-    - DOMAIN-SUFFIX,getlantern.org
+    - DOMAIN-SUFFIX,haveibeenpwned.com
     - DOMAIN-SUFFIX,psiphon.ca
     - DOMAIN-SUFFIX,psiphon3.com
     - DOMAIN-SUFFIX,sagernet.org
@@ -41,16 +41,15 @@ payload:
     - DOMAIN-SUFFIX,wireguard.com
     - DOMAIN-SUFFIX,zeronet.io
     - DOMAIN-SUFFIX,censorship.no
-    - DOMAIN-SUFFIX,epicbrowser.com
-    - DOMAIN-SUFFIX,haveibeenpwned.com
+    - DOMAIN-SUFFIX,citizenlab.ca
+    - DOMAIN-SUFFIX,citizenlab.org
     - DOMAIN-SUFFIX,censorship.ai
     - DOMAIN-SUFFIX,akasha.world
     - DOMAIN-SUFFIX,geti2p.net
+    - DOMAIN-SUFFIX,getlantern.org
+    - DOMAIN-SUFFIX,lantern.io
     - DOMAIN-SUFFIX,softether.org
     - DOMAIN-SUFFIX,softether-download.com
-    - DOMAIN-SUFFIX,opengw.net
-    - DOMAIN-SUFFIX,vpngate.jp
-    - DOMAIN-SUFFIX,vpngate.net
     - DOMAIN-SUFFIX,ipns.co
     - DOMAIN-SUFFIX,ipfs.tech
     - DOMAIN-SUFFIX,cloudflare-ipfs.com
@@ -66,19 +65,20 @@ payload:
     - DOMAIN-SUFFIX,dweb.link
     - DOMAIN-SUFFIX,applecensorship.com
     - DOMAIN-SUFFIX,freebrowser.org
-    - DOMAIN-SUFFIX,citizenlab.org
-    - DOMAIN-SUFFIX,citizenlab.ca
+    - DOMAIN-SUFFIX,vpngate.net
+    - DOMAIN-SUFFIX,vpngate.jp
+    - DOMAIN-SUFFIX,opengw.net
     - DOMAIN-SUFFIX,v2fly.org
     - DOMAIN-SUFFIX,v2ray.cool
     - DOMAIN-SUFFIX,v2ray.com
     - DOMAIN-SUFFIX,torproject.org
     - DOMAIN-SUFFIX,paskoocheh.com
-    - DOMAIN-SUFFIX,wikiunblocked.org
     - DOMAIN-SUFFIX,freewechat.com
     - DOMAIN-SUFFIX,freeweibo.com
     - DOMAIN-SUFFIX,freezhihu.org
     - DOMAIN-SUFFIX,greatfire.org
     - DOMAIN-SUFFIX,pao-pao.net
+    - DOMAIN-SUFFIX,wikiunblocked.org
     - DOMAIN-SUFFIX,ipfs.lain.la
     - DOMAIN-SUFFIX,ipfs.best-practice.se
     - DOMAIN-SUFFIX,ipfs.eternum.io

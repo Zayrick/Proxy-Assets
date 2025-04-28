@@ -1,9 +1,10 @@
 payload:
-    - +.97973.com
-    - +.procg.cn
+    - +.sina.com
+    - +.douban.fm
     - +.tieba.com
-    - +.gracg.com
-    - +.sina.net
+    - +.douban.com
+    - +.97973.com
+    - +.doubanio.com
     - +.xhscdn.com
     - +.xhscdn.net
     - +.xiaohongshu.com
@@ -11,21 +12,21 @@ payload:
     - +.yystatic.com
     - +.duowan.com
     - +.dwstatic.com
-    - +.zhihu.com
-    - +.zhimg.com
     - +.coolapk.com
-    - +.sinaapp.com
-    - +.coolapkmarket.net
-    - +.douban.com
-    - +.douban.fm
-    - +.doubanio.com
+    - +.coolapkmarket.com
+    - +.sina.net
+    - +.gracg.com
+    - +.procg.cn
+    - +.hupu.com
+    - +.hupucdn.com
+    - +.shihuo.cn
     - +.sinajs.cn
     - +.sina.cn
     - +.sinajs.com
-    - +.sina.com
     - +.dandanvoice.com
     - +.dandan818.com
-    - +.coolapkmarket.com
+    - +.coolapkmarket.net
+    - +.sinaapp.com
     - +.sinaedge.com
     - +.t.cn
     - +.sinaimg.com
@@ -39,16 +40,15 @@ payload:
     - +.weibo.cn
     - +.weibo.com
     - +.weibocdn.com
-    - +.bcy.net
+    - +.zhihu.com
+    - +.zhimg.com
     - +.bcyimg.com
-    - +.hupu.com
-    - +.hupucdn.com
-    - +.shihuo.cn
-    - +.weibo.com.cn
+    - +.bcy.net
+    - +.hoopchina.com.cn
     - +.tieba.baidu.com
+    - +.weibo.com.cn
     - +.sina.com.cn
     - +.lf-rc1.yhgfb-cn-static.com
-    - +.hoopchina.com.cn
     - +.hk.weibo.com
     - +.my.weibo.com
     - +.overseas.weibo.com
