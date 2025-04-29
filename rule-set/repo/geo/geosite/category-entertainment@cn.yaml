@@ -1,6 +1,28 @@
 payload:
-    - +.amazonprimevideo.cn
-    - +.amazonprimevideo.com.cn
+    - +.xboxlive.cn
+    - +.leagueoflegends.cn
+    - +.lpl.com.cn
+    - +.bilibiligame.cn
+    - +.bilibiligame.co
+    - +.bilibiligame.net
+    - +.biligame.co
+    - +.biligame.com
+    - +.biligame.net
+    - +.legendofzelda.cn
+    - +.legendofzelda.com.cn
+    - +.miitomo.com.cn
+    - +.nintendolabo.cn
+    - +.nintendoswitch.cn
+    - +.nintendoswitch.com.cn
+    - +.supersmashbros.cn
+    - +.supersmashbros.com.cn
+    - +.xn--mts47c3w9b1qr.cn
+    - +.mariokart.cn
+    - +.mariokart.com.cn
+    - +.supermariobros.com.cn
+    - +.kurogames.com
+    - +.aki-game.com
+    - +.sl916.com
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -16,12 +38,7 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
-    - +.bilibiligame.cn
-    - +.bilibiligame.co
-    - +.bilibiligame.net
-    - +.biligame.co
-    - +.biligame.com
-    - +.biligame.net
+    - uplaypc-s-ubisoft.cdn.ubi.com
     - +.bluearchive-cn.com
     - gog.qtlglb.com
     - gogalaxy.gog-statics.com
@@ -31,18 +48,6 @@ payload:
     - www4-static.gog-statics.com
     - gog-cdn-fastly.gog.com
     - gog-cdn.akamaized.net
-    - +.legendofzelda.cn
-    - +.legendofzelda.com.cn
-    - +.miitomo.com.cn
-    - +.nintendolabo.cn
-    - +.nintendoswitch.cn
-    - +.nintendoswitch.com.cn
-    - +.supersmashbros.cn
-    - +.supersmashbros.com.cn
-    - +.xn--mts47c3w9b1qr.cn
-    - +.mariokart.cn
-    - +.mariokart.com.cn
-    - +.supermariobros.com.cn
     - +.battlecare.net
     - +.gameitop.com
     - +.gameloop.com
@@ -128,9 +133,6 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
-    - +.xboxlive.cn
-    - +.leagueoflegends.cn
-    - +.lpl.com.cn
     - +.steamserver.net
     - +.steamusercontent.com
     - +.csgo.wmsj.cn
@@ -147,6 +149,7 @@ payload:
     - xz.pphimalayanrt.com
     - +.steamchina.com
     - +.gstore.val.manlaxy.com
+    - +.ggpht.cn
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -162,8 +165,5 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
-    - uplaypc-s-ubisoft.cdn.ubi.com
-    - +.sl916.com
-    - +.kurogames.com
-    - +.aki-game.com
-    - +.ggpht.cn
+    - +.amazonprimevideo.cn
+    - +.amazonprimevideo.com.cn
