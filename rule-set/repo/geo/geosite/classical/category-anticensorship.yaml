@@ -1,5 +1,5 @@
 payload:
-    - DOMAIN-SUFFIX,cf-ipfs.com
+    - DOMAIN-SUFFIX,vpngate.net
     - DOMAIN-SUFFIX,proxifier.com
     - DOMAIN-SUFFIX,browserleaks.com
     - DOMAIN-SUFFIX,bypasscensorship.org
@@ -10,7 +10,7 @@ payload:
     - DOMAIN-SUFFIX,ffprofile.com
     - DOMAIN-SUFFIX,freenetproject.org
     - DOMAIN-SUFFIX,fteproxy.org
-    - DOMAIN-SUFFIX,ipfs-gateway.cloud
+    - DOMAIN-SUFFIX,ipfs.tech
     - DOMAIN-SUFFIX,getoutline.org
     - DOMAIN-SUFFIX,gfw.report
     - DOMAIN-SUFFIX,guardianproject.info
@@ -22,7 +22,7 @@ payload:
     - DOMAIN-SUFFIX,ooni.org
     - DOMAIN-SUFFIX,openvpn.net
     - DOMAIN-SUFFIX,privacytools.io
-    - DOMAIN-SUFFIX,ipfs.io
+    - DOMAIN-SUFFIX,ipns.co
     - DOMAIN-SUFFIX,psiphon.ca
     - DOMAIN-SUFFIX,psiphon3.com
     - DOMAIN-SUFFIX,sagernet.org
@@ -40,12 +40,16 @@ payload:
     - DOMAIN-SUFFIX,wikileaks.org
     - DOMAIN-SUFFIX,wireguard.com
     - DOMAIN-SUFFIX,zeronet.io
-    - DOMAIN-SUFFIX,ipns.co
-    - DOMAIN-SUFFIX,ipfs.tech
-    - DOMAIN-SUFFIX,cloudflare-ipfs.com
+    - DOMAIN-SUFFIX,paskoocheh.com
+    - DOMAIN-SUFFIX,opengw.net
+    - DOMAIN-SUFFIX,vpngate.jp
     - DOMAIN-SUFFIX,censorship.ai
     - DOMAIN-SUFFIX,akasha.world
     - DOMAIN-SUFFIX,geti2p.net
+    - DOMAIN-SUFFIX,cloudflare-ipfs.com
+    - DOMAIN-SUFFIX,cf-ipfs.com
+    - DOMAIN-SUFFIX,ipfs.io
+    - DOMAIN-SUFFIX,ipfs-gateway.cloud
     - DOMAIN-SUFFIX,c4rex.co
     - DOMAIN-SUFFIX,via0.com
     - DOMAIN-SUFFIX,nftstorage.link
@@ -53,20 +57,17 @@ payload:
     - DOMAIN-SUFFIX,crustwebsites.net
     - DOMAIN-SUFFIX,4everland.io
     - DOMAIN-SUFFIX,dweb.link
-    - DOMAIN-SUFFIX,censorship.no
+    - DOMAIN-SUFFIX,haveibeenpwned.com
+    - DOMAIN-SUFFIX,pwnedpasswords.com
+    - DOMAIN-SUFFIX,citizenlab.org
     - DOMAIN-SUFFIX,citizenlab.ca
-    - DOMAIN-SUFFIX,vpngate.net
-    - DOMAIN-SUFFIX,vpngate.jp
-    - DOMAIN-SUFFIX,opengw.net
+    - DOMAIN-SUFFIX,censorship.no
     - DOMAIN-SUFFIX,v2fly.org
     - DOMAIN-SUFFIX,v2ray.cool
     - DOMAIN-SUFFIX,v2ray.com
     - DOMAIN-SUFFIX,torproject.org
     - DOMAIN-SUFFIX,softether-download.com
-    - DOMAIN-SUFFIX,citizenlab.org
     - DOMAIN-SUFFIX,epicbrowser.com
-    - DOMAIN-SUFFIX,getlantern.org
-    - DOMAIN-SUFFIX,lantern.io
     - DOMAIN-SUFFIX,applecensorship.com
     - DOMAIN-SUFFIX,freebrowser.org
     - DOMAIN-SUFFIX,freewechat.com
@@ -75,9 +76,8 @@ payload:
     - DOMAIN-SUFFIX,greatfire.org
     - DOMAIN-SUFFIX,pao-pao.net
     - DOMAIN-SUFFIX,wikiunblocked.org
-    - DOMAIN-SUFFIX,haveibeenpwned.com
-    - DOMAIN-SUFFIX,pwnedpasswords.com
-    - DOMAIN-SUFFIX,paskoocheh.com
+    - DOMAIN-SUFFIX,getlantern.org
+    - DOMAIN-SUFFIX,lantern.io
     - DOMAIN-SUFFIX,softether.org
     - DOMAIN-SUFFIX,ipfs.lain.la
     - DOMAIN-SUFFIX,ipfs.best-practice.se

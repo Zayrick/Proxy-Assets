@@ -8,25 +8,25 @@ payload:
     - +.chesicc.net
     - +.chsi.cn
     - +.gfbzb.cn
-    - +.fenbilantian.com
+    - +.yuketang.cn
     - +.keboyunxiao.com
-    - +.fenbilantian.cn
-    - +.fenbike.com
-    - +.fenbike.cn
-    - +.fenbi.com
-    - +.fbstatic.cn
-    - +.yuantiku.com
+    - +.rainclassroom.com
+    - +.zhihuishu.com
+    - +.koopass.com
+    - +.koolearn.com
+    - +.koocdn.com
+    - +.yeshj.com
     - +.gfbzb.com
-    - +.yuansouti.com
-    - +.yuanfudao.com
-    - +.ybccode.com
+    - +.hujiang.com
+    - +.hjfile.cn
+    - +.hjapi.com
     - +.gfbzb.net
     - +.ncss.cn
-    - +.xiaoyuankousuan.com
-    - +.banmaaike.com
-    - +.koopass.com
+    - +.cctalk.com
+    - +.fenbilantian.com
+    - +.fenbilantian.cn
     - +.qgzb.net
-    - +.koolearn.com
+    - +.fenbike.com
     - +.zbbm.net
     - +.yudou.cn
     - +.yushiyan.net
@@ -52,8 +52,8 @@ payload:
     - +.aiyunxiao.com
     - +.cedf.cn
     - +.iyunxiao.com
-    - +.chinesemooc.org
-    - +.koocdn.com
+    - +.pmphmooc.com
+    - +.fenbike.cn
     - +.chesicc.cn
     - +.pigai.org
     - +.weilaiyunxiao.com
@@ -62,20 +62,14 @@ payload:
     - +.eduei.com
     - +.edu.cn
     - +.ystbds.com
-    - +.speiyou.com
-    - +.xesimg.com
-    - +.xueersi.com
-    - +.zhihuishu.com
-    - +.rainclassroom.com
-    - +.yuketang.cn
-    - +.yunxiao.com
+    - +.chinesemooc.org
     - +.cnmooc.org
     - +.icourse163.org
     - +.icourses.cn
     - +.mooc.cn
     - +.openlearning.com
-    - +.pmphmooc.com
-    - +.yeshj.com
+    - +.yunxiao.com
+    - +.fenbi.com
     - +.17zuoye.cn
     - +.17zuoye.com
     - +.17zuoye.net
@@ -86,10 +80,16 @@ payload:
     - +.mojidict.com
     - +.baydn.com
     - +.shanbay.com
-    - +.cctalk.com
-    - +.hjapi.com
-    - +.hjfile.cn
-    - +.hujiang.com
+    - +.speiyou.com
+    - +.xesimg.com
+    - +.xueersi.com
+    - +.banmaaike.com
+    - +.xiaoyuankousuan.com
+    - +.ybccode.com
+    - +.yuanfudao.com
+    - +.yuansouti.com
+    - +.yuantiku.com
+    - +.fbstatic.cn
     - +.qgzb.gov.cn
     - +.chsi.com.cn
     - +.zbbm.gov.cn
