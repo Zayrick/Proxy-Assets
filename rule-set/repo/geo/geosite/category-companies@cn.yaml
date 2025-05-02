@@ -1,8 +1,4 @@
 payload:
-    - +.myqnapcloud.cn
-    - +.qlinkto.cn
-    - +.qnap.com.cn
-    - +.duolingo.cn
     - +.apple.cn
     - +.apple.com.cn
     - +.apple-store.cn
@@ -296,6 +292,16 @@ payload:
     - www.apple.com.edgekey.net
     - www.apple.com.edgekey.net.globalredir.akadns.net
     - xp.apple.com
+    - +.apple-icloud.cn
+    - +.appleicloud.cn
+    - +.icloud-apple.cn
+    - +.icloud.com.cn
+    - +.icloud.net.cn
+    - +.icloudapple.cn
+    - +.researchkit.cn
+    - +.researchkit.com.cn
+    - +.swiftui.cn
+    - +.swiftui.com.cn
     - +.beats1.cn
     - +.beats1.com.cn
     - +.beats2.com.cn
@@ -319,26 +325,11 @@ payload:
     - ocsp2-lb.apple.com.akadns.net
     - ocsp2.apple.com
     - valid.apple.com
-    - +.researchkit.cn
-    - +.researchkit.com.cn
-    - +.swiftui.cn
-    - +.swiftui.com.cn
-    - +.apple-icloud.cn
-    - +.appleicloud.cn
-    - +.icloud-apple.cn
-    - +.icloud.com.cn
-    - +.icloud.net.cn
-    - +.icloudapple.cn
-    - +.quickconnect.cn
-    - +.synology.cn
+    - +.intel.cn
+    - +.intel.com.cn
+    - +.intelrealsense.cn
     - +.yahoo.cn
     - +.yahoo.com.cn
-    - +.heptio.cn
-    - +.canon.cn
-    - +.canon.com.cn
-    - +.razerapi.com
-    - +.razersynapse.com
-    - +.razerzone.com
     - +.google.cn
     - +.g.cn
     - +.gkecnapps.cn
@@ -489,6 +480,8 @@ payload:
     - xn--flw351e.com
     - +.gvt1-cn.com
     - +.gvt2-cn.com
+    - firebase-settings.crashlytics.com
+    - redirector.c.play.google.com
     - pki-goog.l.google.com
     - c.pki.goog
     - i.pki.goog
@@ -497,21 +490,6 @@ payload:
     - crls.pki.goog
     - ocsp.pki.goog
     - +.ggpht.cn
-    - redirector.c.play.google.com
-    - firebase-settings.crashlytics.com
-    - +.hpstore.cn
-    - +.samsungeshop.com.cn
-    - +.stmicroelectronics.com.cn
-    - +.acer.com.cn
-    - +.amplifi.com.cn
-    - +.frontrow.com.cn
-    - +.ubnt.com
-    - +.ubnt.com.cn
-    - +.ui.com.cn
-    - +.uum.com.cn
-    - +.uwn.com
-    - +.adobedc.cn
-    - +.panasonic.cn
     - +.dcg.microsoft.com
     - +.dynamics.cn
     - +.engkoo.com
@@ -685,33 +663,30 @@ payload:
     - +.azure-dns-8.cn
     - +.azure-dns-9.cn
     - +.azure-dns-10.cn
-    - +.asus.com.cn
-    - +.teamviewer.cn
+    - +.hpstore.cn
+    - +.amplifi.com.cn
+    - +.frontrow.com.cn
+    - +.ubnt.com
+    - +.ubnt.com.cn
+    - +.ui.com.cn
+    - +.uum.com.cn
+    - +.uwn.com
     - +.yahoo.cn
     - +.yahoo.com.cn
-    - +.sandisk.cn
+    - +.panasonic.cn
+    - www.amd.com
+    - +.att.cn
+    - +.attcorp.cn
+    - +.teamviewer.cn
+    - +.adobedc.cn
     - +.cisco.cn
     - +.cisco.com.cn
     - +.network-auth.cn
     - +.webex.com.cn
-    - +.aoruszone.cn
-    - +.gigabyte.cn
-    - +.gpsonextra.net
-    - +.izatcloud.net
-    - +.qceventscenter.com.cn
-    - +.qualcomm.cn
-    - +.qualcomm.cn.cdn.cloudflare.net
-    - +.xtracloud.cn
-    - +.att.cn
-    - +.attcorp.cn
     - +.heptio.cn
-    - +.geforce.cn
-    - +.gputechconf.cn
-    - +.nvidia.cn
-    - cn.download.nvidia.com
-    - +.intel.cn
-    - +.intel.com.cn
-    - +.intelrealsense.cn
+    - +.razerapi.com
+    - +.razersynapse.com
+    - +.razerzone.com
     - +.aboutamazon.cn
     - +.alexafund.cn
     - +.alexafund.com.cn
@@ -736,11 +711,6 @@ payload:
     - +.z.cn
     - images-cn.ssl-images-amazon.com
     - images-cn-8.ssl-images-amazon.com
-    - +.kindle.cn
-    - +.kindleoasis.cn
-    - +.kindleoasis.com.cn
-    - +.amazonprimevideo.cn
-    - +.amazonprimevideo.com.cn
     - +.a2z.org.cn
     - +.amazonaws.cn
     - +.amazonaws.com.cn
@@ -766,4 +736,34 @@ payload:
     - +.amzndns-cn.cn
     - +.amzndns-cn.com
     - +.amzndns-cn.net
-    - www.amd.com
+    - +.kindle.cn
+    - +.kindleoasis.cn
+    - +.kindleoasis.com.cn
+    - +.amazonprimevideo.cn
+    - +.amazonprimevideo.com.cn
+    - +.gpsonextra.net
+    - +.izatcloud.net
+    - +.qceventscenter.com.cn
+    - +.qualcomm.cn
+    - +.qualcomm.cn.cdn.cloudflare.net
+    - +.xtracloud.cn
+    - +.asus.com.cn
+    - +.aoruszone.cn
+    - +.gigabyte.cn
+    - +.acer.com.cn
+    - +.duolingo.cn
+    - +.stmicroelectronics.com.cn
+    - +.heptio.cn
+    - +.canon.cn
+    - +.canon.com.cn
+    - +.geforce.cn
+    - +.gputechconf.cn
+    - +.nvidia.cn
+    - cn.download.nvidia.com
+    - +.sandisk.cn
+    - +.quickconnect.cn
+    - +.synology.cn
+    - +.myqnapcloud.cn
+    - +.qlinkto.cn
+    - +.qnap.com.cn
+    - +.samsungeshop.com.cn
