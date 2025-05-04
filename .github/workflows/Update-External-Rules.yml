@@ -8,19 +8,7 @@ on:
 jobs:
   Rules-Update:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        rule: [DeepSeek, Talkatone, anti-AD]
-        include:
-          - rule: DeepSeek
-            url: https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/main/DeepSeek.list
-          - rule: Talkatone
-            url: https://raw.githubusercontent.com/mottzz87/crules/main/rule/talkatone.list
-          - rule: anti-AD
-            url: https://anti-ad.net/surge.txt
-      fail-fast: false  # Continue other tasks even if one fails
-      max-parallel: 1  # Run one task at a time to avoid git push conflicts
-  
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -31,34 +19,63 @@ jobs:
         run: |
           mkdir -p rule-set/external
 
-      - name: Download ${{ matrix.rule }} Rule File
+      - name: Download All Rule Files
+        id: download
+        shell: bash
         run: |
-          echo "::group::Downloading ${{ matrix.rule }}.list"
-          curl -s -o rule-set/external/${{ matrix.rule }}.list "${{ matrix.url }}"
-          if [ $? -eq 0 ]; then
-            echo "${{ matrix.rule }}.list downloaded successfully"
+          echo "::group::Downloading Rule Files"
+          
+          # Define rule names and URLs using associative array
+          declare -A rules=(
+            ["DeepSeek"]="https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/main/DeepSeek.list"
+            ["Talkatone"]="https://raw.githubusercontent.com/mottzz87/crules/main/rule/talkatone.list"
+            ["anti-AD"]="https://anti-ad.net/surge.txt"
+          )
+          
+          # Variable to track if any files changed
+          changes=false
+          
+          # Process each rule
+          for rule in "${!rules[@]}"; do
+            url="${rules[$rule]}"
+            
+            echo "Downloading $rule.list from $url"
+            curl -s -o "rule-set/external/$rule.list.new" "$url"
+            
+            if [ $? -eq 0 ] && [ -s "rule-set/external/$rule.list.new" ]; then
+              if [ -f "rule-set/external/$rule.list" ] && cmp -s "rule-set/external/$rule.list" "rule-set/external/$rule.list.new"; then
+                echo "No changes detected for $rule.list"
+                rm "rule-set/external/$rule.list.new"
+              else
+                mv "rule-set/external/$rule.list.new" "rule-set/external/$rule.list"
+                echo "$rule.list updated"
+                changes=true
+              fi
+            else
+              echo "$rule.list download failed"
+              rm -f "rule-set/external/$rule.list.new"
+            fi
+          done
+          
+          # Set output variable to indicate if changes were made
+          if [ "$changes" = true ]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
           else
-            echo "${{ matrix.rule }}.list download failed"
-            exit 1
+            echo "changes=false" >> $GITHUB_OUTPUT
           fi
           echo "::endgroup::"
 
       - name: Commit Changes
+        if: steps.download.outputs.changes == 'true'
         run: |
-          echo "::group::Committing Changes for ${{ matrix.rule }}"
+          echo "::group::Committing Changes"
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-        
-          git pull origin main --rebase
-        
-          git add rule-set/external/${{ matrix.rule }}.list
-        
-          if git diff --staged --quiet; then
-            echo "No changes detected for ${{ matrix.rule }}.list"
-          else
-            TZ=Asia/Shanghai beijing_time=$(date "+%Y-%m-%d %H:%M:%S")
-            git commit -m "Update: ${{ matrix.rule }} rules (Beijing time: $beijing_time)"
-            git push
-            echo "${{ matrix.rule }}.list changes committed"
-          fi
+          
+          git add rule-set/external/
+          
+          TZ=Asia/Shanghai beijing_time=$(date "+%Y-%m-%d %H:%M:%S")
+          git commit -m "Update: external rule files (Beijing time: $beijing_time)"
+          git push
+          echo "Changes committed and pushed"
           echo "::endgroup::"
