@@ -10,14 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        rule:
-          - name: DeepSeek
+        rule: [DeepSeek, Talkatone, anti-AD]
+        include:
+          - rule: DeepSeek
             url: https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/main/DeepSeek.list
-          - name: Talkatone
+          - rule: Talkatone
             url: https://raw.githubusercontent.com/mottzz87/crules/main/rule/talkatone.list
+          - rule: anti-AD
+            url: https://anti-ad.net/surge.txt
       fail-fast: false  # Continue other tasks even if one fails
       max-parallel: 1  # Run one task at a time to avoid git push conflicts
-    
+  
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -28,34 +31,34 @@ jobs:
         run: |
           mkdir -p rule-set/external
 
-      - name: Download ${{ matrix.rule.name }} Rule File
+      - name: Download ${{ matrix.rule }} Rule File
         run: |
-          echo "::group::Downloading ${{ matrix.rule.name }}.list"
-          curl -s -o rule-set/external/${{ matrix.rule.name }}.list "${{ matrix.rule.url }}"
+          echo "::group::Downloading ${{ matrix.rule }}.list"
+          curl -s -o rule-set/external/${{ matrix.rule }}.list "${{ matrix.url }}"
           if [ $? -eq 0 ]; then
-            echo "${{ matrix.rule.name }}.list downloaded successfully"
+            echo "${{ matrix.rule }}.list downloaded successfully"
           else
-            echo "${{ matrix.rule.name }}.list download failed"
+            echo "${{ matrix.rule }}.list download failed"
             exit 1
           fi
           echo "::endgroup::"
 
       - name: Commit Changes
         run: |
-          echo "::group::Committing Changes for ${{ matrix.rule.name }}"
+          echo "::group::Committing Changes for ${{ matrix.rule }}"
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          
+        
           git pull origin main --rebase
-          
-          git add rule-set/external/${{ matrix.rule.name }}.list
-          
+        
+          git add rule-set/external/${{ matrix.rule }}.list
+        
           if git diff --staged --quiet; then
-            echo "No changes detected for ${{ matrix.rule.name }}.list"
+            echo "No changes detected for ${{ matrix.rule }}.list"
           else
             TZ=Asia/Shanghai beijing_time=$(date "+%Y-%m-%d %H:%M:%S")
-            git commit -m "Update: ${{ matrix.rule.name }} rules (Beijing time: $beijing_time)"
+            git commit -m "Update: ${{ matrix.rule }} rules (Beijing time: $beijing_time)"
             git push
-            echo "${{ matrix.rule.name }}.list changes committed"
+            echo "${{ matrix.rule }}.list changes committed"
           fi
-          echo "::endgroup::" 
+          echo "::endgroup::"
