@@ -12,6 +12,7 @@ payload:
     - t21ipau.nikkei.co.jp
     - ulrichsweb.serialssolutions.com
     - wrds-www.wharton.upenn.edu
+    - imperial.insendi.com
     - scholar.google.ae
     - scholar.google.at
     - scholar.google.be
@@ -88,7 +89,6 @@ payload:
     - scholar.google.sk
     - scholar.googleusercontent.com
     - scholar.l.google.com
-    - imperial.insendi.com
     - +.mit
     - +.aacrjournals.org
     - +.aclweb.org
@@ -164,14 +164,14 @@ payload:
     - +.highwirepress.com
     - +.hindawi.com
     - +.icevirtuallibrary.com
-    - +.zlibcdn2.com
-    - +.zlibcdn.com
-    - +.zlib.life
-    - +.z-library.se
+    - +.wkap.nl
+    - +.springernature.com
+    - +.springerlink.com
+    - +.springer.com
     - +.igi-global.com
     - +.igpublish.com
-    - +.z-lib.org
-    - +.singlelogin.site
+    - +.apress.com
+    - +.sci-hub.st
     - +.informs.org
     - +.ioinformatics.org
     - +.iop.org
@@ -183,11 +183,11 @@ payload:
     - +.jmlr.org
     - +.jneurosci.org
     - +.jove.com
-    - +.singlelogin.re
+    - +.sci-hub.ee
     - +.jstor.org
     - +.karger.com
     - +.kuke.com
-    - +.singlelogin.me
+    - +.sci-hub.se
     - +.lexisnexis.com
     - +.literatumonline.com
     - +.mdpi.com
@@ -195,10 +195,10 @@ payload:
     - +.morganclaypool.com
     - +.nature.com
     - +.naturemag.org
-    - +.singlelogin.app
+    - +.universitypressscholarship.com
     - +.nejm.org
     - +.neurology.org
-    - +.sg1lib.org
+    - +.ukwhoswho.com
     - +.oecd-ilibrary.org
     - +.optica.org
     - +.osapublishing.org
@@ -244,29 +244,6 @@ payload:
     - +.worldscientific.com
     - +.yale.edu
     - +.zenodo.org
-    - +.knovel.com
-    - +.mit.edu
-    - +.mit.net
-    - +.mitpressjournals.org
-    - +.sciencedirect.com
-    - +.sciencedirectassets.com
-    - +.apa.org
-    - +.psyccareers.com
-    - +.doi.org
-    - +.doi.info
-    - +.cell.com
-    - +.clinicalkey.com
-    - +.els-cdn.com
-    - +.elsevier-ae.com
-    - +.elsevier.com
-    - +.elsevier.io
-    - +.engineeringvillage.com
-    - +.evise.com
-    - +.fundinginstitutional.com
-    - +.mendeley.com
-    - +.reaxys.com
-    - +.scival.com
-    - +.scopus.com
     - +.ieee.org
     - +.ieee.tv
     - +.tryengineering.org
@@ -321,16 +298,73 @@ payload:
     - +.signalprocessingsociety.org
     - +.technologyandsociety.org
     - +.vtsociety.org
-    - +.apress.com
-    - +.springer.com
-    - +.springerlink.com
-    - +.springernature.com
-    - +.wkap.nl
+    - +.serialssolutions.com
+    - +.proquest.com
+    - +.tandfonline.com
+    - +.taylorandfrancis.com
+    - +.taylorfrancis.com
+    - +.sipriyearbook.org
+    - +.sciencedirect.com
+    - +.sciencedirectassets.com
+    - +.imperialbusiness.school
     - +.cambridge.org
     - +.cambridgeschoolshakespeare.com
     - +.cambridgedigital.net
     - +.cambridgemaths.org
-    - +.imperialbusiness.school
+    - +.oxfordwesternmusic.com
+    - +.oxfordscholarship.com
+    - +.anb.org
+    - +.oxfordreference.com
+    - +.oxfordre.com
+    - +.oxfordpoliticstrove.com
+    - +.oxfordmusiconline.com
+    - +.oxfordmedicine.com
+    - +.oxfordbibliographies.com
+    - +.oed.com
+    - +.blackstonespoliceservice.com
+    - +.oxforddnb.com
+    - +.oxfordclinicalpsych.com
+    - +.oxfordlawtrove.com
+    - +.oxfordartonline.com
+    - +.oxfordaasc.com
+    - +.veryshortintroductions.com
+    - +.ouplaw.com
+    - +.oup.com
+    - +.omscr.com
+    - +.oxfordhandbooks.com
+    - +.epigeum.com
+    - +.amamanualofstyle.com
+    - +.oxfordscholarlyeditions.com
+    - +.oxfordfirstsource.com
+    - +.mitpressjournals.org
+    - +.mit.net
+    - +.mit.edu
+    - +.knovel.com
+    - +.scopus.com
+    - +.scival.com
+    - +.reaxys.com
+    - +.mendeley.com
+    - +.fundinginstitutional.com
+    - +.evise.com
+    - +.engineeringvillage.com
+    - +.elsevier.io
+    - +.elsevier.com
+    - +.elsevier-ae.com
+    - +.els-cdn.com
+    - +.clinicalkey.com
+    - +.cell.com
+    - +.psyccareers.com
+    - +.apa.org
+    - +.zlibcdn2.com
+    - +.zlibcdn.com
+    - +.zlib.life
+    - +.z-library.se
+    - +.z-lib.org
+    - +.singlelogin.site
+    - +.singlelogin.re
+    - +.singlelogin.me
+    - +.singlelogin.app
+    - +.sg1lib.org
     - +.ma1lib.org
     - +.libsolutions.net
     - +.libsolutions.domains
@@ -363,37 +397,13 @@ payload:
     - +.1lib.domains
     - +.1lib.cz
     - +.1lib.cloud
-    - +.sci-hub.st
-    - +.sci-hub.ee
-    - +.sci-hub.se
-    - +.universitypressscholarship.com
-    - +.ukwhoswho.com
-    - +.sipriyearbook.org
-    - +.oxfordwesternmusic.com
-    - +.oxfordscholarship.com
-    - +.anb.org
-    - +.oxfordreference.com
-    - +.oxfordre.com
-    - +.oxfordpoliticstrove.com
-    - +.oxfordmusiconline.com
-    - +.oxfordmedicine.com
-    - +.oxfordbibliographies.com
-    - +.oed.com
-    - +.blackstonespoliceservice.com
-    - +.oxforddnb.com
-    - +.oxfordclinicalpsych.com
-    - +.oxfordlawtrove.com
-    - +.oxfordartonline.com
-    - +.oxfordaasc.com
-    - +.veryshortintroductions.com
-    - +.ouplaw.com
-    - +.oup.com
-    - +.omscr.com
-    - +.oxfordhandbooks.com
-    - +.epigeum.com
-    - +.amamanualofstyle.com
-    - +.oxfordscholarlyeditions.com
-    - +.oxfordfirstsource.com
+    - +.doi.info
+    - +.doi.org
+    - +.isiknowledge.com
+    - +.newisiknowledge.com
+    - +.webofscience.com
+    - +.webofknowledge.com
+    - +.clarivate.com
     - +.srttu.edu
     - +.sharif.ir
     - +.sharif.edu
@@ -402,40 +412,8 @@ payload:
     - +.iranlms.ir
     - +.edu.ir
     - +.ac.ir
-    - +.proquest.com
-    - +.serialssolutions.com
-    - +.isiknowledge.com
-    - +.newisiknowledge.com
-    - +.webofscience.com
-    - +.webofknowledge.com
-    - +.clarivate.com
-    - +.taylorfrancis.com
-    - +.taylorandfrancis.com
-    - +.tandfonline.com
-    - +.leeds-metropolitan.ac.uk
-    - +.kingshurst.ac.uk
-    - +.advanced-he.ac.uk
-    - +.advancedhe.ac.uk
-    - +.advanced-radiotherapy.ac.uk
-    - +.advancedtherapeutics-cdt.ac.uk
-    - +.advance-he.ac.uk
-    - +.advancehe.ac.uk
-    - +.advancingaccess.ac.uk
-    - +.advantagenottinghamshire.ac.uk
-    - +.aecc.ac.uk
-    - +.aecc-chiropractic.ac.uk
-    - +.aemap.ac.uk
-    - +.aengd.ac.uk
-    - +.aerosol-cdt.ac.uk
-    - +.aerospace-training-wales.ac.uk
-    - +.aes.ac.uk
-    - +.afao.ac.uk
-    - +.afi.ac.uk
-    - +.africadesk.ac.uk
-    - +.africanplants.ac.uk
-    - +.afsni.ac.uk
-    - +.afterenglish.ac.uk
-    - +.agenet.ac.uk
+    - +.lettol.ac.uk
+    - +.kssdeanery.ac.uk
     - +.agocg.ac.uk
     - +.agressofinanceroyalholloway.ac.uk
     - +.agrifoodatp.ac.uk
@@ -1879,7 +1857,7 @@ payload:
     - +.edshare.ac.uk
     - +.edtech.ac.uk
     - +.educationlondonconnect.ac.uk
-    - +.loughborough.ac.uk
+    - +.educationpartnershipne.ac.uk
     - +.educationpartnershipnortheast.ac.uk
     - +.eduroam.ac.uk
     - +.eduserv.ac.uk
@@ -1901,7 +1879,7 @@ payload:
     - +.ehche.ac.uk
     - +.e-htpx.ac.uk
     - +.ehu.ac.uk
-    - +.eicdt.ac.uk
+    - +.lse-residences.ac.uk
     - +.eidc.ac.uk
     - +.einfrastructureforum.ac.uk
     - +.einfrastructuresouth.ac.uk
@@ -2068,7 +2046,7 @@ payload:
     - +.ex.ac.uk
     - +.exam-ta.ac.uk
     - +.excellence.ac.uk
-    - +.lou.ac.uk
+    - +.excellencelondon.ac.uk
     - +.exchange.ac.uk
     - +.exe-coll.ac.uk
     - +.exemplashe.ac.uk
@@ -2090,7 +2068,7 @@ payload:
     - +.facoccmed.ac.uk
     - +.failte.ac.uk
     - +.fairbairn.ac.uk
-    - +.fairfieldfarmcollege.ac.uk
+    - +.lse-nursery.ac.uk
     - +.fairfieldopportunityfarm.ac.uk
     - +.falkirkcollege.ac.uk
     - +.falmouth.ac.uk
@@ -2904,7 +2882,7 @@ payload:
     - +.kinged6nun.ac.uk
     - +.kings.ac.uk
     - +.kingshillinstitute.ac.uk
-    - +.loucoll.ac.uk
+    - +.kingshurst.ac.uk
     - +.kingslondon.ac.uk
     - +.kingston.ac.uk
     - +.kingstonalumni.ac.uk
@@ -2926,7 +2904,7 @@ payload:
     - +.ksc.ac.uk
     - +.ksep.ac.uk
     - +.kssacademy.ac.uk
-    - +.kssdeanery.ac.uk
+    - +.lse-research.ac.uk
     - +.laban.ac.uk
     - +.labinacell.ac.uk
     - +.lackcoll.ac.uk
@@ -3040,7 +3018,7 @@ payload:
     - +.leeds-met.ac.uk
     - +.leedsmet.ac.uk
     - +.leedsmetcarnegie.ac.uk
-    - +.ads.ac.uk
+    - +.leeds-metropolitan.ac.uk
     - +.leedsmetropolitan.ac.uk
     - +.leedssixthform.ac.uk
     - +.leedsthomasdanby.ac.uk
@@ -3062,7 +3040,7 @@ payload:
     - +.lersnet.ac.uk
     - +.lesoco.ac.uk
     - +.letbsharedservice.ac.uk
-    - +.lettol.ac.uk
+    - +.afterenglish.ac.uk
     - +.leverhulme.ac.uk
     - +.lewcol.ac.uk
     - +.lewestraining.ac.uk
@@ -3200,9 +3178,9 @@ payload:
     - +.lonmt.ac.uk
     - +.loreto.ac.uk
     - +.lothiancolleges.ac.uk
-    - +.excellencelondon.ac.uk
-    - +.adultlearningbcc.ac.uk
-    - +.educationpartnershipne.ac.uk
+    - +.lou.ac.uk
+    - +.loucoll.ac.uk
+    - +.loughborough.ac.uk
     - +.lowestoft.ac.uk
     - +.lowestoftsfc.ac.uk
     - +.lowestoftsixthformcollege.ac.uk
@@ -3222,9 +3200,9 @@ payload:
     - +.lse-global.ac.uk
     - +.lsejournals.ac.uk
     - +.lse-marketing.ac.uk
-    - +.lse-nursery.ac.uk
-    - +.lse-research.ac.uk
-    - +.lse-residences.ac.uk
+    - +.fairfieldfarmcollege.ac.uk
+    - +.agenet.ac.uk
+    - +.eicdt.ac.uk
     - +.lse-sport.ac.uk
     - +.lsestaff.ac.uk
     - +.lse-students.ac.uk
@@ -5892,10 +5870,31 @@ payload:
     - +.zoonosis.ac.uk
     - +.dlib.eastview.com
     - +.academic.eb.com
+    - +.afsni.ac.uk
+    - +.africanplants.ac.uk
+    - +.africadesk.ac.uk
+    - +.afi.ac.uk
+    - +.afao.ac.uk
+    - +.aes.ac.uk
+    - +.aerospace-training-wales.ac.uk
+    - +.aerosol-cdt.ac.uk
+    - +.aengd.ac.uk
+    - +.aemap.ac.uk
+    - +.aecc-chiropractic.ac.uk
+    - +.aecc.ac.uk
+    - +.advantagenottinghamshire.ac.uk
+    - +.advancingaccess.ac.uk
+    - +.advancehe.ac.uk
+    - +.advance-he.ac.uk
+    - +.advancedtherapeutics-cdt.ac.uk
+    - +.advanced-radiotherapy.ac.uk
+    - +.advancedhe.ac.uk
+    - +.advanced-he.ac.uk
+    - +.adultlearningbcc.ac.uk
+    - +.ads.ac.uk
     - +.adrn.ac.uk
     - +.adrc-e.ac.uk
     - +.adls.ac.uk
-    - +.tandf.co.uk
     - +.adlib.ac.uk
     - +.adeptt.ac.uk
     - +.addison.ac.uk
@@ -5942,9 +5941,6 @@ payload:
     - +.academic-clinician.ac.uk
     - +.acacia.ac.uk
     - +.abs.ac.uk
-    - +.sci-hub.it.nf
-    - +.sci-hub.mksa.top
-    - +.sci.hubg.org
     - +.abrsm.ac.uk
     - +.abira.ac.uk
     - +.abingdon-witney.ac.uk
@@ -5977,11 +5973,15 @@ payload:
     - +.3d-fossils.ac.uk
     - +.uk-data-service.ac.uk
     - +.liparm.ac.uk
+    - +.tandf.co.uk
     - +.nii.ac.jp
     - +.ncl.edu.tw
     - +.lawdata.com.tw
     - +.acaric.co.jp
     - +.infolinker.com.tw
+    - +.sci-hub.it.nf
+    - +.sci-hub.mksa.top
+    - +.sci.hubg.org
     - +.hanzhen.xmulib.org
     - +.icsd.fiz-karlsruhe.de
     - +.amdigital.co.uk

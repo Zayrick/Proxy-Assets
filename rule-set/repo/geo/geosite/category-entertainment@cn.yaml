@@ -1,11 +1,4 @@
 payload:
-    - +.bilibiligame.cn
-    - +.bilibiligame.co
-    - +.bilibiligame.net
-    - +.biligame.co
-    - +.biligame.com
-    - +.biligame.net
-    - +.xboxlive.cn
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -21,6 +14,25 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
+    - +.amazonprimevideo.cn
+    - +.amazonprimevideo.com.cn
+    - gog.qtlglb.com
+    - gogalaxy.gog-statics.com
+    - menu-static.gog-statics.com
+    - productcard.gog-statics.com
+    - static-login.gog-statics.com
+    - www4-static.gog-statics.com
+    - gog-cdn-fastly.gog.com
+    - gog-cdn.akamaized.net
+    - +.bilibiligame.cn
+    - +.bilibiligame.co
+    - +.bilibiligame.net
+    - +.biligame.co
+    - +.biligame.com
+    - +.biligame.net
+    - +.sl916.com
+    - +.leagueoflegends.cn
+    - +.lpl.com.cn
     - +.legendofzelda.cn
     - +.legendofzelda.com.cn
     - +.miitomo.com.cn
@@ -33,17 +45,7 @@ payload:
     - +.mariokart.cn
     - +.mariokart.com.cn
     - +.supermariobros.com.cn
-    - gog.qtlglb.com
-    - gogalaxy.gog-statics.com
-    - menu-static.gog-statics.com
-    - productcard.gog-statics.com
-    - static-login.gog-statics.com
-    - www4-static.gog-statics.com
-    - gog-cdn-fastly.gog.com
-    - gog-cdn.akamaized.net
     - uplaypc-s-ubisoft.cdn.ubi.com
-    - +.leagueoflegends.cn
-    - +.lpl.com.cn
     - +.steamserver.net
     - +.steamusercontent.com
     - +.csgo.wmsj.cn
@@ -62,8 +64,6 @@ payload:
     - +.steamchina.com
     - +.gstore.val.manlaxy.com
     - +.bluearchive-cn.com
-    - +.kurogames.com
-    - +.aki-game.com
     - +.battlecare.net
     - +.gameitop.com
     - +.gameloop.com
@@ -149,10 +149,6 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
-    - +.sl916.com
-    - +.amazonprimevideo.cn
-    - +.amazonprimevideo.com.cn
-    - +.ggpht.cn
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -168,3 +164,7 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
+    - +.xboxlive.cn
+    - +.kurogames.com
+    - +.aki-game.com
+    - +.ggpht.cn

@@ -2,11 +2,9 @@ payload:
     - 0123456789nonexistent.com
     - 0d.kebhana.mx
     - 1337.abcvg.info
-    - admin.52ywp.com
     - bandito.byterunner.io
     - bittorrent-tracker.e-n-c-r-y-p-t.net
     - bt.ktrackers.com
-    - bt.okmp3.ru
     - bt.poletracker.org
     - bt.rer.lol
     - bt1.xxxxbt.cc
@@ -24,10 +22,8 @@ payload:
     - ipv4announce.sktorrent.eu
     - ipv6.rer.lol
     - ismaarino.com
-    - leet-tracker.moe
     - lucke.fenesisu.moe
     - martin-gebhardt.eu
-    - ns-1.x-fins.com
     - ns3109441.mypdns.org
     - nyaa.tracker.wf
     - open.acgtracker.com
@@ -54,10 +50,10 @@ payload:
     - taciturn-shadow.spb.ru
     - thouvenin.cloud
     - tk.greedland.net
-    - torrent.hificode.in
     - torrent.i.ng
     - torrentsmd.com
     - tr.abiir.top
+    - tr.abir.ga
     - tr.nyacat.pw
     - tr.zukizuki.org
     - tr3.ysagin.top
@@ -77,12 +73,12 @@ payload:
     - tracker.corpscorp.online
     - tracker.cyberia.is
     - tracker.darkness.services
-    - tracker.ddunlimited.net
     - tracker.deadorbit.nl
     - tracker.dler.com
     - tracker.dler.org
     - tracker.dmcomic.org
     - tracker.ducks.party
+    - tracker.dump.cl
     - tracker.expli.top
     - tracker.filemail.com
     - tracker.fnix.net
@@ -91,6 +87,7 @@ payload:
     - tracker.ghostchu-services.top
     - tracker.gigantino.net
     - tracker.gmi.gd
+    - tracker.iperson.xyz
     - tracker.ipv6tracker.org
     - tracker.ipv6tracker.ru
     - tracker.itscraftsoftware.my.id
@@ -101,14 +98,13 @@ payload:
     - tracker.leechshield.link
     - tracker.lilithraws.org
     - tracker.lintk.me
+    - tracker.linvk.com
     - tracker.moeblog.cn
     - tracker.moxing.party
     - tracker.mywaifu.best
     - tracker.netmap.top
-    - tracker.ololosh.space
     - tracker.opentrackr.org
     - tracker.openwebtorrent.com
-    - tracker.privateseedbox.xyz
     - tracker.qu.ax
     - tracker.renfei.net
     - tracker.sbsub.com
@@ -129,6 +125,7 @@ payload:
     - tracker.zhuqiy.top
     - tracker1.520.jp
     - tracker1.itzmx.com
+    - tracker1.myporn.club
     - tracker2.dler.org
     - tracker2.itzmx.com
     - tracker3.itzmx.com
@@ -136,6 +133,7 @@ payload:
     - tracker810.xyz
     - ttk2.nbaonlineservice.com
     - udp.tracker.projectk.org
+    - utracker.ghostchu-services.top
     - wepzone.net
     - www.all4nothin.net
     - www.genesis-sp.org
