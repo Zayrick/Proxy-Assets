@@ -2,7 +2,7 @@ name: Meta Rules Update
 
 on:
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '00 23 * * *'
   workflow_dispatch:
 
 jobs:
