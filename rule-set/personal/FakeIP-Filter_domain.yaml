@@ -1,0 +1,95 @@
+payload:
+  - "*"
+  - "*.lan" # 局域网（LAN）域名
+  - "*.localdomain" # 本地网络的特定域名
+  - "*.example" # 文档或示例用保留域名
+  - "*.invalid" # 测试或错误场景用的无效域名
+  - "*.localhost" # 本地主机访问服务的域名
+  - "*.test" # 测试用域名
+  - "*.local" # 本地网络配置中常用域名
+  - "*.home.arpa" # 家庭网络保留域名
+
+  # NTP（网络时间协议）相关域名
+  # 提供时间同步服务的域名
+  - "time.*.com" # 时间服务（.com域）
+  - "time.*.gov" # 时间服务（.gov域）
+  - "time.*.edu.cn" # 时间服务（.edu.cn域）
+  - "time.*.apple.com" # Apple 时间服务
+  - "time1.*.com" # 具体时间服务1（.com域）
+  - "time2.*.com" # 具体时间服务2（.com域）
+  - "time3.*.com" # 具体时间服务3（.com域）
+  - "time4.*.com" # 具体时间服务4（.com域）
+  - "time5.*.com" # 具体时间服务5（.com域）
+  - "time6.*.com" # 具体时间服务6（.com域）
+  - "time7.*.com" # 具体时间服务7（.com域）
+  - "ntp.*.com" # NTP服务（.com域）
+  - "ntp1.*.com" # NTP服务1
+  - "ntp2.*.com" # NTP服务2
+  - "ntp3.*.com" # NTP服务3
+  - "ntp4.*.com" # NTP服务4
+  - "ntp5.*.com" # NTP服务5
+  - "ntp6.*.com" # NTP服务6
+  - "ntp7.*.com" # NTP服务7
+  - "*.time.edu.cn" # 时间服务（.edu.cn域）
+  - "*.ntp.org.cn" # NTP服务（.org.cn域）
+  - "+.pool.ntp.org" # NTP池服务
+
+  # 微软及网络连通性测试域名
+  # 与微软及网络连接相关的服务域名
+  - "+.msftconnecttest.com" # 微软网络连接测试
+  - "+.msftncsi.com" # 微软网络连接状态指示
+
+  # 游戏及流媒体服务域名
+  # 包括任天堂、PlayStation、Xbox、战网等
+  - "+.srv.nintendo.net" # 任天堂服务域名
+  - "+.stun.playstation.net" # PlayStation STUN服务
+  - "xbox.*.microsoft.com" # Xbox相关域名
+  - "*.*.xboxlive.com" # Xbox Live相关域名
+  - "+.battlenet.com.cn" # 暴雪战网中国服务
+  - "+.wotgame.cn" # 坦克世界中国服务
+  - "+.wggames.cn" # Wargaming游戏服务
+  - "+.wowsgame.cn" # 战舰世界中国服务
+  - "+.wargaming.net" # Wargaming服务
+
+  # 代理及连通服务域名
+  # 代理服务器及通用网络服务域名
+  - "proxy.golang.org" # Golang代理服务器
+  - "stun.*.*" # STUN服务器（两级域名）
+  - "stun.*.*.*" # STUN服务器（三级域名）
+  - "+.stun.*.*" # STUN服务通配域
+  - "+.stun.*.*.*" # STUN服务多级通配域
+
+  # 路由器及设备管理域名
+  # 与路由器和设备管理相关的服务
+  - "heartbeat.belkin.com" # Belkin设备心跳服务
+  - "*.linksys.com" # Linksys路由器相关域名
+  - "*.linksyssmartwifi.com" # Linksys智能WiFi服务
+  - "*.router.asus.com" # 华硕路由器相关域名
+
+  # Apple相关服务域名
+  # 包括苹果软件更新及其他服务
+  - "mesu.apple.com" # 苹果软件更新服务
+  - "swscan.apple.com" # 苹果软件扫描服务
+  - "swquery.apple.com" # 苹果软件查询服务
+  - "swdownload.apple.com" # 苹果软件下载服务
+  - "swcdn.apple.com" # 苹果软件内容分发网络（CDN）
+  - "swdist.apple.com" # 苹果软件分发服务
+
+  # Google相关服务域名
+  # 包括Google Lens及实时通信服务
+  - "lens.l.google.com" # Google Lens服务
+  - "stun.l.google.com" # Google STUN服务
+
+  # Netflix及流媒体服务域名
+  # Netflix相关的流媒体服务
+  - "+.nflxvideo.net" # Netflix视频流媒体服务
+
+  # Square Enix及最终幻想
+  # 与Square Enix及最终幻想游戏相关的域名
+  - "*.square-enix.com" # Square Enix主域名
+  - "*.finalfantasyxiv.com" # 最终幻想XIV服务
+  - "*.ffxiv.com" # 最终幻想XIV相关服务
+  - "*.mcdn.bilivideo.cn" # 哔哩哔哩媒体内容分发网络（CDN）
+
+  # Windows工作组
+  - "WORKGROUP" # Windows默认工作组名称
