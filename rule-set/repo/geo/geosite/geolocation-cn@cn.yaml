@@ -1,29 +1,4 @@
 payload:
-    - +.weui.io
-    - +.bisheng.cn
-    - +.bishengcompiler.cn
-    - +.devui.design
-    - +.gneec.com
-    - +.gneec.com.cn
-    - +.gneec3.com
-    - +.gneec4.com
-    - +.gneec7.com
-    - +.harmonyos.com
-    - +.hiascend.cn
-    - +.hiascend.com
-    - +.hiclc.com
-    - +.hikunpeng.cn
-    - +.hikunpeng.com
-    - +.hikunpeng.com.cn
-    - +.hikunpeng.net
-    - +.hisilicon.com
-    - +.hisilicon.com.cn
-    - +.huaweiapaas.com
-    - +.mindspore.cn
-    - +.owsgo.com
-    - +.teleows.com
-    - +.saasops.tech
-    - +.weui.io
     - +.battlecare.net
     - +.gameitop.com
     - +.gameloop.com
@@ -109,8 +84,8 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
-    - +.bluepoch.com
-    - +.sl916.com
+    - +.weui.io
+    - kc.kexinshe.com
     - +.a2z.org.cn
     - +.amazonaws.cn
     - +.amazonaws.com.cn
@@ -136,7 +111,6 @@ payload:
     - +.amzndns-cn.cn
     - +.amzndns-cn.com
     - +.amzndns-cn.net
-    - kc.kexinshe.com
     - +.bisheng.cn
     - +.bishengcompiler.cn
     - +.devui.design
@@ -181,6 +155,26 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
+    - +.cf-ns.com
+    - +.cf-ns.net
+    - +.cf-ns.site
+    - +.cf-ns.tech
+    - +.cftest5.cn
+    - +.cftest6.cn
+    - +.cftest7.com
+    - +.cftest8.com
+    - +.cloudflare-cn.com
+    - +.cloudflareanycast.net
+    - +.cloudflarechina.cn
+    - +.cloudflarecn.net
+    - +.cloudflareglobal.net
+    - +.cloudflareinsights-cn.com
+    - +.cloudflareperf.com
+    - +.cloudflareprod.com
+    - +.cloudflarestaging.com
+    - +.cloudflarestoragegw.com
+    - +.doubao.com
+    - +.coze.cn
     - ntp.aliyun.com
     - ntp1.aliyun.com
     - ntp2.aliyun.com
@@ -202,23 +196,29 @@ payload:
     - +.ntp.neu.edu.cn
     - +.ntp.ntsc.ac.cn
     - +.ntp.org.cn
-    - +.doubao.com
-    - +.coze.cn
-    - +.cf-ns.com
-    - +.cf-ns.net
-    - +.cf-ns.site
-    - +.cf-ns.tech
-    - +.cftest5.cn
-    - +.cftest6.cn
-    - +.cftest7.com
-    - +.cftest8.com
-    - +.cloudflare-cn.com
-    - +.cloudflareanycast.net
-    - +.cloudflarechina.cn
-    - +.cloudflarecn.net
-    - +.cloudflareglobal.net
-    - +.cloudflareinsights-cn.com
-    - +.cloudflareperf.com
-    - +.cloudflareprod.com
-    - +.cloudflarestaging.com
-    - +.cloudflarestoragegw.com
+    - +.bluepoch.com
+    - +.sl916.com
+    - +.bisheng.cn
+    - +.bishengcompiler.cn
+    - +.devui.design
+    - +.gneec.com
+    - +.gneec.com.cn
+    - +.gneec3.com
+    - +.gneec4.com
+    - +.gneec7.com
+    - +.harmonyos.com
+    - +.hiascend.cn
+    - +.hiascend.com
+    - +.hiclc.com
+    - +.hikunpeng.cn
+    - +.hikunpeng.com
+    - +.hikunpeng.com.cn
+    - +.hikunpeng.net
+    - +.hisilicon.com
+    - +.hisilicon.com.cn
+    - +.huaweiapaas.com
+    - +.mindspore.cn
+    - +.owsgo.com
+    - +.teleows.com
+    - +.saasops.tech
+    - +.weui.io
