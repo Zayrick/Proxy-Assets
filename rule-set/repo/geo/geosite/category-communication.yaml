@@ -1,38 +1,6 @@
 payload:
     - discord-attachments-uploads-prd.storage.googleapis.com
     - hammerandchisel.ssl.zendesk.com
-    - +.arewereadyyet.com
-    - +.cinny.in
-    - +.element.io
-    - +.fluffychat.im
-    - +.matrix.org
-    - +.matrix.to
-    - +.modular.im
-    - +.riot.im
-    - +.vector.im
-    - +.fbmessenger.com
-    - +.m.me
-    - +.messenger.com
-    - +.nbabot.net
-    - +.cdn-telegram.org
-    - +.comments.app
-    - +.contest.com
-    - +.fragment.com
-    - +.graph.org
-    - +.quiz.directory
-    - +.t.me
-    - +.tdesktop.com
-    - +.telega.one
-    - +.telegra.ph
-    - +.telegram-cdn.org
-    - +.telegram.dog
-    - +.telegram.me
-    - +.telegram.org
-    - +.telegram.space
-    - +.telesco.pe
-    - +.tg.dev
-    - +.tx.me
-    - +.usercontent.dev
     - +.dis.gd
     - +.discord.co
     - +.discord.com
@@ -60,26 +28,8 @@ payload:
     - +.discordapp.io
     - +.discordcdn.com
     - +.freenode.net
-    - +.intercom.com
-    - +.intercom.io
-    - +.intercomassets.com
-    - +.intercomcdn.com
     - +.keybase.io
     - +.keybaseapi.com
-    - +.wa.me
-    - +.whatsapp-plus.info
-    - +.whatsapp-plus.me
-    - +.whatsapp-plus.net
-    - +.whatsapp.cc
-    - +.whatsapp.com
-    - +.whatsapp.info
-    - +.whatsapp.net
-    - +.whatsapp.org
-    - +.whatsapp.tv
-    - +.whatsappbrand.com
-    - +.clubhouse.com
-    - +.clubhouseapi.com
-    - +.joinclubhouse.com
     - +.linemobile.com
     - +.lineshoppingseller.com
     - +.line-apps-beta.com
@@ -98,6 +48,15 @@ payload:
     - +.gcld-line.com
     - +.linemyshop.com
     - +.line.me
+    - +.arewereadyyet.com
+    - +.cinny.in
+    - +.element.io
+    - +.fluffychat.im
+    - +.matrix.org
+    - +.matrix.to
+    - +.modular.im
+    - +.riot.im
+    - +.vector.im
     - +.signal.art
     - +.signal.group
     - +.signal.link
@@ -117,6 +76,47 @@ payload:
     - +.slackcertified.com
     - +.slackdemo.com
     - +.slackhq.com
+    - +.cdn-telegram.org
+    - +.comments.app
+    - +.contest.com
+    - +.fragment.com
+    - +.graph.org
+    - +.quiz.directory
+    - +.t.me
+    - +.tdesktop.com
+    - +.telega.one
+    - +.telegra.ph
+    - +.telegram-cdn.org
+    - +.telegram.dog
+    - +.telegram.me
+    - +.telegram.org
+    - +.telegram.space
+    - +.telesco.pe
+    - +.tg.dev
+    - +.tx.me
+    - +.usercontent.dev
+    - +.clubhouse.com
+    - +.clubhouseapi.com
+    - +.joinclubhouse.com
+    - +.intercom.com
+    - +.intercom.io
+    - +.intercomassets.com
+    - +.intercomcdn.com
+    - +.fbmessenger.com
+    - +.m.me
+    - +.messenger.com
+    - +.nbabot.net
+    - +.wa.me
+    - +.whatsapp-plus.info
+    - +.whatsapp-plus.me
+    - +.whatsapp-plus.net
+    - +.whatsapp.cc
+    - +.whatsapp.com
+    - +.whatsapp.info
+    - +.whatsapp.net
+    - +.whatsapp.org
+    - +.whatsapp.tv
+    - +.whatsappbrand.com
     - +.linefriends.com.tw
     - +.line.naver.jp
     - +.graph.whatsapp.com
