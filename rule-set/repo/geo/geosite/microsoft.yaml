@@ -6,7 +6,6 @@ payload:
     - statics-marketingsites-eas-ms-com.akamaized.net
     - statics-marketingsites-eus-ms-com.akamaized.net
     - statics-marketingsites-wcus-ms-com.akamaized.net
-    - github-cloud.s3.amazonaws.com
     - az764295.vo.msecnd.net
     - bingsettingssearch.trafficmanager.net
     - default.exp-tas.com
@@ -29,6 +28,7 @@ payload:
     - azure.microsoft.com
     - azuremarketplace.microsoft.com
     - location.microsoft.com
+    - github-cloud.s3.amazonaws.com
     - +.microsoft
     - +.hotmail
     - +.office
@@ -40,7 +40,7 @@ payload:
     - +.onedriveupdater
     - +.onedrive
     - +.winhec.com
-    - +.msedge.net
+    - +.msft.info
     - +.microsoft.com
     - +.microsoft.cz
     - +.microsoft.de
@@ -143,7 +143,7 @@ payload:
     - +.mepn.com
     - +.microsoftedgeinsider.com
     - +.microsoft-falcon.io
-    - +.microsoft-int.com
+    - +.npmjs.com
     - +.microsoft-ppe.com
     - +.microsoft-sap-events.com
     - +.microsoft-sbs-domains.com
@@ -178,14 +178,14 @@ payload:
     - +.momentumms.com
     - +.morphcharts.com
     - +.mpnevolution.com
-    - +.ms-studiosmedia.com
+    - +.api-extractor.com
     - +.ms365surfaceoffer.com
     - +.msads.net
     - +.msauth.net
     - +.mschallenge2018.com
     - +.msecnd.net
-    - +.renovacionoffice.com
-    - +.msft.info
+    - +.msedge.net
+    - +.npm.community
     - +.msft.net
     - +.msftauth.net
     - +.msftconnecttest.com
@@ -202,7 +202,7 @@ payload:
     - +.nextechafrica.net
     - +.nxta.org
     - +.o365weve-dev.com
-    - +.office365tw.com
+    - +.o365weve-ppe.com
     - +.o365weve.com
     - +.office.com
     - +.office.net
@@ -211,7 +211,7 @@ payload:
     - +.onenote.net
     - +.onestore.ms
     - +.opticsforthecloud.net
-    - +.ghcr.io
+    - +.outingsapp.com
     - +.outlook.com
     - +.passport.net
     - +.pixapp.net
@@ -272,38 +272,10 @@ payload:
     - +.microsoft.ch
     - +.winhec.net
     - +.yammer.com
-    - +.githubhackathon.com
-    - +.outingsapp.com
-    - +.microsoft.cl
-    - +.o365weve-ppe.com
-    - +.githubnext.com
-    - +.githubpreview.dev
-    - +.github.blog
-    - +.github.com
-    - +.github.community
-    - +.github.dev
-    - +.github.io
-    - +.githubapp.com
-    - +.githubassets.com
-    - +.githubcopilot.com
-    - +.npmjs.org
-    - +.dependabot.com
-    - +.git.io
-    - +.githubstatus.com
-    - +.githubuniverse.com
-    - +.githubusercontent.com
-    - +.myoctocat.com
-    - +.opensource.guide
-    - +.repo.new
-    - +.thegithubshop.com
-    - +.atom.io
-    - +.npm.community
-    - +.npmjs.com
-    - +.office365love.com
-    - +.msunlimitedcloudsummit.com
-    - +.flipwithsurface.com
     - +.adaptivecards.io
-    - +.api-extractor.com
+    - +.ms-studiosmedia.com
+    - +.microsoft.cl
+    - +.microsoft-int.com
     - +.apisof.net
     - +.appcenter.ms
     - +.blazor.net
@@ -353,7 +325,9 @@ payload:
     - +.vscode-cdn.net
     - +.vscode-unpkg.net
     - +.xamarin.com
-    - +.microsoftmxfilantropia.com
+    - +.atom.io
+    - +.thegithubshop.com
+    - +.repo.new
     - +.msocsp.com
     - +.microsoftnews.cc
     - +.microsoftnews.com
@@ -378,13 +352,13 @@ payload:
     - +.1drv.com
     - +.livefilestore.com
     - +.sharepoint.cn
-    - +.microsoftlatamholiday.com
-    - +.microsoftdiplomados.com
-    - +.microsoftcloudsummit.com
-    - +.microsoft-give.com
-    - +.masalladeloslimites.com
-    - +.microsoftpartnersolutions.com
-    - +.bing.net
+    - +.opensource.guide
+    - +.myoctocat.com
+    - +.githubusercontent.com
+    - +.githubuniverse.com
+    - +.githubstatus.com
+    - +.git.io
+    - +.dependabot.com
     - +.microsoft.by
     - +.forzamotorsport.net
     - +.forzaracingchampionship.com
@@ -419,6 +393,7 @@ payload:
     - +.doom.com
     - +.elderscrolls.com
     - +.callersbane.com
+    - +.minecraft-services.net
     - +.minecraft.net
     - +.minecraftservices.com
     - +.minecraftshop.com
@@ -493,12 +468,38 @@ payload:
     - +.bingworld.com
     - +.bluehatnights.com
     - +.bing123.com
-    - +.visualstudio.co.uk
+    - +.bing.net
+    - +.microsoftpartnersolutions.com
+    - +.masalladeloslimites.com
+    - +.microsoft-give.com
+    - +.microsoftcloudsummit.com
+    - +.microsoftdiplomados.com
+    - +.microsoftlatamholiday.com
+    - +.microsoftmxfilantropia.com
+    - +.flipwithsurface.com
+    - +.msunlimitedcloudsummit.com
+    - +.office365love.com
+    - +.office365tw.com
+    - +.renovacionoffice.com
+    - +.npmjs.org
+    - +.githubhackathon.com
+    - +.ghcr.io
+    - +.githubnext.com
+    - +.githubpreview.dev
+    - +.github.blog
+    - +.github.com
+    - +.github.community
+    - +.github.dev
+    - +.github.io
+    - +.githubapp.com
+    - +.githubassets.com
+    - +.githubcopilot.com
+    - +.microsoftstore.com.hk
     - +.spoprod-a.akamaihd.net
     - +.skype-edf.akadns.net
     - +.skypedata.akadns.net
+    - +.visualstudio.co.uk
     - +.live.com.au
-    - +.microsoftstore.com.hk
     - +.dcg.microsoft.com
     - +.dynamics.cn
     - +.engkoo.com
