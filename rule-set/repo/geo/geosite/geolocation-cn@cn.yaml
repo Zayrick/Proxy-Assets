@@ -17,6 +17,9 @@ payload:
     - +.cloudflareprod.com
     - +.cloudflarestaging.com
     - +.cloudflarestoragegw.com
+    - +.doubao.com
+    - +.coze.cn
+    - kc.kexinshe.com
     - +.bisheng.cn
     - +.bishengcompiler.cn
     - +.devui.design
@@ -40,10 +43,52 @@ payload:
     - +.owsgo.com
     - +.teleows.com
     - +.saasops.tech
-    - +.doubao.com
-    - +.coze.cn
-    - +.bluepoch.com
-    - +.sl916.com
+    - +.a2z.org.cn
+    - +.amazonaws.cn
+    - +.amazonaws.com.cn
+    - +.amazonwebservices.com.cn
+    - +.amazonworkdocs.cn
+    - +.amazonworkdocs.com.cn
+    - +.asfiovnxocqpcry.com.cn
+    - +.aws-border.cn
+    - +.aws-icp-domain-manager.cn
+    - +.awsapps.cn
+    - +.awsapps.com.cn
+    - +.awsstatic.cn
+    - +.cloudfront-cn.net
+    - +.cloudfront-test.cn
+    - +.cloudfront.cn
+    - +.nwcdcloud.cn
+    - +.nwcdcloud.com.cn
+    - +.nwcddns.cn
+    - +.nwcdinfosec.cn
+    - +.route53.cn
+    - +.sagemaker.com.cn
+    - +.amzndns-cn.biz
+    - +.amzndns-cn.cn
+    - +.amzndns-cn.com
+    - +.amzndns-cn.net
+    - +.mhystatic.com
+    - +.mhyurl.cn
+    - +.mihayo.com
+    - +.mihayou.com
+    - +.mihoyo.com
+    - +.mihoyocg.com
+    - +.mihoyogift.com
+    - +.mihoyomall.com
+    - +.miyoushe.com
+    - +.benghuai.com
+    - +.bh3.com
+    - +.bhsr.com
+    - +.themisweeps.com
+    - +.yuanshen.com
+    - +.juequling.com
+    - +.bilibiligame.cn
+    - +.bilibiligame.co
+    - +.bilibiligame.net
+    - +.biligame.co
+    - +.biligame.com
+    - +.biligame.net
     - +.weui.io
     - +.battlecare.net
     - +.gameitop.com
@@ -130,6 +175,29 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
+    - +.bluepoch.com
+    - +.sl916.com
+    - ntp.aliyun.com
+    - ntp1.aliyun.com
+    - ntp2.aliyun.com
+    - ntp3.aliyun.com
+    - ntp4.aliyun.com
+    - ntp5.aliyun.com
+    - ntp6.aliyun.com
+    - ntp7.aliyun.com
+    - time.amazonaws.cn
+    - time.izatcloud.net
+    - time.xtracloud.net
+    - ntp.tencent.com
+    - ntp1.tencent.com
+    - ntp2.tencent.com
+    - ntp3.tencent.com
+    - ntp4.tencent.com
+    - ntp5.tencent.com
+    - +.cn.pool.ntp.org
+    - +.ntp.neu.edu.cn
+    - +.ntp.ntsc.ac.cn
+    - +.ntp.org.cn
     - +.bisheng.cn
     - +.bishengcompiler.cn
     - +.devui.design
@@ -154,71 +222,3 @@ payload:
     - +.teleows.com
     - +.saasops.tech
     - +.weui.io
-    - ntp.aliyun.com
-    - ntp1.aliyun.com
-    - ntp2.aliyun.com
-    - ntp3.aliyun.com
-    - ntp4.aliyun.com
-    - ntp5.aliyun.com
-    - ntp6.aliyun.com
-    - ntp7.aliyun.com
-    - time.amazonaws.cn
-    - time.izatcloud.net
-    - time.xtracloud.net
-    - ntp.tencent.com
-    - ntp1.tencent.com
-    - ntp2.tencent.com
-    - ntp3.tencent.com
-    - ntp4.tencent.com
-    - ntp5.tencent.com
-    - +.cn.pool.ntp.org
-    - +.ntp.neu.edu.cn
-    - +.ntp.ntsc.ac.cn
-    - +.ntp.org.cn
-    - kc.kexinshe.com
-    - +.a2z.org.cn
-    - +.amazonaws.cn
-    - +.amazonaws.com.cn
-    - +.amazonwebservices.com.cn
-    - +.amazonworkdocs.cn
-    - +.amazonworkdocs.com.cn
-    - +.asfiovnxocqpcry.com.cn
-    - +.aws-border.cn
-    - +.aws-icp-domain-manager.cn
-    - +.awsapps.cn
-    - +.awsapps.com.cn
-    - +.awsstatic.cn
-    - +.cloudfront-cn.net
-    - +.cloudfront-test.cn
-    - +.cloudfront.cn
-    - +.nwcdcloud.cn
-    - +.nwcdcloud.com.cn
-    - +.nwcddns.cn
-    - +.nwcdinfosec.cn
-    - +.route53.cn
-    - +.sagemaker.com.cn
-    - +.amzndns-cn.biz
-    - +.amzndns-cn.cn
-    - +.amzndns-cn.com
-    - +.amzndns-cn.net
-    - +.mhystatic.com
-    - +.mhyurl.cn
-    - +.mihayo.com
-    - +.mihayou.com
-    - +.mihoyo.com
-    - +.mihoyocg.com
-    - +.mihoyogift.com
-    - +.mihoyomall.com
-    - +.miyoushe.com
-    - +.benghuai.com
-    - +.bh3.com
-    - +.bhsr.com
-    - +.themisweeps.com
-    - +.yuanshen.com
-    - +.juequling.com
-    - +.bilibiligame.cn
-    - +.bilibiligame.co
-    - +.bilibiligame.net
-    - +.biligame.co
-    - +.biligame.com
-    - +.biligame.net
