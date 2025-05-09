@@ -7,9 +7,10 @@ DOMAIN-SUFFIX,xn--c1avg
 DOMAIN-SUFFIX,xn--d1acj3b
 DOMAIN-SUFFIX,xn--p1acf
 DOMAIN-SUFFIX,xn--p1ai
-DOMAIN-SUFFIX,yandex
 DOMAIN-SUFFIX,psk
-DOMAIN-SUFFIX,vkmessenger.app
+DOMAIN-SUFFIX,yandex
+DOMAIN-SUFFIX,emias.info
+DOMAIN-SUFFIX,mycdn.me
 DOMAIN-SUFFIX,ozonusercontent.com
 DOMAIN-SUFFIX,mvk.com
 DOMAIN-SUFFIX,userapi.com
@@ -27,6 +28,7 @@ DOMAIN-SUFFIX,vk.team
 DOMAIN-SUFFIX,vkcache.com
 DOMAIN-SUFFIX,vkgo.app
 DOMAIN-SUFFIX,vklive.app
+DOMAIN-SUFFIX,vkmessenger.app
 DOMAIN-SUFFIX,vkmessenger.com
 DOMAIN-SUFFIX,vkuser.net
 DOMAIN-SUFFIX,vkuseraudio.com
@@ -40,6 +42,7 @@ DOMAIN-SUFFIX,yandex.fi
 DOMAIN-SUFFIX,yandex.fr
 DOMAIN-SUFFIX,yandex.az
 DOMAIN-SUFFIX,yandex.by
+DOMAIN-SUFFIX,yastatic.net
 DOMAIN-SUFFIX,yandex.com
 DOMAIN-SUFFIX,yandexcloud.net
 DOMAIN-SUFFIX,yandex.uz
@@ -59,11 +62,8 @@ DOMAIN-SUFFIX,yandex.net
 DOMAIN-SUFFIX,yandex.jobs
 DOMAIN-SUFFIX,yandex.st
 DOMAIN-SUFFIX,yandex.sx
-DOMAIN-SUFFIX,mycdn.me
-DOMAIN-SUFFIX,emias.info
-DOMAIN-SUFFIX,yastatic.net
-DOMAIN-SUFFIX,yandex.com.tr
 DOMAIN-SUFFIX,yandex.com.ua
+DOMAIN-SUFFIX,yandex.com.tr
 DOMAIN-SUFFIX,yandex.com.ge
 DOMAIN-SUFFIX,yandex.com.am
 DOMAIN-SUFFIX,yandex.co.il
