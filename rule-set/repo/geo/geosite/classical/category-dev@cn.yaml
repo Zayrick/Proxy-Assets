@@ -8,5 +8,5 @@ payload:
     - DOMAIN-SUFFIX,researchkit.com.cn
     - DOMAIN-SUFFIX,swiftui.cn
     - DOMAIN-SUFFIX,swiftui.com.cn
-    - DOMAIN,firebase-settings.crashlytics.com
     - DOMAIN,cdn.ampproject.org
+    - DOMAIN,firebase-settings.crashlytics.com

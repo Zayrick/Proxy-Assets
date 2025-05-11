@@ -1,10 +1,12 @@
 payload:
     - DOMAIN-SUFFIX,hsbc
     - DOMAIN-SUFFIX,longbridge.hk
-    - DOMAIN-SUFFIX,agdbank.com
     - DOMAIN-SUFFIX,tuncommercialbank.com
+    - DOMAIN-SUFFIX,transferwise.com
     - DOMAIN-SUFFIX,longbridge.global
     - DOMAIN-SUFFIX,ifastgp.com
+    - DOMAIN-SUFFIX,nptsibinbank.com
+    - DOMAIN-SUFFIX,agdbank.com
     - DOMAIN-SUFFIX,ayabank.com
     - DOMAIN-SUFFIX,ysx-mm.com
     - DOMAIN-SUFFIX,yomabank.com
@@ -17,21 +19,21 @@ payload:
     - DOMAIN-SUFFIX,mwdbank.com
     - DOMAIN-SUFFIX,mdbankpublic.com
     - DOMAIN-SUFFIX,mobmyanmar.com
-    - DOMAIN-SUFFIX,wise.com
-    - DOMAIN-SUFFIX,transferwise.com
     - DOMAIN-SUFFIX,wbrks.com
     - DOMAIN-SUFFIX,lbkrs.com
     - DOMAIN-SUFFIX,longportapp.com
     - DOMAIN-SUFFIX,longbridgeapp.com
     - DOMAIN-SUFFIX,longbridge.sg
-    - DOMAIN-SUFFIX,hsbc.de
+    - DOMAIN-SUFFIX,hsbc-alternatives.de
     - DOMAIN-SUFFIX,tradingview.com
-    - DOMAIN-SUFFIX,nptsibinbank.com
+    - DOMAIN-SUFFIX,wise.com
     - DOMAIN-SUFFIX,longbridge.cloud
     - DOMAIN-SUFFIX,ifasttv.com
     - DOMAIN-SUFFIX,ifastnetwork.com
     - DOMAIN-SUFFIX,fsmone.com
     - DOMAIN-SUFFIX,ifastgb.com
+    - DOMAIN-SUFFIX,ifastcorp.com
+    - DOMAIN-SUFFIX,fundsupermart.com
     - DOMAIN-SUFFIX,mql5.com
     - DOMAIN-SUFFIX,hsbc.com
     - DOMAIN-SUFFIX,hsbc.net
@@ -47,12 +49,12 @@ payload:
     - DOMAIN-SUFFIX,hsbc.lk
     - DOMAIN-SUFFIX,hsbc-zertifikate.de
     - DOMAIN-SUFFIX,hsbc-transactionservices.de
-    - DOMAIN-SUFFIX,hsbc-alternatives.de
-    - DOMAIN-SUFFIX,hsbc.uk
     - DOMAIN-SUFFIX,fxcorporate.com
-    - DOMAIN-SUFFIX,ifastcorp.com
-    - DOMAIN-SUFFIX,fundsupermart.com
-    - DOMAIN-SUFFIX,gbank.com.mm
+    - DOMAIN-SUFFIX,hsbc.uk
+    - DOMAIN-SUFFIX,hsbc.de
+    - DOMAIN-SUFFIX,meb.gov.mm
+    - DOMAIN-SUFFIX,hsbc.com.uy
+    - DOMAIN-SUFFIX,hsbc.com.bh
     - DOMAIN-SUFFIX,hsbc.com.br
     - DOMAIN-SUFFIX,hsbc.com.au
     - DOMAIN-SUFFIX,hsbc.com.hk
@@ -79,24 +81,22 @@ payload:
     - DOMAIN-SUFFIX,hsbc.com.cn
     - DOMAIN-SUFFIX,hsbcqh.com.cn
     - DOMAIN-SUFFIX,hsbcinsurance.com.cn
-    - DOMAIN-SUFFIX,hsbc.com.bh
-    - DOMAIN-SUFFIX,hsbc.com.uy
     - DOMAIN-SUFFIX,hsbc.com.eg
     - DOMAIN-SUFFIX,cbbank.com.mm
     - DOMAIN-SUFFIX,cbm.com.mm
     - DOMAIN-SUFFIX,waveomoney.com.mm
     - DOMAIN-SUFFIX,uab.com.mm
+    - DOMAIN-SUFFIX,chid.com.mm
+    - DOMAIN-SUFFIX,smedevelopmentbank.com.mm
     - DOMAIN-SUFFIX,fsmone.com.hk
     - DOMAIN-SUFFIX,fsmone.com.my
     - DOMAIN-SUFFIX,ifastcapital.com.my
     - DOMAIN-SUFFIX,ifastfinancial.com.hk
     - DOMAIN-SUFFIX,ifastfinancial.co.in
     - DOMAIN-SUFFIX,ifastgp.com.hk
-    - DOMAIN-SUFFIX,chid.com.mm
-    - DOMAIN-SUFFIX,smedevelopmentbank.com.mm
     - DOMAIN-SUFFIX,abank.com.mm
+    - DOMAIN-SUFFIX,gbank.com.mm
     - DOMAIN-SUFFIX,mcb.com.mm
-    - DOMAIN-SUFFIX,meb.gov.mm
     - DOMAIN-SUFFIX,micb.gov.mm
     - DOMAIN-SUFFIX,mminsurance.gov.mm
     - DOMAIN-SUFFIX,mmftb.gov.mm
