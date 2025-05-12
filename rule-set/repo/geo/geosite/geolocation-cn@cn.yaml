@@ -1,8 +1,5 @@
 payload:
-    - +.bluepoch.com
-    - +.sl916.com
-    - +.doubao.com
-    - +.coze.cn
+    - kc.kexinshe.com
     - +.bisheng.cn
     - +.bishengcompiler.cn
     - +.devui.design
@@ -69,48 +66,6 @@ payload:
     - +.cloudflareprod.com
     - +.cloudflarestaging.com
     - +.cloudflarestoragegw.com
-    - +.mhystatic.com
-    - +.mhyurl.cn
-    - +.mihayo.com
-    - +.mihayou.com
-    - +.mihoyo.com
-    - +.mihoyocg.com
-    - +.mihoyogift.com
-    - +.mihoyomall.com
-    - +.miyoushe.com
-    - +.benghuai.com
-    - +.bh3.com
-    - +.bhsr.com
-    - +.themisweeps.com
-    - +.yuanshen.com
-    - +.juequling.com
-    - +.bilibiligame.cn
-    - +.bilibiligame.co
-    - +.bilibiligame.net
-    - +.biligame.co
-    - +.biligame.com
-    - +.biligame.net
-    - ntp.aliyun.com
-    - ntp1.aliyun.com
-    - ntp2.aliyun.com
-    - ntp3.aliyun.com
-    - ntp4.aliyun.com
-    - ntp5.aliyun.com
-    - ntp6.aliyun.com
-    - ntp7.aliyun.com
-    - time.amazonaws.cn
-    - time.izatcloud.net
-    - time.xtracloud.net
-    - ntp.tencent.com
-    - ntp1.tencent.com
-    - ntp2.tencent.com
-    - ntp3.tencent.com
-    - ntp4.tencent.com
-    - ntp5.tencent.com
-    - +.cn.pool.ntp.org
-    - +.ntp.neu.edu.cn
-    - +.ntp.ntsc.ac.cn
-    - +.ntp.org.cn
     - +.weui.io
     - +.battlecare.net
     - +.gameitop.com
@@ -197,6 +152,10 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
+    - +.doubao.com
+    - +.coze.cn
+    - +.bluepoch.com
+    - +.sl916.com
     - +.bisheng.cn
     - +.bishengcompiler.cn
     - +.devui.design
@@ -221,4 +180,45 @@ payload:
     - +.teleows.com
     - +.saasops.tech
     - +.weui.io
-    - kc.kexinshe.com
+    - +.bilibiligame.cn
+    - +.bilibiligame.co
+    - +.bilibiligame.net
+    - +.biligame.co
+    - +.biligame.com
+    - +.biligame.net
+    - +.mhystatic.com
+    - +.mhyurl.cn
+    - +.mihayo.com
+    - +.mihayou.com
+    - +.mihoyo.com
+    - +.mihoyocg.com
+    - +.mihoyogift.com
+    - +.mihoyomall.com
+    - +.miyoushe.com
+    - +.benghuai.com
+    - +.bh3.com
+    - +.bhsr.com
+    - +.themisweeps.com
+    - +.yuanshen.com
+    - +.juequling.com
+    - ntp.aliyun.com
+    - ntp1.aliyun.com
+    - ntp2.aliyun.com
+    - ntp3.aliyun.com
+    - ntp4.aliyun.com
+    - ntp5.aliyun.com
+    - ntp6.aliyun.com
+    - ntp7.aliyun.com
+    - time.amazonaws.cn
+    - time.izatcloud.net
+    - time.xtracloud.net
+    - ntp.tencent.com
+    - ntp1.tencent.com
+    - ntp2.tencent.com
+    - ntp3.tencent.com
+    - ntp4.tencent.com
+    - ntp5.tencent.com
+    - +.cn.pool.ntp.org
+    - +.ntp.neu.edu.cn
+    - +.ntp.ntsc.ac.cn
+    - +.ntp.org.cn
