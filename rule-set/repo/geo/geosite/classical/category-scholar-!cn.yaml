@@ -164,14 +164,14 @@ payload:
     - DOMAIN-SUFFIX,highwirepress.com
     - DOMAIN-SUFFIX,hindawi.com
     - DOMAIN-SUFFIX,icevirtuallibrary.com
-    - DOMAIN-SUFFIX,scopus.com
-    - DOMAIN-SUFFIX,scival.com
-    - DOMAIN-SUFFIX,reaxys.com
-    - DOMAIN-SUFFIX,mendeley.com
+    - DOMAIN-SUFFIX,proquest.com
+    - DOMAIN-SUFFIX,serialssolutions.com
+    - DOMAIN-SUFFIX,knovel.com
+    - DOMAIN-SUFFIX,srttu.edu
     - DOMAIN-SUFFIX,igi-global.com
     - DOMAIN-SUFFIX,igpublish.com
-    - DOMAIN-SUFFIX,knovel.com
-    - DOMAIN-SUFFIX,fundinginstitutional.com
+    - DOMAIN-SUFFIX,sharif.ir
+    - DOMAIN-SUFFIX,sharif.edu
     - DOMAIN-SUFFIX,informs.org
     - DOMAIN-SUFFIX,ioinformatics.org
     - DOMAIN-SUFFIX,iop.org
@@ -183,11 +183,11 @@ payload:
     - DOMAIN-SUFFIX,jmlr.org
     - DOMAIN-SUFFIX,jneurosci.org
     - DOMAIN-SUFFIX,jove.com
-    - DOMAIN-SUFFIX,evise.com
+    - DOMAIN-SUFFIX,sanjesh.org
     - DOMAIN-SUFFIX,jstor.org
     - DOMAIN-SUFFIX,karger.com
     - DOMAIN-SUFFIX,kuke.com
-    - DOMAIN-SUFFIX,engineeringvillage.com
+    - DOMAIN-SUFFIX,jtt.ir
     - DOMAIN-SUFFIX,lexisnexis.com
     - DOMAIN-SUFFIX,literatumonline.com
     - DOMAIN-SUFFIX,mdpi.com
@@ -195,10 +195,10 @@ payload:
     - DOMAIN-SUFFIX,morganclaypool.com
     - DOMAIN-SUFFIX,nature.com
     - DOMAIN-SUFFIX,naturemag.org
-    - DOMAIN-SUFFIX,elsevier.io
+    - DOMAIN-SUFFIX,iranlms.ir
     - DOMAIN-SUFFIX,nejm.org
     - DOMAIN-SUFFIX,neurology.org
-    - DOMAIN-SUFFIX,elsevier.com
+    - DOMAIN-SUFFIX,edu.ir
     - DOMAIN-SUFFIX,oecd-ilibrary.org
     - DOMAIN-SUFFIX,optica.org
     - DOMAIN-SUFFIX,osapublishing.org
@@ -244,60 +244,26 @@ payload:
     - DOMAIN-SUFFIX,worldscientific.com
     - DOMAIN-SUFFIX,yale.edu
     - DOMAIN-SUFFIX,zenodo.org
+    - DOMAIN-SUFFIX,apa.org
+    - DOMAIN-SUFFIX,psyccareers.com
+    - DOMAIN-SUFFIX,clarivate.com
+    - DOMAIN-SUFFIX,webofknowledge.com
+    - DOMAIN-SUFFIX,webofscience.com
+    - DOMAIN-SUFFIX,newisiknowledge.com
+    - DOMAIN-SUFFIX,isiknowledge.com
+    - DOMAIN-SUFFIX,sci-hub.se
+    - DOMAIN-SUFFIX,sci-hub.ee
+    - DOMAIN-SUFFIX,sci-hub.st
+    - DOMAIN-SUFFIX,ac.ir
+    - DOMAIN-SUFFIX,taylorfrancis.com
+    - DOMAIN-SUFFIX,taylorandfrancis.com
+    - DOMAIN-SUFFIX,doi.org
+    - DOMAIN-SUFFIX,doi.info
     - DOMAIN-SUFFIX,mit.edu
     - DOMAIN-SUFFIX,mit.net
     - DOMAIN-SUFFIX,mitpressjournals.org
-    - DOMAIN-SUFFIX,1lib.cloud
-    - DOMAIN-SUFFIX,1lib.cz
-    - DOMAIN-SUFFIX,1lib.domains
-    - DOMAIN-SUFFIX,1lib.education
-    - DOMAIN-SUFFIX,1lib.eu
-    - DOMAIN-SUFFIX,1lib.limited
-    - DOMAIN-SUFFIX,1lib.pl
-    - DOMAIN-SUFFIX,1lib.to
-    - DOMAIN-SUFFIX,1lib.tw
-    - DOMAIN-SUFFIX,2lib.org
-    - DOMAIN-SUFFIX,3lib.net
-    - DOMAIN-SUFFIX,art1lib.com
-    - DOMAIN-SUFFIX,b-ok.africa
-    - DOMAIN-SUFFIX,b-ok.asia
-    - DOMAIN-SUFFIX,b-ok.cc
-    - DOMAIN-SUFFIX,b-ok.global
-    - DOMAIN-SUFFIX,b-ok.org
-    - DOMAIN-SUFFIX,book4you.org
-    - DOMAIN-SUFFIX,bookfi.net
-    - DOMAIN-SUFFIX,booksc.eu
-    - DOMAIN-SUFFIX,booksc.me
-    - DOMAIN-SUFFIX,booksc.org
-    - DOMAIN-SUFFIX,booksc.xyz
-    - DOMAIN-SUFFIX,bookshome.info
-    - DOMAIN-SUFFIX,bookshome.net
-    - DOMAIN-SUFFIX,bookshome.world
-    - DOMAIN-SUFFIX,de1lib.org
-    - DOMAIN-SUFFIX,hk1lib.org
-    - DOMAIN-SUFFIX,libsolutions.app
-    - DOMAIN-SUFFIX,libsolutions.domains
-    - DOMAIN-SUFFIX,libsolutions.net
-    - DOMAIN-SUFFIX,ma1lib.org
-    - DOMAIN-SUFFIX,sg1lib.org
-    - DOMAIN-SUFFIX,singlelogin.app
-    - DOMAIN-SUFFIX,singlelogin.me
-    - DOMAIN-SUFFIX,singlelogin.re
-    - DOMAIN-SUFFIX,singlelogin.site
-    - DOMAIN-SUFFIX,z-lib.org
-    - DOMAIN-SUFFIX,z-library.se
-    - DOMAIN-SUFFIX,zlib.life
-    - DOMAIN-SUFFIX,zlibcdn.com
-    - DOMAIN-SUFFIX,zlibcdn2.com
-    - DOMAIN-SUFFIX,ac.ir
-    - DOMAIN-SUFFIX,edu.ir
-    - DOMAIN-SUFFIX,iranlms.ir
-    - DOMAIN-SUFFIX,jtt.ir
-    - DOMAIN-SUFFIX,sanjesh.org
-    - DOMAIN-SUFFIX,sharif.edu
-    - DOMAIN-SUFFIX,sharif.ir
-    - DOMAIN-SUFFIX,srttu.edu
-    - DOMAIN-SUFFIX,elsevier-ae.com
+    - DOMAIN-SUFFIX,sciencedirect.com
+    - DOMAIN-SUFFIX,sciencedirectassets.com
     - DOMAIN-SUFFIX,ieee.org
     - DOMAIN-SUFFIX,ieee.tv
     - DOMAIN-SUFFIX,tryengineering.org
@@ -352,11 +318,6 @@ payload:
     - DOMAIN-SUFFIX,signalprocessingsociety.org
     - DOMAIN-SUFFIX,technologyandsociety.org
     - DOMAIN-SUFFIX,vtsociety.org
-    - DOMAIN-SUFFIX,clarivate.com
-    - DOMAIN-SUFFIX,webofknowledge.com
-    - DOMAIN-SUFFIX,webofscience.com
-    - DOMAIN-SUFFIX,newisiknowledge.com
-    - DOMAIN-SUFFIX,isiknowledge.com
     - DOMAIN-SUFFIX,oxfordfirstsource.com
     - DOMAIN-SUFFIX,oxfordscholarlyeditions.com
     - DOMAIN-SUFFIX,amamanualofstyle.com
@@ -385,33 +346,72 @@ payload:
     - DOMAIN-SUFFIX,sipriyearbook.org
     - DOMAIN-SUFFIX,ukwhoswho.com
     - DOMAIN-SUFFIX,universitypressscholarship.com
-    - DOMAIN-SUFFIX,els-cdn.com
-    - DOMAIN-SUFFIX,sciencedirect.com
-    - DOMAIN-SUFFIX,sciencedirectassets.com
+    - DOMAIN-SUFFIX,tandfonline.com
+    - DOMAIN-SUFFIX,1lib.cloud
+    - DOMAIN-SUFFIX,1lib.cz
+    - DOMAIN-SUFFIX,1lib.domains
+    - DOMAIN-SUFFIX,1lib.education
+    - DOMAIN-SUFFIX,1lib.eu
+    - DOMAIN-SUFFIX,1lib.limited
+    - DOMAIN-SUFFIX,1lib.pl
+    - DOMAIN-SUFFIX,1lib.to
+    - DOMAIN-SUFFIX,1lib.tw
+    - DOMAIN-SUFFIX,2lib.org
+    - DOMAIN-SUFFIX,3lib.net
+    - DOMAIN-SUFFIX,art1lib.com
+    - DOMAIN-SUFFIX,b-ok.africa
+    - DOMAIN-SUFFIX,b-ok.asia
+    - DOMAIN-SUFFIX,b-ok.cc
+    - DOMAIN-SUFFIX,b-ok.global
+    - DOMAIN-SUFFIX,b-ok.org
+    - DOMAIN-SUFFIX,book4you.org
+    - DOMAIN-SUFFIX,bookfi.net
+    - DOMAIN-SUFFIX,booksc.eu
+    - DOMAIN-SUFFIX,booksc.me
+    - DOMAIN-SUFFIX,booksc.org
+    - DOMAIN-SUFFIX,booksc.xyz
+    - DOMAIN-SUFFIX,bookshome.info
+    - DOMAIN-SUFFIX,bookshome.net
+    - DOMAIN-SUFFIX,bookshome.world
+    - DOMAIN-SUFFIX,de1lib.org
+    - DOMAIN-SUFFIX,hk1lib.org
+    - DOMAIN-SUFFIX,libsolutions.app
+    - DOMAIN-SUFFIX,libsolutions.domains
+    - DOMAIN-SUFFIX,libsolutions.net
+    - DOMAIN-SUFFIX,ma1lib.org
+    - DOMAIN-SUFFIX,sg1lib.org
+    - DOMAIN-SUFFIX,singlelogin.app
+    - DOMAIN-SUFFIX,singlelogin.me
+    - DOMAIN-SUFFIX,singlelogin.re
+    - DOMAIN-SUFFIX,singlelogin.site
+    - DOMAIN-SUFFIX,z-lib.org
+    - DOMAIN-SUFFIX,z-library.se
+    - DOMAIN-SUFFIX,zlib.life
+    - DOMAIN-SUFFIX,zlibcdn.com
+    - DOMAIN-SUFFIX,zlibcdn2.com
     - DOMAIN-SUFFIX,cambridge.org
     - DOMAIN-SUFFIX,cambridgeschoolshakespeare.com
     - DOMAIN-SUFFIX,cambridgedigital.net
     - DOMAIN-SUFFIX,cambridgemaths.org
     - DOMAIN-SUFFIX,imperialbusiness.school
-    - DOMAIN-SUFFIX,clinicalkey.com
-    - DOMAIN-SUFFIX,cell.com
-    - DOMAIN-SUFFIX,doi.info
-    - DOMAIN-SUFFIX,doi.org
     - DOMAIN-SUFFIX,wkap.nl
     - DOMAIN-SUFFIX,springernature.com
     - DOMAIN-SUFFIX,springerlink.com
     - DOMAIN-SUFFIX,springer.com
     - DOMAIN-SUFFIX,apress.com
-    - DOMAIN-SUFFIX,sci-hub.st
-    - DOMAIN-SUFFIX,sci-hub.ee
-    - DOMAIN-SUFFIX,sci-hub.se
-    - DOMAIN-SUFFIX,proquest.com
-    - DOMAIN-SUFFIX,serialssolutions.com
-    - DOMAIN-SUFFIX,taylorfrancis.com
-    - DOMAIN-SUFFIX,taylorandfrancis.com
-    - DOMAIN-SUFFIX,tandfonline.com
-    - DOMAIN-SUFFIX,psyccareers.com
-    - DOMAIN-SUFFIX,apa.org
+    - DOMAIN-SUFFIX,scopus.com
+    - DOMAIN-SUFFIX,scival.com
+    - DOMAIN-SUFFIX,reaxys.com
+    - DOMAIN-SUFFIX,mendeley.com
+    - DOMAIN-SUFFIX,fundinginstitutional.com
+    - DOMAIN-SUFFIX,evise.com
+    - DOMAIN-SUFFIX,engineeringvillage.com
+    - DOMAIN-SUFFIX,elsevier.io
+    - DOMAIN-SUFFIX,elsevier.com
+    - DOMAIN-SUFFIX,elsevier-ae.com
+    - DOMAIN-SUFFIX,els-cdn.com
+    - DOMAIN-SUFFIX,clinicalkey.com
+    - DOMAIN-SUFFIX,cell.com
     - DOMAIN-SUFFIX,lcb.ac.uk
     - DOMAIN-SUFFIX,jmu.ac.uk
     - DOMAIN-SUFFIX,aberdeen-isc.ac.uk
@@ -5959,15 +5959,11 @@ payload:
     - DOMAIN-SUFFIX,aberbangorpartnership.ac.uk
     - DOMAIN-SUFFIX,aber.ac.uk
     - DOMAIN-SUFFIX,abdn-online.ac.uk
-    - DOMAIN-SUFFIX,tandf.co.uk
     - DOMAIN-SUFFIX,abdn.ac.uk
     - DOMAIN-SUFFIX,abdn-access-biomedical.ac.uk
     - DOMAIN-SUFFIX,abcolstudents.ac.uk
     - DOMAIN-SUFFIX,abcol.ac.uk
     - DOMAIN-SUFFIX,abbeygatesixthformcollege.ac.uk
-    - DOMAIN-SUFFIX,sci-hub.it.nf
-    - DOMAIN-SUFFIX,sci-hub.mksa.top
-    - DOMAIN-SUFFIX,sci.hubg.org
     - DOMAIN-SUFFIX,abbeygatesfc.ac.uk
     - DOMAIN-SUFFIX,aau.ac.uk
     - DOMAIN-SUFFIX,aaschool.ac.uk
@@ -5977,6 +5973,10 @@ payload:
     - DOMAIN-SUFFIX,3d-fossils.ac.uk
     - DOMAIN-SUFFIX,uk-data-service.ac.uk
     - DOMAIN-SUFFIX,liparm.ac.uk
+    - DOMAIN-SUFFIX,sci.hubg.org
+    - DOMAIN-SUFFIX,sci-hub.mksa.top
+    - DOMAIN-SUFFIX,tandf.co.uk
+    - DOMAIN-SUFFIX,sci-hub.it.nf
     - DOMAIN-SUFFIX,nii.ac.jp
     - DOMAIN-SUFFIX,ncl.edu.tw
     - DOMAIN-SUFFIX,lawdata.com.tw
