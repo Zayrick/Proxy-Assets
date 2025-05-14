@@ -12,7 +12,6 @@ payload:
     - t21ipau.nikkei.co.jp
     - ulrichsweb.serialssolutions.com
     - wrds-www.wharton.upenn.edu
-    - imperial.insendi.com
     - scholar.google.ae
     - scholar.google.at
     - scholar.google.be
@@ -89,6 +88,7 @@ payload:
     - scholar.google.sk
     - scholar.googleusercontent.com
     - scholar.l.google.com
+    - imperial.insendi.com
     - +.mit
     - +.aacrjournals.org
     - +.aclweb.org
@@ -164,14 +164,14 @@ payload:
     - +.highwirepress.com
     - +.hindawi.com
     - +.icevirtuallibrary.com
-    - +.proquest.com
-    - +.serialssolutions.com
-    - +.knovel.com
-    - +.srttu.edu
+    - +.zlibcdn2.com
+    - +.zlibcdn.com
+    - +.zlib.life
+    - +.z-library.se
     - +.igi-global.com
     - +.igpublish.com
-    - +.sharif.ir
-    - +.sharif.edu
+    - +.z-lib.org
+    - +.singlelogin.site
     - +.informs.org
     - +.ioinformatics.org
     - +.iop.org
@@ -183,11 +183,11 @@ payload:
     - +.jmlr.org
     - +.jneurosci.org
     - +.jove.com
-    - +.sanjesh.org
+    - +.singlelogin.re
     - +.jstor.org
     - +.karger.com
     - +.kuke.com
-    - +.jtt.ir
+    - +.singlelogin.me
     - +.lexisnexis.com
     - +.literatumonline.com
     - +.mdpi.com
@@ -195,10 +195,10 @@ payload:
     - +.morganclaypool.com
     - +.nature.com
     - +.naturemag.org
-    - +.iranlms.ir
+    - +.singlelogin.app
     - +.nejm.org
     - +.neurology.org
-    - +.edu.ir
+    - +.sg1lib.org
     - +.oecd-ilibrary.org
     - +.optica.org
     - +.osapublishing.org
@@ -251,19 +251,6 @@ payload:
     - +.webofscience.com
     - +.newisiknowledge.com
     - +.isiknowledge.com
-    - +.sci-hub.se
-    - +.sci-hub.ee
-    - +.sci-hub.st
-    - +.ac.ir
-    - +.taylorfrancis.com
-    - +.taylorandfrancis.com
-    - +.doi.org
-    - +.doi.info
-    - +.mit.edu
-    - +.mit.net
-    - +.mitpressjournals.org
-    - +.sciencedirect.com
-    - +.sciencedirectassets.com
     - +.ieee.org
     - +.ieee.tv
     - +.tryengineering.org
@@ -318,6 +305,7 @@ payload:
     - +.signalprocessingsociety.org
     - +.technologyandsociety.org
     - +.vtsociety.org
+    - +.knovel.com
     - +.oxfordfirstsource.com
     - +.oxfordscholarlyeditions.com
     - +.amamanualofstyle.com
@@ -346,59 +334,53 @@ payload:
     - +.sipriyearbook.org
     - +.ukwhoswho.com
     - +.universitypressscholarship.com
-    - +.tandfonline.com
-    - +.1lib.cloud
-    - +.1lib.cz
-    - +.1lib.domains
-    - +.1lib.education
-    - +.1lib.eu
-    - +.1lib.limited
-    - +.1lib.pl
-    - +.1lib.to
-    - +.1lib.tw
-    - +.2lib.org
-    - +.3lib.net
-    - +.art1lib.com
-    - +.b-ok.africa
-    - +.b-ok.asia
-    - +.b-ok.cc
-    - +.b-ok.global
-    - +.b-ok.org
-    - +.book4you.org
-    - +.bookfi.net
-    - +.booksc.eu
-    - +.booksc.me
-    - +.booksc.org
-    - +.booksc.xyz
-    - +.bookshome.info
-    - +.bookshome.net
-    - +.bookshome.world
-    - +.de1lib.org
-    - +.hk1lib.org
-    - +.libsolutions.app
-    - +.libsolutions.domains
-    - +.libsolutions.net
     - +.ma1lib.org
-    - +.sg1lib.org
-    - +.singlelogin.app
-    - +.singlelogin.me
-    - +.singlelogin.re
-    - +.singlelogin.site
-    - +.z-lib.org
-    - +.z-library.se
-    - +.zlib.life
-    - +.zlibcdn.com
-    - +.zlibcdn2.com
+    - +.doi.org
+    - +.doi.info
+    - +.mit.edu
+    - +.mit.net
+    - +.mitpressjournals.org
+    - +.sci-hub.se
+    - +.sci-hub.ee
+    - +.sci-hub.st
+    - +.libsolutions.net
+    - +.libsolutions.domains
+    - +.libsolutions.app
+    - +.sciencedirect.com
+    - +.sciencedirectassets.com
     - +.cambridge.org
     - +.cambridgeschoolshakespeare.com
     - +.cambridgedigital.net
     - +.cambridgemaths.org
     - +.imperialbusiness.school
-    - +.wkap.nl
-    - +.springernature.com
-    - +.springerlink.com
-    - +.springer.com
-    - +.apress.com
+    - +.hk1lib.org
+    - +.de1lib.org
+    - +.bookshome.world
+    - +.bookshome.net
+    - +.bookshome.info
+    - +.booksc.xyz
+    - +.booksc.org
+    - +.booksc.me
+    - +.booksc.eu
+    - +.bookfi.net
+    - +.book4you.org
+    - +.b-ok.org
+    - +.b-ok.global
+    - +.b-ok.cc
+    - +.b-ok.asia
+    - +.b-ok.africa
+    - +.art1lib.com
+    - +.3lib.net
+    - +.2lib.org
+    - +.1lib.tw
+    - +.1lib.to
+    - +.1lib.pl
+    - +.1lib.limited
+    - +.1lib.eu
+    - +.1lib.education
+    - +.1lib.domains
+    - +.1lib.cz
+    - +.1lib.cloud
     - +.scopus.com
     - +.scival.com
     - +.reaxys.com
@@ -412,49 +394,26 @@ payload:
     - +.els-cdn.com
     - +.clinicalkey.com
     - +.cell.com
-    - +.lcb.ac.uk
-    - +.jmu.ac.uk
-    - +.aberdeen-isc.ac.uk
-    - +.aberdeenrescon.ac.uk
-    - +.abertawe.ac.uk
-    - +.abertay.ac.uk
-    - +.abertaydundee.ac.uk
-    - +.aberystwyth.ac.uk
-    - +.abhsc.ac.uk
-    - +.abicollege.ac.uk
-    - +.abingdon-witney.ac.uk
-    - +.abira.ac.uk
-    - +.abrsm.ac.uk
-    - +.abs.ac.uk
-    - +.acacia.ac.uk
-    - +.academic-clinician.ac.uk
-    - +.academicpaediatricsassociation.ac.uk
-    - +.academicpeerlearning.ac.uk
-    - +.academyforhealthcarescience.ac.uk
-    - +.academyofmusic.ac.uk
-    - +.acceleratedcomputing.ac.uk
-    - +.accesscollege.ac.uk
-    - +.accesscreative.ac.uk
-    - +.accesshe.ac.uk
-    - +.accessheonline.ac.uk
-    - +.access-summit.ac.uk
-    - +.accesstohe.ac.uk
-    - +.accesstohighereducation.ac.uk
-    - +.accesstomusic.ac.uk
-    - +.accountancylearning.ac.uk
-    - +.accross.ac.uk
-    - +.accs.ac.uk
-    - +.aced.ac.uk
-    - +.ace-lp.ac.uk
-    - +.acer.ac.uk
-    - +.aces.ac.uk
-    - +.acets.ac.uk
-    - +.acm.ac.uk
-    - +.acmedsci.ac.uk
-    - +.acoustics.ac.uk
-    - +.acp.ac.uk
-    - +.acpme.ac.uk
-    - +.acsis.ac.uk
+    - +.taylorfrancis.com
+    - +.taylorandfrancis.com
+    - +.tandfonline.com
+    - +.wkap.nl
+    - +.springernature.com
+    - +.springerlink.com
+    - +.springer.com
+    - +.apress.com
+    - +.proquest.com
+    - +.serialssolutions.com
+    - +.srttu.edu
+    - +.sharif.ir
+    - +.sharif.edu
+    - +.sanjesh.org
+    - +.jtt.ir
+    - +.iranlms.ir
+    - +.edu.ir
+    - +.ac.ir
+    - +.learnportsmouth.ac.uk
+    - +.kentadulteducation.ac.uk
     - +.activatelearning.ac.uk
     - +.actofunion.ac.uk
     - +.actris.ac.uk
@@ -1879,7 +1838,7 @@ payload:
     - +.eastkentcollege.ac.uk
     - +.eastleigh.ac.uk
     - +.east-london.ac.uk
-    - +.llandrillo.ac.uk
+    - +.eastmallingresearch.ac.uk
     - +.eastmidlandscetls.ac.uk
     - +.eastnorfolk.ac.uk
     - +.easton.ac.uk
@@ -1920,7 +1879,7 @@ payload:
     - +.ecu.ac.uk
     - +.ecw.ac.uk
     - +.ed6.ac.uk
-    - +.ed.ac.uk
+    - +.londonreach.ac.uk
     - +.edam.ac.uk
     - +.edc.ac.uk
     - +.ed-coll.ac.uk
@@ -2068,7 +2027,7 @@ payload:
     - +.erbecdt.ac.uk
     - +.erc.ac.uk
     - +.eres.ac.uk
-    - +.llakes.ac.uk
+    - +.eresearchsouth.ac.uk
     - +.eri.ac.uk
     - +.e-rihs.ac.uk
     - +.erini.ac.uk
@@ -2109,7 +2068,7 @@ payload:
     - +.essex.ac.uk
     - +.e-studio.ac.uk
     - +.etc.ac.uk
-    - +.etcfhe.ac.uk
+    - +.londonp4p.ac.uk
     - +.etextbooks.ac.uk
     - +.ethicsguidebook.ac.uk
     - +.ethnicity.ac.uk
@@ -2904,7 +2863,7 @@ payload:
     - +.jisc-tau.ac.uk
     - +.jiscwell.ac.uk
     - +.jmc.ac.uk
-    - +.llambed.ac.uk
+    - +.jmu.ac.uk
     - +.jnt.ac.uk
     - +.jobs.ac.uk
     - +.johnruskin.ac.uk
@@ -2945,7 +2904,7 @@ payload:
     - +.kennedy.ac.uk
     - +.kensingtoncoll.ac.uk
     - +.kent.ac.uk
-    - +.kentadulteducation.ac.uk
+    - +.london-pgmde.ac.uk
     - +.kentcls.ac.uk
     - +.kentman.ac.uk
     - +.kess2.ac.uk
@@ -3040,7 +2999,7 @@ payload:
     - +.lbs.ac.uk
     - +.lbu.ac.uk
     - +.lcad.ac.uk
-    - +.aberdeen.ac.uk
+    - +.lcb.ac.uk
     - +.lcbs.ac.uk
     - +.lcbt.ac.uk
     - +.lcds.ac.uk
@@ -3081,7 +3040,7 @@ payload:
     - +.learninworcestershire.ac.uk
     - +.learnit-northampton.ac.uk
     - +.learnnorthants.ac.uk
-    - +.learnportsmouth.ac.uk
+    - +.acpme.ac.uk
     - +.learnsafl.ac.uk
     - +.learntelford.ac.uk
     - +.learntogive.ac.uk
@@ -3200,9 +3159,9 @@ payload:
     - +.livjm.ac.uk
     - +.ljmu.ac.uk
     - +.lkl.ac.uk
-    - +.eresearchsouth.ac.uk
-    - +.aberdeenenergy.ac.uk
-    - +.eastmallingresearch.ac.uk
+    - +.llakes.ac.uk
+    - +.llambed.ac.uk
+    - +.llandrillo.ac.uk
     - +.llas.ac.uk
     - +.llysfasi.ac.uk
     - +.lma.ac.uk
@@ -3241,9 +3200,9 @@ payload:
     - +.londonmetropolitan.ac.uk
     - +.londonmetropolitanuniversity.ac.uk
     - +.londonmetuniversity.ac.uk
-    - +.londonp4p.ac.uk
-    - +.london-pgmde.ac.uk
-    - +.londonreach.ac.uk
+    - +.etcfhe.ac.uk
+    - +.acsis.ac.uk
+    - +.ed.ac.uk
     - +.londonschooloftheology.ac.uk
     - +.londonscreenacademy.ac.uk
     - +.londonstudiocenter.ac.uk
@@ -5954,6 +5913,48 @@ payload:
     - +.zoonosis.ac.uk
     - +.dlib.eastview.com
     - +.academic.eb.com
+    - +.acp.ac.uk
+    - +.acoustics.ac.uk
+    - +.acmedsci.ac.uk
+    - +.acm.ac.uk
+    - +.acets.ac.uk
+    - +.aces.ac.uk
+    - +.acer.ac.uk
+    - +.ace-lp.ac.uk
+    - +.aced.ac.uk
+    - +.accs.ac.uk
+    - +.accross.ac.uk
+    - +.accountancylearning.ac.uk
+    - +.accesstomusic.ac.uk
+    - +.accesstohighereducation.ac.uk
+    - +.accesstohe.ac.uk
+    - +.access-summit.ac.uk
+    - +.accessheonline.ac.uk
+    - +.accesshe.ac.uk
+    - +.tandf.co.uk
+    - +.accesscreative.ac.uk
+    - +.accesscollege.ac.uk
+    - +.acceleratedcomputing.ac.uk
+    - +.academyofmusic.ac.uk
+    - +.academyforhealthcarescience.ac.uk
+    - +.academicpeerlearning.ac.uk
+    - +.academicpaediatricsassociation.ac.uk
+    - +.academic-clinician.ac.uk
+    - +.acacia.ac.uk
+    - +.abs.ac.uk
+    - +.abrsm.ac.uk
+    - +.abira.ac.uk
+    - +.abingdon-witney.ac.uk
+    - +.abicollege.ac.uk
+    - +.abhsc.ac.uk
+    - +.aberystwyth.ac.uk
+    - +.abertaydundee.ac.uk
+    - +.abertay.ac.uk
+    - +.abertawe.ac.uk
+    - +.aberdeenrescon.ac.uk
+    - +.aberdeen-isc.ac.uk
+    - +.aberdeenenergy.ac.uk
+    - +.aberdeen.ac.uk
     - +.aberdare.ac.uk
     - +.aberbangorstrategicalliance.ac.uk
     - +.aberbangorpartnership.ac.uk
@@ -5975,7 +5976,6 @@ payload:
     - +.liparm.ac.uk
     - +.sci.hubg.org
     - +.sci-hub.mksa.top
-    - +.tandf.co.uk
     - +.sci-hub.it.nf
     - +.nii.ac.jp
     - +.ncl.edu.tw
