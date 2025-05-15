@@ -8,25 +8,25 @@ payload:
     - +.chesicc.net
     - +.chsi.cn
     - +.gfbzb.cn
-    - +.xueersi.com
-    - +.keboyunxiao.com
-    - +.xesimg.com
-    - +.speiyou.com
     - +.koopass.com
+    - +.keboyunxiao.com
     - +.koolearn.com
     - +.koocdn.com
-    - +.yeshj.com
+    - +.yuketang.cn
+    - +.rainclassroom.com
+    - +.zhihuishu.com
+    - +.pmphmooc.com
     - +.gfbzb.com
-    - +.hujiang.com
-    - +.hjfile.cn
-    - +.hjapi.com
+    - +.openlearning.com
+    - +.mooc.cn
+    - +.icourses.cn
     - +.gfbzb.net
     - +.ncss.cn
-    - +.cctalk.com
-    - +.applysquare.net
-    - +.applysquare.com
+    - +.icourse163.org
+    - +.cnmooc.org
+    - +.chinesemooc.org
     - +.qgzb.net
-    - +.pmphmooc.com
+    - +.fenbilantian.com
     - +.zbbm.net
     - +.yudou.cn
     - +.yushiyan.net
@@ -52,8 +52,8 @@ payload:
     - +.aiyunxiao.com
     - +.cedf.cn
     - +.iyunxiao.com
-    - +.baydn.com
-    - +.openlearning.com
+    - +.shareintelli.com
+    - +.fenbilantian.cn
     - +.chesicc.cn
     - +.pigai.org
     - +.weilaiyunxiao.com
@@ -65,11 +65,21 @@ payload:
     - +.17zuoye.cn
     - +.17zuoye.com
     - +.17zuoye.net
+    - +.applysquare.com
+    - +.applysquare.net
     - +.hugecore.net
-    - +.shareintelli.com
-    - +.mojidict.com
     - +.yunxiao.com
+    - +.mojidict.com
+    - +.cctalk.com
+    - +.hjapi.com
+    - +.hjfile.cn
+    - +.hujiang.com
+    - +.yeshj.com
+    - +.baydn.com
     - +.shanbay.com
+    - +.speiyou.com
+    - +.xesimg.com
+    - +.xueersi.com
     - +.banmaaike.com
     - +.xiaoyuankousuan.com
     - +.ybccode.com
@@ -80,26 +90,16 @@ payload:
     - +.fenbi.com
     - +.fenbike.cn
     - +.fenbike.com
-    - +.fenbilantian.cn
-    - +.fenbilantian.com
-    - +.rainclassroom.com
-    - +.yuketang.cn
-    - +.zhihuishu.com
-    - +.chinesemooc.org
-    - +.cnmooc.org
-    - +.icourse163.org
-    - +.icourses.cn
-    - +.mooc.cn
+    - +.qgzb.com.cn
+    - +.icve.com.cn
     - +.qgzb.gov.cn
     - +.chsi.com.cn
-    - +.icve.com.cn
-    - +.gatzs.com.cn
     - +.chdi.com.cn
+    - +.gfbzb.gov.cn
+    - +.gatzs.com.cn
+    - +.zbbm.gov.cn
     - +.ncss.org.cn
     - +.gfbzb.com.cn
-    - +.zbbm.gov.cn
-    - +.qgzb.com.cn
-    - +.gfbzb.gov.cn
     - +.chinayz.com.cn
     - +.chesicc.org.cn
     - +.chesicc.net.cn

@@ -292,6 +292,11 @@ payload:
     - www.apple.com.edgekey.net
     - www.apple.com.edgekey.net.globalredir.akadns.net
     - xp.apple.com
+    - +.apple-itunes.cn
+    - +.itunes-apple.cn
+    - +.itunesapple.cn
+    - +.itunesradio.cn
+    - +.itunesradio.com.cn
     - certs-lb.apple.com.akadns.net
     - certs.apple.com
     - crl-lb.apple.com.akadns.net
@@ -308,8 +313,6 @@ payload:
     - +.beatsbydre.com
     - +.beatsbydre.com.cn
     - +.beatsep.cn
-    - +.swiftui.cn
-    - +.swiftui.com.cn
     - +.researchkit.cn
     - +.researchkit.com.cn
     - +.swiftui.cn
@@ -320,8 +323,5 @@ payload:
     - +.icloud.com.cn
     - +.icloud.net.cn
     - +.icloudapple.cn
-    - +.apple-itunes.cn
-    - +.itunes-apple.cn
-    - +.itunesapple.cn
-    - +.itunesradio.cn
-    - +.itunesradio.com.cn
+    - +.swiftui.cn
+    - +.swiftui.com.cn
