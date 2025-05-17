@@ -1,5 +1,4 @@
 payload:
-    - csis-prod.s3.amazonaws.com
     - a.ppy.sh
     - assets.ppy.sh
     - c.ppy.sh
@@ -9,6 +8,7 @@ payload:
     - notify.ppy.sh
     - sentry.ppy.sh
     - spectator.ppy.sh
+    - csis-prod.s3.amazonaws.com
     - +.aomedia.org
     - +.atypi.org
     - +.change.org
@@ -23,6 +23,10 @@ payload:
     - +.who.int
     - +.wi-fi.org
     - +.wto.org
+    - +.f-dro1d.org
+    - +.f-droid.com
+    - +.f-droid.org
+    - +.fdroid.org
     - +.acousticbrainz.org
     - +.bookbrainz.org
     - +.coverartarchive.org
@@ -31,6 +35,8 @@ payload:
     - +.messybrainz.org
     - +.metabrainz.org
     - +.musicbrainz.org
+    - +.nist.gov
+    - +.time.gov
     - +.openmaps.org
     - +.openstreetmap.com
     - +.openstreetmap.net
@@ -40,8 +46,8 @@ payload:
     - +.osmfoundation.org
     - +.stateofthemap.com
     - +.stateofthemap.org
-    - +.rolfoundation.org
-    - +.rolsociety.org
+    - +.paskoocheh.com
+    - +.ppy.sh
     - +.archive-it.org
     - +.archive.org
     - +.archive.ph
@@ -49,11 +55,15 @@ payload:
     - +.openlibrary.org
     - +.4pcdn.org
     - +.4plebs.org
+    - +.ccstatic.org
+    - +.creativecommons.org
+    - +.creativecommons.engineering
+    - +.licensebuttons.net
     - +.csis.org
-    - +.f-dro1d.org
-    - +.f-droid.com
-    - +.f-droid.org
-    - +.fdroid.org
+    - +.emojipedia.org
+    - +.worldemojiawards.com
+    - +.worldemojiday.com
+    - +.xn--yt8h.la
     - +.ieee.org
     - +.ieee.tv
     - +.tryengineering.org
@@ -108,15 +118,5 @@ payload:
     - +.signalprocessingsociety.org
     - +.technologyandsociety.org
     - +.vtsociety.org
-    - +.ppy.sh
-    - +.ccstatic.org
-    - +.creativecommons.org
-    - +.creativecommons.engineering
-    - +.licensebuttons.net
-    - +.emojipedia.org
-    - +.worldemojiawards.com
-    - +.worldemojiday.com
-    - +.xn--yt8h.la
-    - +.nist.gov
-    - +.time.gov
-    - +.paskoocheh.com
+    - +.rolfoundation.org
+    - +.rolsociety.org

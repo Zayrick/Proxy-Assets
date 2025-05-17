@@ -1,5 +1,15 @@
 payload:
-    - +.ggpht.cn
+    - uplaypc-s-ubisoft.cdn.ubi.com
+    - gog.qtlglb.com
+    - gogalaxy.gog-statics.com
+    - menu-static.gog-statics.com
+    - productcard.gog-statics.com
+    - static-login.gog-statics.com
+    - www4-static.gog-statics.com
+    - gog-cdn-fastly.gog.com
+    - gog-cdn.akamaized.net
+    - +.leagueoflegends.cn
+    - +.lpl.com.cn
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -15,45 +25,7 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
-    - +.legendofzelda.cn
-    - +.legendofzelda.com.cn
-    - +.miitomo.com.cn
-    - +.nintendolabo.cn
-    - +.nintendoswitch.cn
-    - +.nintendoswitch.com.cn
-    - +.supersmashbros.cn
-    - +.supersmashbros.com.cn
-    - +.xn--mts47c3w9b1qr.cn
-    - +.mariokart.cn
-    - +.mariokart.com.cn
-    - +.supermariobros.com.cn
-    - uplaypc-s-ubisoft.cdn.ubi.com
-    - +.bilibiligame.cn
-    - +.bilibiligame.co
-    - +.bilibiligame.net
-    - +.biligame.co
-    - +.biligame.com
-    - +.biligame.net
-    - +.sl916.com
-    - +.steamserver.net
-    - +.steamusercontent.com
-    - +.csgo.wmsj.cn
-    - +.dota2.wmsj.cn
-    - +.wmsjsteam.com
-    - +.client-update.queniuqe.com
-    - +.dl.steam.clngaa.com
-    - +.st.dl.bscstorage.net
-    - +.st.dl.eccdnx.com
-    - +.st.dl.pinyuncloud.com
-    - +.steampowered.com.8686c.com
-    - +.steamstatic.com.8686c.com
-    - alibaba.cdn.steampipe.steamcontent.com
-    - lv.queniujq.cn
-    - xz.pphimalayanrt.com
-    - +.steamchina.com
-    - +.gstore.val.manlaxy.com
-    - +.leagueoflegends.cn
-    - +.lpl.com.cn
+    - +.bluearchive-cn.com
     - +.battlecare.net
     - +.gameitop.com
     - +.gameloop.com
@@ -139,14 +111,48 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
-    - gog.qtlglb.com
-    - gogalaxy.gog-statics.com
-    - menu-static.gog-statics.com
-    - productcard.gog-statics.com
-    - static-login.gog-statics.com
-    - www4-static.gog-statics.com
-    - gog-cdn-fastly.gog.com
-    - gog-cdn.akamaized.net
+    - +.steamserver.net
+    - +.steamusercontent.com
+    - +.csgo.wmsj.cn
+    - +.dota2.wmsj.cn
+    - +.wmsjsteam.com
+    - +.client-update.queniuqe.com
+    - +.dl.steam.clngaa.com
+    - +.st.dl.bscstorage.net
+    - +.st.dl.eccdnx.com
+    - +.st.dl.pinyuncloud.com
+    - +.steampowered.com.8686c.com
+    - +.steamstatic.com.8686c.com
+    - alibaba.cdn.steampipe.steamcontent.com
+    - lv.queniujq.cn
+    - xz.pphimalayanrt.com
+    - +.steamchina.com
+    - +.gstore.val.manlaxy.com
+    - +.bilibiligame.cn
+    - +.bilibiligame.co
+    - +.bilibiligame.net
+    - +.biligame.co
+    - +.biligame.com
+    - +.biligame.net
+    - +.legendofzelda.cn
+    - +.legendofzelda.com.cn
+    - +.miitomo.com.cn
+    - +.nintendolabo.cn
+    - +.nintendoswitch.cn
+    - +.nintendoswitch.com.cn
+    - +.supersmashbros.cn
+    - +.supersmashbros.com.cn
+    - +.xn--mts47c3w9b1qr.cn
+    - +.mariokart.cn
+    - +.mariokart.com.cn
+    - +.supermariobros.com.cn
+    - +.sl916.com
+    - +.kurogames.com
+    - +.aki-game.com
+    - +.xboxlive.cn
+    - +.ggpht.cn
+    - +.amazonprimevideo.cn
+    - +.amazonprimevideo.com.cn
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -162,9 +168,3 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
-    - +.xboxlive.cn
-    - +.bluearchive-cn.com
-    - +.kurogames.com
-    - +.aki-game.com
-    - +.amazonprimevideo.cn
-    - +.amazonprimevideo.com.cn
