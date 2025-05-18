@@ -6,6 +6,7 @@ payload:
     - DOMAIN-SUFFIX,1lib.eu
     - DOMAIN-SUFFIX,1lib.limited
     - DOMAIN-SUFFIX,1lib.pl
+    - DOMAIN-SUFFIX,1lib.sk
     - DOMAIN-SUFFIX,1lib.to
     - DOMAIN-SUFFIX,1lib.tw
     - DOMAIN-SUFFIX,2lib.org
@@ -36,7 +37,11 @@ payload:
     - DOMAIN-SUFFIX,singlelogin.me
     - DOMAIN-SUFFIX,singlelogin.re
     - DOMAIN-SUFFIX,singlelogin.site
+    - DOMAIN-SUFFIX,z-lib.fm
+    - DOMAIN-SUFFIX,z-lib.gd
+    - DOMAIN-SUFFIX,z-lib.gl
     - DOMAIN-SUFFIX,z-lib.org
+    - DOMAIN-SUFFIX,z-library.sk
     - DOMAIN-SUFFIX,z-library.se
     - DOMAIN-SUFFIX,zlib.life
     - DOMAIN-SUFFIX,zlibcdn.com

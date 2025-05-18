@@ -1,9 +1,4 @@
 payload:
-    - +.citics.com.hk
-    - +.cncbinternational.com
-    - +.csci.hk
-    - +.cmbi.com.hk
-    - +.cmbwinglungbank.com
     - +.icbc-at.com
     - +.icbc-cz.com
     - +.icbc-ltd.com
@@ -52,3 +47,8 @@ payload:
     - +.bochk.com
     - +.ccbintl.com.hk
     - +.ccbseoul.com
+    - +.citics.com.hk
+    - +.cncbinternational.com
+    - +.csci.hk
+    - +.cmbi.com.hk
+    - +.cmbwinglungbank.com

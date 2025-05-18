@@ -1,5 +1,4 @@
 payload:
-    - uplaypc-s-ubisoft.cdn.ubi.com
     - gog.qtlglb.com
     - gogalaxy.gog-statics.com
     - menu-static.gog-statics.com
@@ -8,24 +7,19 @@ payload:
     - www4-static.gog-statics.com
     - gog-cdn-fastly.gog.com
     - gog-cdn.akamaized.net
-    - +.leagueoflegends.cn
-    - +.lpl.com.cn
-    - +.mhystatic.com
-    - +.mhyurl.cn
-    - +.mihayo.com
-    - +.mihayou.com
-    - +.mihoyo.com
-    - +.mihoyocg.com
-    - +.mihoyogift.com
-    - +.mihoyomall.com
-    - +.miyoushe.com
-    - +.benghuai.com
-    - +.bh3.com
-    - +.bhsr.com
-    - +.themisweeps.com
-    - +.yuanshen.com
-    - +.juequling.com
-    - +.bluearchive-cn.com
+    - +.legendofzelda.cn
+    - +.legendofzelda.com.cn
+    - +.miitomo.com.cn
+    - +.nintendolabo.cn
+    - +.nintendoswitch.cn
+    - +.nintendoswitch.com.cn
+    - +.supersmashbros.cn
+    - +.supersmashbros.com.cn
+    - +.xn--mts47c3w9b1qr.cn
+    - +.mariokart.cn
+    - +.mariokart.com.cn
+    - +.supermariobros.com.cn
+    - +.sl916.com
     - +.battlecare.net
     - +.gameitop.com
     - +.gameloop.com
@@ -111,6 +105,19 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
+    - +.leagueoflegends.cn
+    - +.lpl.com.cn
+    - uplaypc-s-ubisoft.cdn.ubi.com
+    - +.xboxlive.cn
+    - +.bluearchive-cn.com
+    - +.kurogames.com
+    - +.aki-game.com
+    - +.bilibiligame.cn
+    - +.bilibiligame.co
+    - +.bilibiligame.net
+    - +.biligame.co
+    - +.biligame.com
+    - +.biligame.net
     - +.steamserver.net
     - +.steamusercontent.com
     - +.csgo.wmsj.cn
@@ -128,25 +135,18 @@ payload:
     - xz.pphimalayanrt.com
     - +.steamchina.com
     - +.gstore.val.manlaxy.com
-    - +.bilibiligame.cn
-    - +.bilibiligame.co
-    - +.bilibiligame.net
-    - +.biligame.co
-    - +.biligame.com
-    - +.biligame.net
-    - +.legendofzelda.cn
-    - +.legendofzelda.com.cn
-    - +.miitomo.com.cn
-    - +.nintendolabo.cn
-    - +.nintendoswitch.cn
-    - +.nintendoswitch.com.cn
-    - +.supersmashbros.cn
-    - +.supersmashbros.com.cn
-    - +.xn--mts47c3w9b1qr.cn
-    - +.mariokart.cn
-    - +.mariokart.com.cn
-    - +.supermariobros.com.cn
-    - +.sl916.com
-    - +.kurogames.com
-    - +.aki-game.com
-    - +.xboxlive.cn
+    - +.mhystatic.com
+    - +.mhyurl.cn
+    - +.mihayo.com
+    - +.mihayou.com
+    - +.mihoyo.com
+    - +.mihoyocg.com
+    - +.mihoyogift.com
+    - +.mihoyomall.com
+    - +.miyoushe.com
+    - +.benghuai.com
+    - +.bh3.com
+    - +.bhsr.com
+    - +.themisweeps.com
+    - +.yuanshen.com
+    - +.juequling.com

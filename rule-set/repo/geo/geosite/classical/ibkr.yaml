@@ -1,5 +1,6 @@
 payload:
     - DOMAIN-SUFFIX,ibkr.com
+    - DOMAIN-SUFFIX,ibllc.com
     - DOMAIN-SUFFIX,interactivebrokers.ca
     - DOMAIN-SUFFIX,interactivebrokers.com
     - DOMAIN-SUFFIX,interactivebrokers.eu
