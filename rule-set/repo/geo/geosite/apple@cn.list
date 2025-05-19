@@ -307,8 +307,6 @@ xp.apple.com
 +.researchkit.com.cn
 +.swiftui.cn
 +.swiftui.com.cn
-+.swiftui.cn
-+.swiftui.com.cn
 certs-lb.apple.com.akadns.net
 certs.apple.com
 crl-lb.apple.com.akadns.net
@@ -324,3 +322,5 @@ valid.apple.com
 +.icloud.com.cn
 +.icloud.net.cn
 +.icloudapple.cn
++.swiftui.cn
++.swiftui.com.cn
