@@ -1,35 +1,40 @@
 payload:
-    - DOMAIN-SUFFIX,sina.cn
-    - DOMAIN-SUFFIX,zhimg.com
-    - DOMAIN-SUFFIX,tieba.com
-    - DOMAIN-SUFFIX,zhihu.com
-    - DOMAIN-SUFFIX,sinajs.com
-    - DOMAIN-SUFFIX,bcy.net
-    - DOMAIN-SUFFIX,bcyimg.com
-    - DOMAIN-SUFFIX,douban.com
-    - DOMAIN-SUFFIX,douban.fm
-    - DOMAIN-SUFFIX,doubanio.com
-    - DOMAIN-SUFFIX,gracg.com
-    - DOMAIN-SUFFIX,procg.cn
-    - DOMAIN-SUFFIX,hupu.com
+    - DOMAIN-SUFFIX,yy.com
     - DOMAIN-SUFFIX,hupucdn.com
+    - DOMAIN-SUFFIX,tieba.com
+    - DOMAIN-SUFFIX,hupu.com
+    - DOMAIN-SUFFIX,yystatic.com
     - DOMAIN-SUFFIX,shihuo.cn
+    - DOMAIN-SUFFIX,ivwen.com
+    - DOMAIN-SUFFIX,meipian.cn
+    - DOMAIN-SUFFIX,meipian.me
     - DOMAIN-SUFFIX,jike.city
     - DOMAIN-SUFFIX,jikecdn.com
-    - DOMAIN-SUFFIX,dwstatic.com
     - DOMAIN-SUFFIX,okjike.com
     - DOMAIN-SUFFIX,okjk.co
     - DOMAIN-SUFFIX,ruguoapp.com
+    - DOMAIN-SUFFIX,xhscdn.com
+    - DOMAIN-SUFFIX,xhscdn.net
+    - DOMAIN-SUFFIX,xiaohongshu.com
+    - DOMAIN-SUFFIX,bcy.net
+    - DOMAIN-SUFFIX,bcyimg.com
     - DOMAIN-SUFFIX,coolapk.com
     - DOMAIN-SUFFIX,coolapkmarket.com
+    - DOMAIN-SUFFIX,zhimg.com
     - DOMAIN-SUFFIX,coolapkmarket.net
-    - DOMAIN-SUFFIX,sina.com
-    - DOMAIN-SUFFIX,meipian.cn
-    - DOMAIN-SUFFIX,meipian.me
-    - DOMAIN-SUFFIX,sinajs.cn
+    - DOMAIN-SUFFIX,douban.com
+    - DOMAIN-SUFFIX,duowan.com
+    - DOMAIN-SUFFIX,doubanio.com
+    - DOMAIN-SUFFIX,gracg.com
+    - DOMAIN-SUFFIX,procg.cn
     - DOMAIN-SUFFIX,dandanvoice.com
     - DOMAIN-SUFFIX,dandan818.com
-    - DOMAIN-SUFFIX,ivwen.com
+    - DOMAIN-SUFFIX,douban.fm
+    - DOMAIN-SUFFIX,dwstatic.com
+    - DOMAIN-SUFFIX,sinajs.cn
+    - DOMAIN-SUFFIX,sina.cn
+    - DOMAIN-SUFFIX,sinajs.com
+    - DOMAIN-SUFFIX,sina.com
     - DOMAIN-SUFFIX,97973.com
     - DOMAIN-SUFFIX,sina.net
     - DOMAIN-SUFFIX,sinaapp.com
@@ -46,16 +51,11 @@ payload:
     - DOMAIN-SUFFIX,weibo.cn
     - DOMAIN-SUFFIX,weibo.com
     - DOMAIN-SUFFIX,weibocdn.com
-    - DOMAIN-SUFFIX,duowan.com
-    - DOMAIN-SUFFIX,yystatic.com
-    - DOMAIN-SUFFIX,yy.com
-    - DOMAIN-SUFFIX,xiaohongshu.com
-    - DOMAIN-SUFFIX,xhscdn.com
-    - DOMAIN-SUFFIX,xhscdn.net
-    - DOMAIN-SUFFIX,sina.com.cn
-    - DOMAIN-SUFFIX,weibo.com.cn
-    - DOMAIN-SUFFIX,hoopchina.com.cn
+    - DOMAIN-SUFFIX,zhihu.com
     - DOMAIN-SUFFIX,lf-rc1.yhgfb-cn-static.com
+    - DOMAIN-SUFFIX,weibo.com.cn
+    - DOMAIN-SUFFIX,sina.com.cn
+    - DOMAIN-SUFFIX,hoopchina.com.cn
     - DOMAIN-SUFFIX,tieba.baidu.com
     - DOMAIN-SUFFIX,hk.weibo.com
     - DOMAIN-SUFFIX,my.weibo.com

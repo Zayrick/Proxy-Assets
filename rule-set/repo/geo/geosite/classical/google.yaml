@@ -1,13 +1,17 @@
 payload:
     - DOMAIN,google-ohttp-relay-safebrowsing.fastly-edge.com
-    - DOMAIN,ai.google.dev
-    - DOMAIN,alkalicore-pa.clients6.google.com
-    - DOMAIN,alkalimakersuite-pa.clients6.google.com
-    - DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
-    - DOMAIN,ai.google.dev
-    - DOMAIN,alkalicore-pa.clients6.google.com
-    - DOMAIN,alkalimakersuite-pa.clients6.google.com
-    - DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
+    - DOMAIN,firebase.google.com
+    - DOMAIN,firebase.googleapis.com
+    - DOMAIN,firebaseappcheck.googleapis.com
+    - DOMAIN,firebasedynamiclinks-ipv4.googleapis.com
+    - DOMAIN,firebasedynamiclinks-ipv6.googleapis.com
+    - DOMAIN,firebasedynamiclinks.googleapis.com
+    - DOMAIN,firebaseinappmessaging.googleapis.com
+    - DOMAIN,firebaseinstallations.googleapis.com
+    - DOMAIN,firebaselogging-pa.googleapis.com
+    - DOMAIN,firebaselogging.googleapis.com
+    - DOMAIN,firebaseperusertopics-pa.googleapis.com
+    - DOMAIN,firebaseremoteconfig.googleapis.com
     - DOMAIN,scholar.google.ae
     - DOMAIN,scholar.google.at
     - DOMAIN,scholar.google.be
@@ -88,18 +92,6 @@ payload:
     - DOMAIN,preprod-publicca.googleapis.com
     - DOMAIN,clients1.google.com
     - DOMAIN,pki.google.com
-    - DOMAIN,firebase.google.com
-    - DOMAIN,firebase.googleapis.com
-    - DOMAIN,firebaseappcheck.googleapis.com
-    - DOMAIN,firebasedynamiclinks-ipv4.googleapis.com
-    - DOMAIN,firebasedynamiclinks-ipv6.googleapis.com
-    - DOMAIN,firebasedynamiclinks.googleapis.com
-    - DOMAIN,firebaseinappmessaging.googleapis.com
-    - DOMAIN,firebaseinstallations.googleapis.com
-    - DOMAIN,firebaselogging-pa.googleapis.com
-    - DOMAIN,firebaselogging.googleapis.com
-    - DOMAIN,firebaseperusertopics-pa.googleapis.com
-    - DOMAIN,firebaseremoteconfig.googleapis.com
     - DOMAIN,alt1-mtalk.google.com
     - DOMAIN,alt2-mtalk.google.com
     - DOMAIN,alt3-mtalk.google.com
@@ -112,6 +104,14 @@ payload:
     - DOMAIN,mtalk-staging.google.com
     - DOMAIN,mtalk.google.com
     - DOMAIN,mtalk4.google.com
+    - DOMAIN,ai.google.dev
+    - DOMAIN,alkalicore-pa.clients6.google.com
+    - DOMAIN,alkalimakersuite-pa.clients6.google.com
+    - DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
+    - DOMAIN,ai.google.dev
+    - DOMAIN,alkalicore-pa.clients6.google.com
+    - DOMAIN,alkalimakersuite-pa.clients6.google.com
+    - DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
     - DOMAIN-SUFFIX,and
     - DOMAIN-SUFFIX,chrome
     - DOMAIN-SUFFIX,dclk
@@ -128,7 +128,7 @@ payload:
     - DOMAIN-SUFFIX,xn--qcka1pmc
     - DOMAIN-SUFFIX,youtube
     - DOMAIN-SUFFIX,projectbaseline.com
-    - DOMAIN-SUFFIX,chronicle.security
+    - DOMAIN-SUFFIX,youtube.ch
     - DOMAIN-SUFFIX,google.am
     - DOMAIN-SUFFIX,google.as
     - DOMAIN-SUFFIX,google.at
@@ -157,10 +157,6 @@ payload:
     - DOMAIN-SUFFIX,google.cz
     - DOMAIN-SUFFIX,google.de
     - DOMAIN-SUFFIX,google.dj
-    - DOMAIN-SUFFIX,opensourceinsights.dev
-    - DOMAIN-SUFFIX,opensourceinsight.dev
-    - DOMAIN-SUFFIX,deps.info
-    - DOMAIN-SUFFIX,deps.dev
     - DOMAIN-SUFFIX,youtube.dk
     - DOMAIN-SUFFIX,youtube.de
     - DOMAIN-SUFFIX,youtube.cz
@@ -208,11 +204,11 @@ payload:
     - DOMAIN-SUFFIX,youtube.pr
     - DOMAIN-SUFFIX,youtube.pt
     - DOMAIN-SUFFIX,youtube.cl
-    - DOMAIN-SUFFIX,savethedate.foo
     - DOMAIN-SUFFIX,googlevideo.com
     - DOMAIN-SUFFIX,youtube.sn
     - DOMAIN-SUFFIX,youtube.ee
     - DOMAIN-SUFFIX,youtube.sa
+    - DOMAIN-SUFFIX,savethedate.foo
     - DOMAIN-SUFFIX,youtube.se
     - DOMAIN-SUFFIX,youtube.sg
     - DOMAIN-SUFFIX,youtube.si
@@ -234,6 +230,10 @@ payload:
     - DOMAIN-SUFFIX,youtubego.com
     - DOMAIN-SUFFIX,youtubego.id
     - DOMAIN-SUFFIX,youtubego.in
+    - DOMAIN-SUFFIX,youtubekids.com
+    - DOMAIN-SUFFIX,youtubemobilesupport.com
+    - DOMAIN-SUFFIX,youtube.co
+    - DOMAIN-SUFFIX,youtube.qa
     - DOMAIN-SUFFIX,google.dk
     - DOMAIN-SUFFIX,google.dm
     - DOMAIN-SUFFIX,google.dz
@@ -422,11 +422,11 @@ payload:
     - DOMAIN-SUFFIX,googlecert.net
     - DOMAIN-SUFFIX,googlecode.com
     - DOMAIN-SUFFIX,googlecommerce.com
-    - DOMAIN-SUFFIX,youtubekids.com
-    - DOMAIN-SUFFIX,youtubemobilesupport.com
-    - DOMAIN-SUFFIX,youtube.co
-    - DOMAIN-SUFFIX,youtube.qa
-    - DOMAIN-SUFFIX,youtube.ch
+    - DOMAIN-SUFFIX,deepmind.com
+    - DOMAIN-SUFFIX,youtube.cat
+    - DOMAIN-SUFFIX,youtube.ca
+    - DOMAIN-SUFFIX,youtube.by
+    - DOMAIN-SUFFIX,youtube.bo
     - DOMAIN-SUFFIX,googledanmark.com
     - DOMAIN-SUFFIX,googledomains.com
     - DOMAIN-SUFFIX,googledrive.com
@@ -465,7 +465,7 @@ payload:
     - DOMAIN-SUFFIX,haplorrhini.com
     - DOMAIN-SUFFIX,hdrplusdata.org
     - DOMAIN-SUFFIX,hindiweb.com
-    - DOMAIN-SUFFIX,youtube.cat
+    - DOMAIN-SUFFIX,youtube.bh
     - DOMAIN-SUFFIX,html5rocks.com
     - DOMAIN-SUFFIX,hwgo.com
     - DOMAIN-SUFFIX,iamremarkable.org
@@ -523,9 +523,9 @@ payload:
     - DOMAIN-SUFFIX,quiksee.com
     - DOMAIN-SUFFIX,revolv.com
     - DOMAIN-SUFFIX,ridepenguin.com
-    - DOMAIN-SUFFIX,blogspot.cz
-    - DOMAIN-SUFFIX,youtube.ca
     - DOMAIN-SUFFIX,google.al
+    - DOMAIN-SUFFIX,youtube.bg
+    - DOMAIN-SUFFIX,chronicle.security
     - DOMAIN-SUFFIX,schemer.com
     - DOMAIN-SUFFIX,screenwisetrends.com
     - DOMAIN-SUFFIX,screenwisetrendspanel.com
@@ -547,7 +547,7 @@ payload:
     - DOMAIN-SUFFIX,tfhub.dev
     - DOMAIN-SUFFIX,thecleversense.com
     - DOMAIN-SUFFIX,thegooglestore.com
-    - DOMAIN-SUFFIX,youtube.by
+    - DOMAIN-SUFFIX,youtube.be
     - DOMAIN-SUFFIX,thinkquarterly.com
     - DOMAIN-SUFFIX,thinkwithgoogle.com
     - DOMAIN-SUFFIX,tiltbrush.com
@@ -578,7 +578,7 @@ payload:
     - DOMAIN-SUFFIX,widevine.com
     - DOMAIN-SUFFIX,withgoogle.com
     - DOMAIN-SUFFIX,womenwill.com
-    - DOMAIN-SUFFIX,youtube.bo
+    - DOMAIN-SUFFIX,youtube.ba
     - DOMAIN-SUFFIX,womenwill.id
     - DOMAIN-SUFFIX,womenwill.in
     - DOMAIN-SUFFIX,womenwill.mx
@@ -592,25 +592,6 @@ payload:
     - DOMAIN-SUFFIX,xn--gogl-1nd42e.com
     - DOMAIN-SUFFIX,xplr.co
     - DOMAIN-SUFFIX,zukunftswerkstatt.de
-    - DOMAIN-SUFFIX,dart.dev
-    - DOMAIN-SUFFIX,dartlang.org
-    - DOMAIN-SUFFIX,dartpad.dev
-    - DOMAIN-SUFFIX,fastlane.ci
-    - DOMAIN-SUFFIX,fastlane.tools
-    - DOMAIN-SUFFIX,deepmind.com
-    - DOMAIN-SUFFIX,youtube.bh
-    - DOMAIN-SUFFIX,youtube.bg
-    - DOMAIN-SUFFIX,youtube.be
-    - DOMAIN-SUFFIX,youtube.ba
-    - DOMAIN-SUFFIX,youtube.ro
-    - DOMAIN-SUFFIX,youtube.at
-    - DOMAIN-SUFFIX,youtube.am
-    - DOMAIN-SUFFIX,kaggle.com
-    - DOMAIN-SUFFIX,kaggle.io
-    - DOMAIN-SUFFIX,kaggle.net
-    - DOMAIN-SUFFIX,kaggleusercontent.com
-    - DOMAIN-SUFFIX,v8.dev
-    - DOMAIN-SUFFIX,v8project.org
     - DOMAIN-SUFFIX,blogspot.nl
     - DOMAIN-SUFFIX,blogspot.mx
     - DOMAIN-SUFFIX,blogspot.ae
@@ -646,7 +627,7 @@ payload:
     - DOMAIN-SUFFIX,blogspot.my
     - DOMAIN-SUFFIX,blogblog.com
     - DOMAIN-SUFFIX,blogspot.cv
-    - DOMAIN-SUFFIX,run.app
+    - DOMAIN-SUFFIX,blogspot.cz
     - DOMAIN-SUFFIX,blogspot.jp
     - DOMAIN-SUFFIX,blogspot.tw
     - DOMAIN-SUFFIX,blogspot.rs
@@ -666,6 +647,10 @@ payload:
     - DOMAIN-SUFFIX,blogspot.lu
     - DOMAIN-SUFFIX,blogspot.md
     - DOMAIN-SUFFIX,blogspot.mk
+    - DOMAIN-SUFFIX,youtube.ro
+    - DOMAIN-SUFFIX,youtube.at
+    - DOMAIN-SUFFIX,run.app
+    - DOMAIN-SUFFIX,youtube.am
     - DOMAIN-SUFFIX,youtube.al
     - DOMAIN-SUFFIX,youtube.ae
     - DOMAIN-SUFFIX,yt.be
@@ -676,41 +661,55 @@ payload:
     - DOMAIN-SUFFIX,youtube.az
     - DOMAIN-SUFFIX,youtube.ru
     - DOMAIN-SUFFIX,google.ad
-    - DOMAIN-SUFFIX,xn--p8j9a0d9c9a.xn--q9jyb4c
-    - DOMAIN-SUFFIX,new.day
-    - DOMAIN-SUFFIX,iam.soy
-    - DOMAIN-SUFFIX,hey.boo
-    - DOMAIN-SUFFIX,get.rsvp
-    - DOMAIN-SUFFIX,get.page
-    - DOMAIN-SUFFIX,get.new
-    - DOMAIN-SUFFIX,get.how
-    - DOMAIN-SUFFIX,get.dev
-    - DOMAIN-SUFFIX,get.app
-    - DOMAIN-SUFFIX,flutter.dev
-    - DOMAIN-SUFFIX,flutterapp.com
-    - DOMAIN-SUFFIX,pub.dev
-    - DOMAIN-SUFFIX,crr.com
-    - DOMAIN-SUFFIX,charlestonroadregistry.com
+    - DOMAIN-SUFFIX,kaggleusercontent.com
+    - DOMAIN-SUFFIX,kaggle.net
+    - DOMAIN-SUFFIX,kaggle.io
+    - DOMAIN-SUFFIX,kaggle.com
     - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
     - DOMAIN-SUFFIX,googleplay.com
-    - DOMAIN-SUFFIX,golang.org
-    - DOMAIN-SUFFIX,golang.net
-    - DOMAIN-SUFFIX,golang.com
-    - DOMAIN-SUFFIX,polymer-project.org
-    - DOMAIN-SUFFIX,polymerproject.org
-    - DOMAIN-SUFFIX,android.com
-    - DOMAIN-SUFFIX,androidify.com
+    - DOMAIN-SUFFIX,fastlane.ci
+    - DOMAIN-SUFFIX,fastlane.tools
     - DOMAIN-SUFFIX,firebase.com
     - DOMAIN-SUFFIX,firebase.io
     - DOMAIN-SUFFIX,firebaseapp.com
     - DOMAIN-SUFFIX,firebaseio.com
+    - DOMAIN-SUFFIX,charlestonroadregistry.com
+    - DOMAIN-SUFFIX,crr.com
+    - DOMAIN-SUFFIX,get.app
+    - DOMAIN-SUFFIX,get.dev
+    - DOMAIN-SUFFIX,get.how
+    - DOMAIN-SUFFIX,get.new
+    - DOMAIN-SUFFIX,get.page
+    - DOMAIN-SUFFIX,get.rsvp
+    - DOMAIN-SUFFIX,hey.boo
+    - DOMAIN-SUFFIX,iam.soy
+    - DOMAIN-SUFFIX,new.day
+    - DOMAIN-SUFFIX,xn--p8j9a0d9c9a.xn--q9jyb4c
+    - DOMAIN-SUFFIX,v8.dev
+    - DOMAIN-SUFFIX,v8project.org
+    - DOMAIN-SUFFIX,deps.dev
+    - DOMAIN-SUFFIX,deps.info
+    - DOMAIN-SUFFIX,opensourceinsight.dev
+    - DOMAIN-SUFFIX,opensourceinsights.dev
+    - DOMAIN-SUFFIX,polymer-project.org
+    - DOMAIN-SUFFIX,polymerproject.org
+    - DOMAIN-SUFFIX,android.com
+    - DOMAIN-SUFFIX,androidify.com
+    - DOMAIN-SUFFIX,flutter.dev
+    - DOMAIN-SUFFIX,flutterapp.com
+    - DOMAIN-SUFFIX,pub.dev
+    - DOMAIN-SUFFIX,dart.dev
+    - DOMAIN-SUFFIX,dartlang.org
+    - DOMAIN-SUFFIX,dartpad.dev
     - DOMAIN-SUFFIX,go-lang.com
     - DOMAIN-SUFFIX,go-lang.net
     - DOMAIN-SUFFIX,go-lang.org
     - DOMAIN-SUFFIX,go.dev
     - DOMAIN-SUFFIX,godoc.org
-    - DOMAIN-SUFFIX,blogspot.com.mt
-    - DOMAIN-SUFFIX,blogspot.com.br
+    - DOMAIN-SUFFIX,golang.com
+    - DOMAIN-SUFFIX,golang.net
+    - DOMAIN-SUFFIX,golang.org
+    - DOMAIN-SUFFIX,blogspot.com.uy
     - DOMAIN-SUFFIX,blogspot.com.by
     - DOMAIN-SUFFIX,blogspot.co.at
     - DOMAIN-SUFFIX,blogspot.co.id
@@ -719,8 +718,8 @@ payload:
     - DOMAIN-SUFFIX,blogspot.co.nz
     - DOMAIN-SUFFIX,blogspot.co.uk
     - DOMAIN-SUFFIX,blogspot.co.za
-    - DOMAIN-SUFFIX,google.com.af
-    - DOMAIN-SUFFIX,google.com.lb
+    - DOMAIN-SUFFIX,blogspot.com.mt
+    - DOMAIN-SUFFIX,blogspot.com.br
     - DOMAIN-SUFFIX,blogspot.com.ng
     - DOMAIN-SUFFIX,blogspot.com.co
     - DOMAIN-SUFFIX,blogspot.com.au
@@ -728,7 +727,6 @@ payload:
     - DOMAIN-SUFFIX,blogspot.com.eg
     - DOMAIN-SUFFIX,blogspot.com.cy
     - DOMAIN-SUFFIX,blogspot.com.ar
-    - DOMAIN-SUFFIX,blogspot.com.uy
     - DOMAIN-SUFFIX,blogspot.com.es
     - DOMAIN-SUFFIX,blogspot.com.tr
     - DOMAIN-SUFFIX,womenwill.com.br
@@ -765,7 +763,7 @@ payload:
     - DOMAIN-SUFFIX,google.com.mx
     - DOMAIN-SUFFIX,google.com.mt
     - DOMAIN-SUFFIX,google.com.mm
-    - DOMAIN-SUFFIX,google.co.zw
+    - DOMAIN-SUFFIX,google.com.lb
     - DOMAIN-SUFFIX,google.com.kw
     - DOMAIN-SUFFIX,google.com.kh
     - DOMAIN-SUFFIX,google.com.jm
@@ -790,8 +788,10 @@ payload:
     - DOMAIN-SUFFIX,google.com.au
     - DOMAIN-SUFFIX,google.com.ar
     - DOMAIN-SUFFIX,google.com.ai
-    - DOMAIN-SUFFIX,google.co.zm
     - DOMAIN-SUFFIX,google.com.ag
+    - DOMAIN-SUFFIX,google.com.af
+    - DOMAIN-SUFFIX,google.co.zw
+    - DOMAIN-SUFFIX,google.co.zm
     - DOMAIN-SUFFIX,google.co.za
     - DOMAIN-SUFFIX,google.co.vi
     - DOMAIN-SUFFIX,google.co.ve
@@ -810,6 +810,10 @@ payload:
     - DOMAIN-SUFFIX,google.co.in
     - DOMAIN-SUFFIX,google.co.il
     - DOMAIN-SUFFIX,google.co.id
+    - DOMAIN-SUFFIX,google.co.cr
+    - DOMAIN-SUFFIX,google.co.ck
+    - DOMAIN-SUFFIX,google.co.bw
+    - DOMAIN-SUFFIX,google.co.ao
     - DOMAIN-SUFFIX,youtube.co.zw
     - DOMAIN-SUFFIX,youtube.com.ve
     - DOMAIN-SUFFIX,youtube.com.uy
@@ -882,10 +886,6 @@ payload:
     - DOMAIN-SUFFIX,youtube.co.cr
     - DOMAIN-SUFFIX,youtube.co.at
     - DOMAIN-SUFFIX,youtube.co.ae
-    - DOMAIN-SUFFIX,google.co.ao
-    - DOMAIN-SUFFIX,google.co.bw
-    - DOMAIN-SUFFIX,google.co.cr
-    - DOMAIN-SUFFIX,google.co.ck
     - DOMAIN-SUFFIX,google.cn
     - DOMAIN-SUFFIX,g.cn
     - DOMAIN-SUFFIX,gkecnapps.cn
@@ -1036,6 +1036,7 @@ payload:
     - DOMAIN,xn--flw351e.com
     - DOMAIN-SUFFIX,gvt1-cn.com
     - DOMAIN-SUFFIX,gvt2-cn.com
+    - DOMAIN,firebase-settings.crashlytics.com
     - DOMAIN-SUFFIX,2mdn-cn.net
     - DOMAIN-SUFFIX,2mdn.net
     - DOMAIN-SUFFIX,admob-cn.com
@@ -1088,7 +1089,6 @@ payload:
     - DOMAIN,crl.pki.goog
     - DOMAIN,crls.pki.goog
     - DOMAIN,ocsp.pki.goog
-    - DOMAIN,firebase-settings.crashlytics.com
     - DOMAIN-REGEX,^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.xn--ngstr-lra8j\.com$
     - DOMAIN-REGEX,^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.googlevideo\.com$
     - DOMAIN,redirector.c.play.google.com
