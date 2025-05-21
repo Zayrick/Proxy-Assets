@@ -6,6 +6,10 @@ payload:
     - DOMAIN,statics-marketingsites-eas-ms-com.akamaized.net
     - DOMAIN,statics-marketingsites-eus-ms-com.akamaized.net
     - DOMAIN,statics-marketingsites-wcus-ms-com.akamaized.net
+    - DOMAIN,crl.microsoft.com
+    - DOMAIN,mscrl.microsoft.com
+    - DOMAIN,ocsp.microsoft.com
+    - DOMAIN,oneocsp.microsoft.com
     - DOMAIN,azure.microsoft.com
     - DOMAIN,azuremarketplace.microsoft.com
     - DOMAIN,location.microsoft.com
@@ -25,10 +29,6 @@ payload:
     - DOMAIN,vscode.blob.core.windows.net
     - DOMAIN,vscode.search.windows.net
     - DOMAIN,vsmarketplacebadge.apphb.com
-    - DOMAIN,crl.microsoft.com
-    - DOMAIN,mscrl.microsoft.com
-    - DOMAIN,ocsp.microsoft.com
-    - DOMAIN,oneocsp.microsoft.com
     - DOMAIN-SUFFIX,microsoft
     - DOMAIN-SUFFIX,hotmail
     - DOMAIN-SUFFIX,office
@@ -60,7 +60,7 @@ payload:
     - DOMAIN-SUFFIX,microsoft.lv
     - DOMAIN-SUFFIX,microsoft.md
     - DOMAIN-SUFFIX,microsoft.net
-    - DOMAIN-SUFFIX,microsoftnews.net
+    - DOMAIN-SUFFIX,microsoftnews.com
     - DOMAIN-SUFFIX,microsoft.pt
     - DOMAIN-SUFFIX,microsoft.red
     - DOMAIN-SUFFIX,microsoft.ro
@@ -198,7 +198,7 @@ payload:
     - DOMAIN-SUFFIX,msidentity.com
     - DOMAIN-SUFFIX,msocdn.com
     - DOMAIN-SUFFIX,msturing.org
-    - DOMAIN-SUFFIX,msocsp.com
+    - DOMAIN-SUFFIX,xamarin.com
     - DOMAIN-SUFFIX,mymicrosoft.com
     - DOMAIN-SUFFIX,nextechafrica.net
     - DOMAIN-SUFFIX,nxta.org
@@ -273,11 +273,12 @@ payload:
     - DOMAIN-SUFFIX,winhec.com
     - DOMAIN-SUFFIX,winhec.net
     - DOMAIN-SUFFIX,yammer.com
+    - DOMAIN-SUFFIX,msocsp.com
     - DOMAIN-SUFFIX,microsoftnews.cc
-    - DOMAIN-SUFFIX,microsoftnews.com
-    - DOMAIN-SUFFIX,serverlesslibrary.net
+    - DOMAIN-SUFFIX,playfabapi.com
     - DOMAIN-SUFFIX,microsoft.cl
     - DOMAIN-SUFFIX,microsoft.pl
+    - DOMAIN-SUFFIX,microsoftnews.net
     - DOMAIN-SUFFIX,microsoftnews.org
     - DOMAIN-SUFFIX,microsoftnewsforkids.com
     - DOMAIN-SUFFIX,microsoftnewsforkids.net
@@ -298,7 +299,6 @@ payload:
     - DOMAIN-SUFFIX,1drv.com
     - DOMAIN-SUFFIX,livefilestore.com
     - DOMAIN-SUFFIX,sharepoint.cn
-    - DOMAIN-SUFFIX,xamarin.com
     - DOMAIN-SUFFIX,vscode-unpkg.net
     - DOMAIN-SUFFIX,vscode-cdn.net
     - DOMAIN-SUFFIX,vscode.dev
@@ -307,6 +307,7 @@ payload:
     - DOMAIN-SUFFIX,vfsforgit.com
     - DOMAIN-SUFFIX,visualstudio.net
     - DOMAIN-SUFFIX,visualstudio.eu
+    - DOMAIN-SUFFIX,visualstudio.co
     - DOMAIN-SUFFIX,microsoft.by
     - DOMAIN-SUFFIX,forzamotorsport.net
     - DOMAIN-SUFFIX,forzaracingchampionship.com
@@ -394,8 +395,8 @@ payload:
     - DOMAIN-SUFFIX,microsoftiotcentral.com
     - DOMAIN-SUFFIX,msn.net
     - DOMAIN-SUFFIX,playfab.com
-    - DOMAIN-SUFFIX,playfabapi.com
-    - DOMAIN-SUFFIX,visualstudio.co
+    - DOMAIN-SUFFIX,visualstudio.com
+    - DOMAIN-SUFFIX,serverlesslibrary.net
     - DOMAIN-SUFFIX,trafficmanager.net
     - DOMAIN-SUFFIX,tryfunctions.com
     - DOMAIN-SUFFIX,windowsazure.com
@@ -430,7 +431,7 @@ payload:
     - DOMAIN-SUFFIX,office365love.com
     - DOMAIN-SUFFIX,office365tw.com
     - DOMAIN-SUFFIX,renovacionoffice.com
-    - DOMAIN-SUFFIX,visualstudio.com
+    - DOMAIN-SUFFIX,visualstudio-staging.com
     - DOMAIN-SUFFIX,githubhackathon.com
     - DOMAIN-SUFFIX,ghcr.io
     - DOMAIN-SUFFIX,githubnext.com
@@ -456,7 +457,7 @@ payload:
     - DOMAIN-SUFFIX,atom.io
     - DOMAIN-SUFFIX,npm.community
     - DOMAIN-SUFFIX,npmjs.com
-    - DOMAIN-SUFFIX,visualstudio-staging.com
+    - DOMAIN-SUFFIX,uwpcommunitytoolkit.com
     - DOMAIN-SUFFIX,adaptivecards.io
     - DOMAIN-SUFFIX,api-extractor.com
     - DOMAIN-SUFFIX,apisof.net
@@ -494,11 +495,10 @@ payload:
     - DOMAIN-SUFFIX,sankie.net
     - DOMAIN-SUFFIX,sqlserveronlinux.com
     - DOMAIN-SUFFIX,timelinestoryteller.com
-    - DOMAIN-SUFFIX,uwpcommunitytoolkit.com
     - DOMAIN-SUFFIX,spoprod-a.akamaihd.net
     - DOMAIN-SUFFIX,live.com.au
-    - DOMAIN-SUFFIX,microsoftstore.com.hk
     - DOMAIN-SUFFIX,visualstudio.co.uk
+    - DOMAIN-SUFFIX,microsoftstore.com.hk
     - DOMAIN-SUFFIX,skypedata.akadns.net
     - DOMAIN-SUFFIX,skype-edf.akadns.net
     - DOMAIN-REGEX,^github-production-release-asset-[0-9a-zA-Z]{6}\.s3\.amazonaws\.com$
@@ -581,6 +581,7 @@ payload:
     - DOMAIN,wscont1.apps.microsoft.com
     - DOMAIN,wscont2.apps.microsoft.com
     - DOMAIN,xb.dlservice.microsoft.com
+    - DOMAIN,www.microsoft.com
     - DOMAIN-SUFFIX,microsoftnews.cn
     - DOMAIN-SUFFIX,msn.cn
     - DOMAIN-SUFFIX,xboxlive.cn
@@ -681,4 +682,3 @@ payload:
     - DOMAIN-SUFFIX,microsoftreactor.cn
     - DOMAIN-SUFFIX,microsoftreactor.com.cn
     - DOMAIN-SUFFIX,reactorms.com.cn
-    - DOMAIN,www.microsoft.com

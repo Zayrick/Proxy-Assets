@@ -654,6 +654,27 @@ payload:
     - +.doubao.com
     - +.coze.cn
     - +.coze.com
+    - +.byteoversea.com
+    - +.muscdn.com
+    - +.musical.ly
+    - +.tik-tokapi.com
+    - +.tiktok.com
+    - +.tiktokcdn-eu.com
+    - +.tiktokcdn-us.com
+    - +.tiktokcdn.com
+    - +.tiktokd.net
+    - +.tiktokd.org
+    - +.tiktokeu-cdn.com
+    - +.tiktokrow-cdn.com
+    - +.tiktokv.com
+    - +.tiktokv.eu
+    - +.tiktokv.us
+    - +.tiktokw.eu
+    - +.tiktokw.us
+    - +.ttlivecdn.com
+    - +.ttoverseaus.net
+    - +.ttwstatic.com
+    - p16-tiktokcdn-com.akamaized.net
     - +.bds.snssdk.com
     - +.byteadverts.com
     - +.ctobsnssdk.com
@@ -683,24 +704,3 @@ payload:
     - p9-ad-sign.byteimg.com
     - rtlog3-applog-hl.fqnovel.com
     - rtlog5-applog-hl.fqnovel.com
-    - +.byteoversea.com
-    - +.muscdn.com
-    - +.musical.ly
-    - +.tik-tokapi.com
-    - +.tiktok.com
-    - +.tiktokcdn-eu.com
-    - +.tiktokcdn-us.com
-    - +.tiktokcdn.com
-    - +.tiktokd.net
-    - +.tiktokd.org
-    - +.tiktokeu-cdn.com
-    - +.tiktokrow-cdn.com
-    - +.tiktokv.com
-    - +.tiktokv.eu
-    - +.tiktokv.us
-    - +.tiktokw.eu
-    - +.tiktokw.us
-    - +.ttlivecdn.com
-    - +.ttoverseaus.net
-    - +.ttwstatic.com
-    - p16-tiktokcdn-com.akamaized.net

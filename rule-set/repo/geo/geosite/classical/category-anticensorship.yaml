@@ -55,20 +55,17 @@ payload:
     - DOMAIN-SUFFIX,crustwebsites.net
     - DOMAIN-SUFFIX,4everland.io
     - DOMAIN-SUFFIX,dweb.link
+    - DOMAIN-SUFFIX,applecensorship.com
+    - DOMAIN-SUFFIX,torproject.org
+    - DOMAIN-SUFFIX,paskoocheh.com
+    - DOMAIN-SUFFIX,epicbrowser.com
+    - DOMAIN-SUFFIX,citizenlab.org
     - DOMAIN-SUFFIX,citizenlab.ca
+    - DOMAIN-SUFFIX,censorship.no
     - DOMAIN-SUFFIX,vpngate.net
     - DOMAIN-SUFFIX,vpngate.jp
     - DOMAIN-SUFFIX,opengw.net
     - DOMAIN-SUFFIX,v2fly.org
-    - DOMAIN-SUFFIX,v2ray.cool
-    - DOMAIN-SUFFIX,v2ray.com
-    - DOMAIN-SUFFIX,torproject.org
-    - DOMAIN-SUFFIX,softether-download.com
-    - DOMAIN-SUFFIX,softether.org
-    - DOMAIN-SUFFIX,paskoocheh.com
-    - DOMAIN-SUFFIX,citizenlab.org
-    - DOMAIN-SUFFIX,epicbrowser.com
-    - DOMAIN-SUFFIX,applecensorship.com
     - DOMAIN-SUFFIX,freebrowser.org
     - DOMAIN-SUFFIX,freewechat.com
     - DOMAIN-SUFFIX,freeweibo.com
@@ -80,7 +77,10 @@ payload:
     - DOMAIN-SUFFIX,pwnedpasswords.com
     - DOMAIN-SUFFIX,getlantern.org
     - DOMAIN-SUFFIX,lantern.io
-    - DOMAIN-SUFFIX,censorship.no
+    - DOMAIN-SUFFIX,softether.org
+    - DOMAIN-SUFFIX,softether-download.com
+    - DOMAIN-SUFFIX,v2ray.com
+    - DOMAIN-SUFFIX,v2ray.cool
     - DOMAIN-SUFFIX,ipfs.fleek.co
     - DOMAIN-SUFFIX,ipfs.lain.la
     - DOMAIN-SUFFIX,ipfs.best-practice.se
