@@ -3,31 +3,8 @@ payload:
     - e122475.dscg.akamaiedge.net
     - licdn.cn.cdn20.com
     - linkedin.sc.omtrdc.net
-    - +.facedbook.com
-    - +.facebooklivestaging.org
-    - +.periscope.tv
-    - +.pscp.tv
-    - +.t.co
-    - +.tellapart.com
-    - +.tweetdeck.com
-    - +.twimg.com
-    - +.twitpic.com
-    - +.twitter.biz
-    - +.x.com
-    - +.cms-twdigitalassets.com
-    - +.twitterflightschool.com
-    - +.twittercommunity.com
-    - +.twitter.com
-    - +.twitterinc.com
-    - +.twitteroauth.com
-    - +.twitterstat.us
-    - +.ads-twitter.com
-    - +.twttr.com
-    - +.twttr.net
-    - +.twitter.jp
-    - +.vine.co
-    - +.mvk.com
-    - +.userapi.com
+    - +.facvebook.com
+    - +.facebookpmdcenter.com
     - +.vk-apps.com
     - +.vk-apps.ru
     - +.vk-cdn.me
@@ -152,7 +129,7 @@ payload:
     - +.facebook-support.org
     - +.facebook-texas-holdem.com
     - +.facebook-texas-holdem.net
-    - +.facecook.com
+    - +.facebook.br
     - +.facebook.ca
     - +.facebook.cc
     - +.facebook.com
@@ -175,7 +152,7 @@ payload:
     - +.facebook4business.com
     - +.facebookads.com
     - +.facebookadvertisingsecrets.com
-    - +.facebookatschool.com
+    - +.facnbook.com
     - +.facebookawards.com
     - +.facebookblueprint.net
     - +.facebookbrand.com
@@ -212,7 +189,7 @@ payload:
     - +.facebooklikeexchange.com
     - +.facebooklive.com
     - +.facebooklivestaging.net
-    - +.facecook.org
+    - +.facebooklivestaging.org
     - +.facebooklogin.com
     - +.facebooklogin.info
     - +.facebookloginhelp.net
@@ -235,14 +212,14 @@ payload:
     - +.facebookphonenumber.net
     - +.facebookphoto.com
     - +.facebookphotos.com
-    - +.facebookpmdcenter.com
+    - +.facrbook.com
     - +.facebookpoke.net
     - +.facebookpoke.org
     - +.facebookpoker.info
     - +.facebookpokerchips.info
     - +.facebookporn.net
     - +.facebookporn.org
-    - +.twtrdns.net
+    - +.facebookporno.net
     - +.facebookportal.com
     - +.facebooks.com
     - +.facebooksafety.com
@@ -265,7 +242,7 @@ payload:
     - +.facebookw.com
     - +.facebookworld.com
     - +.facebool.com
-    - +.facebool.info
+    - +.mvk.com
     - +.facebooll.com
     - +.faceboom.com
     - +.faceboon.com
@@ -285,9 +262,9 @@ payload:
     - +.facecbgook.com
     - +.facecbook.com
     - +.facecbook.org
-    - +.facebook.br
-    - +.twvid.com
-    - +.facebookporno.net
+    - +.facecook.com
+    - +.facecook.org
+    - +.facedbook.com
     - +.faceebok.com
     - +.faceebook.com
     - +.faceebot.com
@@ -308,9 +285,9 @@ payload:
     - +.facfacebook.com
     - +.facfebook.com
     - +.fackebook.com
-    - +.facnbook.com
-    - +.facrbook.com
-    - +.facvebook.com
+    - +.facebookatschool.com
+    - +.userapi.com
+    - +.facebool.info
     - +.facwebook.com
     - +.facxebook.com
     - +.fadebook.com
@@ -553,20 +530,43 @@ payload:
     - +.9ineverse.com
     - +.threads.com
     - +.threads.net
-    - +.misskey.04.si
-    - +.misskey.gamelore.fun
-    - +.msk.ilnk.info
-    - +.mof.kemomi.me
-    - +.misskey.ranranhome.info
-    - +.misskey.always-we-need.games
-    - +.misskey.yukineko.me
+    - +.twtrdns.net
+    - +.vine.co
+    - +.twitter.jp
+    - +.twttr.net
+    - +.twttr.com
+    - +.ads-twitter.com
+    - +.twitterstat.us
+    - +.twitteroauth.com
+    - +.twitterinc.com
+    - +.twitter.com
+    - +.twittercommunity.com
+    - +.twitterflightschool.com
+    - +.cms-twdigitalassets.com
+    - +.x.com
+    - +.twitter.biz
+    - +.twvid.com
+    - +.periscope.tv
+    - +.pscp.tv
+    - +.t.co
+    - +.tellapart.com
+    - +.tweetdeck.com
+    - +.twimg.com
+    - +.twitpic.com
     - +.l-0005.l-msedge.net
+    - +.msk.kitazawa.me
+    - +.misskey.noellabo.jp
+    - +.misskey.ranranhome.info
+    - +.mof.kemomi.me
     - +.mk.yopo.work
     - +.mk.shrimpia.network
-    - +.misskey.noellabo.jp
-    - +.msk.kitazawa.me
-    - +.l-0005.dc-msedge.net
+    - +.misskey.04.si
+    - +.misskey.always-we-need.games
+    - +.misskey.yukineko.me
+    - +.msk.ilnk.info
+    - +.misskey.gamelore.fun
     - +.mi.nakn.jp
+    - +.l-0005.dc-msedge.net
     - +.mi.mashiro.site
     - +.mi.kochudaho.me
     - +.labo.wovs.tk
