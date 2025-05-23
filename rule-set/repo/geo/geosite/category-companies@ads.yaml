@@ -1,32 +1,17 @@
 payload:
+    - +.clarity.ms
+    - +.nelreports.net
     - +.samsungads.com
     - +.ads-api.duolingo.com
     - +.metrics.duolingo.com
     - +.analytics.vpc.duolingo.com
-    - +.amazon-adsystem.com
-    - +.serving-sys.com
-    - o33249.ingest.sentry.io
-    - openaicom.imgix.net
-    - browser-intake-datadoghq.com
-    - +.api-adservices.apple.com
-    - +.iadsdk.apple.com
-    - +.iad.apple.com
-    - +.qwapi.com
-    - +.ads.yahoo.com
-    - +.gemini.yahoo.com
-    - +.ysm.yahoo.com
     - sentry.hetzner.company
-    - +.clarity.ms
-    - +.nelreports.net
+    - +.advertising.adobe.com
+    - +.tubemogul.com
     - +.graph.instagram.com
     - +.graph-fallback.instagram.com
     - +.graph.whatsapp.com
     - +.graph.whatsapp.net
-    - +.ads.yahoo.com
-    - +.gemini.yahoo.com
-    - +.ysm.yahoo.com
-    - +.advertising.adobe.com
-    - +.tubemogul.com
     - +.2mdn-cn.net
     - +.2mdn.net
     - +.admob-cn.com
@@ -71,4 +56,19 @@ payload:
     - +.marketingplatform.google.com
     - +.urchin.com
     - analytics.google.com
+    - +.api-adservices.apple.com
+    - +.iadsdk.apple.com
+    - +.iad.apple.com
+    - +.qwapi.com
     - +.snapads.com
+    - +.ads.yahoo.com
+    - +.gemini.yahoo.com
+    - +.ysm.yahoo.com
+    - +.ads.yahoo.com
+    - +.gemini.yahoo.com
+    - +.ysm.yahoo.com
+    - +.amazon-adsystem.com
+    - +.serving-sys.com
+    - o33249.ingest.sentry.io
+    - openaicom.imgix.net
+    - browser-intake-datadoghq.com

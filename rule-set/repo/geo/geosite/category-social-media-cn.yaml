@@ -1,35 +1,42 @@
 payload:
-    - +.sina.com
-    - +.bcyimg.com
-    - +.tieba.com
-    - +.bcy.net
-    - +.97973.com
-    - +.coolapk.com
-    - +.coolapkmarket.com
     - +.coolapkmarket.net
+    - +.jike.city
+    - +.dwstatic.com
+    - +.dandanvoice.com
     - +.douban.com
-    - +.douban.fm
-    - +.doubanio.com
+    - +.jikecdn.com
+    - +.okjike.com
+    - +.okjk.co
+    - +.ruguoapp.com
+    - +.xhscdn.com
+    - +.xhscdn.net
+    - +.xiaohongshu.com
+    - +.bcy.net
+    - +.bcyimg.com
+    - +.duowan.com
     - +.gracg.com
     - +.procg.cn
-    - +.ivwen.com
-    - +.meipian.cn
-    - +.meipian.me
     - +.hupu.com
     - +.hupucdn.com
     - +.shihuo.cn
-    - +.jike.city
-    - +.jikecdn.com
+    - +.yystatic.com
+    - +.ivwen.com
+    - +.meipian.cn
+    - +.meipian.me
+    - +.douban.fm
     - +.zhimg.com
-    - +.okjike.com
-    - +.okjk.co
-    - +.sina.net
+    - +.coolapk.com
+    - +.coolapkmarket.com
+    - +.dandan818.com
+    - +.tieba.com
+    - +.zhihu.com
+    - +.doubanio.com
     - +.sinajs.cn
     - +.sina.cn
     - +.sinajs.com
-    - +.dandanvoice.com
-    - +.dandan818.com
-    - +.ruguoapp.com
+    - +.sina.com
+    - +.97973.com
+    - +.sina.net
     - +.sinaapp.com
     - +.sinaedge.com
     - +.t.cn
@@ -44,13 +51,6 @@ payload:
     - +.weibo.cn
     - +.weibo.com
     - +.weibocdn.com
-    - +.zhihu.com
-    - +.dwstatic.com
-    - +.duowan.com
-    - +.yystatic.com
-    - +.xhscdn.com
-    - +.xhscdn.net
-    - +.xiaohongshu.com
     - +.yy.com
     - +.sina.com.cn
     - +.weibo.com.cn
