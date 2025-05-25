@@ -58,29 +58,30 @@ payload:
     - DOMAIN,emby.p-p.men
     - DOMAIN,emby.aiyowei.ml
     - DOMAIN,cc.ccemby.tk
-    - DOMAIN,direct.nebula-emby.com
-    - DOMAIN-SUFFIX,ju.dog
-    - DOMAIN-SUFFIX,sfcj.org
-    - DOMAIN-SUFFIX,123456.al
     - DOMAIN-SUFFIX,mius.uk
+    - DOMAIN-SUFFIX,loseremby.org
+    - DOMAIN-SUFFIX,sfcj.org
+    - DOMAIN-SUFFIX,ju.dog
     - DOMAIN-SUFFIX,embyplus.club
     - DOMAIN-SUFFIX,404.sb
     - DOMAIN-SUFFIX,4545.cf
     - DOMAIN-SUFFIX,blueseacdn.com
     - DOMAIN-SUFFIX,emby.ml
-    - DOMAIN-SUFFIX,loseremby.org
     - DOMAIN-SUFFIX,plex.direct
     - DOMAIN-SUFFIX,texon.fans
-    - DOMAIN-SUFFIX,nvidia.rip
-    - DOMAIN-SUFFIX,feverss.cloud
+    - DOMAIN-SUFFIX,hongxingyunmovie.vip
+    - DOMAIN-SUFFIX,123456.al
+    - DOMAIN-SUFFIX,gfwemby.org
     - DOMAIN-SUFFIX,poloemby.xyz
     - DOMAIN-SUFFIX,pololine.ml
     - DOMAIN-SUFFIX,misakaf.org
-    - DOMAIN-SUFFIX,gfwemby.org
-    - DOMAIN-SUFFIX,singularity.deja-vu.beauty
+    - DOMAIN-SUFFIX,nvidia.rip
+    - DOMAIN-SUFFIX,feverss.cloud
+    - DOMAIN-SUFFIX,nebula-emby.com
     - DOMAIN-SUFFIX,stream.synn.cc
-    - DOMAIN-SUFFIX,cn-music.mefun.vip
+    - DOMAIN-SUFFIX,stream.ntrrr.top
     - DOMAIN-SUFFIX,media-1.co.uk
     - DOMAIN-SUFFIX,sptv.ii00.cc
     - DOMAIN-SUFFIX,sgtv.ii00.cc
-    - DOMAIN-SUFFIX,stream.ntrrr.top
+    - DOMAIN-SUFFIX,cn-music.mefun.vip
+    - DOMAIN-SUFFIX,singularity.deja-vu.beauty

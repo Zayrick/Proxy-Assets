@@ -1,4 +1,29 @@
 payload:
+    - uplaypc-s-ubisoft.cdn.ubi.com
+    - +.leagueoflegends.cn
+    - +.lpl.com.cn
+    - +.bilibiligame.cn
+    - +.bilibiligame.co
+    - +.bilibiligame.net
+    - +.biligame.co
+    - +.biligame.com
+    - +.biligame.net
+    - +.sl916.com
+    - +.mhystatic.com
+    - +.mhyurl.cn
+    - +.mihayo.com
+    - +.mihayou.com
+    - +.mihoyo.com
+    - +.mihoyocg.com
+    - +.mihoyogift.com
+    - +.mihoyomall.com
+    - +.miyoushe.com
+    - +.benghuai.com
+    - +.bh3.com
+    - +.bhsr.com
+    - +.themisweeps.com
+    - +.yuanshen.com
+    - +.juequling.com
     - +.legendofzelda.cn
     - +.legendofzelda.com.cn
     - +.miitomo.com.cn
@@ -96,20 +121,18 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
-    - +.leagueoflegends.cn
-    - +.lpl.com.cn
+    - +.xboxlive.cn
     - +.kurogames.com
     - +.aki-game.com
-    - +.xboxlive.cn
-    - +.sl916.com
-    - +.bilibiligame.cn
-    - +.bilibiligame.co
-    - +.bilibiligame.net
-    - +.biligame.co
-    - +.biligame.com
-    - +.biligame.net
     - +.bluearchive-cn.com
-    - uplaypc-s-ubisoft.cdn.ubi.com
+    - gog.qtlglb.com
+    - gogalaxy.gog-statics.com
+    - menu-static.gog-statics.com
+    - productcard.gog-statics.com
+    - static-login.gog-statics.com
+    - www4-static.gog-statics.com
+    - gog-cdn-fastly.gog.com
+    - gog-cdn.akamaized.net
     - +.steamserver.net
     - +.steamusercontent.com
     - +.csgo.wmsj.cn
@@ -127,26 +150,3 @@ payload:
     - xz.pphimalayanrt.com
     - +.steamchina.com
     - +.gstore.val.manlaxy.com
-    - +.mhystatic.com
-    - +.mhyurl.cn
-    - +.mihayo.com
-    - +.mihayou.com
-    - +.mihoyo.com
-    - +.mihoyocg.com
-    - +.mihoyogift.com
-    - +.mihoyomall.com
-    - +.miyoushe.com
-    - +.benghuai.com
-    - +.bh3.com
-    - +.bhsr.com
-    - +.themisweeps.com
-    - +.yuanshen.com
-    - +.juequling.com
-    - gog.qtlglb.com
-    - gogalaxy.gog-statics.com
-    - menu-static.gog-statics.com
-    - productcard.gog-statics.com
-    - static-login.gog-statics.com
-    - www4-static.gog-statics.com
-    - gog-cdn-fastly.gog.com
-    - gog-cdn.akamaized.net

@@ -28,6 +28,7 @@ payload:
     - DOMAIN,cds.apple.com.akadns.net
     - DOMAIN,cds.apple.com
     - DOMAIN,cdsassets.apple.com
+    - DOMAIN,certs.apple.com
     - DOMAIN,cl1-cdn.origin-apple.com.akadns.net
     - DOMAIN,cl1.apple.com
     - DOMAIN,cl2-cn.apple.com
