@@ -20,6 +20,26 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
+    - +.doubao.com
+    - +.coze.cn
+    - +.cf-ns.com
+    - +.cf-ns.net
+    - +.cf-ns.site
+    - +.cf-ns.tech
+    - +.cftest5.cn
+    - +.cftest6.cn
+    - +.cftest7.com
+    - +.cftest8.com
+    - +.cloudflare-cn.com
+    - +.cloudflareanycast.net
+    - +.cloudflarechina.cn
+    - +.cloudflarecn.net
+    - +.cloudflareglobal.net
+    - +.cloudflareinsights-cn.com
+    - +.cloudflareperf.com
+    - +.cloudflareprod.com
+    - +.cloudflarestaging.com
+    - +.cloudflarestoragegw.com
     - +.bisheng.cn
     - +.bishengcompiler.cn
     - +.devui.design
@@ -43,51 +63,6 @@ payload:
     - +.owsgo.com
     - +.teleows.com
     - +.saasops.tech
-    - +.cf-ns.com
-    - +.cf-ns.net
-    - +.cf-ns.site
-    - +.cf-ns.tech
-    - +.cftest5.cn
-    - +.cftest6.cn
-    - +.cftest7.com
-    - +.cftest8.com
-    - +.cloudflare-cn.com
-    - +.cloudflareanycast.net
-    - +.cloudflarechina.cn
-    - +.cloudflarecn.net
-    - +.cloudflareglobal.net
-    - +.cloudflareinsights-cn.com
-    - +.cloudflareperf.com
-    - +.cloudflareprod.com
-    - +.cloudflarestaging.com
-    - +.cloudflarestoragegw.com
-    - +.doubao.com
-    - +.coze.cn
-    - +.a2z.org.cn
-    - +.amazonaws.cn
-    - +.amazonaws.com.cn
-    - +.amazonwebservices.com.cn
-    - +.amazonworkdocs.cn
-    - +.amazonworkdocs.com.cn
-    - +.asfiovnxocqpcry.com.cn
-    - +.aws-border.cn
-    - +.aws-icp-domain-manager.cn
-    - +.awsapps.cn
-    - +.awsapps.com.cn
-    - +.awsstatic.cn
-    - +.cloudfront-cn.net
-    - +.cloudfront-test.cn
-    - +.cloudfront.cn
-    - +.nwcdcloud.cn
-    - +.nwcdcloud.com.cn
-    - +.nwcddns.cn
-    - +.nwcdinfosec.cn
-    - +.route53.cn
-    - +.sagemaker.com.cn
-    - +.amzndns-cn.biz
-    - +.amzndns-cn.cn
-    - +.amzndns-cn.com
-    - +.amzndns-cn.net
     - +.weui.io
     - +.battlecare.net
     - +.gameitop.com
@@ -175,8 +150,6 @@ payload:
     - +.17roco.com
     - +.roco.qq.com
     - kc.kexinshe.com
-    - +.bluepoch.com
-    - +.sl916.com
     - ntp.aliyun.com
     - ntp1.aliyun.com
     - ntp2.aliyun.com
@@ -198,6 +171,31 @@ payload:
     - +.ntp.neu.edu.cn
     - +.ntp.ntsc.ac.cn
     - +.ntp.org.cn
+    - +.a2z.org.cn
+    - +.amazonaws.cn
+    - +.amazonaws.com.cn
+    - +.amazonwebservices.com.cn
+    - +.amazonworkdocs.cn
+    - +.amazonworkdocs.com.cn
+    - +.asfiovnxocqpcry.com.cn
+    - +.aws-border.cn
+    - +.aws-icp-domain-manager.cn
+    - +.awsapps.cn
+    - +.awsapps.com.cn
+    - +.awsstatic.cn
+    - +.cloudfront-cn.net
+    - +.cloudfront-test.cn
+    - +.cloudfront.cn
+    - +.nwcdcloud.cn
+    - +.nwcdcloud.com.cn
+    - +.nwcddns.cn
+    - +.nwcdinfosec.cn
+    - +.route53.cn
+    - +.sagemaker.com.cn
+    - +.amzndns-cn.biz
+    - +.amzndns-cn.cn
+    - +.amzndns-cn.com
+    - +.amzndns-cn.net
     - +.bisheng.cn
     - +.bishengcompiler.cn
     - +.devui.design
@@ -222,3 +220,5 @@ payload:
     - +.teleows.com
     - +.saasops.tech
     - +.weui.io
+    - +.bluepoch.com
+    - +.sl916.com

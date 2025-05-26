@@ -14,6 +14,12 @@ payload:
     - +.safechat.com
     - +.sis001.com
     - +.v2ex.com
+    - +.ck101.com
+    - +.ckcdn.com
+    - +.ckck.fun
+    - +.lih.kg
+    - +.lihkg.com
+    - +.yamibo.com
     - +.2ch.net
     - +.5ch.net
     - +.6park.com
@@ -23,22 +29,6 @@ payload:
     - +.popo8.com
     - +.parkvv.com
     - +.xwbo.com
-    - +.maintracker.org
-    - +.rutracker.cc
-    - +.rutracker.cr
-    - +.rutracker.me
-    - +.rutracker.nl
-    - +.rutracker.org
-    - +.rutrecker.net
-    - +.rutrk.org
-    - +.4cdn.org
-    - +.4chan.org
-    - +.4channel.org
-    - +.broadbandreports.com
-    - +.dslr.net
-    - +.dslreports.com
-    - +.5i01.com
-    - +.mobile01.com
     - +.pimg.tw
     - +.pixanalytics.com
     - +.pixfs.net
@@ -47,11 +37,6 @@ payload:
     - +.pixnet.pro
     - +.pixnet.tw
     - +.pixplug.in
-    - +.qr.ae
-    - +.quora.com
-    - +.quoracdn.net
-    - +.poe.com
-    - +.poecdn.net
     - +.redd.it
     - +.reddit.com
     - +.redditblog.com
@@ -62,29 +47,44 @@ payload:
     - +.redditspace.com
     - +.redditstatic.com
     - +.redditstatus.com
-    - +.yamibo.com
-    - +.lih.kg
-    - +.lihkg.com
-    - +.linux.do
-    - +.ldstatic.com
-    - +.ptt.cc
-    - +.ptt2.cc
-    - +.ptt3.cc
-    - +.xda-cdn.com
-    - +.xda-developers.com
-    - +.xdaforums.com
-    - +.xdaimages.com
-    - +.ck101.com
-    - +.ckcdn.com
-    - +.ckck.fun
+    - +.soyjak.party
+    - +.soyjak.st
     - +.dcard.cc
     - +.dcard.io
     - +.dcard.link
     - +.dcard.tw
+    - +.linux.do
+    - +.ldstatic.com
+    - +.xda-cdn.com
+    - +.xda-developers.com
+    - +.xdaforums.com
+    - +.xdaimages.com
+    - +.4cdn.org
+    - +.4chan.org
+    - +.4channel.org
+    - +.broadbandreports.com
+    - +.dslr.net
+    - +.dslreports.com
     - +.hkgolden.com
     - +.hkgolden.media
-    - +.soyjak.party
-    - +.soyjak.st
+    - +.5i01.com
+    - +.mobile01.com
+    - +.ptt.cc
+    - +.ptt2.cc
+    - +.ptt3.cc
+    - +.qr.ae
+    - +.quora.com
+    - +.quoracdn.net
+    - +.poe.com
+    - +.poecdn.net
+    - +.maintracker.org
+    - +.rutracker.cc
+    - +.rutracker.cr
+    - +.rutracker.me
+    - +.rutracker.nl
+    - +.rutracker.org
+    - +.rutrecker.net
+    - +.rutrk.org
     - +.pixinsight.com.tw
     - +.reddit.app.link
     - +.reddit.map.fastly.net
