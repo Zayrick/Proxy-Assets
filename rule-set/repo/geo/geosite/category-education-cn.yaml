@@ -3,30 +3,30 @@ payload:
     - opencourse.pku.edu.cn
     - study.163.com
     - +.ketangpai.com
-    - +.cctalk.com
+    - +.17zuoye.com
     - +.chesicc.com
     - +.cedf.cn
     - +.chsi.cn
     - +.gfbzb.cn
-    - +.yuketang.cn
-    - +.rainclassroom.com
     - +.xueersi.com
     - +.xesimg.com
     - +.speiyou.com
-    - +.yeshj.com
-    - +.hujiang.com
-    - +.hjfile.cn
+    - +.mojidict.com
+    - +.shareintelli.com
+    - +.hugecore.net
+    - +.applysquare.net
+    - +.applysquare.com
     - +.gfbzb.com
-    - +.hjapi.com
+    - +.17zuoye.net
     - +.pigai.org
-    - +.pmphmooc.com
+    - +.17zuoye.cn
     - +.gfbzb.net
     - +.ncss.cn
-    - +.openlearning.com
-    - +.mooc.cn
-    - +.icourses.cn
+    - +.yuketang.cn
+    - +.rainclassroom.com
+    - +.zhihuishu.com
     - +.qgzb.net
-    - +.icourse163.org
+    - +.fenbilantian.com
     - +.zbbm.net
     - +.yudou.cn
     - +.yushiyan.net
@@ -56,7 +56,7 @@ payload:
     - +.keboyunxiao.com
     - +.chesicc.net
     - +.chesicc.cn
-    - +.fenbilantian.com
+    - +.fbstatic.cn
     - +.magedu.com
     - +.oldboyedu.com
     - +.eduei.com
@@ -65,14 +65,19 @@ payload:
     - +.neoscholar.com
     - +.neoschool.com
     - +.winyoungreading.com
-    - +.17zuoye.cn
-    - +.17zuoye.com
-    - +.17zuoye.net
-    - +.applysquare.com
-    - +.applysquare.net
-    - +.hugecore.net
-    - +.shareintelli.com
-    - +.mojidict.com
+    - +.chinesemooc.org
+    - +.cnmooc.org
+    - +.icourse163.org
+    - +.icourses.cn
+    - +.mooc.cn
+    - +.openlearning.com
+    - +.pmphmooc.com
+    - +.fenbilantian.cn
+    - +.cctalk.com
+    - +.hjapi.com
+    - +.hjfile.cn
+    - +.hujiang.com
+    - +.yeshj.com
     - +.koocdn.com
     - +.koolearn.com
     - +.koopass.com
@@ -84,24 +89,19 @@ payload:
     - +.yuanfudao.com
     - +.yuansouti.com
     - +.yuantiku.com
-    - +.fbstatic.cn
+    - +.weilaiyunxiao.com
     - +.fenbi.com
     - +.fenbike.cn
     - +.fenbike.com
-    - +.fenbilantian.cn
-    - +.weilaiyunxiao.com
-    - +.zhihuishu.com
-    - +.chinesemooc.org
-    - +.cnmooc.org
-    - +.ncss.org.cn
-    - +.chinayz.com.cn
     - +.qgzb.com.cn
-    - +.chsi.com.cn
-    - +.zbbm.gov.cn
-    - +.icve.com.cn
-    - +.gatzs.com.cn
+    - +.chinayz.com.cn
     - +.qgzb.gov.cn
+    - +.chsi.com.cn
+    - +.icve.com.cn
     - +.gfbzb.gov.cn
+    - +.gatzs.com.cn
+    - +.zbbm.gov.cn
+    - +.ncss.org.cn
     - +.gfbzb.com.cn
     - +.chesicc.org.cn
     - +.chesicc.net.cn
