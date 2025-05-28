@@ -3,11 +3,8 @@ payload:
     - e122475.dscg.akamaiedge.net
     - licdn.cn.cdn20.com
     - linkedin.sc.omtrdc.net
-    - +.fbmarketing.com
-    - +.facebzook.com
-    - +.bsky.social
-    - +.aboutfacebook.com
-    - +.accessfacebookfromschool.com
+    - +.fbsbx.com
+    - +.facecbook.org
     - +.acebooik.com
     - +.acebook.com
     - +.advancediddetection.com
@@ -226,10 +223,10 @@ payload:
     - +.facebuok.com
     - +.facebvook.com
     - +.facebyook.com
-    - +.fbreg.com
+    - +.facebzook.com
     - +.facecbgook.com
     - +.facecbook.com
-    - +.facecbook.org
+    - +.fbsbx.net
     - +.facecook.com
     - +.facecook.org
     - +.facedbook.com
@@ -287,12 +284,12 @@ payload:
     - +.fbidb.io
     - +.fbinc.com
     - +.fbinnovation.com
-    - +.gfacecbook.com
-    - +.bsky.network
-    - +.bsky.app
-    - +.fbsbx.com
-    - +.fbsbx.net
-    - +.fbsupport-covid.net
+    - +.fbmarketing.com
+    - +.fbreg.com
+    - +.fbrpms.com
+    - +.hackfacebook.com
+    - +.accessfacebookfromschool.com
+    - +.aboutfacebook.com
     - +.fbthirdpartypixel.com
     - +.fbthirdpartypixel.net
     - +.fbthirdpartypixel.org
@@ -350,10 +347,10 @@ payload:
     - +.futureofbusinesssurvey.org
     - +.gacebook.com
     - +.gameroom.com
-    - +.fbrpms.com
+    - +.gfacecbook.com
     - +.groups.com
     - +.hackerfacebook.com
-    - +.hackfacebook.com
+    - +.fbsupport-covid.net
     - +.hackfacebookid.com
     - +.hifacebook.info
     - +.howtohackfacebook-account.com
@@ -499,6 +496,9 @@ payload:
     - +.threads.com
     - +.threads.net
     - +.twtrdns.net
+    - +.bsky.social
+    - +.bsky.network
+    - +.bsky.app
     - +.vkvideo.ru
     - +.vkuservideo.ru
     - +.vkuservideo.net
@@ -510,9 +510,6 @@ payload:
     - +.vkuseraudio.net
     - +.vkuseraudio.com
     - +.vkuser.net
-    - +.vkontakte.ru
-    - +.vkmessenger.com
-    - +.vkmessenger.app
     - +.twvid.com
     - +.periscope.tv
     - +.pscp.tv
@@ -535,10 +532,10 @@ payload:
     - +.twttr.net
     - +.twitter.jp
     - +.vine.co
+    - +.vkontakte.ru
+    - +.vkmessenger.com
+    - +.vkmessenger.app
     - +.vklive.app
-    - +.vkgo.app
-    - +.vkcache.com
-    - +.vk.team
     - +.mradx.net
     - +.mvk.com
     - +.userapi.com
@@ -555,6 +552,9 @@ payload:
     - +.vk.link
     - +.vk.me
     - +.vk.ru
+    - +.vk.team
+    - +.vkcache.com
+    - +.vkgo.app
     - +.l-0005.dc-msedge.net
     - +.mi.kochudaho.me
     - +.mk.shrimpia.network

@@ -121,7 +121,7 @@ payload:
     - +.mashort.cn
     - +.pailitao.com
     - +.taobao.com
-    - +.kunlunsa.com
+    - +.kunlunar.com
     - +.56che.com
     - +.dratio.com
     - +.taopiaopiao.com
@@ -146,10 +146,17 @@ payload:
     - +.zhisheng.com
     - +.npmmirror.com
     - +.goofish.com
-    - +.uc.cn
-    - +.uc123.com
-    - +.ucweb.com
-    - +.uczzd.cn
+    - +.doservice.com
+    - +.ele.me
+    - +.ele.to
+    - +.eleme.cn
+    - +.eleme.io
+    - +.elemecdn.cn
+    - +.elemecdn.com
+    - +.elenet.me
+    - +.teambition.com
+    - +.teambition.net
+    - +.teambitionapis.com
     - +.a-map.cn
     - +.a-map.co
     - +.a-map.link
@@ -167,9 +174,14 @@ payload:
     - +.alibabacloud.com
     - +.whalecloud.com
     - +.uyunad.com
-    - +.teambition.com
-    - +.teambition.net
-    - +.teambitionapis.com
+    - +.ddurl.to
+    - +.dingding.xin
+    - +.dingtalk.cn
+    - +.dingtalk.com
+    - +.dingtalk.net
+    - +.dingtalkapps.com
+    - +.laiwang.com
+    - +.lwurl.to
     - +.alibabadns.com
     - +.alicdn.com
     - +.alicloudapi.com
@@ -185,7 +197,7 @@ payload:
     - +.hichina.com
     - +.ica-alliance.org
     - +.kunlunaq.com
-    - +.kunlunar.com
+    - +.25pp.com
     - +.kunlunca.com
     - +.kunluncan.com
     - +.kunlunea.com
@@ -197,7 +209,7 @@ payload:
     - +.kunlunno.com
     - +.kunlunpi.com
     - +.kunlunra.com
-    - +.25pp.com
+    - +.kunlunsa.com
     - +.kunlunsc.com
     - +.kunlunsl.com
     - +.kunlunso.com
@@ -211,27 +223,15 @@ payload:
     - +.umengcloud.com
     - +.umeng.com
     - +.mobmore.com
-    - +.elenet.me
-    - +.elemecdn.com
-    - +.elemecdn.cn
-    - +.eleme.io
-    - +.eleme.cn
-    - +.ele.to
-    - +.ele.me
-    - +.ddurl.to
-    - +.dingding.xin
-    - +.dingtalk.cn
-    - +.dingtalk.com
-    - +.dingtalk.net
-    - +.dingtalkapps.com
-    - +.laiwang.com
-    - +.lwurl.to
-    - +.doservice.com
+    - +.uczzd.cn
+    - +.ucweb.com
+    - +.uc123.com
+    - +.uc.cn
     - +.oss-cn-shanghai.aliyuncs.com
     - +.oss-cn-guangzhou.aliyuncs.com
-    - +.oss-cn-shenzhen.aliyuncs.com
-    - +.oss-cn-hangzhou.aliyuncs.com
     - +.oss-cn-zhangjiakou.aliyuncs.com
+    - +.oss-cn-hangzhou.aliyuncs.com
+    - +.oss-cn-shenzhen.aliyuncs.com
     - +.oss-cn-nanjing.aliyuncs.com
     - +.oss-cn-heyuan.aliyuncs.com
     - +.oss-cn-wulanchabu.aliyuncs.com

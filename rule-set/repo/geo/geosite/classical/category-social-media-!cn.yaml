@@ -3,11 +3,8 @@ payload:
     - DOMAIN,e122475.dscg.akamaiedge.net
     - DOMAIN,licdn.cn.cdn20.com
     - DOMAIN,linkedin.sc.omtrdc.net
-    - DOMAIN-SUFFIX,fbmarketing.com
-    - DOMAIN-SUFFIX,facebzook.com
-    - DOMAIN-SUFFIX,bsky.social
-    - DOMAIN-SUFFIX,aboutfacebook.com
-    - DOMAIN-SUFFIX,accessfacebookfromschool.com
+    - DOMAIN-SUFFIX,fbsbx.com
+    - DOMAIN-SUFFIX,facecbook.org
     - DOMAIN-SUFFIX,acebooik.com
     - DOMAIN-SUFFIX,acebook.com
     - DOMAIN-SUFFIX,advancediddetection.com
@@ -226,10 +223,10 @@ payload:
     - DOMAIN-SUFFIX,facebuok.com
     - DOMAIN-SUFFIX,facebvook.com
     - DOMAIN-SUFFIX,facebyook.com
-    - DOMAIN-SUFFIX,fbreg.com
+    - DOMAIN-SUFFIX,facebzook.com
     - DOMAIN-SUFFIX,facecbgook.com
     - DOMAIN-SUFFIX,facecbook.com
-    - DOMAIN-SUFFIX,facecbook.org
+    - DOMAIN-SUFFIX,fbsbx.net
     - DOMAIN-SUFFIX,facecook.com
     - DOMAIN-SUFFIX,facecook.org
     - DOMAIN-SUFFIX,facedbook.com
@@ -287,12 +284,12 @@ payload:
     - DOMAIN-SUFFIX,fbidb.io
     - DOMAIN-SUFFIX,fbinc.com
     - DOMAIN-SUFFIX,fbinnovation.com
-    - DOMAIN-SUFFIX,gfacecbook.com
-    - DOMAIN-SUFFIX,bsky.network
-    - DOMAIN-SUFFIX,bsky.app
-    - DOMAIN-SUFFIX,fbsbx.com
-    - DOMAIN-SUFFIX,fbsbx.net
-    - DOMAIN-SUFFIX,fbsupport-covid.net
+    - DOMAIN-SUFFIX,fbmarketing.com
+    - DOMAIN-SUFFIX,fbreg.com
+    - DOMAIN-SUFFIX,fbrpms.com
+    - DOMAIN-SUFFIX,hackfacebook.com
+    - DOMAIN-SUFFIX,accessfacebookfromschool.com
+    - DOMAIN-SUFFIX,aboutfacebook.com
     - DOMAIN-SUFFIX,fbthirdpartypixel.com
     - DOMAIN-SUFFIX,fbthirdpartypixel.net
     - DOMAIN-SUFFIX,fbthirdpartypixel.org
@@ -350,10 +347,10 @@ payload:
     - DOMAIN-SUFFIX,futureofbusinesssurvey.org
     - DOMAIN-SUFFIX,gacebook.com
     - DOMAIN-SUFFIX,gameroom.com
-    - DOMAIN-SUFFIX,fbrpms.com
+    - DOMAIN-SUFFIX,gfacecbook.com
     - DOMAIN-SUFFIX,groups.com
     - DOMAIN-SUFFIX,hackerfacebook.com
-    - DOMAIN-SUFFIX,hackfacebook.com
+    - DOMAIN-SUFFIX,fbsupport-covid.net
     - DOMAIN-SUFFIX,hackfacebookid.com
     - DOMAIN-SUFFIX,hifacebook.info
     - DOMAIN-SUFFIX,howtohackfacebook-account.com
@@ -499,6 +496,9 @@ payload:
     - DOMAIN-SUFFIX,threads.com
     - DOMAIN-SUFFIX,threads.net
     - DOMAIN-SUFFIX,twtrdns.net
+    - DOMAIN-SUFFIX,bsky.social
+    - DOMAIN-SUFFIX,bsky.network
+    - DOMAIN-SUFFIX,bsky.app
     - DOMAIN-SUFFIX,vkvideo.ru
     - DOMAIN-SUFFIX,vkuservideo.ru
     - DOMAIN-SUFFIX,vkuservideo.net
@@ -510,9 +510,6 @@ payload:
     - DOMAIN-SUFFIX,vkuseraudio.net
     - DOMAIN-SUFFIX,vkuseraudio.com
     - DOMAIN-SUFFIX,vkuser.net
-    - DOMAIN-SUFFIX,vkontakte.ru
-    - DOMAIN-SUFFIX,vkmessenger.com
-    - DOMAIN-SUFFIX,vkmessenger.app
     - DOMAIN-SUFFIX,twvid.com
     - DOMAIN-SUFFIX,periscope.tv
     - DOMAIN-SUFFIX,pscp.tv
@@ -535,10 +532,10 @@ payload:
     - DOMAIN-SUFFIX,twttr.net
     - DOMAIN-SUFFIX,twitter.jp
     - DOMAIN-SUFFIX,vine.co
+    - DOMAIN-SUFFIX,vkontakte.ru
+    - DOMAIN-SUFFIX,vkmessenger.com
+    - DOMAIN-SUFFIX,vkmessenger.app
     - DOMAIN-SUFFIX,vklive.app
-    - DOMAIN-SUFFIX,vkgo.app
-    - DOMAIN-SUFFIX,vkcache.com
-    - DOMAIN-SUFFIX,vk.team
     - DOMAIN-SUFFIX,mradx.net
     - DOMAIN-SUFFIX,mvk.com
     - DOMAIN-SUFFIX,userapi.com
@@ -555,6 +552,9 @@ payload:
     - DOMAIN-SUFFIX,vk.link
     - DOMAIN-SUFFIX,vk.me
     - DOMAIN-SUFFIX,vk.ru
+    - DOMAIN-SUFFIX,vk.team
+    - DOMAIN-SUFFIX,vkcache.com
+    - DOMAIN-SUFFIX,vkgo.app
     - DOMAIN-SUFFIX,l-0005.dc-msedge.net
     - DOMAIN-SUFFIX,mi.kochudaho.me
     - DOMAIN-SUFFIX,mk.shrimpia.network

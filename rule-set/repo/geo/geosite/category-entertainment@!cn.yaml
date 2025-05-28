@@ -1,5 +1,4 @@
 payload:
-    - +.supercell.com
     - +.byteoversea.com
     - +.muscdn.com
     - +.musical.ly
@@ -21,3 +20,4 @@ payload:
     - +.ttoverseaus.net
     - +.ttwstatic.com
     - p16-tiktokcdn-com.akamaized.net
+    - +.supercell.com
