@@ -30,6 +30,8 @@ payload:
     - IP-CIDR,43.113.226.128/25
     - IP-CIDR,45.8.0.0/22
     - IP-CIDR,45.14.36.0/22
+    - IP-CIDR,45.15.178.0/23
+    - IP-CIDR,45.15.184.0/24
     - IP-CIDR,45.82.88.0/22
     - IP-CIDR,45.131.116.0/22
     - IP-CIDR,45.148.123.0/24
@@ -452,6 +454,7 @@ payload:
     - IP-CIDR,2a0e:5400::/29
     - IP-CIDR,2a0e:6580::/32
     - IP-CIDR,2a0e:8ac0::/29
+    - IP-CIDR,2a0f:85c1:81b:f1a0::/60
     - IP-CIDR,2a13:4684::/32
     - IP-CIDR,2a13:a5c3:d014::/46
     - IP-CIDR,2a13:a5c7:2511::/48

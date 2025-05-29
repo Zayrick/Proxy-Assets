@@ -1,5 +1,5 @@
 payload:
-    - DOMAIN-SUFFIX,censorship.no
+    - DOMAIN-SUFFIX,opengw.net
     - DOMAIN-SUFFIX,ooni.org
     - DOMAIN-SUFFIX,browserleaks.com
     - DOMAIN-SUFFIX,bypasscensorship.org
@@ -19,7 +19,7 @@ payload:
     - DOMAIN-SUFFIX,lokinet.org
     - DOMAIN-SUFFIX,ntc.party
     - DOMAIN-SUFFIX,onionshare.org
-    - DOMAIN-SUFFIX,paskoocheh.com
+    - DOMAIN-SUFFIX,vpngate.jp
     - DOMAIN-SUFFIX,openvpn.net
     - DOMAIN-SUFFIX,privacytools.io
     - DOMAIN-SUFFIX,proxifier.com
@@ -42,16 +42,15 @@ payload:
     - DOMAIN-SUFFIX,wireguard.com
     - DOMAIN-SUFFIX,zeronet.io
     - DOMAIN-SUFFIX,metacubex.one
-    - DOMAIN-SUFFIX,opengw.net
-    - DOMAIN-SUFFIX,vpngate.jp
-    - DOMAIN-SUFFIX,vpngate.net
+    - DOMAIN-SUFFIX,paskoocheh.com
+    - DOMAIN-SUFFIX,softether.org
+    - DOMAIN-SUFFIX,softether-download.com
     - DOMAIN-SUFFIX,stunnel.org
     - DOMAIN-SUFFIX,akasha.world
-    - DOMAIN-SUFFIX,applecensorship.com
-    - DOMAIN-SUFFIX,v2ray.cool
-    - DOMAIN-SUFFIX,v2fly.org
-    - DOMAIN-SUFFIX,v2ray.com
     - DOMAIN-SUFFIX,freebrowser.org
+    - DOMAIN-SUFFIX,epicbrowser.com
+    - DOMAIN-SUFFIX,applecensorship.com
+    - DOMAIN-SUFFIX,vpngate.net
     - DOMAIN-SUFFIX,freewechat.com
     - DOMAIN-SUFFIX,freeweibo.com
     - DOMAIN-SUFFIX,freezhihu.org
@@ -62,9 +61,9 @@ payload:
     - DOMAIN-SUFFIX,pwnedpasswords.com
     - DOMAIN-SUFFIX,getlantern.org
     - DOMAIN-SUFFIX,lantern.io
-    - DOMAIN-SUFFIX,softether.org
-    - DOMAIN-SUFFIX,softether-download.com
-    - DOMAIN-SUFFIX,torproject.org
+    - DOMAIN-SUFFIX,v2ray.com
+    - DOMAIN-SUFFIX,v2ray.cool
+    - DOMAIN-SUFFIX,v2fly.org
     - DOMAIN-SUFFIX,ipns.co
     - DOMAIN-SUFFIX,ipfs.tech
     - DOMAIN-SUFFIX,cloudflare-ipfs.com
@@ -78,10 +77,10 @@ payload:
     - DOMAIN-SUFFIX,crustwebsites.net
     - DOMAIN-SUFFIX,4everland.io
     - DOMAIN-SUFFIX,dweb.link
-    - DOMAIN-SUFFIX,citizenlab.ca
-    - DOMAIN-SUFFIX,epicbrowser.com
+    - DOMAIN-SUFFIX,censorship.no
+    - DOMAIN-SUFFIX,torproject.org
     - DOMAIN-SUFFIX,citizenlab.org
-    - DOMAIN-SUFFIX,trojan-gfw.github.io
+    - DOMAIN-SUFFIX,citizenlab.ca
     - DOMAIN-SUFFIX,ipfs.anonymize.com
     - DOMAIN-SUFFIX,ipfs.runfission.com
     - DOMAIN-SUFFIX,gateway.pinata.cloud
@@ -89,6 +88,7 @@ payload:
     - DOMAIN-SUFFIX,ipfs.best-practice.se
     - DOMAIN-SUFFIX,ipfs.lain.la
     - DOMAIN-SUFFIX,ipfs.fleek.co
+    - DOMAIN-SUFFIX,trojan-gfw.github.io
     - DOMAIN-SUFFIX,xtls.github.io
     - DOMAIN-SUFFIX,twister.net.co
     - DOMAIN-SUFFIX,ipfs.eth.aragon.network

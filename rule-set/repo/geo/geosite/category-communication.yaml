@@ -46,6 +46,23 @@ payload:
     - +.watchanimeattheoffice.com
     - +.discordapp.io
     - +.discordcdn.com
+    - +.slack-core.com
+    - +.slack-edge.com
+    - +.slack-files.com
+    - +.slack-imgs.com
+    - +.slack-msgs.com
+    - +.slack-redir.net
+    - +.slack.com
+    - +.slackb.com
+    - +.slackcertified.com
+    - +.slackdemo.com
+    - +.slackhq.com
+    - +.intercom.com
+    - +.intercom.io
+    - +.intercomassets.com
+    - +.intercomcdn.com
+    - +.keybase.io
+    - +.keybaseapi.com
     - +.linemobile.com
     - +.lineshoppingseller.com
     - +.line-apps-beta.com
@@ -73,8 +90,6 @@ payload:
     - +.modular.im
     - +.riot.im
     - +.vector.im
-    - +.keybase.io
-    - +.keybaseapi.com
     - +.fbmessenger.com
     - +.m.me
     - +.messenger.com
@@ -87,17 +102,10 @@ payload:
     - +.signal.org
     - +.signalusers.org
     - +.whispersystems.org
-    - +.slack-core.com
-    - +.slack-edge.com
-    - +.slack-files.com
-    - +.slack-imgs.com
-    - +.slack-msgs.com
-    - +.slack-redir.net
-    - +.slack.com
-    - +.slackb.com
-    - +.slackcertified.com
-    - +.slackdemo.com
-    - +.slackhq.com
+    - +.clubhouse.com
+    - +.clubhouseapi.com
+    - +.joinclubhouse.com
+    - +.freenode.net
     - +.wa.me
     - +.whatsapp-plus.info
     - +.whatsapp-plus.me
@@ -109,14 +117,6 @@ payload:
     - +.whatsapp.org
     - +.whatsapp.tv
     - +.whatsappbrand.com
-    - +.clubhouse.com
-    - +.clubhouseapi.com
-    - +.joinclubhouse.com
-    - +.freenode.net
-    - +.intercom.com
-    - +.intercom.io
-    - +.intercomassets.com
-    - +.intercomcdn.com
     - +.linefriends.com.tw
     - +.line.naver.jp
     - +.graph.whatsapp.com

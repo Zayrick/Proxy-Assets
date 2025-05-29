@@ -46,6 +46,23 @@ payload:
     - DOMAIN-SUFFIX,watchanimeattheoffice.com
     - DOMAIN-SUFFIX,discordapp.io
     - DOMAIN-SUFFIX,discordcdn.com
+    - DOMAIN-SUFFIX,slack-core.com
+    - DOMAIN-SUFFIX,slack-edge.com
+    - DOMAIN-SUFFIX,slack-files.com
+    - DOMAIN-SUFFIX,slack-imgs.com
+    - DOMAIN-SUFFIX,slack-msgs.com
+    - DOMAIN-SUFFIX,slack-redir.net
+    - DOMAIN-SUFFIX,slack.com
+    - DOMAIN-SUFFIX,slackb.com
+    - DOMAIN-SUFFIX,slackcertified.com
+    - DOMAIN-SUFFIX,slackdemo.com
+    - DOMAIN-SUFFIX,slackhq.com
+    - DOMAIN-SUFFIX,intercom.com
+    - DOMAIN-SUFFIX,intercom.io
+    - DOMAIN-SUFFIX,intercomassets.com
+    - DOMAIN-SUFFIX,intercomcdn.com
+    - DOMAIN-SUFFIX,keybase.io
+    - DOMAIN-SUFFIX,keybaseapi.com
     - DOMAIN-SUFFIX,linemobile.com
     - DOMAIN-SUFFIX,lineshoppingseller.com
     - DOMAIN-SUFFIX,line-apps-beta.com
@@ -73,8 +90,6 @@ payload:
     - DOMAIN-SUFFIX,modular.im
     - DOMAIN-SUFFIX,riot.im
     - DOMAIN-SUFFIX,vector.im
-    - DOMAIN-SUFFIX,keybase.io
-    - DOMAIN-SUFFIX,keybaseapi.com
     - DOMAIN-SUFFIX,fbmessenger.com
     - DOMAIN-SUFFIX,m.me
     - DOMAIN-SUFFIX,messenger.com
@@ -87,17 +102,10 @@ payload:
     - DOMAIN-SUFFIX,signal.org
     - DOMAIN-SUFFIX,signalusers.org
     - DOMAIN-SUFFIX,whispersystems.org
-    - DOMAIN-SUFFIX,slack-core.com
-    - DOMAIN-SUFFIX,slack-edge.com
-    - DOMAIN-SUFFIX,slack-files.com
-    - DOMAIN-SUFFIX,slack-imgs.com
-    - DOMAIN-SUFFIX,slack-msgs.com
-    - DOMAIN-SUFFIX,slack-redir.net
-    - DOMAIN-SUFFIX,slack.com
-    - DOMAIN-SUFFIX,slackb.com
-    - DOMAIN-SUFFIX,slackcertified.com
-    - DOMAIN-SUFFIX,slackdemo.com
-    - DOMAIN-SUFFIX,slackhq.com
+    - DOMAIN-SUFFIX,clubhouse.com
+    - DOMAIN-SUFFIX,clubhouseapi.com
+    - DOMAIN-SUFFIX,joinclubhouse.com
+    - DOMAIN-SUFFIX,freenode.net
     - DOMAIN-SUFFIX,wa.me
     - DOMAIN-SUFFIX,whatsapp-plus.info
     - DOMAIN-SUFFIX,whatsapp-plus.me
@@ -109,14 +117,6 @@ payload:
     - DOMAIN-SUFFIX,whatsapp.org
     - DOMAIN-SUFFIX,whatsapp.tv
     - DOMAIN-SUFFIX,whatsappbrand.com
-    - DOMAIN-SUFFIX,clubhouse.com
-    - DOMAIN-SUFFIX,clubhouseapi.com
-    - DOMAIN-SUFFIX,joinclubhouse.com
-    - DOMAIN-SUFFIX,freenode.net
-    - DOMAIN-SUFFIX,intercom.com
-    - DOMAIN-SUFFIX,intercom.io
-    - DOMAIN-SUFFIX,intercomassets.com
-    - DOMAIN-SUFFIX,intercomcdn.com
     - DOMAIN-SUFFIX,linefriends.com.tw
     - DOMAIN-SUFFIX,line.naver.jp
     - DOMAIN-SUFFIX,graph.whatsapp.com
