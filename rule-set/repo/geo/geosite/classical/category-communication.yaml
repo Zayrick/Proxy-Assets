@@ -1,10 +1,6 @@
 payload:
     - DOMAIN,discord-attachments-uploads-prd.storage.googleapis.com
     - DOMAIN,hammerandchisel.ssl.zendesk.com
-    - DOMAIN-SUFFIX,intercom.com
-    - DOMAIN-SUFFIX,intercom.io
-    - DOMAIN-SUFFIX,intercomassets.com
-    - DOMAIN-SUFFIX,intercomcdn.com
     - DOMAIN-SUFFIX,keybase.io
     - DOMAIN-SUFFIX,keybaseapi.com
     - DOMAIN-SUFFIX,linemobile.com
@@ -25,6 +21,10 @@ payload:
     - DOMAIN-SUFFIX,gcld-line.com
     - DOMAIN-SUFFIX,linemyshop.com
     - DOMAIN-SUFFIX,line.me
+    - DOMAIN-SUFFIX,fbmessenger.com
+    - DOMAIN-SUFFIX,m.me
+    - DOMAIN-SUFFIX,messenger.com
+    - DOMAIN-SUFFIX,nbabot.net
     - DOMAIN-SUFFIX,signal.art
     - DOMAIN-SUFFIX,signal.group
     - DOMAIN-SUFFIX,signal.link
@@ -44,23 +44,6 @@ payload:
     - DOMAIN-SUFFIX,slackcertified.com
     - DOMAIN-SUFFIX,slackdemo.com
     - DOMAIN-SUFFIX,slackhq.com
-    - DOMAIN-SUFFIX,clubhouse.com
-    - DOMAIN-SUFFIX,clubhouseapi.com
-    - DOMAIN-SUFFIX,joinclubhouse.com
-    - DOMAIN-SUFFIX,freenode.net
-    - DOMAIN-SUFFIX,arewereadyyet.com
-    - DOMAIN-SUFFIX,cinny.in
-    - DOMAIN-SUFFIX,element.io
-    - DOMAIN-SUFFIX,fluffychat.im
-    - DOMAIN-SUFFIX,matrix.org
-    - DOMAIN-SUFFIX,matrix.to
-    - DOMAIN-SUFFIX,modular.im
-    - DOMAIN-SUFFIX,riot.im
-    - DOMAIN-SUFFIX,vector.im
-    - DOMAIN-SUFFIX,fbmessenger.com
-    - DOMAIN-SUFFIX,m.me
-    - DOMAIN-SUFFIX,messenger.com
-    - DOMAIN-SUFFIX,nbabot.net
     - DOMAIN-SUFFIX,cdn-telegram.org
     - DOMAIN-SUFFIX,comments.app
     - DOMAIN-SUFFIX,contest.com
@@ -117,6 +100,23 @@ payload:
     - DOMAIN-SUFFIX,watchanimeattheoffice.com
     - DOMAIN-SUFFIX,discordapp.io
     - DOMAIN-SUFFIX,discordcdn.com
+    - DOMAIN-SUFFIX,freenode.net
+    - DOMAIN-SUFFIX,intercom.com
+    - DOMAIN-SUFFIX,intercom.io
+    - DOMAIN-SUFFIX,intercomassets.com
+    - DOMAIN-SUFFIX,intercomcdn.com
+    - DOMAIN-SUFFIX,arewereadyyet.com
+    - DOMAIN-SUFFIX,cinny.in
+    - DOMAIN-SUFFIX,element.io
+    - DOMAIN-SUFFIX,fluffychat.im
+    - DOMAIN-SUFFIX,matrix.org
+    - DOMAIN-SUFFIX,matrix.to
+    - DOMAIN-SUFFIX,modular.im
+    - DOMAIN-SUFFIX,riot.im
+    - DOMAIN-SUFFIX,vector.im
+    - DOMAIN-SUFFIX,clubhouse.com
+    - DOMAIN-SUFFIX,clubhouseapi.com
+    - DOMAIN-SUFFIX,joinclubhouse.com
     - DOMAIN-SUFFIX,linefriends.com.tw
     - DOMAIN-SUFFIX,line.naver.jp
     - DOMAIN-SUFFIX,graph.whatsapp.com

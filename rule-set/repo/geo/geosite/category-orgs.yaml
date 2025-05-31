@@ -1,5 +1,4 @@
 payload:
-    - csis-prod.s3.amazonaws.com
     - a.ppy.sh
     - assets.ppy.sh
     - c.ppy.sh
@@ -9,6 +8,7 @@ payload:
     - notify.ppy.sh
     - sentry.ppy.sh
     - spectator.ppy.sh
+    - csis-prod.s3.amazonaws.com
     - +.aomedia.org
     - +.atypi.org
     - +.change.org
@@ -23,19 +23,14 @@ payload:
     - +.who.int
     - +.wi-fi.org
     - +.wto.org
-    - +.archive-it.org
-    - +.archive.md
-    - +.archive.org
-    - +.archive.ph
-    - +.archive.today
-    - +.openlibrary.org
-    - +.4pcdn.org
-    - +.4plebs.org
-    - +.csis.org
-    - +.emojipedia.org
-    - +.worldemojiawards.com
-    - +.worldemojiday.com
-    - +.xn--yt8h.la
+    - +.acousticbrainz.org
+    - +.bookbrainz.org
+    - +.coverartarchive.org
+    - +.critiquebrainz.org
+    - +.listenbrainz.org
+    - +.messybrainz.org
+    - +.metabrainz.org
+    - +.musicbrainz.org
     - +.nist.gov
     - +.time.gov
     - +.openmaps.org
@@ -47,7 +42,9 @@ payload:
     - +.osmfoundation.org
     - +.stateofthemap.com
     - +.stateofthemap.org
-    - +.paskoocheh.com
+    - +.ppy.sh
+    - +.rolfoundation.org
+    - +.rolsociety.org
     - +.ccstatic.org
     - +.creativecommons.org
     - +.creativecommons.engineering
@@ -56,6 +53,10 @@ payload:
     - +.f-droid.com
     - +.f-droid.org
     - +.fdroid.org
+    - +.emojipedia.org
+    - +.worldemojiawards.com
+    - +.worldemojiday.com
+    - +.xn--yt8h.la
     - +.ieee.org
     - +.ieee.tv
     - +.tryengineering.org
@@ -110,14 +111,13 @@ payload:
     - +.signalprocessingsociety.org
     - +.technologyandsociety.org
     - +.vtsociety.org
-    - +.acousticbrainz.org
-    - +.bookbrainz.org
-    - +.coverartarchive.org
-    - +.critiquebrainz.org
-    - +.listenbrainz.org
-    - +.messybrainz.org
-    - +.metabrainz.org
-    - +.musicbrainz.org
-    - +.ppy.sh
-    - +.rolfoundation.org
-    - +.rolsociety.org
+    - +.paskoocheh.com
+    - +.archive-it.org
+    - +.archive.md
+    - +.archive.org
+    - +.archive.ph
+    - +.archive.today
+    - +.openlibrary.org
+    - +.4pcdn.org
+    - +.4plebs.org
+    - +.csis.org
