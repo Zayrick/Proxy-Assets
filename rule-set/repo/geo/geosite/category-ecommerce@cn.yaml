@@ -1,14 +1,32 @@
 payload:
+    - +.walmart.cn
     - +.adidas.com.cn
     - +.farfetch.cn
     - +.farfetch.com.cn
     - +.farfetch.net.cn
+    - +.hm.com.cn
     - +.muji.com.cn
-    - +.bestbuy.cn
-    - +.bestbuy.com.cn
-    - +.magnoliaav.com.cn
+    - +.just-do-it.cn
+    - +.nike-shox.cn
+    - +.nike.cn
+    - +.nikebetterworld.cn
+    - +.nikebetterworld.com.cn
+    - +.nikechina.cn
+    - +.nikegolf.cn
+    - +.nikeid.cn
+    - +.nikeid.com.cn
+    - +.nikeinc.com.cn
+    - +.nikelab.cn
+    - +.nikelab.com.cn
+    - +.nikeliuxiang.cn
+    - +.nikeliuxiang.com.cn
+    - +.nikemall.cn
+    - +.nikemall.com.cn
+    - +.nikerunclub.cn
+    - +.nikerunclub.com.cn
+    - +.nikerunning.com.cn
+    - +.nikestore.cn
     - +.booking.cn
-    - +.gucci.cn
     - +.adcommerce.cn
     - +.appforebay.cn
     - +.connectcommerce.cn
@@ -46,9 +64,6 @@ payload:
     - +.kijijidns.com.cn
     - +.mobileinternational.com.cn
     - +.terapeak.cn
-    - +.shopee.cn
-    - +.shopeesz.com
-    - +.walmart.cn
     - +.miniso.cn
     - +.minisohome.cn
     - +.minsio.cn
@@ -56,24 +71,9 @@ payload:
     - +.ingka-dt.cn
     - +.ingka-internal.cn
     - +.ingka-system.cn
-    - +.hm.com.cn
-    - +.just-do-it.cn
-    - +.nike-shox.cn
-    - +.nike.cn
-    - +.nikebetterworld.cn
-    - +.nikebetterworld.com.cn
-    - +.nikechina.cn
-    - +.nikegolf.cn
-    - +.nikeid.cn
-    - +.nikeid.com.cn
-    - +.nikeinc.com.cn
-    - +.nikelab.cn
-    - +.nikelab.com.cn
-    - +.nikeliuxiang.cn
-    - +.nikeliuxiang.com.cn
-    - +.nikemall.cn
-    - +.nikemall.com.cn
-    - +.nikerunclub.cn
-    - +.nikerunclub.com.cn
-    - +.nikerunning.com.cn
-    - +.nikestore.cn
+    - +.bestbuy.cn
+    - +.bestbuy.com.cn
+    - +.magnoliaav.com.cn
+    - +.gucci.cn
+    - +.shopee.cn
+    - +.shopeesz.com
