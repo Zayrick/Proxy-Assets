@@ -8,20 +8,14 @@ payload:
     - p7-juejin.byteimg.com
     - p8-juejin.byteimg.com
     - p9-juejin.byteimg.com
-    - +.chinauos.com
-    - +.csdn.net
+    - +.apipost.cn
+    - +.apipost.net
     - +.juejin.cn
     - +.juejin.im
     - +.xitu.io
-    - +.oschina.net
-    - +.gitee.com
-    - +.gitee.io
-    - +.ruby-china.org
-    - +.rubyconfchina.org
-    - +.segmentfault.com
-    - +.sifou.com
-    - +.tipdim.org
-    - +.xueyuanjun.com
+    - +.pgyer.com
+    - +.tracup.com
+    - +.frontjs.com
     - +.openmidas.com
     - +.qq.design
     - +.qqgamedesign.com
@@ -32,12 +26,39 @@ payload:
     - +.tjstats.com
     - +.wegamedeveloper.com
     - +.weixinbridge.com
+    - +.apifox.cn
+    - +.apifox.com
+    - +.gitee.com
+    - +.gitee.io
+    - +.dengguobi.com
+    - +.houyicaiji.com
+    - +.jinglingbiaozhu.com
+    - +.tipdim.org
+    - +.aixcoder.com
+    - +.nnthink.com
     - +.coding.me
     - +.coding.net
+    - +.goproxy.cn
+    - +.goproxy.io
+    - +.segmentfault.com
+    - +.sifou.com
+    - +.mysxl.cn
+    - +.sxl.cn
+    - +.sxlcdn.cn
+    - +.openkylin.top
+    - +.ubuntukylin.com
+    - +.blogjava.net
+    - +.cnblogs.com
+    - +.cnitblog.com
+    - +.cnweblog.com
+    - +.cppblog.com
+    - +.phpweblog.net
+    - +.teachblog.net
     - +.gitcode.com
-    - +.uniontech.com
+    - +.gitchat.cn
+    - +.csdn.net
     - +.kaifayun.com
-    - +.apipost.cn
+    - +.csdnimg.cn
     - +.csto.com
     - +.csdn.com
     - +.gitbook.cn
@@ -49,12 +70,10 @@ payload:
     - +.deepin.com
     - +.deepin.io
     - +.deepin.org
-    - +.csdnimg.cn
-    - +.apipost.net
-    - +.gitchat.cn
-    - +.pgyer.com
-    - +.tracup.com
-    - +.frontjs.com
+    - +.chinauos.com
+    - +.uniontech.com
+    - +.jinrishici.com
+    - +.oschina.net
     - +.asktug.com
     - +.pingcap.cn
     - +.pingcap.com
@@ -62,36 +81,16 @@ payload:
     - +.tidb.net
     - +.tidbcloud.com
     - +.tikv.org
-    - +.aixcoder.com
-    - +.nnthink.com
-    - +.apifox.cn
-    - +.apifox.com
+    - +.ruby-china.org
+    - +.rubyconfchina.org
+    - +.xueyuanjun.com
     - +.baltamatica.cn
     - +.baltamatica.net
     - +.baltamatica.com
-    - +.blogjava.net
-    - +.cnblogs.com
-    - +.ubuntukylin.com
-    - +.openkylin.top
-    - +.cnitblog.com
-    - +.cnweblog.com
-    - +.cppblog.com
-    - +.phpweblog.net
-    - +.teachblog.net
-    - +.goproxy.cn
-    - +.goproxy.io
-    - +.jinrishici.com
-    - +.mysxl.cn
-    - +.sxl.cn
-    - +.sxlcdn.cn
-    - +.dengguobi.com
-    - +.houyicaiji.com
-    - +.jinglingbiaozhu.com
-    - +.programmer.com.cn
     - +.csdn.net.cn
+    - +.programmer.com.cn
     - +.programmer.net.cn
     - +.baltamatica.org.cn
-    - +.weui.io
     - +.bisheng.cn
     - +.bishengcompiler.cn
     - +.devui.design
@@ -115,3 +114,4 @@ payload:
     - +.owsgo.com
     - +.teleows.com
     - +.saasops.tech
+    - +.weui.io
