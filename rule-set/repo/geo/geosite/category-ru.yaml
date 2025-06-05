@@ -10,7 +10,11 @@ payload:
     - +.xn--p1ai
     - +.yandex
     - +.psk
-    - +.vkmessenger.com
+    - +.vk.me
+    - +.mycdn.me
+    - +.ozonusercontent.com
+    - +.mradx.net
+    - +.mvk.com
     - +.userapi.com
     - +.vk-apps.com
     - +.vk-cdn.me
@@ -21,12 +25,12 @@ payload:
     - +.vk.company
     - +.vk.design
     - +.vk.link
-    - +.vk.me
     - +.vk.team
     - +.vkcache.com
     - +.vkgo.app
     - +.vklive.app
     - +.vkmessenger.app
+    - +.vkmessenger.com
     - +.vkuser.net
     - +.vkuseraudio.com
     - +.vkuseraudio.net
@@ -60,15 +64,11 @@ payload:
     - +.yandex.lv
     - +.yandex.md
     - +.yandex.net
-    - +.yandex.org
     - +.yandex.sx
     - +.yandex.tj
     - +.yandex.tm
-    - +.ozonusercontent.com
     - +.emias.info
-    - +.mradx.net
-    - +.mvk.com
-    - +.mycdn.me
+    - +.yandex.org
     - +.yandex.com.tr
     - +.yandex.com.ua
     - +.yandex.com.ge

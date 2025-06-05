@@ -1,6 +1,6 @@
 payload:
-    - +.tcloudhw.net
-    - +.vxo7tu.com
+    - +.tcloudhw.com
+    - +.yunjitele.com
     - +.acimg.cn
     - +.apcdns.net
     - +.foxmail.com
@@ -9,6 +9,7 @@ payload:
     - +.idqqimg.com
     - +.imqq.com
     - +.myapp.com
+    - +.qlivecdn.com
     - +.qlogo.cn
     - +.qpic.cn
     - +.qq.com
@@ -114,7 +115,7 @@ payload:
     - +.doh.pub
     - +.myqcloud.com
     - +.onexmail.com
-    - +.tcloudedu.com
+    - +.openapp.run
     - +.ovscdns.com
     - +.ovscdns.net
     - +.pn1waq.com
@@ -175,17 +176,17 @@ payload:
     - +.tcloudbaseapp.com
     - +.tcloudbi.com
     - +.tclouddrive.com
-    - +.openapp.run
+    - +.tcloudedu.com
+    - +.um.run
     - +.xn--r70as2s.xn--fiqs8s
-    - +.tencdns.net
-    - +.tcloudscdn.com
+    - +.testwaf.com
     - +.tcloudscdn.net
     - +.tdnsx1.com
     - +.techo.chat
     - +.tefscloud.com
     - +.tefscloud.net
     - +.tenant-zone-dev.com
-    - +.qq.xn--fiqs8s
+    - +.tencdns.net
     - +.tencent-cloud.com
     - +.tencent-cloud.net
     - +.tencentapps.com
@@ -225,7 +226,7 @@ payload:
     - +.tendis.net
     - +.dnsapi.cn
     - +.testmeet.cn
-    - +.testwaf.com
+    - +.tcloudscdn.com
     - +.tgovcloud.com
     - +.tidaas.com
     - +.dnspod.mobi
@@ -248,13 +249,13 @@ payload:
     - +.vcloudstc.net
     - +.vcloudvod.com
     - +.vodtcbk.com
-    - +.tcloudhw.com
+    - +.vxo7tu.com
     - +.wework-studio.com
     - +.xqymuy.com
     - +.yufuid.com
     - +.dot.pub
     - +.yufuid.net
-    - +.yunjitele.com
+    - +.tcloudhw.net
     - +.dnse0.cn
     - +.dnse1.cn
     - +.dnse2.cn
@@ -305,7 +306,7 @@ payload:
     - +.discuz.net
     - +.comsenz.com
     - +.ym.run
-    - +.um.run
+    - +.qq.xn--fiqs8s
     - +.ma.run
     - +.oracle-tencent.cn
     - +.oracle-tencent.com
