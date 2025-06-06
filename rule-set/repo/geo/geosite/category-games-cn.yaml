@@ -7,13 +7,25 @@ payload:
     - +.tgpro.top
     - +.tgprocs.net
     - +.wo1wan.com
-    - +.tgbus.com
-    - +.tiancity.com
-    - +.tiancitycdn.com
+    - +.vgtime.com
     - +.vrzwk.cn
     - +.vrzwk.com
     - +.vrzwk.net
     - +.vrzwk.top
+    - +.tgbus.com
+    - +.tiancity.com
+    - +.tiancitycdn.com
+    - +.ro.com
+    - +.xd.cn
+    - +.xd.com
+    - +.xdcdn.net
+    - +.xindong.com
+    - +.tapimg.com
+    - +.tapimg.net
+    - +.taptap.cn
+    - +.taptap.com
+    - +.taptap.io
+    - +.taptapdada.com
     - +.3304399.com
     - +.3304399.net
     - +.3839.com
@@ -71,21 +83,15 @@ payload:
     - +.yxhhdl.com
     - +.cowlevel.net
     - +.cdncl.net
-    - +.vgtime.com
-    - +.ro.com
-    - +.xd.cn
-    - +.xd.com
-    - +.xdcdn.net
-    - +.xindong.com
-    - +.tapimg.com
-    - +.tapimg.net
-    - +.taptap.cn
-    - +.taptap.com
-    - +.taptap.io
-    - +.taptapdada.com
-    - +.sl916.com
     - +.kurogames.com
     - +.aki-game.com
+    - +.bilibiligame.cn
+    - +.bilibiligame.co
+    - +.bilibiligame.net
+    - +.biligame.co
+    - +.biligame.com
+    - +.biligame.net
+    - +.sl916.com
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -101,12 +107,6 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
-    - +.bilibiligame.cn
-    - +.bilibiligame.co
-    - +.bilibiligame.net
-    - +.biligame.co
-    - +.biligame.com
-    - +.biligame.net
     - +.battlecare.net
     - +.gameitop.com
     - +.gameloop.com

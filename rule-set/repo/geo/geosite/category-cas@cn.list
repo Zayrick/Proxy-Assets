@@ -3,10 +3,8 @@
 +.sectigochina.com
 +.sectigochina.com.cdn.cloudflare.net
 +.trust-provider.cn
-+.sslcom.cn
 www.microsoft.com
-+.dcocsp.cn
-+.digicert.cn
++.sslcom.cn
 www.entrust.cn
 +.alphassl.com
 +.easy-signing.com
@@ -22,6 +20,8 @@ o.pki.goog
 crl.pki.goog
 crls.pki.goog
 ocsp.pki.goog
++.dcocsp.cn
++.digicert.cn
 +.yahoo.cn
 +.yahoo.com.cn
 certs-lb.apple.com.akadns.net
