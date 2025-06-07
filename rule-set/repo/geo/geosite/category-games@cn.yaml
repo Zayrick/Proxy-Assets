@@ -1,13 +1,10 @@
 payload:
-    - +.kurogames.com
-    - +.aki-game.com
     - +.bilibiligame.cn
     - +.bilibiligame.co
     - +.bilibiligame.net
     - +.biligame.co
     - +.biligame.com
     - +.biligame.net
-    - +.sl916.com
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -108,18 +105,9 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
-    - +.legendofzelda.cn
-    - +.legendofzelda.com.cn
-    - +.miitomo.com.cn
-    - +.nintendolabo.cn
-    - +.nintendoswitch.cn
-    - +.nintendoswitch.com.cn
-    - +.supersmashbros.cn
-    - +.supersmashbros.com.cn
-    - +.xn--mts47c3w9b1qr.cn
-    - +.mariokart.cn
-    - +.mariokart.com.cn
-    - +.supermariobros.com.cn
+    - +.sl916.com
+    - +.kurogames.com
+    - +.aki-game.com
     - uplaypc-s-ubisoft.cdn.ubi.com
     - +.steamserver.net
     - +.steamusercontent.com
@@ -138,8 +126,18 @@ payload:
     - xz.pphimalayanrt.com
     - +.steamchina.com
     - +.gstore.val.manlaxy.com
-    - +.bluearchive-cn.com
-    - +.xboxlive.cn
+    - +.legendofzelda.cn
+    - +.legendofzelda.com.cn
+    - +.miitomo.com.cn
+    - +.nintendolabo.cn
+    - +.nintendoswitch.cn
+    - +.nintendoswitch.com.cn
+    - +.supersmashbros.cn
+    - +.supersmashbros.com.cn
+    - +.xn--mts47c3w9b1qr.cn
+    - +.mariokart.cn
+    - +.mariokart.com.cn
+    - +.supermariobros.com.cn
     - gog.qtlglb.com
     - gogalaxy.gog-statics.com
     - menu-static.gog-statics.com
@@ -150,3 +148,5 @@ payload:
     - gog-cdn.akamaized.net
     - +.leagueoflegends.cn
     - +.lpl.com.cn
+    - +.bluearchive-cn.com
+    - +.xboxlive.cn

@@ -14,21 +14,6 @@ payload:
     - +.themisweeps.com
     - +.yuanshen.com
     - +.juequling.com
-    - +.amazonprimevideo.cn
-    - +.amazonprimevideo.com.cn
-    - +.ggpht.cn
-    - +.legendofzelda.cn
-    - +.legendofzelda.com.cn
-    - +.miitomo.com.cn
-    - +.nintendolabo.cn
-    - +.nintendoswitch.cn
-    - +.nintendoswitch.com.cn
-    - +.supersmashbros.cn
-    - +.supersmashbros.com.cn
-    - +.xn--mts47c3w9b1qr.cn
-    - +.mariokart.cn
-    - +.mariokart.com.cn
-    - +.supermariobros.com.cn
     - uplaypc-s-ubisoft.cdn.ubi.com
     - +.steamserver.net
     - +.steamusercontent.com
@@ -47,8 +32,18 @@ payload:
     - xz.pphimalayanrt.com
     - +.steamchina.com
     - +.gstore.val.manlaxy.com
-    - +.bluearchive-cn.com
-    - +.xboxlive.cn
+    - +.legendofzelda.cn
+    - +.legendofzelda.com.cn
+    - +.miitomo.com.cn
+    - +.nintendolabo.cn
+    - +.nintendoswitch.cn
+    - +.nintendoswitch.com.cn
+    - +.supersmashbros.cn
+    - +.supersmashbros.com.cn
+    - +.xn--mts47c3w9b1qr.cn
+    - +.mariokart.cn
+    - +.mariokart.com.cn
+    - +.supermariobros.com.cn
     - gog.qtlglb.com
     - gogalaxy.gog-statics.com
     - menu-static.gog-statics.com
@@ -59,3 +54,8 @@ payload:
     - gog-cdn.akamaized.net
     - +.leagueoflegends.cn
     - +.lpl.com.cn
+    - +.bluearchive-cn.com
+    - +.xboxlive.cn
+    - +.amazonprimevideo.cn
+    - +.amazonprimevideo.com.cn
+    - +.ggpht.cn

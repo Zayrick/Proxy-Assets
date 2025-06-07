@@ -21,16 +21,31 @@ payload:
     - +.ssrpass.pw
     - +.stc-server.com
     - +.hutao.cloud
-    - +.boslife.biz
-    - +.boslife.net
     - +.cylink.pro
     - +.cylink0122.icu
     - +.dlercloud.com
     - +.dlercloud.org
     - +.dlercloud.me
     - +.dleris.best
+    - +.surflite.co
+    - +.surflite.net
+    - +.boslife.biz
+    - +.boslife.net
     - +.hitun.io
     - +.xn--90wwvt03e.com
+    - +.vilavpn.com
+    - +.vilavpn.xyz
+    - +.vilavpn1.xyz
+    - +.vilavpn2.xyz
+    - +.vilavpn3.xyz
+    - +.vilavpn4.xyz
+    - +.vilavpn5.xyz
+    - +.vilavpn6.xyz
+    - +.vilavpn7.xyz
+    - +.928.plus
+    - +.zind.cloud
+    - +.duyaoss.com
+    - +.duyaossr.com
     - +.n3ro.lol
     - +.n3ro.net
     - +.n3ro.wtf
@@ -41,17 +56,8 @@ payload:
     - +.paofuyun.me
     - +.shadowsocks.com
     - +.shadowsocks.nl
-    - +.surflite.co
-    - +.surflite.net
-    - +.vilavpn.com
-    - +.vilavpn.xyz
-    - +.vilavpn1.xyz
-    - +.vilavpn2.xyz
-    - +.vilavpn3.xyz
-    - +.vilavpn4.xyz
-    - +.vilavpn5.xyz
-    - +.vilavpn6.xyz
-    - +.vilavpn7.xyz
+    - +.squirrelvpn.com
+    - +.squirrelgroup.net
     - +.justmysocks.net
     - +.justmysocks1.net
     - +.justmysocks2.net
@@ -59,9 +65,3 @@ payload:
     - +.airport-gov-cn.com
     - +.cnix-gov-cn.com
     - +.xn--d4ty0ojsqzfd.com
-    - +.928.plus
-    - +.zind.cloud
-    - +.duyaoss.com
-    - +.duyaossr.com
-    - +.squirrelvpn.com
-    - +.squirrelgroup.net

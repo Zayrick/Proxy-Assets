@@ -1,15 +1,4 @@
 payload:
-    - +.intel.cn
-    - +.intel.com.cn
-    - +.intelrealsense.cn
-    - +.quickconnect.cn
-    - +.synology.cn
-    - +.yahoo.cn
-    - +.yahoo.com.cn
-    - +.teamviewer.cn
-    - +.acer.com.cn
-    - +.samsungeshop.com.cn
-    - +.stmicroelectronics.com.cn
     - +.google.cn
     - +.g.cn
     - +.gkecnapps.cn
@@ -160,8 +149,8 @@ payload:
     - xn--flw351e.com
     - +.gvt1-cn.com
     - +.gvt2-cn.com
-    - +.ggpht.cn
     - firebase-settings.crashlytics.com
+    - redirector.c.play.google.com
     - pki-goog.l.google.com
     - c.pki.goog
     - i.pki.goog
@@ -169,75 +158,15 @@ payload:
     - crl.pki.goog
     - crls.pki.goog
     - ocsp.pki.goog
-    - redirector.c.play.google.com
-    - +.myqnapcloud.cn
-    - +.qlinkto.cn
-    - +.qnap.com.cn
-    - www.amd.com
-    - +.heptio.cn
+    - +.ggpht.cn
     - +.razerapi.com
     - +.razersynapse.com
     - +.razerzone.com
     - +.yahoo.cn
     - +.yahoo.com.cn
-    - +.aboutamazon.cn
-    - +.alexafund.cn
-    - +.alexafund.com.cn
-    - +.amazon.cn
-    - +.amazonbusiness.cn
-    - +.amazonbusiness.com.cn
-    - +.amazonchoice.cn
-    - +.amazonchoice.com.cn
-    - +.amazonchoices.cn
-    - +.amazonchoices.com.cn
-    - +.amazoninspire.cn
-    - +.amazoninspire.com.cn
-    - +.amazonlaunchpad.cn
-    - +.amazonlaunchpad.com.cn
-    - +.amazonlending.com.cn
-    - +.amazonnow.cn
-    - +.amazonnow.com.cn
-    - +.assoc-amazon.cn
-    - +.primeday.cn
-    - +.primeday.com.cn
-    - +.yamaxun.cn
-    - +.z.cn
-    - images-cn.ssl-images-amazon.com
-    - images-cn-8.ssl-images-amazon.com
-    - +.a2z.org.cn
-    - +.amazonaws.cn
-    - +.amazonaws.com.cn
-    - +.amazonwebservices.com.cn
-    - +.amazonworkdocs.cn
-    - +.amazonworkdocs.com.cn
-    - +.asfiovnxocqpcry.com.cn
-    - +.aws-border.cn
-    - +.aws-icp-domain-manager.cn
-    - +.awsapps.cn
-    - +.awsapps.com.cn
-    - +.awsstatic.cn
-    - +.cloudfront-cn.net
-    - +.cloudfront-test.cn
-    - +.cloudfront.cn
-    - +.nwcdcloud.cn
-    - +.nwcdcloud.com.cn
-    - +.nwcddns.cn
-    - +.nwcdinfosec.cn
-    - +.route53.cn
-    - +.sagemaker.com.cn
-    - +.amzndns-cn.biz
-    - +.amzndns-cn.cn
-    - +.amzndns-cn.com
-    - +.amzndns-cn.net
-    - +.kindle.cn
-    - +.kindleoasis.cn
-    - +.kindleoasis.com.cn
-    - +.amazonprimevideo.cn
-    - +.amazonprimevideo.com.cn
-    - +.cisco.cn
-    - +.cisco.com.cn
-    - +.network-auth.cn
-    - +.webex.com.cn
+    - +.acer.com.cn
+    - +.teamviewer.cn
+    - +.sandisk.cn
     - +.dcg.microsoft.com
     - +.dynamics.cn
     - +.engkoo.com
@@ -312,6 +241,10 @@ payload:
     - wscont1.apps.microsoft.com
     - wscont2.apps.microsoft.com
     - xb.dlservice.microsoft.com
+    - www.microsoft.com
+    - +.microsoftnews.cn
+    - +.msn.cn
+    - +.xboxlive.cn
     - +.21vbc.com
     - +.21vbluecloud.com
     - +.21vbluecloud.net
@@ -409,34 +342,7 @@ payload:
     - +.microsoftreactor.cn
     - +.microsoftreactor.com.cn
     - +.reactorms.com.cn
-    - www.microsoft.com
-    - +.microsoftnews.cn
-    - +.msn.cn
-    - +.xboxlive.cn
-    - +.adobedc.cn
-    - +.att.cn
-    - +.attcorp.cn
-    - +.heptio.cn
-    - +.canon.cn
-    - +.canon.com.cn
-    - +.aoruszone.cn
-    - +.gigabyte.cn
-    - +.amplifi.com.cn
-    - +.frontrow.com.cn
-    - +.ubnt.com
-    - +.ubnt.com.cn
-    - +.ui.com.cn
-    - +.uum.com.cn
-    - +.uwn.com
-    - +.asus.com.cn
-    - +.duolingo.cn
     - +.panasonic.cn
-    - +.hpstore.cn
-    - +.geforce.cn
-    - +.gputechconf.cn
-    - +.nvidia.cn
-    - cn.download.nvidia.com
-    - +.sandisk.cn
     - +.apple.cn
     - +.apple.com.cn
     - +.apple-store.cn
@@ -731,6 +637,19 @@ payload:
     - www.apple.com
     - www.apple.com.edgekey.net.globalredir.akadns.net
     - xp.apple.com
+    - +.beats1.cn
+    - +.beats1.com.cn
+    - +.beats2.com.cn
+    - +.beats4.cn
+    - +.beatsbydre.com
+    - +.beatsbydre.com.cn
+    - +.beatsep.cn
+    - +.apple-icloud.cn
+    - +.appleicloud.cn
+    - +.icloud-apple.cn
+    - +.icloud.com.cn
+    - +.icloud.net.cn
+    - +.icloudapple.cn
     - certs-lb.apple.com.akadns.net
     - certs.apple.com
     - crl-lb.apple.com.akadns.net
@@ -740,13 +659,6 @@ payload:
     - ocsp2-lb.apple.com.akadns.net
     - ocsp2.apple.com
     - valid.apple.com
-    - +.beats1.cn
-    - +.beats1.com.cn
-    - +.beats2.com.cn
-    - +.beats4.cn
-    - +.beatsbydre.com
-    - +.beatsbydre.com.cn
-    - +.beatsep.cn
     - +.apple-itunes.cn
     - +.itunes-apple.cn
     - +.itunesapple.cn
@@ -758,15 +670,103 @@ payload:
     - +.researchkit.com.cn
     - +.swiftui.cn
     - +.swiftui.com.cn
-    - +.apple-icloud.cn
-    - +.appleicloud.cn
-    - +.icloud-apple.cn
-    - +.icloud.com.cn
-    - +.icloud.net.cn
-    - +.icloudapple.cn
+    - +.yahoo.cn
+    - +.yahoo.com.cn
+    - +.geforce.cn
+    - +.gputechconf.cn
+    - +.nvidia.cn
+    - cn.download.nvidia.com
+    - +.duolingo.cn
+    - +.adobedc.cn
+    - +.myqnapcloud.cn
+    - +.qlinkto.cn
+    - +.qnap.com.cn
+    - +.aboutamazon.cn
+    - +.alexafund.cn
+    - +.alexafund.com.cn
+    - +.amazon.cn
+    - +.amazonbusiness.cn
+    - +.amazonbusiness.com.cn
+    - +.amazonchoice.cn
+    - +.amazonchoice.com.cn
+    - +.amazonchoices.cn
+    - +.amazonchoices.com.cn
+    - +.amazoninspire.cn
+    - +.amazoninspire.com.cn
+    - +.amazonlaunchpad.cn
+    - +.amazonlaunchpad.com.cn
+    - +.amazonlending.com.cn
+    - +.amazonnow.cn
+    - +.amazonnow.com.cn
+    - +.assoc-amazon.cn
+    - +.primeday.cn
+    - +.primeday.com.cn
+    - +.yamaxun.cn
+    - +.z.cn
+    - images-cn.ssl-images-amazon.com
+    - images-cn-8.ssl-images-amazon.com
+    - +.a2z.org.cn
+    - +.amazonaws.cn
+    - +.amazonaws.com.cn
+    - +.amazonwebservices.com.cn
+    - +.amazonworkdocs.cn
+    - +.amazonworkdocs.com.cn
+    - +.asfiovnxocqpcry.com.cn
+    - +.aws-border.cn
+    - +.aws-icp-domain-manager.cn
+    - +.awsapps.cn
+    - +.awsapps.com.cn
+    - +.awsstatic.cn
+    - +.cloudfront-cn.net
+    - +.cloudfront-test.cn
+    - +.cloudfront.cn
+    - +.nwcdcloud.cn
+    - +.nwcdcloud.com.cn
+    - +.nwcddns.cn
+    - +.nwcdinfosec.cn
+    - +.route53.cn
+    - +.sagemaker.com.cn
+    - +.amzndns-cn.biz
+    - +.amzndns-cn.cn
+    - +.amzndns-cn.com
+    - +.amzndns-cn.net
+    - +.kindle.cn
+    - +.kindleoasis.cn
+    - +.kindleoasis.com.cn
+    - +.amazonprimevideo.cn
+    - +.amazonprimevideo.com.cn
+    - +.aoruszone.cn
+    - +.gigabyte.cn
+    - +.asus.com.cn
+    - +.att.cn
+    - +.attcorp.cn
     - +.gpsonextra.net
     - +.izatcloud.net
     - +.qceventscenter.com.cn
     - +.qualcomm.cn
     - +.qualcomm.cn.cdn.cloudflare.net
     - +.xtracloud.cn
+    - +.samsungeshop.com.cn
+    - +.intel.cn
+    - +.intel.com.cn
+    - +.intelrealsense.cn
+    - +.heptio.cn
+    - +.stmicroelectronics.com.cn
+    - +.cisco.cn
+    - +.cisco.com.cn
+    - +.network-auth.cn
+    - +.webex.com.cn
+    - +.heptio.cn
+    - +.canon.cn
+    - +.canon.com.cn
+    - www.amd.com
+    - +.quickconnect.cn
+    - +.synology.cn
+    - +.amplifi.com.cn
+    - +.frontrow.com.cn
+    - +.ubnt.com
+    - +.ubnt.com.cn
+    - +.ui.com.cn
+    - +.uum.com.cn
+    - +.uwn.com
+    - +.hpstore.cn
