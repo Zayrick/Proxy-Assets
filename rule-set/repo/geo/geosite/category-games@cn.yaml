@@ -1,10 +1,13 @@
 payload:
+    - +.sl916.com
     - +.bilibiligame.cn
     - +.bilibiligame.co
     - +.bilibiligame.net
     - +.biligame.co
     - +.biligame.com
     - +.biligame.net
+    - +.kurogames.com
+    - +.aki-game.com
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -105,10 +108,9 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
-    - +.sl916.com
-    - +.kurogames.com
-    - +.aki-game.com
-    - uplaypc-s-ubisoft.cdn.ubi.com
+    - +.leagueoflegends.cn
+    - +.lpl.com.cn
+    - +.xboxlive.cn
     - +.steamserver.net
     - +.steamusercontent.com
     - +.csgo.wmsj.cn
@@ -126,6 +128,16 @@ payload:
     - xz.pphimalayanrt.com
     - +.steamchina.com
     - +.gstore.val.manlaxy.com
+    - gog.qtlglb.com
+    - gogalaxy.gog-statics.com
+    - menu-static.gog-statics.com
+    - productcard.gog-statics.com
+    - static-login.gog-statics.com
+    - www4-static.gog-statics.com
+    - gog-cdn-fastly.gog.com
+    - gog-cdn.akamaized.net
+    - +.bluearchive-cn.com
+    - uplaypc-s-ubisoft.cdn.ubi.com
     - +.legendofzelda.cn
     - +.legendofzelda.com.cn
     - +.miitomo.com.cn
@@ -138,15 +150,3 @@ payload:
     - +.mariokart.cn
     - +.mariokart.com.cn
     - +.supermariobros.com.cn
-    - gog.qtlglb.com
-    - gogalaxy.gog-statics.com
-    - menu-static.gog-statics.com
-    - productcard.gog-statics.com
-    - static-login.gog-statics.com
-    - www4-static.gog-statics.com
-    - gog-cdn-fastly.gog.com
-    - gog-cdn.akamaized.net
-    - +.leagueoflegends.cn
-    - +.lpl.com.cn
-    - +.bluearchive-cn.com
-    - +.xboxlive.cn

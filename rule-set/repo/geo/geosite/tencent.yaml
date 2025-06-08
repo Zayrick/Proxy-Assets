@@ -1,6 +1,6 @@
 payload:
-    - +.starlakelab.com
-    - +.tourismuser.cn
+    - +.tcloudhw.com
+    - +.yunjitele.com
     - +.acimg.cn
     - +.apcdns.net
     - +.foxmail.com
@@ -14,19 +14,19 @@ payload:
     - +.qpic.cn
     - +.qq.com
     - +.qq.wang
-    - +.m1.run
-    - +.m6.run
-    - +.oracle-tencent.net
+    - +.xxsy.net
+    - +.xs8.cn
+    - +.webnovel.com
     - +.qqmail.com
     - +.qzone.com
-    - +.m9.run
-    - +.oracle-tencent.com
+    - +.tingbook.com
+    - +.readnovel.com
     - +.servicewechat.com
     - +.tencent.cn
     - +.tencent.com
-    - +.oracle-tencent.cn
+    - +.qidian.com
     - +.tencent.net
-    - +.ma.run
+    - +.qdmm.com
     - +.tencentmusic.com
     - +.tenpay.com
     - +.tfogc.com
@@ -61,26 +61,6 @@ payload:
     - +.fymallqa4.com
     - +.fymallqa7.com
     - +.fymallqa9.com
-    - +.openmidas.com
-    - +.qq.design
-    - +.qqgamedesign.com
-    - +.tencent-cloud.cn
-    - +.tencent-cloud.com
-    - +.tencent.design
-    - +.tencentcloud.com
-    - +.tjstats.com
-    - +.wegamedeveloper.com
-    - +.weixinbridge.com
-    - +.yuewen.com
-    - +.hongxiu.com
-    - +.lrts.me
-    - +.qdmm.com
-    - +.qidian.com
-    - +.readnovel.com
-    - +.tingbook.com
-    - +.webnovel.com
-    - +.xs8.cn
-    - +.xxsy.net
     - +.tencentcloudclub.com
     - +.dnse4.com
     - +.aitransfy.com
@@ -177,9 +157,9 @@ payload:
     - +.spcloudhw.com
     - +.spcloudhw.net
     - +.tencentcloudmarket.com
-    - +.tdnsv4.net
-    - +.xn--r70as2s.xn--fiqs8s
-    - +.tencentcs.com
+    - +.starlakelab.com
+    - +.tamaegis.com
+    - +.tapd.cn
     - +.tcdlive.com
     - +.tcdnhw.com
     - +.tcdnkcbak.com
@@ -197,9 +177,9 @@ payload:
     - +.tcloudbi.com
     - +.tclouddrive.com
     - +.tcloudedu.com
-    - +.tcloudhw.com
-    - +.tcloudhw.net
-    - +.tcloudscdn.com
+    - +.um.run
+    - +.xn--r70as2s.xn--fiqs8s
+    - +.testwaf.com
     - +.tcloudscdn.net
     - +.tdnsx1.com
     - +.techo.chat
@@ -207,6 +187,7 @@ payload:
     - +.tefscloud.net
     - +.tenant-zone-dev.com
     - +.tencdns.net
+    - +.tencent-cloud.com
     - +.tencent-cloud.net
     - +.tencentapps.com
     - +.tencentbyod.com
@@ -225,7 +206,7 @@ payload:
     - +.tencentcos.cn
     - +.tencentcos.com
     - +.dns.pub
-    - +.tapd.cn
+    - +.tencentcs.com
     - +.tencentdayu.com
     - +.tencentdb.com
     - +.tencentdevices.com
@@ -245,7 +226,7 @@ payload:
     - +.tendis.net
     - +.dnsapi.cn
     - +.testmeet.cn
-    - +.testwaf.com
+    - +.tcloudscdn.com
     - +.tgovcloud.com
     - +.tidaas.com
     - +.dnspod.mobi
@@ -254,7 +235,7 @@ payload:
     - +.tlivepush.com
     - +.tlivesource.com
     - +.tourismshow.cn
-    - +.tamaegis.com
+    - +.tourismuser.cn
     - +.tsparkling.com
     - +.tx-exhibition.com
     - +.txbyod.com
@@ -274,7 +255,7 @@ payload:
     - +.yufuid.com
     - +.dot.pub
     - +.yufuid.net
-    - +.yunjitele.com
+    - +.tcloudhw.net
     - +.dnse0.cn
     - +.dnse1.cn
     - +.dnse2.cn
@@ -305,7 +286,7 @@ payload:
     - +.tdnsv1.net
     - +.tdnsv2.net
     - +.tdnsv3.net
-    - +.qq.xn--fiqs8s
+    - +.tdnsv4.net
     - +.tdnsv5.net
     - +.tdnsv6.net
     - +.tdnsv7.net
@@ -325,31 +306,111 @@ payload:
     - +.discuz.net
     - +.comsenz.com
     - +.ym.run
-    - +.um.run
-    - +.tencent.com.cn
-    - +.qq.cn.com
-    - +.tencent.net.cn
-    - +.qq.com.cn
+    - +.qq.xn--fiqs8s
+    - +.ma.run
+    - +.oracle-tencent.cn
+    - +.oracle-tencent.com
+    - +.m9.run
+    - +.oracle-tencent.net
+    - +.m6.run
+    - +.m1.run
+    - +.lrts.me
+    - +.hongxiu.com
+    - +.yuewen.com
+    - +.weixinbridge.com
+    - +.wegamedeveloper.com
+    - +.tjstats.com
+    - +.tencentcloud.com
+    - +.tencent.design
+    - +.tencent-cloud.cn
+    - +.qqgamedesign.com
+    - +.qq.design
+    - +.openmidas.com
+    - +.tencentcos.com.cn
+    - +.ectencent.com.cn
+    - +.testjrzk.net.cn
+    - +.tencentcdb.com.cn
     - +.yufuid.com.cn
     - +.gtimg.com.cn
-    - +.foxmail.com.cn
-    - +.tencentcos.com.cn
-    - +.oracle-tencent.com.cn
-    - +.dnspod.com.cn
-    - +.qcloudcos.com.cn
-    - +.ectencent.com.cn
-    - +.rtx.com.cn
-    - +.dnsv1.com.cn
+    - +.qq.cn.com
     - +.jrzk.net.cn
-    - +.timatrix.com.cn
-    - +.testjrzk.net.cn
+    - +.rtx.com.cn
+    - +.qcloudcos.com.cn
+    - +.foxmail.com.cn
     - +.oracle-tencent.net.cn
-    - +.tencentcdb.com.cn
+    - +.qq.com.cn
+    - +.dnsv1.com.cn
+    - +.dnspod.com.cn
+    - +.oracle-tencent.com.cn
+    - +.timatrix.com.cn
+    - +.tencent.net.cn
+    - +.tencent.com.cn
     - +.tencent.co.id
     - +.tencent.com.hk
     - +.wetv.vip
     - +.wetvinfo.com
     - wetv.qq.com
+    - +.intltencentcos.com
+    - +.ap-hongkong.myqcloud.com
+    - +.ap-singapore.myqcloud.com
+    - +.ap-mumbai.myqcloud.com
+    - +.ap-jakarta.myqcloud.com
+    - +.ap-seoul.myqcloud.com
+    - +.ap-bangkok.myqcloud.com
+    - +.ap-tokyo.myqcloud.com
+    - +.na-siliconvalley.myqcloud.com
+    - +.na-ashburn.myqcloud.com
+    - +.na-toronto.myqcloud.com
+    - +.sa-saopaulo.myqcloud.com
+    - +.eu-frankfurt.myqcloud.com
+    - +.eu-moscow.myqcloud.com
+    - +.ap-hongkong.tencentcos.cn
+    - +.ap-hongkong.tencentcos.com
+    - +.ap-hongkong.tencentcos.com.cn
+    - +.ap-singapore.tencentcos.cn
+    - +.ap-singapore.tencentcos.com
+    - +.ap-singapore.tencentcos.com.cn
+    - +.ap-mumbai.tencentcos.cn
+    - +.ap-mumbai.tencentcos.com
+    - +.ap-mumbai.tencentcos.com.cn
+    - +.ap-jakarta.tencentcos.cn
+    - +.ap-jakarta.tencentcos.com
+    - +.ap-jakarta.tencentcos.com.cn
+    - +.ap-seoul.tencentcos.cn
+    - +.ap-seoul.tencentcos.com
+    - +.ap-seoul.tencentcos.com.cn
+    - +.ap-bangkok.tencentcos.cn
+    - +.ap-bangkok.tencentcos.com
+    - +.ap-bangkok.tencentcos.com.cn
+    - +.ap-tokyo.tencentcos.cn
+    - +.ap-tokyo.tencentcos.com
+    - +.ap-tokyo.tencentcos.com.cn
+    - +.na-siliconvalley.tencentcos.cn
+    - +.na-siliconvalley.tencentcos.com
+    - +.na-siliconvalley.tencentcos.com.cn
+    - +.na-ashburn.tencentcos.cn
+    - +.na-ashburn.tencentcos.com
+    - +.na-ashburn.tencentcos.com.cn
+    - +.na-toronto.tencentcos.cn
+    - +.na-toronto.tencentcos.com
+    - +.na-toronto.tencentcos.com.cn
+    - +.sa-saopaulo.tencentcos.cn
+    - +.sa-saopaulo.tencentcos.com
+    - +.sa-saopaulo.tencentcos.com.cn
+    - +.eu-frankfurt.tencentcos.cn
+    - +.eu-frankfurt.tencentcos.com
+    - +.eu-frankfurt.tencentcos.com.cn
+    - +.eu-moscow.tencentcos.cn
+    - +.eu-moscow.tencentcos.com
+    - +.eu-moscow.tencentcos.com.cn
+    - +.coshk.myqcloud.com
+    - +.cossgp.myqcloud.com
+    - +.cosca.myqcloud.com
+    - +.cosger.myqcloud.com
+    - +.hk.file.myqcloud.com
+    - +.sgp.file.myqcloud.com
+    - +.ca.file.myqcloud.com
+    - +.ger.file.myqcloud.com
     - +.ad.qq.com
     - +.ad.qun.qq.com
     - +.adfilter.imtt.qq.com
@@ -473,64 +534,3 @@ payload:
     - +.anticheatexpert.com
     - +.17roco.com
     - +.roco.qq.com
-    - +.intltencentcos.com
-    - +.ap-hongkong.myqcloud.com
-    - +.ap-singapore.myqcloud.com
-    - +.ap-mumbai.myqcloud.com
-    - +.ap-jakarta.myqcloud.com
-    - +.ap-seoul.myqcloud.com
-    - +.ap-bangkok.myqcloud.com
-    - +.ap-tokyo.myqcloud.com
-    - +.na-siliconvalley.myqcloud.com
-    - +.na-ashburn.myqcloud.com
-    - +.na-toronto.myqcloud.com
-    - +.sa-saopaulo.myqcloud.com
-    - +.eu-frankfurt.myqcloud.com
-    - +.eu-moscow.myqcloud.com
-    - +.ap-hongkong.tencentcos.cn
-    - +.ap-hongkong.tencentcos.com
-    - +.ap-hongkong.tencentcos.com.cn
-    - +.ap-singapore.tencentcos.cn
-    - +.ap-singapore.tencentcos.com
-    - +.ap-singapore.tencentcos.com.cn
-    - +.ap-mumbai.tencentcos.cn
-    - +.ap-mumbai.tencentcos.com
-    - +.ap-mumbai.tencentcos.com.cn
-    - +.ap-jakarta.tencentcos.cn
-    - +.ap-jakarta.tencentcos.com
-    - +.ap-jakarta.tencentcos.com.cn
-    - +.ap-seoul.tencentcos.cn
-    - +.ap-seoul.tencentcos.com
-    - +.ap-seoul.tencentcos.com.cn
-    - +.ap-bangkok.tencentcos.cn
-    - +.ap-bangkok.tencentcos.com
-    - +.ap-bangkok.tencentcos.com.cn
-    - +.ap-tokyo.tencentcos.cn
-    - +.ap-tokyo.tencentcos.com
-    - +.ap-tokyo.tencentcos.com.cn
-    - +.na-siliconvalley.tencentcos.cn
-    - +.na-siliconvalley.tencentcos.com
-    - +.na-siliconvalley.tencentcos.com.cn
-    - +.na-ashburn.tencentcos.cn
-    - +.na-ashburn.tencentcos.com
-    - +.na-ashburn.tencentcos.com.cn
-    - +.na-toronto.tencentcos.cn
-    - +.na-toronto.tencentcos.com
-    - +.na-toronto.tencentcos.com.cn
-    - +.sa-saopaulo.tencentcos.cn
-    - +.sa-saopaulo.tencentcos.com
-    - +.sa-saopaulo.tencentcos.com.cn
-    - +.eu-frankfurt.tencentcos.cn
-    - +.eu-frankfurt.tencentcos.com
-    - +.eu-frankfurt.tencentcos.com.cn
-    - +.eu-moscow.tencentcos.cn
-    - +.eu-moscow.tencentcos.com
-    - +.eu-moscow.tencentcos.com.cn
-    - +.coshk.myqcloud.com
-    - +.cossgp.myqcloud.com
-    - +.cosca.myqcloud.com
-    - +.cosger.myqcloud.com
-    - +.hk.file.myqcloud.com
-    - +.sgp.file.myqcloud.com
-    - +.ca.file.myqcloud.com
-    - +.ger.file.myqcloud.com
