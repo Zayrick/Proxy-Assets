@@ -293,12 +293,6 @@ payload:
     - www.apple.com
     - www.apple.com.edgekey.net.globalredir.akadns.net
     - xp.apple.com
-    - +.apple-icloud.cn
-    - +.appleicloud.cn
-    - +.icloud-apple.cn
-    - +.icloud.com.cn
-    - +.icloud.net.cn
-    - +.icloudapple.cn
     - +.swiftui.cn
     - +.swiftui.com.cn
     - +.researchkit.cn
@@ -321,6 +315,12 @@ payload:
     - +.beatsbydre.com
     - +.beatsbydre.com.cn
     - +.beatsep.cn
+    - +.apple-icloud.cn
+    - +.appleicloud.cn
+    - +.icloud-apple.cn
+    - +.icloud.com.cn
+    - +.icloud.net.cn
+    - +.icloudapple.cn
     - +.apple-itunes.cn
     - +.itunes-apple.cn
     - +.itunesapple.cn

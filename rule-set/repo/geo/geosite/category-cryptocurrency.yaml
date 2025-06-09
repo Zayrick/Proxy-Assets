@@ -1,10 +1,10 @@
 payload:
+    - deribit.cdn.prismic.io
     - bybit-exchange.github.io
     - bybit.ada.support
     - onekey.zendesk.com
-    - deribit.cdn.prismic.io
-    - +.zb.live
-    - +.huobiasia.vip
+    - +.binancezh.pro
+    - +.binance.net
     - +.bitbank.cc
     - +.bitcoin.org
     - +.bitfinex.com
@@ -32,7 +32,7 @@ payload:
     - +.dogecoin.com
     - +.dydx.exchange
     - +.fundingrates.xyz
-    - +.asproexapi.com
+    - +.binancezh.top
     - +.hashflow.com
     - +.infura.io
     - +.invity.io
@@ -55,6 +55,44 @@ payload:
     - +.walletconnect.com
     - +.wintermute.com
     - +.zapper.fi
+    - +.redotpay.com
+    - +.asproex.com
+    - +.asproexapi.com
+    - +.binance.cc
+    - +.binance.charity
+    - +.wynd.network
+    - +.binance.cloud
+    - +.binance.co
+    - +.binance.com
+    - +.binance.info
+    - +.binance.me
+    - +.binancezh.sh
+    - +.binance.org
+    - +.binance.us
+    - +.binance.vision
+    - +.binancecnt.com
+    - +.binancezh.be
+    - +.binancezh.biz
+    - +.binancezh.cc
+    - +.binancezh.co
+    - +.binancezh.com
+    - +.binancezh.info
+    - +.binancezh.ink
+    - +.1inch.io
+    - +.binancezh.link
+    - +.binancezh.live
+    - +.binancezh.mobi
+    - +.binancezh.net
+    - +.binancezh.kim
+    - +.aave.com
+    - +.gemini.com
+    - +.binanceapi.com
+    - +.bnbstatic.com
+    - +.saasexch.com
+    - +.saasexch.io
+    - +.appsflayer.com
+    - +.bitflyer.com
+    - +.bitflyer.jp
     - +.devcon.org
     - +.ethereum.foundation
     - +.ethereum.org
@@ -66,9 +104,22 @@ payload:
     - +.huobi.me
     - +.huobi.pro
     - +.huobi.sc
-    - +.asproex.com
+    - +.huobiasia.vip
     - +.huobigroup.com
     - +.huobitoken.com
+    - +.kraken.com
+    - +.kraken.onl
+    - +.nexo.com
+    - +.nexo.io
+    - +.bisq.io
+    - +.bisq.network
+    - +.bitsquare.io
+    - +.deribit.com
+    - +.gate.io
+    - +.gatedata.org
+    - +.gateimg.com
+    - +.gateio.live
+    - +.gateio.services
     - +.kucoin.com
     - +.kucoin.plus
     - +.localbitcoins.com
@@ -78,16 +129,10 @@ payload:
     - +.okx-dns.com
     - +.okx-dns1.com
     - +.okx-dns2.com
-    - +.1inch.io
-    - +.wynd.network
     - +.zb.app
     - +.zb.com
     - +.zb.io
-    - +.wyndlabs.ai
-    - +.aave.com
-    - +.gemini.com
-    - +.bitflyer.com
-    - +.bitflyer.jp
+    - +.zb.live
     - +.bybit.com
     - +.bycsi.com
     - +.bytick.com
@@ -102,66 +147,21 @@ payload:
     - +.bybit-global.com
     - +.bybit.cloud
     - +.bybitglobal.com
-    - +.kraken.com
-    - +.kraken.onl
+    - +.coinonecore.com
+    - +.coinonecorp.com
+    - +.wyndlabs.ai
+    - +.wisekey.com
+    - +.wiseid.com
+    - +.wisecoin.com
     - +.onekey-asset.com
     - +.onekey.so
     - +.onekeycn.com
     - +.trustwallet.com
-    - +.wisecoin.com
-    - +.wiseid.com
-    - +.wisekey.com
-    - +.binance.cc
-    - +.binance.charity
-    - +.binance.cloud
-    - +.binance.co
-    - +.binance.com
-    - +.binance.info
-    - +.binance.me
-    - +.binance.net
-    - +.binance.org
-    - +.binance.us
-    - +.binance.vision
-    - +.binancecnt.com
-    - +.binancezh.be
-    - +.binancezh.biz
-    - +.binancezh.cc
-    - +.binancezh.co
-    - +.binancezh.com
-    - +.binancezh.info
-    - +.binancezh.ink
-    - +.binancezh.kim
-    - +.binancezh.link
-    - +.binancezh.live
-    - +.binancezh.mobi
-    - +.binancezh.net
-    - +.binancezh.pro
-    - +.binancezh.sh
-    - +.binancezh.top
-    - +.binanceapi.com
-    - +.bnbstatic.com
-    - +.saasexch.com
-    - +.saasexch.io
-    - +.appsflayer.com
-    - +.bisq.io
-    - +.bisq.network
-    - +.bitsquare.io
-    - +.deribit.com
-    - +.gate.io
-    - +.gatedata.org
-    - +.gateimg.com
-    - +.gateio.live
-    - +.gateio.services
-    - +.nexo.com
-    - +.nexo.io
-    - +.redotpay.com
-    - +.coinonecore.com
-    - +.coinonecorp.com
-    - +.btcbox.co.jp
+    - +.coinone.co.kr
+    - +.xhpjc6-cdn-settings.appsflyersdk.com
+    - +.pod-15-sunco-ws.zendesk.com
     - +.wisekey.com.hk
     - +.redotpay.zendesk.com
-    - +.pod-15-sunco-ws.zendesk.com
-    - +.xhpjc6-cdn-settings.appsflyersdk.com
-    - +.coinone.co.kr
+    - +.btcbox.co.jp
     - +.rp-static-apne1.s3.ap-northeast-1.amazonaws.com
     - +.oklink.com

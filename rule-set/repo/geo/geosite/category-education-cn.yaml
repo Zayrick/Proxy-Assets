@@ -3,30 +3,30 @@ payload:
     - opencourse.pku.edu.cn
     - study.163.com
     - +.ketangpai.com
-    - +.17zuoye.cn
+    - +.cctalk.com
     - +.chesicc.com
     - +.cedf.cn
     - +.chsi.cn
     - +.gfbzb.cn
     - +.yuketang.cn
     - +.rainclassroom.com
-    - +.xueersi.com
-    - +.xesimg.com
-    - +.speiyou.com
-    - +.applysquare.net
-    - +.applysquare.com
-    - +.17zuoye.net
-    - +.gfbzb.com
-    - +.17zuoye.com
-    - +.pigai.org
     - +.koopass.com
-    - +.gfbzb.net
-    - +.ncss.cn
     - +.koolearn.com
     - +.koocdn.com
     - +.yeshj.com
-    - +.qgzb.net
     - +.hujiang.com
+    - +.hjfile.cn
+    - +.gfbzb.com
+    - +.hjapi.com
+    - +.pigai.org
+    - +.mojidict.com
+    - +.gfbzb.net
+    - +.ncss.cn
+    - +.shareintelli.com
+    - +.hugecore.net
+    - +.applysquare.net
+    - +.qgzb.net
+    - +.applysquare.com
     - +.zbbm.net
     - +.yudou.cn
     - +.yushiyan.net
@@ -56,7 +56,7 @@ payload:
     - +.keboyunxiao.com
     - +.chesicc.net
     - +.chesicc.cn
-    - +.shareintelli.com
+    - +.pmphmooc.com
     - +.magedu.com
     - +.oldboyedu.com
     - +.eduei.com
@@ -67,6 +67,10 @@ payload:
     - +.winyoungreading.com
     - +.baydn.com
     - +.shanbay.com
+    - +.zhihuishu.com
+    - +.speiyou.com
+    - +.xesimg.com
+    - +.xueersi.com
     - +.banmaaike.com
     - +.xiaoyuankousuan.com
     - +.ybccode.com
@@ -79,20 +83,16 @@ payload:
     - +.fenbike.com
     - +.fenbilantian.cn
     - +.fenbilantian.com
-    - +.zhihuishu.com
     - +.chinesemooc.org
     - +.cnmooc.org
     - +.icourse163.org
     - +.icourses.cn
     - +.mooc.cn
     - +.openlearning.com
-    - +.pmphmooc.com
-    - +.hjfile.cn
-    - +.hugecore.net
     - +.weilaiyunxiao.com
-    - +.mojidict.com
-    - +.cctalk.com
-    - +.hjapi.com
+    - +.17zuoye.net
+    - +.17zuoye.cn
+    - +.17zuoye.com
     - +.qgzb.com.cn
     - +.chinayz.com.cn
     - +.qgzb.gov.cn
