@@ -14,13 +14,19 @@ payload:
     - +.safechat.com
     - +.sis001.com
     - +.v2ex.com
-    - +.2ch.net
-    - +.5ch.net
     - +.broadbandreports.com
     - +.dslr.net
     - +.dslreports.com
-    - +.linux.do
-    - +.ldstatic.com
+    - +.lih.kg
+    - +.lihkg.com
+    - +.xda-cdn.com
+    - +.xda-developers.com
+    - +.xdaforums.com
+    - +.xdaimages.com
+    - +.dcard.cc
+    - +.dcard.io
+    - +.dcard.link
+    - +.dcard.tw
     - +.pimg.tw
     - +.pixanalytics.com
     - +.pixfs.net
@@ -29,34 +35,6 @@ payload:
     - +.pixnet.pro
     - +.pixnet.tw
     - +.pixplug.in
-    - +.lih.kg
-    - +.lihkg.com
-    - +.ptt.cc
-    - +.ptt2.cc
-    - +.ptt3.cc
-    - +.qr.ae
-    - +.quora.com
-    - +.quoracdn.net
-    - +.poe.com
-    - +.poecdn.net
-    - +.maintracker.org
-    - +.rutracker.cc
-    - +.rutracker.cr
-    - +.rutracker.me
-    - +.rutracker.nl
-    - +.rutracker.org
-    - +.rutrecker.net
-    - +.rutrk.org
-    - +.4cdn.org
-    - +.4chan.org
-    - +.4channel.org
-    - +.dcard.cc
-    - +.dcard.io
-    - +.dcard.link
-    - +.dcard.tw
-    - +.soyjak.party
-    - +.soyjak.st
-    - +.yamibo.com
     - +.redd.it
     - +.reddit.com
     - +.redditblog.com
@@ -67,10 +45,25 @@ payload:
     - +.redditspace.com
     - +.redditstatic.com
     - +.redditstatus.com
-    - +.xda-cdn.com
-    - +.xda-developers.com
-    - +.xdaforums.com
-    - +.xdaimages.com
+    - +.maintracker.org
+    - +.rutracker.cc
+    - +.rutracker.cr
+    - +.rutracker.me
+    - +.rutracker.nl
+    - +.rutracker.org
+    - +.rutrecker.net
+    - +.rutrk.org
+    - +.ptt.cc
+    - +.ptt2.cc
+    - +.ptt3.cc
+    - +.qr.ae
+    - +.quora.com
+    - +.quoracdn.net
+    - +.poe.com
+    - +.poecdn.net
+    - +.4cdn.org
+    - +.4chan.org
+    - +.4channel.org
     - +.6park.com
     - +.6parkbbs.com
     - +.6parknews.com
@@ -78,13 +71,20 @@ payload:
     - +.popo8.com
     - +.parkvv.com
     - +.xwbo.com
-    - +.ck101.com
-    - +.ckcdn.com
-    - +.ckck.fun
     - +.hkgolden.com
     - +.hkgolden.media
     - +.5i01.com
     - +.mobile01.com
+    - +.yamibo.com
+    - +.2ch.net
+    - +.5ch.net
+    - +.ck101.com
+    - +.ckcdn.com
+    - +.ckck.fun
+    - +.linux.do
+    - +.ldstatic.com
+    - +.soyjak.party
+    - +.soyjak.st
     - +.pixinsight.com.tw
     - +.reddit.app.link
     - +.reddit.map.fastly.net
