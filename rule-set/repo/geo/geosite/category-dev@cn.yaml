@@ -1,4 +1,6 @@
 payload:
+    - +.cdn.jetbrains.com
+    - +.download-cdn.jetbrains.com.cn
     - cdn.ampproject.org
     - +.researchkit.cn
     - +.researchkit.com.cn
@@ -8,5 +10,3 @@ payload:
     - +.microsoftreactor.cn
     - +.microsoftreactor.com.cn
     - +.reactorms.com.cn
-    - +.cdn.jetbrains.com
-    - +.download-cdn.jetbrains.com.cn

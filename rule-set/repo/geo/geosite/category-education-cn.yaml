@@ -3,30 +3,30 @@ payload:
     - opencourse.pku.edu.cn
     - study.163.com
     - +.ketangpai.com
-    - +.ybccode.com
+    - +.yuansouti.com
     - +.chesicc.com
     - +.cedf.cn
     - +.chsi.cn
     - +.gfbzb.cn
+    - +.yuketang.cn
+    - +.rainclassroom.com
     - +.fenbilantian.com
     - +.fenbilantian.cn
     - +.fenbike.com
     - +.fenbike.cn
     - +.fenbi.com
     - +.fbstatic.cn
-    - +.yuantiku.com
-    - +.yuansouti.com
     - +.gfbzb.com
-    - +.yuanfudao.com
+    - +.yuantiku.com
     - +.pigai.org
-    - +.xiaoyuankousuan.com
+    - +.yuanfudao.com
     - +.gfbzb.net
     - +.ncss.cn
+    - +.ybccode.com
+    - +.xiaoyuankousuan.com
     - +.banmaaike.com
-    - +.koopass.com
-    - +.koolearn.com
     - +.qgzb.net
-    - +.koocdn.com
+    - +.shanbay.com
     - +.zbbm.net
     - +.yudou.cn
     - +.yushiyan.net
@@ -56,7 +56,7 @@ payload:
     - +.keboyunxiao.com
     - +.chesicc.net
     - +.chesicc.cn
-    - +.icourses.cn
+    - +.applysquare.net
     - +.magedu.com
     - +.oldboyedu.com
     - +.eduei.com
@@ -65,34 +65,34 @@ payload:
     - +.neoscholar.com
     - +.neoschool.com
     - +.winyoungreading.com
+    - +.17zuoye.cn
+    - +.17zuoye.com
+    - +.17zuoye.net
     - +.cctalk.com
     - +.hjapi.com
     - +.hjfile.cn
     - +.hujiang.com
     - +.yeshj.com
-    - +.baydn.com
-    - +.shanbay.com
+    - +.koocdn.com
+    - +.koolearn.com
+    - +.koopass.com
     - +.speiyou.com
     - +.xesimg.com
     - +.xueersi.com
-    - +.17zuoye.cn
-    - +.17zuoye.com
-    - +.17zuoye.net
-    - +.applysquare.com
-    - +.applysquare.net
-    - +.hugecore.net
-    - +.shareintelli.com
-    - +.mojidict.com
     - +.zhihuishu.com
-    - +.rainclassroom.com
-    - +.yuketang.cn
     - +.chinesemooc.org
     - +.cnmooc.org
     - +.icourse163.org
-    - +.weilaiyunxiao.com
+    - +.icourses.cn
     - +.mooc.cn
     - +.openlearning.com
     - +.pmphmooc.com
+    - +.baydn.com
+    - +.applysquare.com
+    - +.weilaiyunxiao.com
+    - +.hugecore.net
+    - +.shareintelli.com
+    - +.mojidict.com
     - +.qgzb.com.cn
     - +.chinayz.com.cn
     - +.qgzb.gov.cn
