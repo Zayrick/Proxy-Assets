@@ -55,23 +55,17 @@ payload:
     - DOMAIN-SUFFIX,crustwebsites.net
     - DOMAIN-SUFFIX,4everland.io
     - DOMAIN-SUFFIX,dweb.link
-    - DOMAIN-SUFFIX,softether.org
-    - DOMAIN-SUFFIX,vpngate.net
-    - DOMAIN-SUFFIX,vpngate.jp
-    - DOMAIN-SUFFIX,opengw.net
+    - DOMAIN-SUFFIX,applecensorship.com
     - DOMAIN-SUFFIX,v2fly.org
     - DOMAIN-SUFFIX,v2ray.cool
     - DOMAIN-SUFFIX,v2ray.com
     - DOMAIN-SUFFIX,torproject.org
     - DOMAIN-SUFFIX,paskoocheh.com
-    - DOMAIN-SUFFIX,lantern.io
-    - DOMAIN-SUFFIX,getlantern.org
-    - DOMAIN-SUFFIX,softether-download.com
-    - DOMAIN-SUFFIX,censorship.no
-    - DOMAIN-SUFFIX,citizenlab.ca
-    - DOMAIN-SUFFIX,citizenlab.org
+    - DOMAIN-SUFFIX,pwnedpasswords.com
+    - DOMAIN-SUFFIX,haveibeenpwned.com
     - DOMAIN-SUFFIX,epicbrowser.com
-    - DOMAIN-SUFFIX,applecensorship.com
+    - DOMAIN-SUFFIX,citizenlab.org
+    - DOMAIN-SUFFIX,citizenlab.ca
     - DOMAIN-SUFFIX,freebrowser.org
     - DOMAIN-SUFFIX,freewechat.com
     - DOMAIN-SUFFIX,freeweibo.com
@@ -79,8 +73,14 @@ payload:
     - DOMAIN-SUFFIX,greatfire.org
     - DOMAIN-SUFFIX,pao-pao.net
     - DOMAIN-SUFFIX,wikiunblocked.org
-    - DOMAIN-SUFFIX,haveibeenpwned.com
-    - DOMAIN-SUFFIX,pwnedpasswords.com
+    - DOMAIN-SUFFIX,getlantern.org
+    - DOMAIN-SUFFIX,lantern.io
+    - DOMAIN-SUFFIX,softether.org
+    - DOMAIN-SUFFIX,softether-download.com
+    - DOMAIN-SUFFIX,opengw.net
+    - DOMAIN-SUFFIX,vpngate.jp
+    - DOMAIN-SUFFIX,vpngate.net
+    - DOMAIN-SUFFIX,censorship.no
     - DOMAIN-SUFFIX,ipfs.fleek.co
     - DOMAIN-SUFFIX,ipfs.lain.la
     - DOMAIN-SUFFIX,ipfs.best-practice.se

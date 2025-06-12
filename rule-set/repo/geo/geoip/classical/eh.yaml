@@ -29,6 +29,7 @@ payload:
     - IP-CIDR,2001:470:6d:b2f::/64
     - IP-CIDR,2001:470:1f0f:1fd::/64
     - IP-CIDR,2001:470:1f21:bf::/64
+    - IP-CIDR,2001:470:54a6::/48
     - IP-CIDR,2001:470:f1ef::/48
     - IP-CIDR,2001:470:fbed::/48
     - IP-CIDR,2001:470:fbf8::/48

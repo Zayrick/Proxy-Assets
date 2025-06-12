@@ -1,10 +1,8 @@
 payload:
-    - DOMAIN-SUFFIX,grok.com
-    - DOMAIN-SUFFIX,x.ai
-    - DOMAIN-SUFFIX,twtrdns.net
-    - DOMAIN-SUFFIX,twvid.com
+    - DOMAIN-SUFFIX,twitterflightschool.com
     - DOMAIN-SUFFIX,periscope.tv
-    - DOMAIN-SUFFIX,pscp.tv
+    - DOMAIN-SUFFIX,twittercommunity.com
+    - DOMAIN-SUFFIX,twitter.com
     - DOMAIN-SUFFIX,t.co
     - DOMAIN-SUFFIX,tellapart.com
     - DOMAIN-SUFFIX,tweetdeck.com
@@ -13,9 +11,9 @@ payload:
     - DOMAIN-SUFFIX,twitter.biz
     - DOMAIN-SUFFIX,x.com
     - DOMAIN-SUFFIX,cms-twdigitalassets.com
-    - DOMAIN-SUFFIX,twitterflightschool.com
-    - DOMAIN-SUFFIX,twittercommunity.com
-    - DOMAIN-SUFFIX,twitter.com
+    - DOMAIN-SUFFIX,x.ai
+    - DOMAIN-SUFFIX,twvid.com
+    - DOMAIN-SUFFIX,pscp.tv
     - DOMAIN-SUFFIX,twitterinc.com
     - DOMAIN-SUFFIX,twitteroauth.com
     - DOMAIN-SUFFIX,twitterstat.us
@@ -24,4 +22,6 @@ payload:
     - DOMAIN-SUFFIX,twttr.net
     - DOMAIN-SUFFIX,twitter.jp
     - DOMAIN-SUFFIX,vine.co
+    - DOMAIN-SUFFIX,twtrdns.net
+    - DOMAIN-SUFFIX,grok.com
     - DOMAIN-SUFFIX,twitter.map.fastly.net
