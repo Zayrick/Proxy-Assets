@@ -17,11 +17,6 @@ payload:
     - +.ptt.cc
     - +.ptt2.cc
     - +.ptt3.cc
-    - +.qr.ae
-    - +.quora.com
-    - +.quoracdn.net
-    - +.poe.com
-    - +.poecdn.net
     - +.redd.it
     - +.reddit.com
     - +.redditblog.com
@@ -32,33 +27,6 @@ payload:
     - +.redditspace.com
     - +.redditstatic.com
     - +.redditstatus.com
-    - +.4cdn.org
-    - +.4chan.org
-    - +.4channel.org
-    - +.2ch.net
-    - +.5ch.net
-    - +.ck101.com
-    - +.ckcdn.com
-    - +.ckck.fun
-    - +.dcard.cc
-    - +.dcard.io
-    - +.dcard.link
-    - +.dcard.tw
-    - +.linux.do
-    - +.ldstatic.com
-    - +.broadbandreports.com
-    - +.dslr.net
-    - +.dslreports.com
-    - +.hkgolden.com
-    - +.hkgolden.media
-    - +.pimg.tw
-    - +.pixanalytics.com
-    - +.pixfs.net
-    - +.pixnet.cc
-    - +.pixnet.net
-    - +.pixnet.pro
-    - +.pixnet.tw
-    - +.pixplug.in
     - +.maintracker.org
     - +.rutracker.cc
     - +.rutracker.cr
@@ -67,9 +35,41 @@ payload:
     - +.rutracker.org
     - +.rutrecker.net
     - +.rutrk.org
+    - +.xda-cdn.com
+    - +.xda-developers.com
+    - +.xdaforums.com
+    - +.xdaimages.com
+    - +.yamibo.com
+    - +.lih.kg
+    - +.lihkg.com
+    - +.linux.do
+    - +.ldstatic.com
+    - +.pimg.tw
+    - +.pixanalytics.com
+    - +.pixfs.net
+    - +.pixnet.cc
+    - +.pixnet.net
+    - +.pixnet.pro
+    - +.pixnet.tw
+    - +.pixplug.in
+    - +.qr.ae
+    - +.quora.com
+    - +.quoracdn.net
+    - +.poe.com
+    - +.poecdn.net
     - +.soyjak.party
     - +.soyjak.st
-    - +.yamibo.com
+    - +.dcard.cc
+    - +.dcard.io
+    - +.dcard.link
+    - +.dcard.tw
+    - +.hkgolden.com
+    - +.hkgolden.media
+    - +.5i01.com
+    - +.mobile01.com
+    - +.4cdn.org
+    - +.4chan.org
+    - +.4channel.org
     - +.6park.com
     - +.6parkbbs.com
     - +.6parknews.com
@@ -77,14 +77,14 @@ payload:
     - +.popo8.com
     - +.parkvv.com
     - +.xwbo.com
-    - +.lih.kg
-    - +.lihkg.com
-    - +.5i01.com
-    - +.mobile01.com
-    - +.xda-cdn.com
-    - +.xda-developers.com
-    - +.xdaforums.com
-    - +.xdaimages.com
+    - +.broadbandreports.com
+    - +.dslr.net
+    - +.dslreports.com
+    - +.2ch.net
+    - +.5ch.net
+    - +.ck101.com
+    - +.ckcdn.com
+    - +.ckck.fun
     - +.reddit.app.link
     - +.pixinsight.com.tw
     - +.reddit.map.fastly.net

@@ -5,12 +5,6 @@ payload:
     - DOMAIN-SUFFIX,biligame.co
     - DOMAIN-SUFFIX,biligame.com
     - DOMAIN-SUFFIX,biligame.net
-    - DOMAIN-SUFFIX,bilibiligame.cn
-    - DOMAIN-SUFFIX,bilibiligame.co
-    - DOMAIN-SUFFIX,bilibiligame.net
-    - DOMAIN-SUFFIX,biligame.co
-    - DOMAIN-SUFFIX,biligame.com
-    - DOMAIN-SUFFIX,biligame.net
     - DOMAIN-SUFFIX,sl916.com
     - DOMAIN-SUFFIX,kurogames.com
     - DOMAIN-SUFFIX,aki-game.com
@@ -115,3 +109,9 @@ payload:
     - DOMAIN-SUFFIX,anticheatexpert.com
     - DOMAIN-SUFFIX,17roco.com
     - DOMAIN-SUFFIX,roco.qq.com
+    - DOMAIN-SUFFIX,bilibiligame.cn
+    - DOMAIN-SUFFIX,bilibiligame.co
+    - DOMAIN-SUFFIX,bilibiligame.net
+    - DOMAIN-SUFFIX,biligame.co
+    - DOMAIN-SUFFIX,biligame.com
+    - DOMAIN-SUFFIX,biligame.net
