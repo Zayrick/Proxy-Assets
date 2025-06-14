@@ -1,6 +1,5 @@
 payload:
-    - DOMAIN-SUFFIX,yahoo.cn
-    - DOMAIN-SUFFIX,yahoo.com.cn
+    - DOMAIN,www.entrust.cn
     - DOMAIN,certs-lb.apple.com.akadns.net
     - DOMAIN,certs.apple.com
     - DOMAIN,crl-lb.apple.com.akadns.net
@@ -10,8 +9,6 @@ payload:
     - DOMAIN,ocsp2-lb.apple.com.akadns.net
     - DOMAIN,ocsp2.apple.com
     - DOMAIN,valid.apple.com
-    - DOMAIN-SUFFIX,sslcom.cn
-    - DOMAIN,www.entrust.cn
     - DOMAIN,pki-goog.l.google.com
     - DOMAIN,c.pki.goog
     - DOMAIN,i.pki.goog
@@ -19,7 +16,8 @@ payload:
     - DOMAIN,crl.pki.goog
     - DOMAIN,crls.pki.goog
     - DOMAIN,ocsp.pki.goog
-    - DOMAIN,www.microsoft.com
+    - DOMAIN-SUFFIX,yahoo.cn
+    - DOMAIN-SUFFIX,yahoo.com.cn
     - DOMAIN-SUFFIX,dcocsp.cn
     - DOMAIN-SUFFIX,digicert.cn
     - DOMAIN-SUFFIX,oemssl.cn
@@ -34,3 +32,5 @@ payload:
     - DOMAIN-SUFFIX,globalsigncdn.com
     - DOMAIN,cdn.globalsigncdn.com.cdn.cloudflare.net
     - DOMAIN,crl.globalsign.net
+    - DOMAIN,www.microsoft.com
+    - DOMAIN-SUFFIX,sslcom.cn

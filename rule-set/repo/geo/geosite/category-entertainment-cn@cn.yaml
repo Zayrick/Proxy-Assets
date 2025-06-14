@@ -6,8 +6,6 @@ payload:
     - +.biligame.com
     - +.biligame.net
     - +.sl916.com
-    - +.kurogames.com
-    - +.aki-game.com
     - +.mhystatic.com
     - +.mhyurl.cn
     - +.mihayo.com
@@ -114,3 +112,5 @@ payload:
     - +.biligame.co
     - +.biligame.com
     - +.biligame.net
+    - +.kurogames.com
+    - +.aki-game.com

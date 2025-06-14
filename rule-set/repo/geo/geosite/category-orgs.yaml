@@ -23,16 +23,10 @@ payload:
     - +.who.int
     - +.wi-fi.org
     - +.wto.org
-    - +.ppy.sh
-    - +.archive-it.org
-    - +.archive.md
-    - +.archive.org
-    - +.archive.ph
-    - +.archive.today
-    - +.openlibrary.org
-    - +.4pcdn.org
-    - +.4plebs.org
-    - +.csis.org
+    - +.ccstatic.org
+    - +.creativecommons.org
+    - +.creativecommons.engineering
+    - +.licensebuttons.net
     - +.f-dro1d.org
     - +.f-droid.com
     - +.f-droid.org
@@ -101,17 +95,6 @@ payload:
     - +.musicbrainz.org
     - +.nist.gov
     - +.time.gov
-    - +.paskoocheh.com
-    - +.rolfoundation.org
-    - +.rolsociety.org
-    - +.ccstatic.org
-    - +.creativecommons.org
-    - +.creativecommons.engineering
-    - +.licensebuttons.net
-    - +.emojipedia.org
-    - +.worldemojiawards.com
-    - +.worldemojiday.com
-    - +.xn--yt8h.la
     - +.openmaps.org
     - +.openstreetmap.com
     - +.openstreetmap.net
@@ -121,3 +104,20 @@ payload:
     - +.osmfoundation.org
     - +.stateofthemap.com
     - +.stateofthemap.org
+    - +.ppy.sh
+    - +.rolfoundation.org
+    - +.rolsociety.org
+    - +.archive-it.org
+    - +.archive.md
+    - +.archive.org
+    - +.archive.ph
+    - +.archive.today
+    - +.openlibrary.org
+    - +.4pcdn.org
+    - +.4plebs.org
+    - +.csis.org
+    - +.emojipedia.org
+    - +.worldemojiawards.com
+    - +.worldemojiday.com
+    - +.xn--yt8h.la
+    - +.paskoocheh.com

@@ -1,19 +1,21 @@
 payload:
-    - +.ggpht.cn
+    - +.mhystatic.com
+    - +.mhyurl.cn
+    - +.mihayo.com
+    - +.mihayou.com
+    - +.mihoyo.com
+    - +.mihoyocg.com
+    - +.mihoyogift.com
+    - +.mihoyomall.com
+    - +.miyoushe.com
+    - +.benghuai.com
+    - +.bh3.com
+    - +.bhsr.com
+    - +.themisweeps.com
+    - +.yuanshen.com
+    - +.juequling.com
     - +.amazonprimevideo.cn
     - +.amazonprimevideo.com.cn
-    - +.xboxlive.cn
-    - +.bluearchive-cn.com
-    - gog.qtlglb.com
-    - gogalaxy.gog-statics.com
-    - menu-static.gog-statics.com
-    - productcard.gog-statics.com
-    - static-login.gog-statics.com
-    - www4-static.gog-statics.com
-    - gog-cdn-fastly.gog.com
-    - gog-cdn.akamaized.net
-    - +.leagueoflegends.cn
-    - +.lpl.com.cn
     - +.legendofzelda.cn
     - +.legendofzelda.com.cn
     - +.miitomo.com.cn
@@ -26,7 +28,19 @@ payload:
     - +.mariokart.cn
     - +.mariokart.com.cn
     - +.supermariobros.com.cn
+    - +.bluearchive-cn.com
+    - +.xboxlive.cn
+    - +.leagueoflegends.cn
+    - +.lpl.com.cn
     - uplaypc-s-ubisoft.cdn.ubi.com
+    - gog.qtlglb.com
+    - gogalaxy.gog-statics.com
+    - menu-static.gog-statics.com
+    - productcard.gog-statics.com
+    - static-login.gog-statics.com
+    - www4-static.gog-statics.com
+    - gog-cdn-fastly.gog.com
+    - gog-cdn.akamaized.net
     - +.steamserver.net
     - +.steamusercontent.com
     - +.csgo.wmsj.cn
@@ -44,18 +58,4 @@ payload:
     - xz.pphimalayanrt.com
     - +.steamchina.com
     - +.gstore.val.manlaxy.com
-    - +.mhystatic.com
-    - +.mhyurl.cn
-    - +.mihayo.com
-    - +.mihayou.com
-    - +.mihoyo.com
-    - +.mihoyocg.com
-    - +.mihoyogift.com
-    - +.mihoyomall.com
-    - +.miyoushe.com
-    - +.benghuai.com
-    - +.bh3.com
-    - +.bhsr.com
-    - +.themisweeps.com
-    - +.yuanshen.com
-    - +.juequling.com
+    - +.ggpht.cn

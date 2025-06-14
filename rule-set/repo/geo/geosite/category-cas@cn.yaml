@@ -1,6 +1,5 @@
 payload:
-    - +.yahoo.cn
-    - +.yahoo.com.cn
+    - www.entrust.cn
     - certs-lb.apple.com.akadns.net
     - certs.apple.com
     - crl-lb.apple.com.akadns.net
@@ -10,8 +9,6 @@ payload:
     - ocsp2-lb.apple.com.akadns.net
     - ocsp2.apple.com
     - valid.apple.com
-    - +.sslcom.cn
-    - www.entrust.cn
     - pki-goog.l.google.com
     - c.pki.goog
     - i.pki.goog
@@ -19,7 +16,8 @@ payload:
     - crl.pki.goog
     - crls.pki.goog
     - ocsp.pki.goog
-    - www.microsoft.com
+    - +.yahoo.cn
+    - +.yahoo.com.cn
     - +.dcocsp.cn
     - +.digicert.cn
     - +.oemssl.cn
@@ -34,3 +32,5 @@ payload:
     - +.globalsigncdn.com
     - cdn.globalsigncdn.com.cdn.cloudflare.net
     - crl.globalsign.net
+    - www.microsoft.com
+    - +.sslcom.cn

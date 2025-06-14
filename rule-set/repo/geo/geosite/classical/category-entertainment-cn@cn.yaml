@@ -6,8 +6,6 @@ payload:
     - DOMAIN-SUFFIX,biligame.com
     - DOMAIN-SUFFIX,biligame.net
     - DOMAIN-SUFFIX,sl916.com
-    - DOMAIN-SUFFIX,kurogames.com
-    - DOMAIN-SUFFIX,aki-game.com
     - DOMAIN-SUFFIX,mhystatic.com
     - DOMAIN-SUFFIX,mhyurl.cn
     - DOMAIN-SUFFIX,mihayo.com
@@ -115,3 +113,5 @@ payload:
     - DOMAIN-SUFFIX,biligame.co
     - DOMAIN-SUFFIX,biligame.com
     - DOMAIN-SUFFIX,biligame.net
+    - DOMAIN-SUFFIX,kurogames.com
+    - DOMAIN-SUFFIX,aki-game.com

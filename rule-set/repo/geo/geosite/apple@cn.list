@@ -292,10 +292,6 @@ weatherkit.apple.com
 www.apple.com
 www.apple.com.edgekey.net.globalredir.akadns.net
 xp.apple.com
-+.researchkit.cn
-+.researchkit.com.cn
-+.swiftui.cn
-+.swiftui.com.cn
 certs-lb.apple.com.akadns.net
 certs.apple.com
 crl-lb.apple.com.akadns.net
@@ -311,6 +307,15 @@ valid.apple.com
 +.icloud.com.cn
 +.icloud.net.cn
 +.icloudapple.cn
++.apple-itunes.cn
++.itunes-apple.cn
++.itunesapple.cn
++.itunesradio.cn
++.itunesradio.com.cn
++.swiftui.cn
++.swiftui.com.cn
++.researchkit.cn
++.researchkit.com.cn
 +.swiftui.cn
 +.swiftui.com.cn
 +.beats1.cn
@@ -320,8 +325,3 @@ valid.apple.com
 +.beatsbydre.com
 +.beatsbydre.com.cn
 +.beatsep.cn
-+.apple-itunes.cn
-+.itunes-apple.cn
-+.itunesapple.cn
-+.itunesradio.cn
-+.itunesradio.com.cn
