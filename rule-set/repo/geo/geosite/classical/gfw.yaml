@@ -1,8 +1,7 @@
 payload:
     - DOMAIN-SUFFIX,kucoin.com
-    - DOMAIN-SUFFIX,ddex.io
+    - DOMAIN-SUFFIX,shooshtime.com
     - DOMAIN-SUFFIX,0rz.tw
-    - DOMAIN-SUFFIX,zzux.com
     - DOMAIN-SUFFIX,1000giri.net
     - DOMAIN-SUFFIX,10beasts.net
     - DOMAIN-SUFFIX,10conditionsoflove.com
@@ -16,7 +15,6 @@ payload:
     - DOMAIN-SUFFIX,141hongkong.com
     - DOMAIN-SUFFIX,141jj.com
     - DOMAIN-SUFFIX,141tube.com
-    - DOMAIN-SUFFIX,zzcloud.me
     - DOMAIN-SUFFIX,173ng.com
     - DOMAIN-SUFFIX,177pic.info
     - DOMAIN-SUFFIX,17t17p.com
@@ -43,9 +41,9 @@ payload:
     - DOMAIN-SUFFIX,2049bbs.xyz
     - DOMAIN-SUFFIX,21andy.com
     - DOMAIN-SUFFIX,21sextury.com
-    - DOMAIN-SUFFIX,zzcartoon.com
     - DOMAIN-SUFFIX,233abc.com
     - DOMAIN-SUFFIX,24hrs.ca
+    - DOMAIN-SUFFIX,zzux.com
     - DOMAIN-SUFFIX,25u.com
     - DOMAIN-SUFFIX,2lipstube.com
     - DOMAIN-SUFFIX,2shared.com
@@ -81,6 +79,8 @@ payload:
     - DOMAIN-SUFFIX,51luoben.com
     - DOMAIN-SUFFIX,5278.cc
     - DOMAIN-SUFFIX,5299.tv
+    - DOMAIN-SUFFIX,zzcloud.me
+    - DOMAIN-SUFFIX,zzcartoon.com
     - DOMAIN-SUFFIX,zyxel.com
     - DOMAIN-SUFFIX,5i01.com
     - DOMAIN-SUFFIX,5isotoi5.org
@@ -306,7 +306,7 @@ payload:
     - DOMAIN-SUFFIX,zillionk.com
     - DOMAIN-SUFFIX,ziddu.com
     - DOMAIN-SUFFIX,zi.media
-    - DOMAIN-SUFFIX,apiary.io
+    - DOMAIN-SUFFIX,kukuku.uk
     - DOMAIN-SUFFIX,apigee.com
     - DOMAIN-SUFFIX,apk.support
     - DOMAIN-SUFFIX,apkcombo.com
@@ -343,7 +343,7 @@ payload:
     - DOMAIN-SUFFIX,archives.gov
     - DOMAIN-SUFFIX,zhongguorenquan.org
     - DOMAIN-SUFFIX,arctosia.com
-    - DOMAIN-SUFFIX,000webhost.com
+    - DOMAIN-SUFFIX,areca-backup.org
     - DOMAIN-SUFFIX,arena.taipei
     - DOMAIN-SUFFIX,arethusa.su
     - DOMAIN-SUFFIX,arlingtoncemetery.mil
@@ -401,7 +401,7 @@ payload:
     - DOMAIN-SUFFIX,avmoo.pw
     - DOMAIN-SUFFIX,avoision.com
     - DOMAIN-SUFFIX,avyahoo.com
-    - DOMAIN-SUFFIX,axios.com
+    - DOMAIN-SUFFIX,000webhost.com
     - DOMAIN-SUFFIX,axureformac.com
     - DOMAIN-SUFFIX,azerimix.com
     - DOMAIN-SUFFIX,azirevpn.com
@@ -1242,7 +1242,7 @@ payload:
     - DOMAIN-SUFFIX,dcard.tw
     - DOMAIN-SUFFIX,dcmilitary.com
     - DOMAIN-SUFFIX,xiaobaiwu.com
-    - DOMAIN-SUFFIX,kui.name
+    - DOMAIN-SUFFIX,ddex.io
     - DOMAIN-SUFFIX,ddns.info
     - DOMAIN-SUFFIX,xianjian.tw
     - DOMAIN-SUFFIX,ddns.mobi
@@ -1965,6 +1965,7 @@ payload:
     - DOMAIN-SUFFIX,githubassets.com
     - DOMAIN-SUFFIX,githubcopilot.com
     - DOMAIN-SUFFIX,githubusercontent.com
+    - DOMAIN-SUFFIX,gitlab.net
     - DOMAIN-SUFFIX,gizlen.net
     - DOMAIN-SUFFIX,gjczz.com
     - DOMAIN-SUFFIX,glarity.app
@@ -2392,6 +2393,7 @@ payload:
     - DOMAIN-SUFFIX,himalayanglacier.com
     - DOMAIN-SUFFIX,himemix.com
     - DOMAIN-SUFFIX,hindustantimes.com
+    - DOMAIN-SUFFIX,hinet.net
     - DOMAIN-SUFFIX,hitbtc.com
     - DOMAIN-SUFFIX,hitomi.la
     - DOMAIN-SUFFIX,hiveon.net
@@ -2704,7 +2706,7 @@ payload:
     - DOMAIN-SUFFIX,isaacmao.com
     - DOMAIN-SUFFIX,isasecret.com
     - DOMAIN-SUFFIX,vpnvip.com
-    - DOMAIN-SUFFIX,kukuku.uk
+    - DOMAIN-SUFFIX,isgreat.org
     - DOMAIN-SUFFIX,ishr.ch
     - DOMAIN-SUFFIX,islahhaber.net
     - DOMAIN-SUFFIX,vpnunlimitedapp.com
@@ -2923,9 +2925,9 @@ payload:
     - DOMAIN-SUFFIX,kspcoin.com
     - DOMAIN-SUFFIX,ktzhk.com
     - DOMAIN-SUFFIX,kuaichedao.co
-    - DOMAIN-SUFFIX,areca-backup.org
+    - DOMAIN-SUFFIX,axios.com
     - DOMAIN-SUFFIX,030buy.com
-    - DOMAIN-SUFFIX,isgreat.org
+    - DOMAIN-SUFFIX,apiary.io
     - DOMAIN-SUFFIX,kun.im
     - DOMAIN-SUFFIX,kurashsultan.com
     - DOMAIN-SUFFIX,kurtmunger.com
@@ -4314,7 +4316,7 @@ payload:
     - DOMAIN-SUFFIX,shizhao.org
     - DOMAIN-SUFFIX,shkspr.mobi
     - DOMAIN-SUFFIX,shodanhq.com
-    - DOMAIN-SUFFIX,shooshtime.com
+    - DOMAIN-SUFFIX,kui.name
     - DOMAIN-SUFFIX,udnbkk.com
     - DOMAIN-SUFFIX,shopee.tw
     - DOMAIN-SUFFIX,shopping.com

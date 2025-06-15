@@ -3,30 +3,30 @@ payload:
     - opencourse.pku.edu.cn
     - study.163.com
     - +.ketangpai.com
-    - +.yuansouti.com
+    - +.fenbilantian.cn
     - +.chesicc.com
     - +.cedf.cn
     - +.chsi.cn
     - +.gfbzb.cn
-    - +.yuketang.cn
-    - +.rainclassroom.com
+    - +.pmphmooc.com
+    - +.openlearning.com
+    - +.mooc.cn
+    - +.icourses.cn
+    - +.icourse163.org
+    - +.cnmooc.org
+    - +.chinesemooc.org
     - +.fenbilantian.com
-    - +.fenbilantian.cn
+    - +.gfbzb.com
+    - +.pigai.org
     - +.fenbike.com
     - +.fenbike.cn
-    - +.fenbi.com
-    - +.fbstatic.cn
-    - +.gfbzb.com
-    - +.yuantiku.com
-    - +.pigai.org
-    - +.yuanfudao.com
     - +.gfbzb.net
     - +.ncss.cn
-    - +.ybccode.com
-    - +.xiaoyuankousuan.com
-    - +.banmaaike.com
+    - +.fenbi.com
+    - +.fbstatic.cn
+    - +.yuantiku.com
     - +.qgzb.net
-    - +.shanbay.com
+    - +.yuansouti.com
     - +.zbbm.net
     - +.yudou.cn
     - +.yushiyan.net
@@ -56,7 +56,7 @@ payload:
     - +.keboyunxiao.com
     - +.chesicc.net
     - +.chesicc.cn
-    - +.hjapi.com
+    - +.banmaaike.com
     - +.magedu.com
     - +.oldboyedu.com
     - +.eduei.com
@@ -65,47 +65,47 @@ payload:
     - +.neoscholar.com
     - +.neoschool.com
     - +.winyoungreading.com
-    - +.chinesemooc.org
-    - +.cnmooc.org
-    - +.icourse163.org
-    - +.icourses.cn
-    - +.mooc.cn
-    - +.openlearning.com
-    - +.pmphmooc.com
-    - +.baydn.com
-    - +.applysquare.com
-    - +.applysquare.net
     - +.hugecore.net
     - +.shareintelli.com
     - +.mojidict.com
+    - +.cctalk.com
+    - +.hjapi.com
+    - +.hjfile.cn
+    - +.hujiang.com
+    - +.yeshj.com
+    - +.baydn.com
+    - +.shanbay.com
+    - +.zhihuishu.com
+    - +.rainclassroom.com
+    - +.yuketang.cn
+    - +.17zuoye.cn
+    - +.17zuoye.com
+    - +.17zuoye.net
+    - +.applysquare.com
+    - +.applysquare.net
     - +.koocdn.com
     - +.koolearn.com
     - +.koopass.com
     - +.speiyou.com
     - +.xesimg.com
     - +.xueersi.com
-    - +.zhihuishu.com
-    - +.17zuoye.cn
-    - +.17zuoye.com
-    - +.17zuoye.net
-    - +.cctalk.com
     - +.weilaiyunxiao.com
-    - +.hjfile.cn
-    - +.hujiang.com
-    - +.yeshj.com
+    - +.xiaoyuankousuan.com
+    - +.ybccode.com
+    - +.yuanfudao.com
+    - +.ncss.org.cn
+    - +.chesicc.org.cn
     - +.qgzb.com.cn
     - +.chinayz.com.cn
-    - +.qgzb.gov.cn
+    - +.zbbm.gov.cn
+    - +.gfbzb.com.cn
     - +.chsi.com.cn
-    - +.icve.com.cn
+    - +.qgzb.gov.cn
     - +.gfbzb.gov.cn
     - +.gatzs.com.cn
-    - +.zbbm.gov.cn
-    - +.ncss.org.cn
-    - +.gfbzb.com.cn
-    - +.chesicc.org.cn
     - +.chesicc.net.cn
     - +.chesicc.com.cn
     - +.chei.com.cn
     - +.chdi.com.cn
     - +.cedf.org.cn
+    - +.icve.com.cn
